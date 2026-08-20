@@ -1,0 +1,1 @@
+{"sample_id":"HG02662","cohort":"HPRC","prefix":"https://s3-us-west-2.amazonaws.com/human-pangenomics/","cols":["modality","key","bytes","indexed_on_github","assay_detail","source"],"files":[["Illumina_WGS","working/HPRC/HG02662/raw_data/Illumina/child/HG02662.final.cram",15170684647,0,"","working"]]}

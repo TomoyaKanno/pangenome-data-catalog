@@ -1,0 +1,12 @@
+modality,sheet_asserts,igsr_verified,sheet_only,notes
+Illumina_WGS,69,6,63,"Sheet says 'yes, Broad' for 68/69 - data held at Broad/1000G, not in HGSVC IGSR dirs"
+HiFi,69,61,8,
+ONT_UL,64,58,6,
+PacBio_CLR,50,25,25,Legacy HGSVC1/2 CLR; superseded by HiFi
+HiC,68,44,24,Mostly HGSVC1/HGSVC2 collections; also 202505012_USC_HighCovHiC
+StrandSeq,69,38,31,"Per-sample libs median 57. SEPARATE 718-sample pooled 1kGP effort exists at 20260214_Strandseq_Pools (HGSVC Yr3 funded) - different cohort, do not merge"
+Bionano,68,47,21,
+RNAseq,67,61,6,"Illumina short-read RNA-seq: PRJEB39684 (HGSVC1/2), PRJEB58376, PRJEB75192. HPRC has NO equivalent"
+IsoSeq,12,12,0,"HGSVC2_Yr2 only, 12 samples; superseded by Kinnex"
+Kinnex,64,54,10,"2025 dirs: 20250610_JAX_HiFi_kinnex, 20250922_EEE_HiFi_Kinnex"
+ChrY_ONT,1,0,1,1 sample; chrY-targeted

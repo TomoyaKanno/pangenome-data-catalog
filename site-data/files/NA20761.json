@@ -1,0 +1,1 @@
+{"sample_id":"NA20761","cohort":"HPRC","prefix":"https://s3-us-west-2.amazonaws.com/human-pangenomics/","cols":["modality","key","bytes","indexed_on_github","assay_detail","source"],"files":[["Kinnex_IsoSeq","working/HPRC/NA20761/raw_data/PacBio_Kinnex/NA20761.lymph.m84203_240906_041700_s3-m84203_240906_061630_s4.flnc.bam",19039662134,0,"","working"]]}

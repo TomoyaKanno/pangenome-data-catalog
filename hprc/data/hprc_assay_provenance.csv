@@ -1,0 +1,15 @@
+modality,github_index,s3_only,notes
+HiFi,data_hifi_release2_v1.0.index.csv; R3_HPRC_hifi_no_dc_map.csv,False,core
+ONT,data_ont_release2_v1.0.index.csv; R3_HPRC_ont.csv,False,core
+Illumina_WGS,data_illumina_release2_v1.0.index.csv; R3_HPRC_ill.csv,False,many parent samples sourced from 1000G
+HiC_OmniC,data_hic_release2_v1.0.index.csv; R3_HPRC_hic.csv,False,"Dovetail Omni-C + Illumina Hi-C, used for phasing"
+Kinnex_IsoSeq,data_kinnex_release2_v1.0.index.csv; R3_HPRC_kinnex.csv,False,full-length cDNA
+HiFi_5mC,data_hifi_meth_wg_release2_v1.0.index.csv (partial),False,9 submissions; index covers only part
+FiberSeq,NONE,True,7 submissions; 19 samples also have ONT chromatin-stenciling 6mA basecalls (see FiberSeq_ONT_stenciling flag)
+MicroC,NONE,True,"HG002 only, WUSTL submission, raw fastq"
+ONT_directRNA,NONE,True,"HG06807 only, WASHU_PED_DATA, m6A/DRACH"
+Bionano,NONE,True,optical maps; missed by sequencing-extension filters
+Microarray,NONE,True,SNP array
+Karyotype,NONE,True,reports
+StrandSeq,NONE,True,"8 samples. HG002's libraries are .txt.gz, not a sequencing extension - they are missed by any extension-filtered scan (see README)"
+TenX,NONE,True,legacy linked-reads

@@ -1,0 +1,69 @@
+{
+  "bundle": "HPRC catalog handoff",
+  "generated_utc": "2026-08-20T20:29:18.158389+00:00",
+  "purpose": "Backing data + provenance for an interactive HPRC data-availability web app.",
+  "authoritative_source": "s3://human-pangenomics (enumerated directly). GitHub org tables used for metadata and explanation only.",
+  "counts": {
+    "samples": 438,
+    "modalities": 14,
+    "files": 19807,
+    "total_TB": 757.9,
+    "samples_not_in_any_release_table": 50
+  },
+  "files": {
+    "data/hprc_catalog.json": "Compact payload for a static app. Per-sample modality lists, totals, intersections. 114 KB - ship as-is, no backend needed.",
+    "data/hprc_sample_modality_matrix.csv": "438 samples x 14 modality booleans + release/population/sex/n_modalities. Same content as the JSON, tabular.",
+    "data/hprc_file_index.csv": "19,807 rows: one per data file. sample_id, modality, assay_detail, s3_key, https_url, size_bytes, source, indexed_on_github. Use for per-sample download lists.",
+    "data/hprc_modality_intersections.csv": "Precomputed counts for 8 useful modality combinations.",
+    "data/hprc_assay_provenance.csv": "Per modality: which GitHub index covers it, whether S3 is the only source, caveats.",
+    "data/hprc_samples_not_in_any_release_table.csv": "Samples with primary data that no release index references.",
+    "scripts/build_hprc_catalog.py": "Regenerates everything above from S3 + GitHub. ~2 min. Run when HPRC adds data."
+  },
+  "app_features_supported": {
+    "browse_by_category": "Filter hprc_catalog.json samples[] by modality membership.",
+    "search_by_sample": "Index samples[] by sample_id; modalities[] is the answer.",
+    "combine_modalities": "Boolean AND across modality columns. Precomputed common cases in intersections.",
+    "download_lists": "Join sample_id + modality into hprc_file_index.csv, present https_url."
+  },
+  "critical_caveats": [
+    "GitHub index tables are NOT comprehensive. They resolve ~10.3k of 19.8k data files. Eight modalities (FiberSeq, MicroC, ONT_directRNA, Bionano, Microarray, Karyotype, StrandSeq, TenX) have NO GitHub index at all - S3 is the only source.",
+    "indexed_on_github=False does not mean the data is unofficial. It often means the file postdates the last index refresh, or the assay was never indexed.",
+    "Micro-C exists for exactly one sample (HG002) and is raw fastq only.",
+    "ONT chromatin-stenciling 6mA basecalls are a Fiber-seq basecall variant living inside the UCSC ONT Fiber-seq submission - NOT a separate assay. Tracked via assay_detail and the FiberSeq_ONT_stenciling flag. Do not present as its own modality.",
+    "Do NOT filter S3 objects by file extension when rebuilding. Doing so silently drops Bionano, karyotype, microarray, and HG002 Strand-seq (.txt.gz).",
+    "release column: R2/R3/untagged. 'untagged' means the sample has data but no row in either release metadata table - surface this, do not hide it.",
+    "Multi-modal analyses are ~100-sample studies: 346 samples have the 5 core modalities, only 100 add Fiber-seq, only 44 also have HiFi 5mC."
+  ],
+  "next_phase": "Both cohorts catalogued. Remaining: wire the app; optionally add the separate 718-sample pooled Strand-seq 1kGP cohort as a third facet.",
+  "cohorts": {
+    "HPRC": {
+      "samples": 438,
+      "modalities": 14,
+      "files": 19807,
+      "TB": 757.9,
+      "source": "s3://human-pangenomics",
+      "dir": "hprc/"
+    },
+    "HGSVC3": {
+      "samples": 69,
+      "modalities": 11,
+      "files": 18174,
+      "source": "HGSVC_Production_Master-2.xlsx + IGSR HGSVC2/3 archive",
+      "dir": "hgsvc3/"
+    }
+  },
+  "combined": {
+    "dir": "combined/",
+    "rows": 507,
+    "unique_samples": 502,
+    "dual_cohort_samples": [
+      "HG00733",
+      "HG02818",
+      "HG03486",
+      "NA19036",
+      "NA19240"
+    ],
+    "note": "Unified modality vocabulary; ONT_UL->ONT, Kinnex/IsoSeq->Kinnex_IsoSeq."
+  },
+  "key_contrast": "HGSVC3 is small but near-complete: 64/69 samples carry 8 modalities. HPRC is large but sparse beyond the core five: 346/438 have the core 5, only ~100 add Fiber-seq. HGSVC3 has short-read RNA-seq (67 samples); HPRC has none. HPRC has Fiber-seq (111), HiFi 5mC (86) and Micro-C (1); HGSVC3 has none of those."
+}

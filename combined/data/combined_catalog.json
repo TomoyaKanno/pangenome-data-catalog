@@ -1,0 +1,8054 @@
+{
+ "generated_utc": "2026-08-20T20:34:47.464256+00:00",
+ "cohorts": {
+  "HPRC": 438,
+  "HGSVC3": 69
+ },
+ "unique_samples": 502,
+ "dual_cohort_samples": [
+  "HG00733",
+  "HG02818",
+  "HG03486",
+  "NA19036",
+  "NA19240"
+ ],
+ "unified_modalities": [
+  "Bionano",
+  "ChrY_ONT",
+  "FiberSeq",
+  "HiC",
+  "HiFi",
+  "HiFi_5mC",
+  "Illumina_WGS",
+  "Karyotype",
+  "Kinnex_IsoSeq",
+  "MicroC",
+  "Microarray",
+  "ONT",
+  "ONT_directRNA",
+  "PacBio_CLR",
+  "RNAseq",
+  "StrandSeq",
+  "TenX"
+ ],
+ "coverage": {
+  "Bionano": {
+   "HPRC": 42,
+   "HGSVC3": 68
+  },
+  "ChrY_ONT": {
+   "HPRC": 0,
+   "HGSVC3": 1
+  },
+  "FiberSeq": {
+   "HPRC": 111,
+   "HGSVC3": 0
+  },
+  "HiC": {
+   "HPRC": 380,
+   "HGSVC3": 68
+  },
+  "HiFi": {
+   "HPRC": 402,
+   "HGSVC3": 69
+  },
+  "HiFi_5mC": {
+   "HPRC": 86,
+   "HGSVC3": 0
+  },
+  "Illumina_WGS": {
+   "HPRC": 401,
+   "HGSVC3": 69
+  },
+  "Karyotype": {
+   "HPRC": 40,
+   "HGSVC3": 0
+  },
+  "Kinnex_IsoSeq": {
+   "HPRC": 368,
+   "HGSVC3": 64
+  },
+  "MicroC": {
+   "HPRC": 1,
+   "HGSVC3": 0
+  },
+  "Microarray": {
+   "HPRC": 40,
+   "HGSVC3": 0
+  },
+  "ONT": {
+   "HPRC": 399,
+   "HGSVC3": 64
+  },
+  "ONT_directRNA": {
+   "HPRC": 1,
+   "HGSVC3": 0
+  },
+  "PacBio_CLR": {
+   "HPRC": 0,
+   "HGSVC3": 50
+  },
+  "RNAseq": {
+   "HPRC": 0,
+   "HGSVC3": 67
+  },
+  "StrandSeq": {
+   "HPRC": 8,
+   "HGSVC3": 69
+  },
+  "TenX": {
+   "HPRC": 10,
+   "HGSVC3": 0
+  }
+ },
+ "samples": [
+  {
+   "sample_id": "HG00097",
+   "cohort": "HPRC",
+   "population": "GBR",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00099",
+   "cohort": "HPRC",
+   "population": "GBR",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00106",
+   "cohort": "HPRC",
+   "population": "GBR",
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00116",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00117",
+   "cohort": "HPRC",
+   "population": "GBR",
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00118",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "Kinnex_IsoSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00119",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00120",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00126",
+   "cohort": "HPRC",
+   "population": "GBR",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00128",
+   "cohort": "HPRC",
+   "population": "GBR",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00133",
+   "cohort": "HPRC",
+   "population": "GBR",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00140",
+   "cohort": "HPRC",
+   "population": "GBR",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00146",
+   "cohort": "HPRC",
+   "population": "GBR",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00150",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG002",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "MicroC",
+    "ONT",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00232",
+   "cohort": "HPRC",
+   "population": "GBR",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00234",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00235",
+   "cohort": "HPRC",
+   "population": "GBR",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00236",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00243",
+   "cohort": "HPRC",
+   "population": "GBR",
+   "sex": "male",
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00245",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00252",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00253",
+   "cohort": "HPRC",
+   "population": "GBR",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00254",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00258",
+   "cohort": "HPRC",
+   "population": "GBR",
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00272",
+   "cohort": "HPRC",
+   "population": "FIN",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00280",
+   "cohort": "HPRC",
+   "population": "FIN",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00290",
+   "cohort": "HPRC",
+   "population": "FIN",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00320",
+   "cohort": "HPRC",
+   "population": "FIN",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00321",
+   "cohort": "HPRC",
+   "population": "FIN",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00323",
+   "cohort": "HPRC",
+   "population": "FIN",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00329",
+   "cohort": "HPRC",
+   "population": "FIN",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00344",
+   "cohort": "HPRC",
+   "population": "FIN",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00350",
+   "cohort": "HPRC",
+   "population": "FIN",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00355",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00375",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00384",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "HiFi",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00408",
+   "cohort": "HPRC",
+   "population": "CHS",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00411",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "Illumina_WGS",
+    "Karyotype",
+    "Microarray"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00423",
+   "cohort": "HPRC",
+   "population": "CHS",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00438",
+   "cohort": "HPRC",
+   "population": "CHS",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00480",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "Illumina_WGS",
+    "Karyotype",
+    "Microarray"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG005",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00544",
+   "cohort": "HPRC",
+   "population": "CHS",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00558",
+   "cohort": "HPRC",
+   "population": "CHS",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00580",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00584",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00597",
+   "cohort": "HPRC",
+   "population": "CHS",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00609",
+   "cohort": "HPRC",
+   "population": "CHS",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00621",
+   "cohort": "HPRC",
+   "population": "CHS",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00639",
+   "cohort": "HPRC",
+   "population": "PUR",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00642",
+   "cohort": "HPRC",
+   "population": "PUR",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00658",
+   "cohort": "HPRC",
+   "population": "CHS",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00662",
+   "cohort": "HPRC",
+   "population": "CHS",
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00673",
+   "cohort": "HPRC",
+   "population": "CHS",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00689",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00701",
+   "cohort": "HPRC",
+   "population": "CHS",
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00706",
+   "cohort": "HPRC",
+   "population": "CHS",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00730",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "Illumina_WGS",
+    "Karyotype",
+    "Microarray"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00733",
+   "cohort": "HPRC",
+   "population": "PUR",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "in_both_cohorts": true
+  },
+  {
+   "sample_id": "HG00735",
+   "cohort": "HPRC",
+   "population": "PUR",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00738",
+   "cohort": "HPRC",
+   "population": "PUR",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00741",
+   "cohort": "HPRC",
+   "population": "PUR",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00867",
+   "cohort": "HPRC",
+   "population": "CDX",
+   "sex": "female",
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01028",
+   "cohort": "HPRC",
+   "population": "CDX",
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01048",
+   "cohort": "HPRC",
+   "population": "PUR",
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01067",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01071",
+   "cohort": "HPRC",
+   "population": "PUR",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01074",
+   "cohort": "HPRC",
+   "population": "PUR",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01081",
+   "cohort": "HPRC",
+   "population": "PUR",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01099",
+   "cohort": "HPRC",
+   "population": "PUR",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01106",
+   "cohort": "HPRC",
+   "population": "PUR",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01109",
+   "cohort": "HPRC",
+   "population": "PUR",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT",
+    "TenX"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01123",
+   "cohort": "HPRC",
+   "population": "CLM",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01136",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01138",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "Illumina_WGS",
+    "Karyotype",
+    "Microarray",
+    "ONT",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01150",
+   "cohort": "HPRC",
+   "population": "CLM",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01167",
+   "cohort": "HPRC",
+   "population": "PUR",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01175",
+   "cohort": "HPRC",
+   "population": "PUR",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01176",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01192",
+   "cohort": "HPRC",
+   "population": "PUR",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01204",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01243",
+   "cohort": "HPRC",
+   "population": "PUR",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT",
+    "TenX"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01248",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "HiFi",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01252",
+   "cohort": "HPRC",
+   "population": "CLM",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01255",
+   "cohort": "HPRC",
+   "population": "CLM",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01258",
+   "cohort": "HPRC",
+   "population": "CLM",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01261",
+   "cohort": "HPRC",
+   "population": "CLM",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01346",
+   "cohort": "HPRC",
+   "population": "CLM",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01358",
+   "cohort": "HPRC",
+   "population": "CLM",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01361",
+   "cohort": "HPRC",
+   "population": "CLM",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01374",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01433",
+   "cohort": "HPRC",
+   "population": "CLM",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01442",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT",
+    "TenX"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01479",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01496",
+   "cohort": "HPRC",
+   "population": "CLM",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01516",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01522",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01530",
+   "cohort": "HPRC",
+   "population": "IBS",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01610",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01624",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01626",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "HiFi",
+    "Illumina_WGS"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01700",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01766",
+   "cohort": "HPRC",
+   "population": "IBS",
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01784",
+   "cohort": "HPRC",
+   "population": "IBS",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01785",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "HiFi",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01786",
+   "cohort": "HPRC",
+   "population": "IBS",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01796",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01798",
+   "cohort": "HPRC",
+   "population": "CDX",
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01884",
+   "cohort": "HPRC",
+   "population": "ACB",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01887",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "HiFi",
+    "Illumina_WGS"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01888",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "Illumina_WGS",
+    "Karyotype",
+    "Microarray",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01891",
+   "cohort": "HPRC",
+   "population": "ACB",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01894",
+   "cohort": "HPRC",
+   "population": "ACB",
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01928",
+   "cohort": "HPRC",
+   "population": "PEL",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01934",
+   "cohort": "HPRC",
+   "population": "PEL",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01940",
+   "cohort": "HPRC",
+   "population": "PEL",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01943",
+   "cohort": "HPRC",
+   "population": "PEL",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01952",
+   "cohort": "HPRC",
+   "population": "PEL",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01960",
+   "cohort": "HPRC",
+   "population": "ACB",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01969",
+   "cohort": "HPRC",
+   "population": "PEL",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01975",
+   "cohort": "HPRC",
+   "population": "PEL",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01978",
+   "cohort": "HPRC",
+   "population": "PEL",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01981",
+   "cohort": "HPRC",
+   "population": "PEL",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01993",
+   "cohort": "HPRC",
+   "population": "PEL",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01998",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "Illumina_WGS",
+    "Karyotype",
+    "Microarray"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02004",
+   "cohort": "HPRC",
+   "population": "PEL",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02015",
+   "cohort": "HPRC",
+   "population": "KHV",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02027",
+   "cohort": "HPRC",
+   "population": "KHV",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02040",
+   "cohort": "HPRC",
+   "population": "KHV",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02055",
+   "cohort": "HPRC",
+   "population": "ACB",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT",
+    "TenX"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02056",
+   "cohort": "HPRC",
+   "population": "KHV",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02071",
+   "cohort": "HPRC",
+   "population": "KHV",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02074",
+   "cohort": "HPRC",
+   "population": "KHV",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02080",
+   "cohort": "HPRC",
+   "population": "KHV",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT",
+    "TenX"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02083",
+   "cohort": "HPRC",
+   "population": "KHV",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02109",
+   "cohort": "HPRC",
+   "population": "ACB",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT",
+    "TenX"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02129",
+   "cohort": "HPRC",
+   "population": "KHV",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02132",
+   "cohort": "HPRC",
+   "population": "KHV",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02135",
+   "cohort": "HPRC",
+   "population": "KHV",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02140",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02145",
+   "cohort": "HPRC",
+   "population": "ACB",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT",
+    "TenX"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02148",
+   "cohort": "HPRC",
+   "population": "PEL",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02155",
+   "cohort": "HPRC",
+   "population": "CDX",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02165",
+   "cohort": "HPRC",
+   "population": "CDX",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02178",
+   "cohort": "HPRC",
+   "population": "CDX",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02257",
+   "cohort": "HPRC",
+   "population": "ACB",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02258",
+   "cohort": "HPRC",
+   "population": "ACB",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02273",
+   "cohort": "HPRC",
+   "population": "PEL",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02280",
+   "cohort": "HPRC",
+   "population": "ACB",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02293",
+   "cohort": "HPRC",
+   "population": "PEL",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02300",
+   "cohort": "HPRC",
+   "population": "PEL",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02337",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02364",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02373",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02391",
+   "cohort": "HPRC",
+   "population": "CDX",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02392",
+   "cohort": "HPRC",
+   "population": "CDX",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02451",
+   "cohort": "HPRC",
+   "population": "ACB",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02470",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02486",
+   "cohort": "HPRC",
+   "population": "ACB",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02497",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02514",
+   "cohort": "HPRC",
+   "population": "KHV",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02523",
+   "cohort": "HPRC",
+   "population": "KHV",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02541",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02559",
+   "cohort": "HPRC",
+   "population": "ACB",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02572",
+   "cohort": "HPRC",
+   "population": "GWD",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02583",
+   "cohort": "HPRC",
+   "population": "GWD",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02589",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02594",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02602",
+   "cohort": "HPRC",
+   "population": "PJL",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02615",
+   "cohort": "HPRC",
+   "population": "GWD",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02622",
+   "cohort": "HPRC",
+   "population": "GWD",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02624",
+   "cohort": "HPRC",
+   "population": "GWD",
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02630",
+   "cohort": "HPRC",
+   "population": "GWD",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02642",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02647",
+   "cohort": "HPRC",
+   "population": "GWD",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02656",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "HiFi",
+    "Illumina_WGS"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02661",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02662",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "Illumina_WGS"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02668",
+   "cohort": "HPRC",
+   "population": "GWD",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02676",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02683",
+   "cohort": "HPRC",
+   "population": "PJL",
+   "sex": "female",
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02698",
+   "cohort": "HPRC",
+   "population": "PJL",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02717",
+   "cohort": "HPRC",
+   "population": "GWD",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02723",
+   "cohort": "HPRC",
+   "population": "GWD",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT",
+    "TenX"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02735",
+   "cohort": "HPRC",
+   "population": "PJL",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02738",
+   "cohort": "HPRC",
+   "population": "PJL",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02792",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02809",
+   "cohort": "HPRC",
+   "population": "GWD",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02818",
+   "cohort": "HPRC",
+   "population": "GWD",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "in_both_cohorts": true
+  },
+  {
+   "sample_id": "HG02841",
+   "cohort": "HPRC",
+   "population": "GWD",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02880",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "FiberSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02886",
+   "cohort": "HPRC",
+   "population": "GWD",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02922",
+   "cohort": "HPRC",
+   "population": "ESN",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02965",
+   "cohort": "HPRC",
+   "population": "ESN",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02970",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02976",
+   "cohort": "HPRC",
+   "population": "ESN",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02984",
+   "cohort": "HPRC",
+   "population": "GWD",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03017",
+   "cohort": "HPRC",
+   "population": "PJL",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03041",
+   "cohort": "HPRC",
+   "population": "GWD",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03050",
+   "cohort": "HPRC",
+   "population": "GWD",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03052",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03072",
+   "cohort": "HPRC",
+   "population": "MSL",
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03098",
+   "cohort": "HPRC",
+   "population": "MSL",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT",
+    "TenX"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03103",
+   "cohort": "HPRC",
+   "population": "ESN",
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03108",
+   "cohort": "HPRC",
+   "population": "ESN",
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03117",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03126",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03130",
+   "cohort": "HPRC",
+   "population": "ESN",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03136",
+   "cohort": "HPRC",
+   "population": "ESN",
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03139",
+   "cohort": "HPRC",
+   "population": "ESN",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03193",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03195",
+   "cohort": "HPRC",
+   "population": "ESN",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03198",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03209",
+   "cohort": "HPRC",
+   "population": "MSL",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03225",
+   "cohort": "HPRC",
+   "population": "MSL",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03239",
+   "cohort": "HPRC",
+   "population": "PJL",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03258",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03270",
+   "cohort": "HPRC",
+   "population": "ESN",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03271",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03343",
+   "cohort": "HPRC",
+   "population": "ESN",
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03366",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03369",
+   "cohort": "HPRC",
+   "population": "ESN",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03372",
+   "cohort": "HPRC",
+   "population": "ESN",
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03388",
+   "cohort": "HPRC",
+   "population": "MSL",
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03432",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03433",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "Kinnex_IsoSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03445",
+   "cohort": "HPRC",
+   "population": "MSL",
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03453",
+   "cohort": "HPRC",
+   "population": "MSL",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03457",
+   "cohort": "HPRC",
+   "population": "MSL",
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03458",
+   "cohort": "HPRC",
+   "population": "MSL",
+   "sex": "female",
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03460",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03470",
+   "cohort": "HPRC",
+   "population": "MSL",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03471",
+   "cohort": "HPRC",
+   "population": "MSL",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03486",
+   "cohort": "HPRC",
+   "population": "MSL",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "in_both_cohorts": true
+  },
+  {
+   "sample_id": "HG03492",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT",
+    "TenX"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03516",
+   "cohort": "HPRC",
+   "population": "ESN",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03521",
+   "cohort": "HPRC",
+   "population": "ESN",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03540",
+   "cohort": "HPRC",
+   "population": "GWD",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03557",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03567",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03579",
+   "cohort": "HPRC",
+   "population": "MSL",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03583",
+   "cohort": "HPRC",
+   "population": "MSL",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03595",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03611",
+   "cohort": "HPRC",
+   "population": "BEB",
+   "sex": "female",
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03654",
+   "cohort": "HPRC",
+   "population": "PJL",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03669",
+   "cohort": "HPRC",
+   "population": "PJL",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03672",
+   "cohort": "HPRC",
+   "population": "STU",
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03688",
+   "cohort": "HPRC",
+   "population": "STU",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03691",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03704",
+   "cohort": "HPRC",
+   "population": "PJL",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03710",
+   "cohort": "HPRC",
+   "population": "PJL",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03733",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03742",
+   "cohort": "HPRC",
+   "population": "ITU",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03775",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03778",
+   "cohort": "HPRC",
+   "population": "ITU",
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03784",
+   "cohort": "HPRC",
+   "population": "ITU",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03788",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03792",
+   "cohort": "HPRC",
+   "population": "ITU",
+   "sex": "male",
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03804",
+   "cohort": "HPRC",
+   "population": "BEB",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03816",
+   "cohort": "HPRC",
+   "population": "BEB",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03825",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "HiFi",
+    "Illumina_WGS"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03831",
+   "cohort": "HPRC",
+   "population": "BEB",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03834",
+   "cohort": "HPRC",
+   "population": "BEB",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03854",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03868",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03874",
+   "cohort": "HPRC",
+   "population": "ITU",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03875",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03882",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03890",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03898",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03902",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03919",
+   "cohort": "HPRC",
+   "population": "BEB",
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03927",
+   "cohort": "HPRC",
+   "population": "BEB",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03942",
+   "cohort": "HPRC",
+   "population": "BEB",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03995",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG04115",
+   "cohort": "HPRC",
+   "population": "STU",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG04144",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG04153",
+   "cohort": "HPRC",
+   "population": "BEB",
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG04157",
+   "cohort": "HPRC",
+   "population": "BEB",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG04160",
+   "cohort": "HPRC",
+   "population": "BEB",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG04161",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "Kinnex_IsoSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG04184",
+   "cohort": "HPRC",
+   "population": "BEB",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG04187",
+   "cohort": "HPRC",
+   "population": "BEB",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG04199",
+   "cohort": "HPRC",
+   "population": "STU",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG04204",
+   "cohort": "HPRC",
+   "population": "STU",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG04216",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG04225",
+   "cohort": "HPRC",
+   "population": "ITU",
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG04228",
+   "cohort": "HPRC",
+   "population": "STU",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG06799",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "FiberSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG06800",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "FiberSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG06801",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "FiberSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG06802",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "FiberSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG06805",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "FiberSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG06807",
+   "cohort": "HPRC",
+   "population": "ASL",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "ONT",
+    "ONT_directRNA"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG08444",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "FiberSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG08446",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "FiberSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG08449",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "FiberSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG08463",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "FiberSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG08464",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "FiberSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "MGISTL-PAN027",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "HiFi"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA18488",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA18505",
+   "cohort": "HPRC",
+   "population": "YRI",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA18508",
+   "cohort": "HPRC",
+   "population": "YRI",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA18511",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA18522",
+   "cohort": "HPRC",
+   "population": "YRI",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA18523",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "HiFi",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA18538",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA18547",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA18559",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA18565",
+   "cohort": "HPRC",
+   "population": "CHB",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA18570",
+   "cohort": "HPRC",
+   "population": "CHB",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA18572",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "Kinnex_IsoSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA18606",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA18608",
+   "cohort": "HPRC",
+   "population": "CHB",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA18611",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA18612",
+   "cohort": "HPRC",
+   "population": "CHB",
+   "sex": "male",
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA18620",
+   "cohort": "HPRC",
+   "population": "CHB",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA18636",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA18638",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "HiFi",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA18747",
+   "cohort": "HPRC",
+   "population": "CHB",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA18748",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "Kinnex_IsoSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA18870",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA18871",
+   "cohort": "HPRC",
+   "population": "YRI",
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA18879",
+   "cohort": "HPRC",
+   "population": "YRI",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA18906",
+   "cohort": "HPRC",
+   "population": "YRI",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA18940",
+   "cohort": "HPRC",
+   "population": "JPT",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA18942",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA18943",
+   "cohort": "HPRC",
+   "population": "JPT",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA18944",
+   "cohort": "HPRC",
+   "population": "JPT",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA18945",
+   "cohort": "HPRC",
+   "population": "JPT",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA18948",
+   "cohort": "HPRC",
+   "population": "JPT",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA18952",
+   "cohort": "HPRC",
+   "population": "JPT",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA18959",
+   "cohort": "HPRC",
+   "population": "JPT",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA18960",
+   "cohort": "HPRC",
+   "population": "JPT",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA18967",
+   "cohort": "HPRC",
+   "population": "JPT",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA18970",
+   "cohort": "HPRC",
+   "population": "JPT",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA18971",
+   "cohort": "HPRC",
+   "population": "JPT",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA18974",
+   "cohort": "HPRC",
+   "population": "JPT",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA18976",
+   "cohort": "HPRC",
+   "population": "JPT",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA18982",
+   "cohort": "HPRC",
+   "population": "JPT",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA18983",
+   "cohort": "HPRC",
+   "population": "JPT",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA18995",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19000",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19012",
+   "cohort": "HPRC",
+   "population": "JPT",
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19030",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19031",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19035",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19036",
+   "cohort": "HPRC",
+   "population": "LWK",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": true
+  },
+  {
+   "sample_id": "NA19042",
+   "cohort": "HPRC",
+   "population": "LWK",
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19043",
+   "cohort": "HPRC",
+   "population": "LWK",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19055",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19063",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19079",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19087",
+   "cohort": "HPRC",
+   "population": "JPT",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19090",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19099",
+   "cohort": "HPRC",
+   "population": "YRI",
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19118",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19120",
+   "cohort": "HPRC",
+   "population": "YRI",
+   "sex": "male",
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19131",
+   "cohort": "HPRC",
+   "population": "YRI",
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19159",
+   "cohort": "HPRC",
+   "population": "YRI",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19175",
+   "cohort": "HPRC",
+   "population": "YRI",
+   "sex": "male",
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19185",
+   "cohort": "HPRC",
+   "population": "YRI",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19190",
+   "cohort": "HPRC",
+   "population": "YRI",
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19240",
+   "cohort": "HPRC",
+   "population": "YRI",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "in_both_cohorts": true
+  },
+  {
+   "sample_id": "NA19307",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19314",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19315",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19318",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "Kinnex_IsoSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19321",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19338",
+   "cohort": "HPRC",
+   "population": "LWK",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19360",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19375",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19377",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "HiFi",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19390",
+   "cohort": "HPRC",
+   "population": "LWK",
+   "sex": "female",
+   "release": "R3",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19391",
+   "cohort": "HPRC",
+   "population": "LWK",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19395",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19438",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19439",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19443",
+   "cohort": "HPRC",
+   "population": "LWK",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19445",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19448",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19461",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19468",
+   "cohort": "HPRC",
+   "population": "LWK",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19655",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19658",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "Kinnex_IsoSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19679",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19682",
+   "cohort": "HPRC",
+   "population": "MXL",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19700",
+   "cohort": "HPRC",
+   "population": "ASW",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19703",
+   "cohort": "HPRC",
+   "population": "ASW",
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19762",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "Kinnex_IsoSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19776",
+   "cohort": "HPRC",
+   "population": "MXL",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19834",
+   "cohort": "HPRC",
+   "population": "ASW",
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19835",
+   "cohort": "HPRC",
+   "population": "ASW",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19909",
+   "cohort": "HPRC",
+   "population": "ASW",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19916",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "Kinnex_IsoSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19917",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19923",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA20129",
+   "cohort": "HPRC",
+   "population": "ASW",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA20282",
+   "cohort": "HPRC",
+   "population": "ASW",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA20287",
+   "cohort": "HPRC",
+   "population": "ASW",
+   "sex": "female",
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA20294",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "Kinnex_IsoSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA20300",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "HiFi",
+    "HiFi_5mC",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA20318",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "Kinnex_IsoSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA20342",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "Kinnex_IsoSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA20346",
+   "cohort": "HPRC",
+   "population": "ASW",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA20362",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "Kinnex_IsoSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA20412",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA20503",
+   "cohort": "HPRC",
+   "population": "TSI",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA20588",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA20752",
+   "cohort": "HPRC",
+   "population": "TSI",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA20756",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA20761",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "Kinnex_IsoSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA20762",
+   "cohort": "HPRC",
+   "population": "TSI",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA20796",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA20799",
+   "cohort": "HPRC",
+   "population": "TSI",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA20800",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA20801",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "Kinnex_IsoSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA20805",
+   "cohort": "HPRC",
+   "population": "TSI",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA20806",
+   "cohort": "HPRC",
+   "population": "TSI",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA20809",
+   "cohort": "HPRC",
+   "population": "TSI",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA20818",
+   "cohort": "HPRC",
+   "population": "TSI",
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA20827",
+   "cohort": "HPRC",
+   "population": "TSI",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA20850",
+   "cohort": "HPRC",
+   "population": "GIH",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA20858",
+   "cohort": "HPRC",
+   "population": "GIH",
+   "sex": "male",
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA20866",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA20870",
+   "cohort": "HPRC",
+   "population": "GIH",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA20905",
+   "cohort": "HPRC",
+   "population": "GIH",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA21093",
+   "cohort": "HPRC",
+   "population": "GIH",
+   "sex": "male",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA21101",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA21102",
+   "cohort": "HPRC",
+   "population": "GIH",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA21106",
+   "cohort": "HPRC",
+   "population": "GIH",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA21110",
+   "cohort": "HPRC",
+   "population": "GIH",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "FiberSeq",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA21115",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "Kinnex_IsoSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA21133",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "R3",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA21144",
+   "cohort": "HPRC",
+   "population": "GIH",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA21309",
+   "cohort": "HPRC",
+   "population": "MKK",
+   "sex": "female",
+   "release": "R2",
+   "modalities": [
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "mHomSap3",
+   "cohort": "HPRC",
+   "population": null,
+   "sex": null,
+   "release": "untagged",
+   "modalities": [
+    "HiFi",
+    "Illumina_WGS"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19238",
+   "cohort": "HGSVC3",
+   "population": "YRI",
+   "sex": "Female",
+   "release": "HGSVC3_Yr1",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19239",
+   "cohort": "HGSVC3",
+   "population": "YRI",
+   "sex": "Male",
+   "release": "HGSVC3_Yr1",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19240",
+   "cohort": "HGSVC3",
+   "population": "YRI",
+   "sex": "Female",
+   "release": "HGSVC3_Yr1",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": true
+  },
+  {
+   "sample_id": "HG00731",
+   "cohort": "HGSVC3",
+   "population": "PUR",
+   "sex": "Male",
+   "release": "HGSVC3_Yr1",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00732",
+   "cohort": "HGSVC3",
+   "population": "PUR",
+   "sex": "Female",
+   "release": "HGSVC3_Yr1",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00733",
+   "cohort": "HGSVC3",
+   "population": "PUR",
+   "sex": "Female",
+   "release": "HGSVC3_Yr1",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": true
+  },
+  {
+   "sample_id": "HG00512",
+   "cohort": "HGSVC3",
+   "population": "CHS",
+   "sex": "Male",
+   "release": "HGSVC3_Yr1",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00513",
+   "cohort": "HGSVC3",
+   "population": "CHS",
+   "sex": "Female",
+   "release": "HGSVC3_Yr1",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00514",
+   "cohort": "HGSVC3",
+   "population": "CHS",
+   "sex": "Female",
+   "release": "HGSVC3_Yr1",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03732",
+   "cohort": "HGSVC3",
+   "population": "ITU",
+   "sex": "Male",
+   "release": "HGSVC3_Yr1, Yr3",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01573",
+   "cohort": "HGSVC3",
+   "population": "PEL",
+   "sex": "Female",
+   "release": "HGSVC3_Yr1, Yr3",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00171",
+   "cohort": "HGSVC3",
+   "population": "FIN",
+   "sex": "Female",
+   "release": "HGSVC3_Yr1, Yr3",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02587",
+   "cohort": "HGSVC3",
+   "population": "GWD",
+   "sex": "Female",
+   "release": "HGSVC3_Yr1, Yr3",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01114",
+   "cohort": "HGSVC3",
+   "population": "CLM",
+   "sex": "Female",
+   "release": "HGSVC3_Yr1, Yr3",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02018",
+   "cohort": "HGSVC3",
+   "population": "KHV",
+   "sex": "Female",
+   "release": "HGSVC3_Yr1, Yr3",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19036",
+   "cohort": "HGSVC3",
+   "population": "LWK",
+   "sex": "Female",
+   "release": "HGSVC3_Yr1, Yr3",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": true
+  },
+  {
+   "sample_id": "NA12329",
+   "cohort": "HGSVC3",
+   "population": "CEU",
+   "sex": "Female",
+   "release": "HGSVC3_Yr1, Yr3",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02011",
+   "cohort": "HGSVC3",
+   "population": "ACB",
+   "sex": "Male",
+   "release": "HGSVC3_Yr1, Yr3",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19983",
+   "cohort": "HGSVC3",
+   "population": "ASW",
+   "sex": "Female",
+   "release": "HGSVC3_Yr1, Yr3",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03371",
+   "cohort": "HGSVC3",
+   "population": "ESN",
+   "sex": "Male",
+   "release": "HGSVC3_Yr1, Yr3",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02492",
+   "cohort": "HGSVC3",
+   "population": "PJL",
+   "sex": "Male",
+   "release": "HGSVC3_Yr1, Yr3",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03009",
+   "cohort": "HGSVC3",
+   "population": "BEB",
+   "sex": "Male",
+   "release": "HGSVC3_Yr1, Yr3",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03683",
+   "cohort": "HGSVC3",
+   "population": "STU",
+   "sex": "Female",
+   "release": "HGSVC3_Yr1, Yr3",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03065",
+   "cohort": "HGSVC3",
+   "population": "MSL",
+   "sex": "Male",
+   "release": "HGSVC3_Yr1, Yr3",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA18534",
+   "cohort": "HGSVC3",
+   "population": "CHB",
+   "sex": "Male",
+   "release": "HGSVC3_Yr1, Yr3",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01505",
+   "cohort": "HGSVC3",
+   "population": "IBS",
+   "sex": "Male",
+   "release": "HGSVC3_Yr1, Yr3",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19650",
+   "cohort": "HGSVC3",
+   "population": "MXL",
+   "sex": "Male",
+   "release": "HGSVC3_Yr1, Yr3",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA18939",
+   "cohort": "HGSVC3",
+   "population": "JPT",
+   "sex": "Female",
+   "release": "HGSVC3_Yr1, Yr3",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00864",
+   "cohort": "HGSVC3",
+   "population": "CDX",
+   "sex": "Female",
+   "release": "HGSVC3_Yr1, Yr3",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA20847",
+   "cohort": "HGSVC3",
+   "population": "GIH",
+   "sex": "Female",
+   "release": "HGSVC3_Yr1, Yr3",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA20509",
+   "cohort": "HGSVC3",
+   "population": "TSI",
+   "sex": "Male",
+   "release": "HGSVC3_Yr1, Yr3",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00096",
+   "cohort": "HGSVC3",
+   "population": "GBR",
+   "sex": "Male",
+   "release": "HGSVC3_Yr1, Yr3",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01596",
+   "cohort": "HGSVC3",
+   "population": "KHV",
+   "sex": "Male",
+   "release": "HGSVC3_Yr1, Yr3",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA24385 (HG002)",
+   "cohort": "HGSVC3",
+   "population": "Ashk",
+   "sex": "Male",
+   "release": "HGSVC3_Yr1_Extension",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA12878 (HG001)",
+   "cohort": "HGSVC3",
+   "population": "CEU",
+   "sex": "Female",
+   "release": "HGSVC3_Yr1_Extension",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02818",
+   "cohort": "HGSVC3",
+   "population": "GWD",
+   "sex": "Female",
+   "release": "HGSVC3_Yr1_Extension",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": true
+  },
+  {
+   "sample_id": "HG03125",
+   "cohort": "HGSVC3",
+   "population": "ESN",
+   "sex": "Female",
+   "release": "HGSVC3_Yr1_Extension",
+   "modalities": [
+    "HiFi",
+    "Illumina_WGS",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03486",
+   "cohort": "HGSVC3",
+   "population": "MSL",
+   "sex": "Female",
+   "release": "HGSVC3_Yr1_Extension",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": true
+  },
+  {
+   "sample_id": "HG01352",
+   "cohort": "HGSVC3",
+   "population": "CLM",
+   "sex": "Female",
+   "release": "HGSVC3_Yr2",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02059",
+   "cohort": "HGSVC3",
+   "population": "KHV",
+   "sex": "Female",
+   "release": "HGSVC3_Yr2",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19434",
+   "cohort": "HGSVC3",
+   "population": "LWK",
+   "sex": "Female",
+   "release": "HGSVC3_Yr2",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG04217",
+   "cohort": "HGSVC3",
+   "population": "ITU",
+   "sex": "Female",
+   "release": "HGSVC3_Yr2",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03807",
+   "cohort": "HGSVC3",
+   "population": "BEB",
+   "sex": "Female",
+   "release": "HGSVC3_Yr2",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19836",
+   "cohort": "HGSVC3",
+   "population": "ASW",
+   "sex": "Female",
+   "release": "HGSVC3_Yr2",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02106",
+   "cohort": "HGSVC3",
+   "population": "PEL",
+   "sex": "Female",
+   "release": "HGSVC3_Yr2",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00268",
+   "cohort": "HGSVC3",
+   "population": "FIN",
+   "sex": "Female",
+   "release": "HGSVC3_Yr2",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "GM20355",
+   "cohort": "HGSVC3",
+   "population": "ASW",
+   "sex": "Female",
+   "release": "HGSVC3_Yr2",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "GM19320",
+   "cohort": "HGSVC3",
+   "population": "LWK",
+   "sex": "Female",
+   "release": "HGSVC3_Yr2",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "GM19129",
+   "cohort": "HGSVC3",
+   "population": "YRI",
+   "sex": "Female",
+   "release": "HGSVC3_Yr2",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02769",
+   "cohort": "HGSVC3",
+   "population": "GWD",
+   "sex": "Female",
+   "release": "HGSVC3_Yr2",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03452",
+   "cohort": "HGSVC3",
+   "population": "MSL",
+   "sex": "Female",
+   "release": "HGSVC3_Yr2",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03520",
+   "cohort": "HGSVC3",
+   "population": "ESN",
+   "sex": "Female",
+   "release": "HGSVC3_Yr2",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02282",
+   "cohort": "HGSVC3",
+   "population": "ACB",
+   "sex": "Female",
+   "release": "HGSVC3_Yr2",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02554",
+   "cohort": "HGSVC3",
+   "population": "ACB",
+   "sex": "Male",
+   "release": "HGSVC3_Yr2",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02953",
+   "cohort": "HGSVC3",
+   "population": "ESN",
+   "sex": "Male",
+   "release": "HGSVC3_Yr2",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "GM21487",
+   "cohort": "HGSVC3",
+   "population": "MKK",
+   "sex": "Female",
+   "release": "HGSVC3_Yr2",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA18989",
+   "cohort": "HGSVC3",
+   "population": "JPT",
+   "sex": "Male",
+   "release": "HGSVC3_Yr2",
+   "modalities": [
+    "Bionano",
+    "ChrY_ONT",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19331",
+   "cohort": "HGSVC3",
+   "population": "LWK",
+   "sex": "Male",
+   "release": "HGSVC3_Yr2",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG02666",
+   "cohort": "HGSVC3",
+   "population": "GWD",
+   "sex": "Male",
+   "release": "HGSVC3_Yr2",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19317",
+   "cohort": "HGSVC3",
+   "population": "LWK",
+   "sex": "Male",
+   "release": "HGSVC3_Yr2",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19347",
+   "cohort": "HGSVC3",
+   "population": "LWK",
+   "sex": "Male",
+   "release": "HGSVC3_Yr2",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03248",
+   "cohort": "HGSVC3",
+   "population": "GWD",
+   "sex": "Male",
+   "release": "HGSVC3_Yr2",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG04036",
+   "cohort": "HGSVC3",
+   "population": "STU",
+   "sex": "Female",
+   "release": "HGSVC3_Yr2",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "PacBio_CLR",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01457",
+   "cohort": "HGSVC3",
+   "population": "CLM",
+   "sex": "Male",
+   "release": "HGSVC3_Yr2",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19384",
+   "cohort": "HGSVC3",
+   "population": "LWK",
+   "sex": "Male",
+   "release": "HGSVC3_Yr2",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG01890",
+   "cohort": "HGSVC3",
+   "population": "ACB",
+   "sex": "Male",
+   "release": "HGSVC3_Yr3",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "NA19705",
+   "cohort": "HGSVC3",
+   "population": "ASW",
+   "sex": "Male",
+   "release": "HGSVC3_Yr3",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG03456",
+   "cohort": "HGSVC3",
+   "population": "MSL",
+   "sex": "Male",
+   "release": "HGSVC3_Yr3",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  },
+  {
+   "sample_id": "HG00358",
+   "cohort": "HGSVC3",
+   "population": "FIN",
+   "sex": "Male",
+   "release": "HGSVC3_Yr3",
+   "modalities": [
+    "Bionano",
+    "HiC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT",
+    "RNAseq",
+    "StrandSeq"
+   ],
+   "in_both_cohorts": false
+  }
+ ]
+}

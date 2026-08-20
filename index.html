@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pangenome Data Catalog — HPRC + HGSVC3</title>
+<meta name="description" content="Which sequencing assays exist for which samples across the HPRC and HGSVC3 cohorts, enumerated directly from the primary archives.">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='13' font-size='13'>🧬</text></svg>">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="masthead">
+      <div>
+        <h1>Pangenome Data Catalog</h1>
+        <p class="lede">
+          Which sequencing assays exist for which samples across the two major human
+          pangenome cohorts. Built by enumerating <abbr title="s3://human-pangenomics">HPRC's S3 bucket</abbr>
+          and the <abbr title="ftp.1000genomes.ebi.ac.uk">IGSR archive</abbr> directly — consortium index
+          tables were used for metadata, never as the sole authority on what exists.
+        </p>
+      </div>
+      <button class="theme-toggle" id="theme-toggle" type="button">Theme</button>
+    </div>
+
+    <ul class="stat-row" id="stat-row"></ul>
+
+    <nav class="tabs" role="tablist">
+      <button role="tab" data-view="combine"  aria-selected="true">Combine modalities</button>
+      <button role="tab" data-view="coverage" aria-selected="false">Coverage</button>
+      <button role="tab" data-view="samples"  aria-selected="false">All samples</button>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ COMBINE ============ -->
+  <section class="view" id="view-combine">
+    <div class="combine-grid">
+
+      <div class="card">
+        <h2>Require these assays</h2>
+        <p class="hint">Samples must have <em>every</em> assay you select.</p>
+        <div id="mod-picker"></div>
+      </div>
+
+      <div>
+        <div class="card">
+          <div class="presets" id="presets"></div>
+          <div class="result-hero">
+            <span class="big" id="result-n">—</span>
+            <span class="of" id="result-of"></span>
+          </div>
+          <div class="split" id="split"></div>
+          <div id="result-note"></div>
+        </div>
+
+        <div class="card" id="cascade-card">
+          <h2>How the count falls as you add assays</h2>
+          <p class="hint">
+            Each row adds one more required assay to the row above it. This falloff is the
+            single most important thing to understand before planning a multi-modal analysis.
+          </p>
+          <ul class="cascade" id="cascade"></ul>
+        </div>
+
+        <div class="card" id="cost-card">
+          <h2>Cost of adding one more</h2>
+          <p class="hint">What your current selection would drop to if you also required each assay below.</p>
+          <ul class="cost-list" id="cost-list"></ul>
+        </div>
+
+        <div class="card">
+          <h2>Matching samples</h2>
+          <div class="controls">
+            <select id="combine-cohort">
+              <option value="">Both cohorts</option>
+              <option value="HPRC">HPRC only</option>
+              <option value="HGSVC3">HGSVC3 only</option>
+            </select>
+            <button class="btn" id="combine-export" type="button">Export sample list (CSV)</button>
+            <button class="btn" id="combine-link" type="button">Copy link to this selection</button>
+            <span class="count-note" id="combine-count"></span>
+          </div>
+          <div class="table-scroll">
+            <table id="combine-table">
+              <thead><tr>
+                <th>Sample</th><th>Cohort</th><th>Population</th><th>Sex</th>
+                <th class="num">Assays</th><th class="num">Files</th><th>Provenance</th>
+              </tr></thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <div class="empty" id="combine-empty" hidden></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COVERAGE ============ -->
+  <section class="view" id="view-coverage" hidden>
+    <div class="card">
+      <h2>Assay coverage by cohort</h2>
+      <p class="hint">
+        Bars are the share of that cohort's samples, so the two columns stay comparable
+        despite very different cohort sizes (438 vs 69).
+      </p>
+      <div class="callout info">
+        <strong>A blank cell is not missing data.</strong> Where a cohort simply never ran an
+        assay, the cell reads <em>not run</em> rather than 0 — those two states mean completely
+        different things when you are choosing a cohort.
+      </div>
+      <div class="table-scroll">
+        <table id="coverage-table">
+          <thead><tr>
+            <th>Assay</th>
+            <th class="num">HPRC <span style="color:var(--hprc)">●</span></th>
+            <th class="num">HGSVC3 <span style="color:var(--hgsvc)">●</span></th>
+            <th class="num">Combined</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>The two cohorts have opposite shapes</h2>
+      <p class="hint">This is the practical guidance the numbers support.</p>
+      <div id="shape-compare"></div>
+    </div>
+
+    <div class="card">
+      <h2>Published intersections</h2>
+      <p class="hint">Precomputed by each cohort's build script, reproduced here as a cross-check on the live filter.</p>
+      <div class="table-scroll">
+        <table id="intersections-table">
+          <thead><tr><th>Cohort</th><th>Combination</th><th class="num">Samples</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SAMPLES ============ -->
+  <section class="view" id="view-samples" hidden>
+    <div class="card">
+      <h2>All samples</h2>
+      <div class="controls">
+        <input type="search" id="sample-search" placeholder="Search sample ID or population…" autocomplete="off">
+        <select id="sample-cohort">
+          <option value="">All cohorts</option>
+          <option value="HPRC">HPRC</option>
+          <option value="HGSVC3">HGSVC3</option>
+        </select>
+        <select id="sample-pop"><option value="">All populations</option></select>
+        <select id="sample-sex">
+          <option value="">Any sex</option><option value="male">Male</option><option value="female">Female</option>
+        </select>
+        <select id="sample-release">
+          <option value="">Any release</option>
+          <option value="R2">HPRC R2</option><option value="R3">HPRC R3</option>
+          <option value="untagged">HPRC untagged</option>
+        </select>
+        <button class="btn" id="sample-export" type="button">Export CSV</button>
+        <span class="count-note" id="sample-count"></span>
+      </div>
+      <div class="table-scroll">
+        <table id="sample-table">
+          <thead><tr>
+            <th class="sortable" data-key="sample_id">Sample</th>
+            <th class="sortable" data-key="cohort">Cohort</th>
+            <th class="sortable" data-key="population">Population</th>
+            <th class="sortable" data-key="sex">Sex</th>
+            <th class="sortable num" data-key="n_mod">Assays</th>
+            <th class="sortable num" data-key="n_files">Files</th>
+            <th class="sortable num" data-key="bytes">Size</th>
+            <th>Provenance</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="empty" id="sample-empty" hidden>No samples match those filters.</div>
+    </div>
+  </section>
+
+  <details class="card caveats" id="caveats">
+    <summary>Before you trust this — caveats that change what the numbers mean</summary>
+    <ul>
+      <li><strong>Index tables are not the archive.</strong> HPRC's GitHub index tables resolve
+        only about 9,700 of 19,807 files, and eight modalities have no index at all. An
+        <em>unindexed</em> file is normal data that postdates the last index refresh — it is a
+        provenance note, not a quality signal.</li>
+      <li><strong>HGSVC3 "sheet only" means you cannot download it.</strong> The production
+        spreadsheet asserts Illumina WGS for all 69 samples, but only 6 have files on IGSR;
+        the rest live at the Broad. Every HGSVC3 assay here carries its evidence source.</li>
+      <li><strong>A zero means the consortium did not run that assay.</strong> HPRC has no
+        short-read RNA-seq; HGSVC3 has no Fiber-seq, HiFi 5mC or Micro-C. Neither is missing data.</li>
+      <li><strong>Multi-modal work is a ~100-sample study, not a 400-sample one.</strong> 346
+        HPRC samples carry the core five, but only 100 add Fiber-seq and only 44 also have HiFi 5mC.</li>
+      <li><strong>6,143 files cannot be tied to a sample</strong> — overwhelmingly pooled or
+        multiplexed Strand-seq libraries. They are real data; they simply have no per-sample
+        attribution. A further 20 name donors outside the catalogued cohorts (including
+        NA24385, GIAB's HG002).</li>
+      <li><strong>ONT 6mA chromatin stencilling is not a separate assay.</strong> It is a
+        basecall variant inside the UCSC ONT Fiber-seq submission, flagged on the samples that
+        have it rather than counted as its own modality.</li>
+      <li><strong>Iso-Seq and PacBio CLR are legacy</strong>, superseded by Kinnex and HiFi
+        respectively. They are shown in italics and folded into <code>Kinnex_IsoSeq</code> in
+        the unified vocabulary.</li>
+    </ul>
+  </details>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p id="footer-note"></p>
+    <p>
+      Sources: <a href="https://github.com/human-pangenomics">human-pangenomics</a> ·
+      <a href="https://www.internationalgenome.org/data-portal/data-collection/hgsvc3">IGSR / HGSVC3</a>.
+      Underlying data is openly licensed by the respective consortia; this catalogue only
+      indexes it. Regenerate with <code>scripts/prep_site_data.py</code>.
+    </p>
+  </div>
+</footer>
+
+<div class="drawer-scrim" id="drawer-scrim"></div>
+<aside class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer-head">
+    <div>
+      <h2 id="drawer-title"></h2>
+      <div class="meta" id="drawer-meta"></div>
+    </div>
+    <button class="drawer-close" id="drawer-close" type="button" aria-label="Close">×</button>
+  </div>
+  <div class="drawer-body" id="drawer-body"></div>
+</aside>
+
+<script src="assets/app.js" type="module"></script>
+</body>
+</html>

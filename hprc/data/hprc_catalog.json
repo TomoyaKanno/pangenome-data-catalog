@@ -1,0 +1,6717 @@
+{
+ "generated_utc": "2026-08-20T20:28:30.074839+00:00",
+ "bucket": "human-pangenomics",
+ "modalities": [
+  "Bionano",
+  "FiberSeq",
+  "HiC_OmniC",
+  "HiFi",
+  "HiFi_5mC",
+  "Illumina_WGS",
+  "Karyotype",
+  "Kinnex_IsoSeq",
+  "MicroC",
+  "Microarray",
+  "ONT",
+  "ONT_directRNA",
+  "StrandSeq",
+  "TenX"
+ ],
+ "samples": [
+  {
+   "sample_id": "HG00097",
+   "release": "R2",
+   "population": "GBR",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00099",
+   "release": "R2",
+   "population": "GBR",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00106",
+   "release": "R3",
+   "population": "GBR",
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00116",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00117",
+   "release": "R3",
+   "population": "GBR",
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00118",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 1,
+   "modalities": [
+    "Kinnex_IsoSeq"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00119",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00120",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00126",
+   "release": "R2",
+   "population": "GBR",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00128",
+   "release": "R2",
+   "population": "GBR",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00133",
+   "release": "R2",
+   "population": "GBR",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00140",
+   "release": "R2",
+   "population": "GBR",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00146",
+   "release": "R2",
+   "population": "GBR",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00150",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG002",
+   "release": "R2",
+   "population": null,
+   "sex": "male",
+   "n_modalities": 8,
+   "modalities": [
+    "Bionano",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "MicroC",
+    "ONT",
+    "StrandSeq"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00232",
+   "release": "R2",
+   "population": "GBR",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00234",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00235",
+   "release": "R2",
+   "population": "GBR",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00236",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00243",
+   "release": "R3",
+   "population": "GBR",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00245",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00252",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 4,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00253",
+   "release": "R2",
+   "population": "GBR",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00254",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00258",
+   "release": "R3",
+   "population": "GBR",
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00272",
+   "release": "R2",
+   "population": "FIN",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00280",
+   "release": "R2",
+   "population": "FIN",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00290",
+   "release": "R2",
+   "population": "FIN",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00320",
+   "release": "R2",
+   "population": "FIN",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00321",
+   "release": "R2",
+   "population": "FIN",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00323",
+   "release": "R2",
+   "population": "FIN",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00329",
+   "release": "R2",
+   "population": "FIN",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00344",
+   "release": "R2",
+   "population": "FIN",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00350",
+   "release": "R2",
+   "population": "FIN",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00355",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00375",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00384",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 3,
+   "modalities": [
+    "HiFi",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00408",
+   "release": "R2",
+   "population": "CHS",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00411",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 3,
+   "modalities": [
+    "Illumina_WGS",
+    "Karyotype",
+    "Microarray"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00423",
+   "release": "R2",
+   "population": "CHS",
+   "sex": "female",
+   "n_modalities": 9,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00438",
+   "release": "R2",
+   "population": "CHS",
+   "sex": "female",
+   "n_modalities": 10,
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00480",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 3,
+   "modalities": [
+    "Illumina_WGS",
+    "Karyotype",
+    "Microarray"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG005",
+   "release": "R2",
+   "population": null,
+   "sex": "male",
+   "n_modalities": 4,
+   "modalities": [
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00544",
+   "release": "R2",
+   "population": "CHS",
+   "sex": "female",
+   "n_modalities": 7,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00558",
+   "release": "R2",
+   "population": "CHS",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00580",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00584",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00597",
+   "release": "R2",
+   "population": "CHS",
+   "sex": "female",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00609",
+   "release": "R2",
+   "population": "CHS",
+   "sex": "male",
+   "n_modalities": 7,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00621",
+   "release": "R2",
+   "population": "CHS",
+   "sex": "male",
+   "n_modalities": 10,
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": true
+  },
+  {
+   "sample_id": "HG00639",
+   "release": "R2",
+   "population": "PUR",
+   "sex": "female",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00642",
+   "release": "R2",
+   "population": "PUR",
+   "sex": "male",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00658",
+   "release": "R2",
+   "population": "CHS",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00662",
+   "release": "R3",
+   "population": "CHS",
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00673",
+   "release": "R2",
+   "population": "CHS",
+   "sex": "male",
+   "n_modalities": 10,
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": true
+  },
+  {
+   "sample_id": "HG00689",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00701",
+   "release": "R3",
+   "population": "CHS",
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00706",
+   "release": "R2",
+   "population": "CHS",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00730",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 3,
+   "modalities": [
+    "Illumina_WGS",
+    "Karyotype",
+    "Microarray"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00733",
+   "release": "R2",
+   "population": "PUR",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "Bionano",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00735",
+   "release": "R2",
+   "population": "PUR",
+   "sex": "female",
+   "n_modalities": 10,
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": true
+  },
+  {
+   "sample_id": "HG00738",
+   "release": "R2",
+   "population": "PUR",
+   "sex": "male",
+   "n_modalities": 6,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG00741",
+   "release": "R2",
+   "population": "PUR",
+   "sex": "female",
+   "n_modalities": 10,
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": true
+  },
+  {
+   "sample_id": "HG00867",
+   "release": "R3",
+   "population": "CDX",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01028",
+   "release": "R3",
+   "population": "CDX",
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01048",
+   "release": "R3",
+   "population": "PUR",
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01067",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01071",
+   "release": "R2",
+   "population": "PUR",
+   "sex": "female",
+   "n_modalities": 10,
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": true
+  },
+  {
+   "sample_id": "HG01074",
+   "release": "R2",
+   "population": "PUR",
+   "sex": "male",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01081",
+   "release": "R2",
+   "population": "PUR",
+   "sex": "female",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01099",
+   "release": "R2",
+   "population": "PUR",
+   "sex": "male",
+   "n_modalities": 6,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01106",
+   "release": "R2",
+   "population": "PUR",
+   "sex": "male",
+   "n_modalities": 10,
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": true
+  },
+  {
+   "sample_id": "HG01109",
+   "release": "R2",
+   "population": "PUR",
+   "sex": "male",
+   "n_modalities": 7,
+   "modalities": [
+    "Bionano",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT",
+    "TenX"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01123",
+   "release": "R2",
+   "population": "CLM",
+   "sex": "female",
+   "n_modalities": 11,
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT",
+    "StrandSeq"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01136",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01138",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "Illumina_WGS",
+    "Karyotype",
+    "Microarray",
+    "ONT",
+    "StrandSeq"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01150",
+   "release": "R2",
+   "population": "CLM",
+   "sex": "female",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01167",
+   "release": "R2",
+   "population": "PUR",
+   "sex": "male",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01175",
+   "release": "R2",
+   "population": "PUR",
+   "sex": "female",
+   "n_modalities": 10,
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01176",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01192",
+   "release": "R2",
+   "population": "PUR",
+   "sex": "male",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01204",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 4,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01243",
+   "release": "R2",
+   "population": "PUR",
+   "sex": "male",
+   "n_modalities": 7,
+   "modalities": [
+    "Bionano",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT",
+    "TenX"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01248",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 3,
+   "modalities": [
+    "HiFi",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01252",
+   "release": "R2",
+   "population": "CLM",
+   "sex": "male",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01255",
+   "release": "R2",
+   "population": "CLM",
+   "sex": "male",
+   "n_modalities": 7,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01258",
+   "release": "R2",
+   "population": "CLM",
+   "sex": "male",
+   "n_modalities": 10,
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01261",
+   "release": "R2",
+   "population": "CLM",
+   "sex": "male",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01346",
+   "release": "R2",
+   "population": "CLM",
+   "sex": "female",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01358",
+   "release": "R2",
+   "population": "CLM",
+   "sex": "male",
+   "n_modalities": 11,
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT",
+    "StrandSeq"
+   ],
+   "fiberseq_ont_stenciling": true
+  },
+  {
+   "sample_id": "HG01361",
+   "release": "R2",
+   "population": "CLM",
+   "sex": "female",
+   "n_modalities": 10,
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01374",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01433",
+   "release": "R2",
+   "population": "CLM",
+   "sex": "male",
+   "n_modalities": 7,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01442",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 7,
+   "modalities": [
+    "Bionano",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT",
+    "TenX"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01479",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01496",
+   "release": "R2",
+   "population": "CLM",
+   "sex": "female",
+   "n_modalities": 6,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01516",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01522",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01530",
+   "release": "R2",
+   "population": "IBS",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01610",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01624",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01626",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 2,
+   "modalities": [
+    "HiFi",
+    "Illumina_WGS"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01700",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01766",
+   "release": "R3",
+   "population": "IBS",
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01784",
+   "release": "R2",
+   "population": "IBS",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01785",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 3,
+   "modalities": [
+    "HiFi",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01786",
+   "release": "R2",
+   "population": "IBS",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01796",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 4,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01798",
+   "release": "R3",
+   "population": "CDX",
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01884",
+   "release": "R2",
+   "population": "ACB",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01887",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 2,
+   "modalities": [
+    "HiFi",
+    "Illumina_WGS"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01888",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 4,
+   "modalities": [
+    "Illumina_WGS",
+    "Karyotype",
+    "Microarray",
+    "StrandSeq"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01891",
+   "release": "R2",
+   "population": "ACB",
+   "sex": "female",
+   "n_modalities": 11,
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT",
+    "StrandSeq"
+   ],
+   "fiberseq_ont_stenciling": true
+  },
+  {
+   "sample_id": "HG01894",
+   "release": "R3",
+   "population": "ACB",
+   "sex": null,
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01928",
+   "release": "R2",
+   "population": "PEL",
+   "sex": "male",
+   "n_modalities": 10,
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": true
+  },
+  {
+   "sample_id": "HG01934",
+   "release": "R2",
+   "population": "PEL",
+   "sex": "male",
+   "n_modalities": 6,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01940",
+   "release": "R2",
+   "population": "PEL",
+   "sex": "female",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01943",
+   "release": "R2",
+   "population": "PEL",
+   "sex": "male",
+   "n_modalities": 6,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01952",
+   "release": "R2",
+   "population": "PEL",
+   "sex": "male",
+   "n_modalities": 10,
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": true
+  },
+  {
+   "sample_id": "HG01960",
+   "release": "R2",
+   "population": "ACB",
+   "sex": "female",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01969",
+   "release": "R2",
+   "population": "PEL",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01975",
+   "release": "R2",
+   "population": "PEL",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01978",
+   "release": "R2",
+   "population": "PEL",
+   "sex": "female",
+   "n_modalities": 10,
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": true
+  },
+  {
+   "sample_id": "HG01981",
+   "release": "R2",
+   "population": "PEL",
+   "sex": "female",
+   "n_modalities": 6,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01993",
+   "release": "R2",
+   "population": "PEL",
+   "sex": "female",
+   "n_modalities": 7,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG01998",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 3,
+   "modalities": [
+    "Illumina_WGS",
+    "Karyotype",
+    "Microarray"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02004",
+   "release": "R2",
+   "population": "PEL",
+   "sex": "female",
+   "n_modalities": 7,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02015",
+   "release": "R2",
+   "population": "KHV",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02027",
+   "release": "R2",
+   "population": "KHV",
+   "sex": "male",
+   "n_modalities": 8,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02040",
+   "release": "R2",
+   "population": "KHV",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02055",
+   "release": "R2",
+   "population": "ACB",
+   "sex": "male",
+   "n_modalities": 7,
+   "modalities": [
+    "Bionano",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT",
+    "TenX"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02056",
+   "release": "R2",
+   "population": "KHV",
+   "sex": "male",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02071",
+   "release": "R2",
+   "population": "KHV",
+   "sex": "male",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02074",
+   "release": "R2",
+   "population": "KHV",
+   "sex": "male",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02080",
+   "release": "R2",
+   "population": "KHV",
+   "sex": "female",
+   "n_modalities": 7,
+   "modalities": [
+    "Bionano",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT",
+    "TenX"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02083",
+   "release": "R2",
+   "population": "KHV",
+   "sex": "male",
+   "n_modalities": 9,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02109",
+   "release": "R2",
+   "population": "ACB",
+   "sex": "female",
+   "n_modalities": 7,
+   "modalities": [
+    "Bionano",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT",
+    "TenX"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02129",
+   "release": "R2",
+   "population": "KHV",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02132",
+   "release": "R2",
+   "population": "KHV",
+   "sex": "male",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02135",
+   "release": "R2",
+   "population": "KHV",
+   "sex": "male",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02140",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02145",
+   "release": "R2",
+   "population": "ACB",
+   "sex": "male",
+   "n_modalities": 7,
+   "modalities": [
+    "Bionano",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT",
+    "TenX"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02148",
+   "release": "R2",
+   "population": "PEL",
+   "sex": "female",
+   "n_modalities": 10,
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02155",
+   "release": "R2",
+   "population": "CDX",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02165",
+   "release": "R2",
+   "population": "CDX",
+   "sex": "female",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02178",
+   "release": "R2",
+   "population": "CDX",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02257",
+   "release": "R2",
+   "population": "ACB",
+   "sex": "female",
+   "n_modalities": 11,
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT",
+    "StrandSeq"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02258",
+   "release": "R2",
+   "population": "ACB",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02273",
+   "release": "R2",
+   "population": "PEL",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02280",
+   "release": "R2",
+   "population": "ACB",
+   "sex": "female",
+   "n_modalities": 6,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02293",
+   "release": "R2",
+   "population": "PEL",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02300",
+   "release": "R2",
+   "population": "PEL",
+   "sex": "female",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02337",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02364",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02373",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02391",
+   "release": "R2",
+   "population": "CDX",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02392",
+   "release": "R2",
+   "population": "CDX",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02451",
+   "release": "R2",
+   "population": "ACB",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02470",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02486",
+   "release": "R2",
+   "population": "ACB",
+   "sex": "male",
+   "n_modalities": 11,
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT",
+    "StrandSeq"
+   ],
+   "fiberseq_ont_stenciling": true
+  },
+  {
+   "sample_id": "HG02497",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02514",
+   "release": "R2",
+   "population": "KHV",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02523",
+   "release": "R2",
+   "population": "KHV",
+   "sex": "female",
+   "n_modalities": 8,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02541",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02559",
+   "release": "R2",
+   "population": "ACB",
+   "sex": "female",
+   "n_modalities": 10,
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": true
+  },
+  {
+   "sample_id": "HG02572",
+   "release": "R2",
+   "population": "GWD",
+   "sex": "male",
+   "n_modalities": 10,
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02583",
+   "release": "R2",
+   "population": "GWD",
+   "sex": "female",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02589",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02594",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02602",
+   "release": "R2",
+   "population": "PJL",
+   "sex": "male",
+   "n_modalities": 6,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02615",
+   "release": "R2",
+   "population": "GWD",
+   "sex": "female",
+   "n_modalities": 7,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02622",
+   "release": "R2",
+   "population": "GWD",
+   "sex": "female",
+   "n_modalities": 10,
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": true
+  },
+  {
+   "sample_id": "HG02624",
+   "release": "R3",
+   "population": "GWD",
+   "sex": null,
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02630",
+   "release": "R2",
+   "population": "GWD",
+   "sex": "female",
+   "n_modalities": 10,
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": true
+  },
+  {
+   "sample_id": "HG02642",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02647",
+   "release": "R2",
+   "population": "GWD",
+   "sex": "male",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02656",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 2,
+   "modalities": [
+    "HiFi",
+    "Illumina_WGS"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02661",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02662",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 1,
+   "modalities": [
+    "Illumina_WGS"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02668",
+   "release": "R2",
+   "population": "GWD",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02676",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02683",
+   "release": "R3",
+   "population": "PJL",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02698",
+   "release": "R2",
+   "population": "PJL",
+   "sex": "male",
+   "n_modalities": 7,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02717",
+   "release": "R2",
+   "population": "GWD",
+   "sex": "male",
+   "n_modalities": 10,
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02723",
+   "release": "R2",
+   "population": "GWD",
+   "sex": "female",
+   "n_modalities": 7,
+   "modalities": [
+    "Bionano",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT",
+    "TenX"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02735",
+   "release": "R2",
+   "population": "PJL",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02738",
+   "release": "R2",
+   "population": "PJL",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02792",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 3,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02809",
+   "release": "R2",
+   "population": "GWD",
+   "sex": "female",
+   "n_modalities": 7,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02818",
+   "release": "R2",
+   "population": "GWD",
+   "sex": "female",
+   "n_modalities": 4,
+   "modalities": [
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02841",
+   "release": "R2",
+   "population": "GWD",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02880",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 1,
+   "modalities": [
+    "FiberSeq"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02886",
+   "release": "R2",
+   "population": "GWD",
+   "sex": "female",
+   "n_modalities": 10,
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02922",
+   "release": "R2",
+   "population": "ESN",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02965",
+   "release": "R2",
+   "population": "ESN",
+   "sex": "male",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02970",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 4,
+   "modalities": [
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02976",
+   "release": "R2",
+   "population": "ESN",
+   "sex": "female",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG02984",
+   "release": "R2",
+   "population": "GWD",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03017",
+   "release": "R2",
+   "population": "PJL",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03041",
+   "release": "R2",
+   "population": "GWD",
+   "sex": "female",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03050",
+   "release": "R2",
+   "population": "GWD",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03052",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03072",
+   "release": "R3",
+   "population": "MSL",
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03098",
+   "release": "R2",
+   "population": "MSL",
+   "sex": "male",
+   "n_modalities": 7,
+   "modalities": [
+    "Bionano",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT",
+    "TenX"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03103",
+   "release": "R3",
+   "population": "ESN",
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03108",
+   "release": "R3",
+   "population": "ESN",
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03117",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03126",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03130",
+   "release": "R2",
+   "population": "ESN",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03136",
+   "release": "R3",
+   "population": "ESN",
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03139",
+   "release": "R2",
+   "population": "ESN",
+   "sex": "male",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03193",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03195",
+   "release": "R2",
+   "population": "ESN",
+   "sex": "female",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03198",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03209",
+   "release": "R2",
+   "population": "MSL",
+   "sex": "male",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03225",
+   "release": "R2",
+   "population": "MSL",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03239",
+   "release": "R2",
+   "population": "PJL",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03258",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03270",
+   "release": "R2",
+   "population": "ESN",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03271",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03343",
+   "release": "R3",
+   "population": "ESN",
+   "sex": null,
+   "n_modalities": 4,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03366",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03369",
+   "release": "R2",
+   "population": "ESN",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03372",
+   "release": "R3",
+   "population": "ESN",
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03388",
+   "release": "R3",
+   "population": "MSL",
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03432",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03433",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 1,
+   "modalities": [
+    "Kinnex_IsoSeq"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03445",
+   "release": "R3",
+   "population": "MSL",
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03453",
+   "release": "R2",
+   "population": "MSL",
+   "sex": "female",
+   "n_modalities": 10,
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": true
+  },
+  {
+   "sample_id": "HG03457",
+   "release": "R3",
+   "population": "MSL",
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03458",
+   "release": "R3",
+   "population": "MSL",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03460",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03470",
+   "release": "R2",
+   "population": "MSL",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03471",
+   "release": "R2",
+   "population": "MSL",
+   "sex": "male",
+   "n_modalities": 9,
+   "modalities": [
+    "Bionano",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03486",
+   "release": "R2",
+   "population": "MSL",
+   "sex": "female",
+   "n_modalities": 4,
+   "modalities": [
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03492",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 7,
+   "modalities": [
+    "Bionano",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT",
+    "TenX"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03516",
+   "release": "R2",
+   "population": "ESN",
+   "sex": "female",
+   "n_modalities": 10,
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03521",
+   "release": "R2",
+   "population": "ESN",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03540",
+   "release": "R2",
+   "population": "GWD",
+   "sex": "female",
+   "n_modalities": 10,
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": true
+  },
+  {
+   "sample_id": "HG03557",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03567",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03579",
+   "release": "R2",
+   "population": "MSL",
+   "sex": "male",
+   "n_modalities": 10,
+   "modalities": [
+    "Bionano",
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Karyotype",
+    "Kinnex_IsoSeq",
+    "Microarray",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": true
+  },
+  {
+   "sample_id": "HG03583",
+   "release": "R2",
+   "population": "MSL",
+   "sex": "female",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03595",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03611",
+   "release": "R3",
+   "population": "BEB",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03654",
+   "release": "R2",
+   "population": "PJL",
+   "sex": "male",
+   "n_modalities": 7,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03669",
+   "release": "R2",
+   "population": "PJL",
+   "sex": "female",
+   "n_modalities": 7,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03672",
+   "release": "R3",
+   "population": "STU",
+   "sex": null,
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03688",
+   "release": "R2",
+   "population": "STU",
+   "sex": "male",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03691",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03704",
+   "release": "R2",
+   "population": "PJL",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03710",
+   "release": "R2",
+   "population": "PJL",
+   "sex": "male",
+   "n_modalities": 7,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03733",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03742",
+   "release": "R2",
+   "population": "ITU",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03775",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03778",
+   "release": "R3",
+   "population": "ITU",
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03784",
+   "release": "R2",
+   "population": "ITU",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03788",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03792",
+   "release": "R3",
+   "population": "ITU",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03804",
+   "release": "R2",
+   "population": "BEB",
+   "sex": "female",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03816",
+   "release": "R2",
+   "population": "BEB",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03825",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 2,
+   "modalities": [
+    "HiFi",
+    "Illumina_WGS"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03831",
+   "release": "R2",
+   "population": "BEB",
+   "sex": "female",
+   "n_modalities": 6,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03834",
+   "release": "R2",
+   "population": "BEB",
+   "sex": "female",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03854",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03868",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03874",
+   "release": "R2",
+   "population": "ITU",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03875",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 4,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03882",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03890",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03898",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 4,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03902",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03919",
+   "release": "R3",
+   "population": "BEB",
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03927",
+   "release": "R2",
+   "population": "BEB",
+   "sex": "female",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03942",
+   "release": "R2",
+   "population": "BEB",
+   "sex": "male",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG03995",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG04115",
+   "release": "R2",
+   "population": "STU",
+   "sex": "male",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG04144",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 4,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG04153",
+   "release": "R3",
+   "population": "BEB",
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG04157",
+   "release": "R2",
+   "population": "BEB",
+   "sex": "male",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": true
+  },
+  {
+   "sample_id": "HG04160",
+   "release": "R2",
+   "population": "BEB",
+   "sex": "male",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG04161",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 1,
+   "modalities": [
+    "Kinnex_IsoSeq"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG04184",
+   "release": "R2",
+   "population": "BEB",
+   "sex": "female",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG04187",
+   "release": "R2",
+   "population": "BEB",
+   "sex": "male",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG04199",
+   "release": "R2",
+   "population": "STU",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG04204",
+   "release": "R2",
+   "population": "STU",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG04216",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG04225",
+   "release": "R3",
+   "population": "ITU",
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG04228",
+   "release": "R2",
+   "population": "STU",
+   "sex": "male",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG06799",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 1,
+   "modalities": [
+    "FiberSeq"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG06800",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 1,
+   "modalities": [
+    "FiberSeq"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG06801",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 1,
+   "modalities": [
+    "FiberSeq"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG06802",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 1,
+   "modalities": [
+    "FiberSeq"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG06805",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 1,
+   "modalities": [
+    "FiberSeq"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG06807",
+   "release": "R2",
+   "population": "ASL",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "ONT",
+    "ONT_directRNA"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG08444",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 1,
+   "modalities": [
+    "FiberSeq"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG08446",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 1,
+   "modalities": [
+    "FiberSeq"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG08449",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 1,
+   "modalities": [
+    "FiberSeq"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG08463",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 1,
+   "modalities": [
+    "FiberSeq"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "HG08464",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 1,
+   "modalities": [
+    "FiberSeq"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "MGISTL-PAN027",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 1,
+   "modalities": [
+    "HiFi"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA18488",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA18505",
+   "release": "R2",
+   "population": "YRI",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA18508",
+   "release": "R2",
+   "population": "YRI",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA18511",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA18522",
+   "release": "R2",
+   "population": "YRI",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA18523",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 3,
+   "modalities": [
+    "HiFi",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA18538",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA18547",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA18559",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA18565",
+   "release": "R2",
+   "population": "CHB",
+   "sex": "female",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA18570",
+   "release": "R2",
+   "population": "CHB",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA18572",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 1,
+   "modalities": [
+    "Kinnex_IsoSeq"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA18606",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA18608",
+   "release": "R2",
+   "population": "CHB",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA18611",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA18612",
+   "release": "R3",
+   "population": "CHB",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA18620",
+   "release": "R2",
+   "population": "CHB",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA18636",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 4,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA18638",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 3,
+   "modalities": [
+    "HiFi",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA18747",
+   "release": "R2",
+   "population": "CHB",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA18748",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 1,
+   "modalities": [
+    "Kinnex_IsoSeq"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA18870",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA18871",
+   "release": "R3",
+   "population": "YRI",
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA18879",
+   "release": "R2",
+   "population": "YRI",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA18906",
+   "release": "R2",
+   "population": "YRI",
+   "sex": "female",
+   "n_modalities": 4,
+   "modalities": [
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA18940",
+   "release": "R2",
+   "population": "JPT",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA18942",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA18943",
+   "release": "R2",
+   "population": "JPT",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA18944",
+   "release": "R2",
+   "population": "JPT",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA18945",
+   "release": "R2",
+   "population": "JPT",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA18948",
+   "release": "R2",
+   "population": "JPT",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA18952",
+   "release": "R2",
+   "population": "JPT",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA18959",
+   "release": "R2",
+   "population": "JPT",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA18960",
+   "release": "R2",
+   "population": "JPT",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA18967",
+   "release": "R2",
+   "population": "JPT",
+   "sex": "male",
+   "n_modalities": 6,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA18970",
+   "release": "R2",
+   "population": "JPT",
+   "sex": "male",
+   "n_modalities": 7,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA18971",
+   "release": "R2",
+   "population": "JPT",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA18974",
+   "release": "R2",
+   "population": "JPT",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA18976",
+   "release": "R2",
+   "population": "JPT",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA18982",
+   "release": "R2",
+   "population": "JPT",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA18983",
+   "release": "R2",
+   "population": "JPT",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA18995",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19000",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19012",
+   "release": "R3",
+   "population": "JPT",
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19030",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 4,
+   "modalities": [
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19031",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19035",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19036",
+   "release": "R2",
+   "population": "LWK",
+   "sex": "female",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19042",
+   "release": "R3",
+   "population": "LWK",
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19043",
+   "release": "R2",
+   "population": "LWK",
+   "sex": "male",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19055",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19063",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19079",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19087",
+   "release": "R2",
+   "population": "JPT",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19090",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 3,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19099",
+   "release": "R3",
+   "population": "YRI",
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19118",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19120",
+   "release": "R3",
+   "population": "YRI",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19131",
+   "release": "R3",
+   "population": "YRI",
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19159",
+   "release": "R2",
+   "population": "YRI",
+   "sex": "female",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19175",
+   "release": "R3",
+   "population": "YRI",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19185",
+   "release": "R2",
+   "population": "YRI",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19190",
+   "release": "R3",
+   "population": "YRI",
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19240",
+   "release": "R2",
+   "population": "YRI",
+   "sex": "female",
+   "n_modalities": 4,
+   "modalities": [
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19307",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19314",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19315",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 2,
+   "modalities": [
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19318",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 1,
+   "modalities": [
+    "Kinnex_IsoSeq"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19321",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19338",
+   "release": "R2",
+   "population": "LWK",
+   "sex": "female",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19360",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19375",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19377",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 3,
+   "modalities": [
+    "HiFi",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19390",
+   "release": "R3",
+   "population": "LWK",
+   "sex": "female",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19391",
+   "release": "R2",
+   "population": "LWK",
+   "sex": "female",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19395",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19438",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19439",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19443",
+   "release": "R2",
+   "population": "LWK",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19445",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19448",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19461",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19468",
+   "release": "R2",
+   "population": "LWK",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19655",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 4,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19658",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 1,
+   "modalities": [
+    "Kinnex_IsoSeq"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19679",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19682",
+   "release": "R2",
+   "population": "MXL",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19700",
+   "release": "R2",
+   "population": "ASW",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19703",
+   "release": "R3",
+   "population": "ASW",
+   "sex": null,
+   "n_modalities": 4,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19762",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 1,
+   "modalities": [
+    "Kinnex_IsoSeq"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19776",
+   "release": "R2",
+   "population": "MXL",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19834",
+   "release": "R3",
+   "population": "ASW",
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19835",
+   "release": "R2",
+   "population": "ASW",
+   "sex": "female",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19909",
+   "release": "R2",
+   "population": "ASW",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19916",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 1,
+   "modalities": [
+    "Kinnex_IsoSeq"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19917",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA19923",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA20129",
+   "release": "R2",
+   "population": "ASW",
+   "sex": "female",
+   "n_modalities": 4,
+   "modalities": [
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA20282",
+   "release": "R2",
+   "population": "ASW",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA20287",
+   "release": "R3",
+   "population": "ASW",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA20294",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 1,
+   "modalities": [
+    "Kinnex_IsoSeq"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA20300",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 3,
+   "modalities": [
+    "HiFi",
+    "HiFi_5mC",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA20318",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 1,
+   "modalities": [
+    "Kinnex_IsoSeq"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA20342",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 1,
+   "modalities": [
+    "Kinnex_IsoSeq"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA20346",
+   "release": "R2",
+   "population": "ASW",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA20362",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 1,
+   "modalities": [
+    "Kinnex_IsoSeq"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA20412",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA20503",
+   "release": "R2",
+   "population": "TSI",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA20588",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 4,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA20752",
+   "release": "R2",
+   "population": "TSI",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA20756",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA20761",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 1,
+   "modalities": [
+    "Kinnex_IsoSeq"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA20762",
+   "release": "R2",
+   "population": "TSI",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA20796",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA20799",
+   "release": "R2",
+   "population": "TSI",
+   "sex": "female",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA20800",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA20801",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 1,
+   "modalities": [
+    "Kinnex_IsoSeq"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA20805",
+   "release": "R2",
+   "population": "TSI",
+   "sex": "male",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA20806",
+   "release": "R2",
+   "population": "TSI",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA20809",
+   "release": "R2",
+   "population": "TSI",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA20818",
+   "release": "R3",
+   "population": "TSI",
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA20827",
+   "release": "R2",
+   "population": "TSI",
+   "sex": "male",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA20850",
+   "release": "R2",
+   "population": "GIH",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA20858",
+   "release": "R3",
+   "population": "GIH",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA20866",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA20870",
+   "release": "R2",
+   "population": "GIH",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA20905",
+   "release": "R2",
+   "population": "GIH",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA21093",
+   "release": "R2",
+   "population": "GIH",
+   "sex": "male",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA21101",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 2,
+   "modalities": [
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA21102",
+   "release": "R2",
+   "population": "GIH",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA21106",
+   "release": "R2",
+   "population": "GIH",
+   "sex": "female",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA21110",
+   "release": "R2",
+   "population": "GIH",
+   "sex": "female",
+   "n_modalities": 6,
+   "modalities": [
+    "FiberSeq",
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA21115",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 1,
+   "modalities": [
+    "Kinnex_IsoSeq"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA21133",
+   "release": "R3",
+   "population": null,
+   "sex": null,
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA21144",
+   "release": "R2",
+   "population": "GIH",
+   "sex": "female",
+   "n_modalities": 5,
+   "modalities": [
+    "HiC_OmniC",
+    "HiFi",
+    "Illumina_WGS",
+    "Kinnex_IsoSeq",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "NA21309",
+   "release": "R2",
+   "population": "MKK",
+   "sex": "female",
+   "n_modalities": 4,
+   "modalities": [
+    "HiFi",
+    "HiFi_5mC",
+    "Illumina_WGS",
+    "ONT"
+   ],
+   "fiberseq_ont_stenciling": false
+  },
+  {
+   "sample_id": "mHomSap3",
+   "release": "untagged",
+   "population": null,
+   "sex": null,
+   "n_modalities": 2,
+   "modalities": [
+    "HiFi",
+    "Illumina_WGS"
+   ],
+   "fiberseq_ont_stenciling": false
+  }
+ ],
+ "modality_totals": {
+  "Bionano": 42,
+  "FiberSeq": 111,
+  "HiC_OmniC": 380,
+  "HiFi": 402,
+  "HiFi_5mC": 86,
+  "Illumina_WGS": 401,
+  "Karyotype": 40,
+  "Kinnex_IsoSeq": 368,
+  "MicroC": 1,
+  "Microarray": 40,
+  "ONT": 399,
+  "ONT_directRNA": 1,
+  "StrandSeq": 8,
+  "TenX": 10
+ },
+ "intersections": {
+  "core5 (HiFi+ONT+Illumina+HiC+Kinnex)": 346,
+  "core5 + FiberSeq": 100,
+  "core5 + FiberSeq + HiFi_5mC": 44,
+  "core5 + Bionano": 30,
+  "FiberSeq + HiC_OmniC": 100,
+  "FiberSeq + Kinnex_IsoSeq": 100,
+  "FiberSeq + HiFi_5mC": 44,
+  "MicroC + FiberSeq": 0
+ }
+}
