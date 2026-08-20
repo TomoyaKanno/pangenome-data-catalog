@@ -203,7 +203,9 @@
       <li><strong>6,143 files cannot be tied to a sample</strong> — overwhelmingly pooled or
         multiplexed Strand-seq libraries. They are real data; they simply have no per-sample
         attribution. A further 20 name donors outside the catalogued cohorts (including
-        NA24385, GIAB's HG002).</li>
+        NA24385, GIAB's HG002). None are reachable from a sample row, so they are kept
+        together in <a href="site-data/files/_unattributed.json"><code>_unattributed.json</code></a>
+        with their download URLs.</li>
       <li><strong>ONT 6mA chromatin stencilling is not a separate assay.</strong> It is a
         basecall variant inside the UCSC ONT Fiber-seq submission, flagged on the samples that
         have it rather than counted as its own modality.</li>
