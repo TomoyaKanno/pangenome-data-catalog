@@ -14,6 +14,21 @@ Other   NYGC 30x, 1KG-ONT, Geuvadis, MAGE and ENCODE, matched on the cell-line i
         557 unique donors, 7 in both cohorts, 32 assay types, 51,483 attributed data files
 ```
 
+## The app
+
+Three tabs, simplest first:
+
+- **Overview** — one table: data types down the side, HPRC and HGSVC across the top, a bar
+  and a donor count in each cell. Rare, older and QC data types sit behind one toggle.
+  Click a row to list its donors.
+- **Find donors** — pick the data you need; only donors with all of it are listed. Each
+  button shows how many donors would remain if you added it. The donor table is a dot grid
+  of the main data types; click a donor for download links.
+- **About the data** — where it comes from, what to watch for, and the specialist tables.
+
+Selections live in the URL (`#view=donors&assays=HiFi,FiberSeq&cohort=HPRC`), so a filtered
+list is a shareable link.
+
 ## Rebuild (one command)
 
 ```bash
@@ -51,9 +66,6 @@ Assays that are **new to the catalogue**: Pore-C (5 donors), ONT 5mC/5hmC, whole
 eight same-donor datasets from other projects (below). Data on donors outside both cohorts
 (ENCODE EnTEx tissue ONT with 5mC/5hmC, GTEx-style colon HiFi, pediatric blood donors) is
 listed in its own table rather than mixed into the cohort counts.
-
-The app's combine view also had a layout bug (the right column overflowed the viewport,
-forcing horizontal scroll on most laptop widths); fixed.
 
 ## Coverage now
 

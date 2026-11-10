@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pangenome Data Catalog</title>
-<meta name="description" content="Which sequencing and functional assays exist for which donors across HPRC and HGSVC (phases 2 and 3), plus same-donor data from 1000 Genomes, Geuvadis, MAGE and ENCODE, enumerated directly from the primary archives.">
-<link rel="stylesheet" href="assets/style.css">
+<meta name="description" content="What data exists for each donor in the HPRC and HGSVC human pangenome cohorts, and where to download it.">
+<link rel="stylesheet" href="assets/style.css?v=7">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='13' font-size='13'>🧬</text></svg>">
 </head>
 <body>
@@ -16,250 +16,170 @@
       <div>
         <h1>Pangenome Data Catalog</h1>
         <p class="lede">
-          Which sequencing and functional assays exist for which donors across the two major
-          human pangenome cohorts — HPRC, and HGSVC phases 2 and 3 — and what other projects
-          have measured on the same cell lines. Built by enumerating
-          <abbr title="s3://human-pangenomics — working/ and submissions/">HPRC's S3 bucket</abbr>
-          and the <abbr title="ftp.1000genomes.ebi.ac.uk">IGSR archive</abbr> directly, and by reading
-          the first few hundred KB of the BAMs to see which already carry methylation calls.
+          What data exists for each donor in the two human pangenome cohorts, HPRC and HGSVC,
+          and where to download it.
         </p>
+        <p class="facts" id="facts"></p>
       </div>
       <button class="theme-toggle" id="theme-toggle" type="button">Theme</button>
     </div>
-
-    <ul class="stat-row" id="stat-row"></ul>
-
     <nav class="tabs" role="tablist">
-      <button role="tab" data-view="combine"  aria-selected="true">Combine modalities</button>
-      <button role="tab" data-view="coverage" aria-selected="false">Coverage</button>
-      <button role="tab" data-view="samples"  aria-selected="false">All samples</button>
+      <button role="tab" data-view="overview" aria-selected="true">Overview</button>
+      <button role="tab" data-view="donors"   aria-selected="false">Find donors</button>
+      <button role="tab" data-view="about"    aria-selected="false">About the data</button>
     </nav>
   </div>
 </header>
 
 <main class="wrap">
 
-  <!-- ============ COMBINE ============ -->
-  <section class="view" id="view-combine">
-    <div class="combine-grid">
-
-      <div class="card">
-        <h2>Require these assays</h2>
-        <p class="hint">Samples must have <em>every</em> assay you select.</p>
-        <div id="mod-picker"></div>
-      </div>
-
-      <div>
-        <div class="card">
-          <div class="presets" id="presets"></div>
-          <div class="result-hero">
-            <span class="big" id="result-n">—</span>
-            <span class="of" id="result-of"></span>
-          </div>
-          <div class="split" id="split"></div>
-          <div id="result-note"></div>
-        </div>
-
-        <div class="card" id="cascade-card">
-          <h2>How the count falls as you add assays</h2>
-          <p class="hint">
-            Each row adds one more required assay to the row above it. This falloff is the
-            single most important thing to understand before planning a multi-modal analysis.
-          </p>
-          <ul class="cascade" id="cascade"></ul>
-        </div>
-
-        <div class="card" id="cost-card">
-          <h2>Cost of adding one more</h2>
-          <p class="hint">What your current selection would drop to if you also required each assay below.</p>
-          <ul class="cost-list" id="cost-list"></ul>
-        </div>
-
-        <div class="card">
-          <h2>Matching samples</h2>
-          <div class="controls">
-            <select id="combine-cohort">
-              <option value="">Both cohorts</option>
-              <option value="HPRC">HPRC only</option>
-              <option value="HGSVC">HGSVC only</option>
-            </select>
-            <button class="btn" id="combine-export" type="button">Export sample list (CSV)</button>
-            <button class="btn" id="combine-link" type="button">Copy link to this selection</button>
-            <span class="count-note" id="combine-count"></span>
-          </div>
-          <div class="table-scroll">
-            <table id="combine-table">
-              <thead><tr>
-                <th>Sample</th><th>Cohort</th><th>Population</th><th>Sex</th>
-                <th class="num">Assays</th><th class="num" title="Datasets from other projects on the same cell line">Other proj.</th>
-                <th class="num">Files</th><th>Provenance</th>
-              </tr></thead>
-              <tbody></tbody>
-            </table>
-          </div>
-          <div class="empty" id="combine-empty" hidden></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ COVERAGE ============ -->
-  <section class="view" id="view-coverage" hidden>
+  <!-- ============ OVERVIEW ============ -->
+  <section class="view" id="view-overview">
     <div class="card">
-      <h2>Assay coverage by cohort</h2>
+      <h2>What is available, and for how many donors</h2>
       <p class="hint">
-        Bars are the share of that cohort's donors, so the two columns stay comparable
-        despite very different cohort sizes. Hover an assay name for what it covers.
+        Each bar shows the share of that cohort's donors who have the data.
+        Click a row to list those donors.
       </p>
-      <div class="callout info">
-        <strong>A blank cell is not missing data.</strong> Where no donor in a cohort has an
-        assay, the cell reads <em>not run</em> rather than 0. Rows under <em>Same donor, other
-        projects</em> count cohort donors whose cell line was also used by that project.
-      </div>
+      <ul class="takeaways" id="takeaways"></ul>
       <div class="table-scroll">
-        <table id="coverage-table">
+        <table class="overview" id="overview-table">
           <thead><tr>
-            <th>Assay</th>
-            <th class="num">HPRC <span style="color:var(--hprc)">●</span></th>
-            <th class="num">HGSVC <span style="color:var(--hgsvc)">●</span></th>
-            <th class="num">Combined</th>
+            <th>Data type</th>
+            <th class="cohort-col"><span class="sw" style="background:var(--hprc)"></span>HPRC
+              <small id="head-hprc"></small></th>
+            <th class="cohort-col"><span class="sw" style="background:var(--hgsvc)"></span>HGSVC
+              <small id="head-hgsvc"></small></th>
           </tr></thead>
           <tbody></tbody>
         </table>
       </div>
+      <button class="btn more-toggle" id="toggle-more" type="button" aria-expanded="false"></button>
+    </div>
+  </section>
+
+  <!-- ============ FIND DONORS ============ -->
+  <section class="view" id="view-donors" hidden>
+    <div class="card">
+      <h2>Pick the data you need</h2>
+      <p class="hint">
+        Only donors who have <em>everything</em> you pick are listed. The number on each
+        button is how many donors would be left if you added it.
+      </p>
+      <div id="mod-picker"></div>
+      <div class="picker-foot">
+        <button class="btn" id="picker-more" type="button" aria-expanded="false"></button>
+        <span class="presets" id="presets"></span>
+      </div>
+
+      <div class="result">
+        <span class="big" id="result-n">—</span>
+        <span class="of" id="result-of"></span>
+      </div>
+      <details class="cascade-wrap" id="cascade-card">
+        <summary>See how each choice narrows the list</summary>
+        <ul class="cascade" id="cascade"></ul>
+      </details>
     </div>
 
     <div class="card">
-      <h2>The two cohorts have opposite shapes</h2>
-      <p class="hint">This is the practical guidance the numbers support.</p>
+      <div class="controls">
+        <input type="search" id="sample-search" placeholder="Search donor ID or population…" autocomplete="off">
+        <select id="combine-cohort" aria-label="Cohort">
+          <option value="">Both cohorts</option>
+          <option value="HPRC">HPRC only</option>
+          <option value="HGSVC">HGSVC only</option>
+        </select>
+        <select id="sample-pop" aria-label="Population"><option value="">All populations</option></select>
+        <button class="btn" id="sample-export" type="button">Export list (CSV)</button>
+        <button class="btn" id="combine-link" type="button">Copy link</button>
+      </div>
+      <p class="legend-line">
+        <span class="dot on"></span> has it &nbsp; <span class="dot"></span> does not &nbsp;·&nbsp;
+        click a donor for download links
+      </p>
+      <div class="table-scroll">
+        <table class="donor-grid" id="sample-table">
+          <thead></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="empty" id="sample-empty" hidden>No donor has everything you picked.</div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="view" id="view-about" hidden>
+    <div class="card prose">
+      <h2>Where this comes from</h2>
+      <p>
+        The catalogue is built by listing the two public archives directly: the HPRC bucket on
+        AWS (<code>s3://human-pangenomics</code>) and the HGSVC2 and HGSVC3 folders on the 1000
+        Genomes / IGSR FTP site. For methylation, the start of the read files was opened to check
+        whether the calls are inside. Data from other projects (1000 Genomes, MAGE, Geuvadis,
+        ENCODE) is matched by cell-line ID.
+      </p>
+      <h2>Good to know</h2>
+      <ul>
+        <li><strong>Methylation is usually inside the read files.</strong> You rarely need a
+          separate download: modern PacBio and Nanopore BAM files already carry the 5mC calls.
+          A donor without the mark may still have it in files that were not checked.</li>
+        <li><strong>HGSVC2 and HGSVC3 are one cohort.</strong> Every HGSVC2 donor is also in
+          HGSVC3, so they are shown together as HGSVC.</li>
+        <li><strong>“Recorded but not public”.</strong> For a few HGSVC donors the consortium's
+          own sheet lists data that is not on the public archive. The donor's page says so.</li>
+        <li><strong>Other projects used the same cell lines, not the same cells.</strong> MAGE,
+          Geuvadis and ENCODE grew their own cultures. Same genome, different experiment.</li>
+        <li><strong>Seven donors are in both cohorts</strong> and are counted once in totals.</li>
+        <li><strong>Some files have no donor name</strong> (pooled runs). They are kept in
+          <a href="site-data/files/_unattributed.json"><code>_unattributed.json</code></a>.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Which cohort should I use?</h2>
       <div id="shape-compare"></div>
     </div>
 
-    <div class="card">
-      <h2>Published intersections</h2>
-      <p class="hint">Precomputed by the build script, reproduced here as a cross-check on the live filter.</p>
+    <details class="card fold">
+      <summary>Common combinations, counted</summary>
       <div class="table-scroll">
         <table id="intersections-table">
           <thead><tr><th>Cohort</th><th>Combination</th><th class="num">Donors</th></tr></thead>
           <tbody></tbody>
         </table>
       </div>
-    </div>
+    </details>
 
-    <div class="card">
-      <h2>Data in the HPRC bucket on donors outside the catalogue</h2>
+    <details class="card fold">
+      <summary>Tissue and blood data from people outside the two cohorts</summary>
       <p class="hint">
-        Tissue and blood samples from donors who are not 1000 Genomes / HPRC cell lines: ENCODE
-        EnTEx tissue donors (ONT with 5mC/5hmC), GTEx-style colon tissue HiFi, and pediatric
-        whole-blood donors. They cannot be combined with the cohort assays, so they are listed here
-        rather than in the sample table. Download URLs are in
-        <a href="site-data/files/_unattributed.json"><code>_unattributed.json</code></a> under <code>other_donors</code>.
+        The HPRC bucket also holds data from ENCODE EnTEx tissue donors, colon tissue donors and
+        pediatric blood donors. They are not cell-line donors, so they are listed here only.
       </p>
       <div class="table-scroll">
         <table id="other-donors">
-          <thead><tr><th>Donor</th><th>Assays</th><th>Context</th><th class="num">Files</th>
-            <th class="num">Size</th><th>Submission</th></tr></thead>
+          <thead><tr><th>Donor</th><th>Data</th><th>Sample</th><th class="num">Files</th>
+            <th class="num">Size</th></tr></thead>
           <tbody></tbody>
         </table>
       </div>
-    </div>
+    </details>
   </section>
-
-  <!-- ============ SAMPLES ============ -->
-  <section class="view" id="view-samples" hidden>
-    <div class="card">
-      <h2>All samples</h2>
-      <div class="controls">
-        <input type="search" id="sample-search" placeholder="Search sample ID or population…" autocomplete="off">
-        <select id="sample-cohort">
-          <option value="">All cohorts</option>
-          <option value="HPRC">HPRC</option>
-          <option value="HGSVC">HGSVC</option>
-        </select>
-        <select id="sample-has"><option value="">Has any assay</option></select>
-        <select id="sample-pop"><option value="">All populations</option></select>
-        <select id="sample-sex">
-          <option value="">Any sex</option><option value="male">Male</option><option value="female">Female</option>
-        </select>
-        <select id="sample-release">
-          <option value="">Any release</option>
-          <option value="R2">HPRC R2</option><option value="R3">HPRC R3</option>
-          <option value="untagged">HPRC untagged</option>
-        </select>
-        <button class="btn" id="sample-export" type="button">Export CSV</button>
-        <span class="count-note" id="sample-count"></span>
-      </div>
-      <div class="table-scroll">
-        <table id="sample-table">
-          <thead><tr>
-            <th class="sortable" data-key="sample_id">Sample</th>
-            <th class="sortable" data-key="cohort">Cohort</th>
-            <th class="sortable" data-key="population">Population</th>
-            <th class="sortable" data-key="sex">Sex</th>
-            <th class="sortable num" data-key="n_mod">Assays</th>
-            <th class="sortable num" data-key="n_ext" title="Datasets from other projects on the same cell line">Other proj.</th>
-            <th class="sortable num" data-key="n_files">Files</th>
-            <th class="sortable num" data-key="bytes">Size</th>
-            <th>Provenance</th>
-          </tr></thead>
-          <tbody></tbody>
-        </table>
-      </div>
-      <div class="empty" id="sample-empty" hidden>No samples match those filters.</div>
-    </div>
-  </section>
-
-  <details class="card caveats" id="caveats">
-    <summary>Before you trust this — caveats that change what the numbers mean</summary>
-    <ul id="caveat-list">
-      <li><strong>Methylation is usually already in the reads.</strong> PacBio Revio/jasmine and ONT
-        dorado BAMs carry 5mC (ONT also 5hmC) as MM/ML tags. <em>HiFi 5mC</em> and <em>ONT 5mC</em>
-        mean those tags were found in the first ~1,000 reads of a probed BAM, or that a dedicated
-        methylation submission exists. A donor without the flag may still have it in BAMs that were
-        not probed; FASTQ-only data never does.</li>
-      <li><strong>Index tables are not the archive.</strong> HPRC's GitHub index tables cover only part
-        of the bucket, and Fiber-seq, Pore-C, Micro-C, direct RNA, Bionano, Strand-seq and the
-        Coriell karyotypes/arrays have no index at all. <em>Unindexed</em> is a provenance note, not a
-        quality signal.</li>
-      <li><strong>submissions/ holds data working/ does not.</strong> Ten donors (the HG084xx
-        whole-blood vs LCL pilot) have no <code>working/</code> directory at all. Every raw-data
-        submission is classified by name; files already promoted to <code>working/</code> are not
-        counted twice.</li>
-      <li><strong>HGSVC "sheet only" means you cannot download it from the HGSVC directories.</strong>
-        For Illumina, most of those donors are in the 1000 Genomes NYGC 30x set on the same archive,
-        shown as <em>nygc_30x</em>.</li>
-      <li><strong>HGSVC2 and HGSVC3 are phases of one cohort</strong>, not separate cohorts: every donor
-        in the HGSVC2 indexes is also on the HGSVC production sheet. Each donor shows which IGSR
-        collection holds its files.</li>
-      <li><strong>Other-project data is matched on the cell-line id.</strong> Geuvadis, MAGE, ENCODE and
-        1KG-ONT sequenced the same Coriell lines, but a different culture and passage. Treat them as
-        the same genome, not the same cells.</li>
-      <li><strong>Trio parents' reads are not the sample's.</strong> HPRC stores parental Illumina under
-        the child; it is shown as its own assay.</li>
-      <li><strong>Remaining unattributed files</strong> are mostly pooled Strand-seq flowcells and
-        multiplexed Kinnex pools with no per-sample name. They, the 1000G trio parents and the Coriell
-        lines screened but never sequenced are kept with their URLs in
-        <a href="site-data/files/_unattributed.json"><code>_unattributed.json</code></a>.</li>
-      <li><strong>ONT 6mA chromatin stencilling is not a separate assay.</strong> It is a basecall
-        variant inside the UCSC ONT Fiber-seq submission, shown as a file detail.</li>
-      <li><strong>Iso-Seq, PacBio CLR, 10x and microarrays are legacy</strong>, shown in italics.</li>
-    </ul>
-  </details>
 </main>
 
 <footer class="site-footer">
   <div class="wrap">
     <p id="footer-note"></p>
     <p>
-      Sources: <a href="https://github.com/human-pangenomics">human-pangenomics</a> ·
-      <a href="https://www.internationalgenome.org/data-portal/data-collection/hgsvc2">IGSR / HGSVC2</a> ·
+      Sources: <a href="https://github.com/human-pangenomics">HPRC</a> ·
+      <a href="https://www.internationalgenome.org/data-portal/data-collection/hgsvc2">HGSVC2</a> ·
       <a href="https://www.internationalgenome.org/data-portal/data-collection/hgsvc3">HGSVC3</a> ·
-      <a href="https://www.internationalgenome.org/data-portal/data-collection/30x-grch38">1kGP NYGC 30x</a> ·
+      <a href="https://www.internationalgenome.org/data-portal/data-collection/30x-grch38">1000 Genomes 30x</a> ·
       <a href="https://www.internationalgenome.org/data-portal/data-collection/geuvadis">Geuvadis</a> ·
       <a href="https://doi.org/10.1038/s41586-024-07708-2">MAGE</a> ·
       <a href="https://www.encodeproject.org/">ENCODE</a>.
-      Underlying data is openly licensed by the respective consortia; this catalogue only
-      indexes it. Regenerate with <code>scripts/build_catalog.py</code>.
+      This catalogue only indexes openly available data.
     </p>
   </div>
 </footer>
@@ -276,6 +196,6 @@
   <div class="drawer-body" id="drawer-body"></div>
 </aside>
 
-<script src="assets/app.js" type="module"></script>
+<script src="assets/app.js?v=7" type="module"></script>
 </body>
 </html>
