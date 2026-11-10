@@ -936,53 +936,65 @@ def igsr_ls_cached(path, refresh):
 # =========================================================================== site
 
 
-MODALITIES = [
-    # id, label, group, scope, note
-    ("HiFi", "PacBio HiFi", "Core long + short reads", "cohort", ""),
-    ("ONT", "ONT long reads", "Core long + short reads", "cohort", ""),
-    ("Illumina_WGS", "Illumina WGS", "Core long + short reads", "cohort",
-     "The sample's own short reads. HGSVC rows marked nygc_30x are the 1kGP NYGC 30x data."),
-    ("Illumina_parents", "Trio parent Illumina", "Core long + short reads", "cohort",
-     "Parents' reads stored under the child's directory, for trio phasing."),
-    ("HiC", "Hi-C / Omni-C", "3D genome & structure", "cohort", ""),
-    ("PoreC", "Pore-C", "3D genome & structure", "cohort", "Multi-way chromatin contacts on ONT."),
-    ("MicroC", "Micro-C", "3D genome & structure", "cohort", ""),
-    ("StrandSeq", "Strand-seq", "3D genome & structure", "cohort", ""),
-    ("Bionano", "Bionano optical", "3D genome & structure", "cohort", ""),
-    ("HiFi_5mC", "HiFi 5mC (CpG)", "Epigenome", "cohort",
-     "5mC from PacBio kinetics. Usually inline MM/ML tags in the ordinary HiFi BAM."),
-    ("ONT_5mC", "ONT 5mC / 5hmC", "Epigenome", "cohort",
-     "Modified-base calls from dorado (inline MM/ML tags) or nanopolish (HGSVC)."),
-    ("FiberSeq", "Fiber-seq (m6A)", "Epigenome", "cohort",
-     "Chromatin accessibility + nucleosome positioning, single-molecule."),
-    ("Kinnex_IsoSeq", "Kinnex / Iso-Seq", "Transcriptome", "cohort", "Full-length cDNA."),
-    ("RNAseq", "RNA-seq (short read)", "Transcriptome", "cohort", ""),
-    ("ONT_directRNA", "ONT direct RNA", "Transcriptome", "cohort", "RNA004 with m6A calls."),
-    ("WholeBlood", "Whole-blood data", "Cell source", "cohort",
-     "Data from whole blood rather than the LCL, so it can be compared with the LCL."),
-    ("iPSC", "iPSC data", "Cell source", "cohort", "Data from induced pluripotent stem cells."),
-    ("PacBio_CLR", "PacBio CLR", "Other & legacy", "cohort", ""),
-    ("TenX", "10x linked reads", "Other & legacy", "cohort", ""),
-    ("Microarray", "SNP microarray", "Other & legacy", "cohort", ""),
-    ("Karyotype", "Karyotype", "Other & legacy", "cohort", ""),
-    ("ChrY_ONT", "chrY ONT", "Other & legacy", "cohort", ""),
-    ("NYGC_30x", "1kGP NYGC 30x WGS", "Same donor, other projects", "external",
-     "1000 Genomes high-coverage Illumina (IGSR)."),
-    ("ONT_1KG", "1KG-ONT Vienna", "Same donor, other projects", "external",
-     "1000 Genomes ONT, R9.4.1 (IGSR)."),
-    ("Geuvadis_RNA", "Geuvadis mRNA-seq", "Same donor, other projects", "external",
-     "LCL mRNA-seq, Lappalainen et al. 2013."),
-    ("Geuvadis_smallRNA", "Geuvadis small RNA", "Same donor, other projects", "external", ""),
-    ("MAGE_RNA", "MAGE RNA-seq", "Same donor, other projects", "external",
-     "LCL RNA-seq of 731 1kGP donors, Taylor et al. 2024 (PRJNA851328)."),
-    ("ENCODE_RNA", "ENCODE RNA", "Same donor, other projects", "external", ""),
-    ("ENCODE_Access", "ENCODE ATAC / DNase", "Same donor, other projects", "external", ""),
-    ("ENCODE_ChIP", "ENCODE ChIP-seq", "Same donor, other projects", "external", ""),
-    ("ENCODE_3D", "ENCODE Hi-C / ChIA-PET", "Same donor, other projects", "external", ""),
-    ("ENCODE_DNAme", "ENCODE DNA methylation", "Same donor, other projects", "external",
-     "RRBS / WGBS / methylation array."),
-]
-LEGACY = {"PacBio_CLR", "TenX", "Microarray", "Karyotype"}
+# Presentation metadata the app reads: id, label, short column label, tier, description.
+# tier "main" rows are shown by default; "more" rows sit behind a toggle.
+G_SEQ, G_EPI, G_RNA, G_3D = "Genome sequence", "DNA methylation & chromatin", "RNA", "3D genome & structure"
+G_QC, G_EXT = "Other sample types & QC", "From other projects, same cell lines"
+MODALITIES = [dict(zip(("id", "label", "short", "group", "scope", "tier", "note"), m)) for m in [
+    ("HiFi", "PacBio HiFi long reads", "HiFi", G_SEQ, "cohort", "main",
+     "Accurate long reads; the backbone of the assemblies."),
+    ("ONT", "Nanopore long reads", "ONT", G_SEQ, "cohort", "main",
+     "Oxford Nanopore, including ultra-long reads."),
+    ("Illumina_WGS", "Illumina short reads", "Illumina", G_SEQ, "cohort", "main",
+     "Short-read whole genome. For HGSVC this is mostly the 1000 Genomes 30x data."),
+    ("Illumina_parents", "Parents' Illumina reads", "Parents", G_SEQ, "cohort", "more",
+     "Short reads from the donor's parents, used for trio phasing."),
+    ("PacBio_CLR", "PacBio CLR long reads (older)", "CLR", G_SEQ, "cohort", "more",
+     "Earlier, noisier PacBio reads; superseded by HiFi."),
+    ("TenX", "10x linked reads (older)", "10x", G_SEQ, "cohort", "more", ""),
+    ("ChrY_ONT", "chrY-targeted Nanopore", "chrY", G_SEQ, "cohort", "more", ""),
+    ("HiFi_5mC", "DNA methylation, from HiFi", "5mC HiFi", G_EPI, "cohort", "main",
+     "5mC at CpG sites. Usually already inside the HiFi read files."),
+    ("ONT_5mC", "DNA methylation, from Nanopore", "5mC ONT", G_EPI, "cohort", "main",
+     "5mC and often 5hmC. Usually already inside the Nanopore read files."),
+    ("FiberSeq", "Fiber-seq", "Fiber-seq", G_EPI, "cohort", "main",
+     "Open chromatin and nucleosome positions on single DNA molecules."),
+    ("Kinnex_IsoSeq", "Full-length RNA (Kinnex / Iso-Seq)", "Kinnex", G_RNA, "cohort", "main",
+     "Long-read transcripts."),
+    ("RNAseq", "RNA-seq (short read)", "RNA-seq", G_RNA, "cohort", "main", "Gene expression."),
+    ("ONT_directRNA", "Nanopore direct RNA", "dRNA", G_RNA, "cohort", "more",
+     "Native RNA with m6A calls."),
+    ("HiC", "Hi-C / Omni-C", "Hi-C", G_3D, "cohort", "main",
+     "Chromosome contacts; used for phasing and 3D structure."),
+    ("StrandSeq", "Strand-seq", "Strand-seq", G_3D, "cohort", "main",
+     "Single-cell strand sequencing; phasing and inversions."),
+    ("Bionano", "Bionano optical maps", "Bionano", G_3D, "cohort", "main",
+     "Large structural variants."),
+    ("PoreC", "Pore-C", "Pore-C", G_3D, "cohort", "more", "Multi-way chromosome contacts on Nanopore."),
+    ("MicroC", "Micro-C", "Micro-C", G_3D, "cohort", "more", "Nucleosome-resolution contacts."),
+    ("WholeBlood", "Whole-blood samples", "Blood", G_QC, "cohort", "more",
+     "Data from the donor's blood rather than the cell line, so the two can be compared."),
+    ("iPSC", "iPSC samples", "iPSC", G_QC, "cohort", "more",
+     "Data from induced pluripotent stem cells."),
+    ("Microarray", "SNP microarray (cell-line QC)", "Array", G_QC, "cohort", "more", ""),
+    ("Karyotype", "Karyotype (cell-line QC)", "Karyotype", G_QC, "cohort", "more", ""),
+    ("NYGC_30x", "1000 Genomes 30x genome", "1kGP 30x", G_EXT, "external", "main",
+     "Illumina short reads from the 1000 Genomes Project (NYGC)."),
+    ("MAGE_RNA", "MAGE RNA-seq", "MAGE", G_EXT, "external", "main",
+     "Gene expression in 731 1000 Genomes cell lines (Taylor et al. 2024)."),
+    ("Geuvadis_RNA", "Geuvadis RNA-seq", "Geuvadis", G_EXT, "external", "main",
+     "Gene expression (Lappalainen et al. 2013)."),
+    ("ENCODE_RNA", "ENCODE RNA-seq", "ENCODE RNA", G_EXT, "external", "main", ""),
+    ("ENCODE_Access", "ENCODE ATAC-seq / DNase-seq", "ENCODE ATAC", G_EXT, "external", "main",
+     "Open chromatin."),
+    ("ONT_1KG", "1000 Genomes Nanopore (Vienna)", "1KG ONT", G_EXT, "external", "more",
+     "Older R9.4.1 reads, no methylation calls."),
+    ("Geuvadis_smallRNA", "Geuvadis small RNA", "small RNA", G_EXT, "external", "more", ""),
+    ("ENCODE_ChIP", "ENCODE ChIP-seq", "ENCODE ChIP", G_EXT, "external", "more", ""),
+    ("ENCODE_3D", "ENCODE Hi-C / ChIA-PET", "ENCODE 3D", G_EXT, "external", "more", ""),
+    ("ENCODE_DNAme", "ENCODE DNA methylation", "ENCODE 5mC", G_EXT, "external", "more",
+     "RRBS, WGBS or methylation array."),
+]]
 
 
 def write_csv(path, rows, cols=None):
@@ -996,8 +1008,8 @@ def write_csv(path, rows, cols=None):
 
 
 def build_site(hprc, hprc_rows, other, hprc_probe, hgsvc, hgsvc_rows, hgsvc_probe, ext, out):
-    mods = [m[0] for m in MODALITIES]
-    ext_mods = {m[0] for m in MODALITIES if m[3] == "external"}
+    mods = [m["id"] for m in MODALITIES]
+    ext_mods = {m["id"] for m in MODALITIES if m["scope"] == "external"}
 
     # ---- per-cohort bundles (CSV, for people who want the tables) ------------
     write_csv(os.path.join(ROOT, "hprc/data/hprc_file_index.csv"), hprc_rows,
@@ -1205,8 +1217,8 @@ def build_site(hprc, hprc_rows, other, hprc_probe, hgsvc, hgsvc_rows, hgsvc_prob
         "unique_samples": len(donors),
         "dual_cohort_samples": dual,
         "modalities": mods,
-        "modality_info": {m[0]: {"label": m[1], "group": m[2], "scope": m[3], "note": m[4],
-                                 "legacy": m[0] in LEGACY} for m in MODALITIES},
+        "modality_info": {m["id"]: {k: m[k] for k in ("label", "short", "group", "scope", "tier",
+                                                       "note")} for m in MODALITIES},
         "coverage": coverage,
         "intersections": intersections,
         "totals": {
