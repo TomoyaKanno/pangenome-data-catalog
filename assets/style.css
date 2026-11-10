@@ -434,3 +434,12 @@ table.bd-table td.num, table.bd-table th.num { white-space: nowrap; }
 
 /* .wrap sets padding after main does, so restate the vertical padding with enough specificity */
 main.wrap { padding-top: 28px; padding-bottom: 64px; }
+
+/* HGSVC2 vs HGSVC3 label table in the Hi-C page */
+.bd-grid h3.spaced { margin-top: 28px; }
+table.bd-label td, table.bd-label th { padding-left: 6px; padding-right: 6px; }
+table.bd-label td.strong { font-weight: 600; }
+table.bd-label th { white-space: normal; line-height: 1.25; vertical-align: bottom; }
+.bd-label-note { margin: 10px 0 0; font-size: 12.5px; color: var(--text-muted); line-height: 1.6; }
+table.bd-label th.num { white-space: normal; }
+@media (max-width: 640px) { table.bd-label td, table.bd-label th { padding-left: 4px; padding-right: 4px; } table.bd-label th { letter-spacing: 0; } }

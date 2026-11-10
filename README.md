@@ -27,6 +27,7 @@ Four tabs, simplest first:
 - **Hi-C breakdown** — for each cohort, how the donors split by where their Hi-C / Omni-C
   files are (HPRC `working/` vs `submissions/`; HGSVC on IGSR vs in the HPRC bucket vs
   recorded-but-not-public), beside a table of every folder with donors, files and size.
+  The HGSVC box also splits its donors by IGSR cohort label, HGSVC2 vs HGSVC3.
   Also reachable from the Hi-C row on the Overview.
 - **About the data** — where it comes from, what to watch for, and the specialist tables.
 
@@ -125,6 +126,10 @@ donors. Other projects add RNA-seq or ENCODE data for only 167 of the 552 donors
   rounded sizes, so the build asks the server for each file's exact `Content-Length`
   (one header request per file, cached in `.cache/igsr_sizes.json`). HGSVC donors' data
   totals 210 TB: 84 TB on IGSR and 126 TB in the HPRC bucket. HPRC donors' data is 1,112 TB.
+- **HGSVC2 vs HGSVC3 label.** Each HGSVC donor carries the phase label(s) the IGSR data
+  portal gives the sample (`igsr_labels`): 44 are labelled HGSVC2 and 65 HGSVC3, 41 of them
+  both; HG002 has neither. This is the donor's cohort label and is separate from `phases`,
+  which records the folders the donor's files sit in.
 - **Invariants** (asserted): every file row lands in exactly one of attributed / unattributed /
   out-of-catalogue; coverage is recomputed from the records and must match.
 

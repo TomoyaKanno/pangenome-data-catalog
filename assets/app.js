@@ -604,6 +604,7 @@ function renderDetails(d) {
       add('In HPRC index', row.n_files ? `${fmtN(row.n_indexed)} of ${fmtN(row.n_files)} files` : '');
     } else {
       add('Total size', fmtBytes(row.bytes));
+      add('IGSR cohort label', (row.igsr_labels || []).join(' and ') || 'none');
       add('Files held in', (row.phases || []).join(', '));
       add('Family', row.family_id);
       add('Relation', row.relation);
@@ -655,6 +656,36 @@ function renderHicPage() {
     const go = el('button', { className: 'btn', type: 'button', textContent: `List the ${fmtN(v.total)} donors` });
     go.addEventListener('click', () => gotoDonors([m], c));
     left.append(go);
+
+    if (v.by_label) {   // HGSVC only: the same donors by IGSR cohort label
+      const L = v.by_label;
+      const idBtns = ids => ids.flatMap((id, i) => {
+        const b = el('button', { className: 'link-btn id', type: 'button', textContent: id, title: `Open ${id}` });
+        b.addEventListener('click', () => openDrawer(id));
+        return i ? [txt(', '), b] : [b];
+      });
+      const tb2 = el('tbody', {}, L.rows.map(x => el('tr', {}, [
+        el('td', {}, [el('strong', { textContent: x.label })]),
+        el('td', { className: 'num', textContent: fmtN(x.donors) }),
+        el('td', { className: 'num strong', textContent: fmtN(x.reads) }),
+        el('td', { className: 'num', textContent: x.not_public ? fmtN(x.not_public) : '—' }),
+        el('td', { className: 'num' }, x.none.length ? idBtns(x.none) : [txt('—')])])));
+      const note = el('p', { className: 'bd-label-note' }, [
+        txt(`The labels overlap: ${L.both} donors carry both, ${L.only3} are HGSVC3 only and ${L.only2.length} are HGSVC2 only (`),
+        ...idBtns(L.only2), txt(').')]);
+      if (L.neither.length) note.append(txt(' '), ...idBtns(L.neither),
+        txt(` ${L.neither.length === 1 ? 'has' : 'have'} neither label on IGSR.`));
+      note.append(txt(' These are IGSR\u2019s cohort labels for the donor, not the folder the files sit in.'));
+      left.append(
+        el('h3', { className: 'spaced', textContent: 'By cohort label: HGSVC2 vs HGSVC3' }),
+        el('div', { className: 'table-scroll' }, [el('table', { className: 'bd-table bd-label' }, [
+          el('thead', {}, [el('tr', {}, [el('th', { textContent: 'Label' }),
+            el('th', { className: 'num', textContent: 'Donors' }),
+            el('th', { className: 'num', textContent: 'Hi-C reads' }),
+            el('th', { className: 'num', textContent: 'Not public' }),
+            el('th', { className: 'num', textContent: 'None' })])]), tb2])]),
+        note);
+    }
 
     const tb = el('tbody');
     for (const sr of v.sources) {

@@ -3,7 +3,8 @@
 Written by `scripts/build_catalog.py` — see the top-level README for method and caveats.
 
 HGSVC2 and HGSVC3 are one 69-donor cohort: every donor in the HGSVC2 indexes is on the
-HGSVC production sheet. `phases` records which file collections hold each donor's data:
+HGSVC production sheet. `igsr_labels` is the cohort label IGSR gives each donor (44 HGSVC2,
+65 HGSVC3, 41 both). `phases` records which file collections hold each donor's data:
 `HGSVC2`, `HGSVC3` (IGSR) and `HPRC bucket` (HGSVC donors sequenced by HPRC centres).
 
 | File | What it is |

@@ -120,6 +120,41 @@ def http_get(url, rng=None, timeout=120, tries=4):
             time.sleep(2 ** i)
 
 
+def http_post_json(url, payload, tries=4):
+    data = json.dumps(payload).encode()
+    for i in range(tries):
+        try:
+            req = urllib.request.Request(url, data=data, method="POST", headers={
+                "Content-Type": "application/json", "User-Agent": "pangenome-data-catalog/2"})
+            with urllib.request.urlopen(req, timeout=120, context=_ctx()) as r:
+                return json.loads(r.read())
+        except Exception:
+            if i == tries - 1:
+                raise
+            time.sleep(2 ** i)
+
+
+IGSR_PHASES = {"HGSVC2": "Human Genome Structural Variation Consortium, Phase 2",
+               "HGSVC3": "Human Genome Structural Variation Consortium, Phase 3"}
+
+
+def igsr_phase_labels(refresh):
+    """Which HGSVC phase(s) the IGSR data portal labels each sample with. This is the
+    cohort label, and is separate from which folder a donor's files happen to sit in."""
+    def go():
+        d = http_post_json("https://www.internationalgenome.org/api/beta/sample/_search", {
+            "size": 1000, "_source": ["name", "dataCollections.title"],
+            "query": {"terms": {"dataCollections.title": list(IGSR_PHASES.values())}}})
+        out = defaultdict(set)
+        for h in d["hits"]["hits"]:
+            titles = {c["title"] for c in h["_source"].get("dataCollections", [])}
+            sid = canon(h["_source"]["name"])
+            if sid:
+                out[sid] |= {k for k, t in IGSR_PHASES.items() if t in titles}
+        return {k: sorted(v) for k, v in out.items()}
+    return cached("igsr/hgsvc_phase_labels.json", go, refresh)
+
+
 def http_head_size(url, tries=4):
     """Exact size of a remote file from its Content-Length. None if the server will not say."""
     for i in range(tries):
@@ -820,6 +855,14 @@ def build_hgsvc(xlsx, nygc, refresh, from_hprc=(), inline_from_hprc=None):
             strandseq_libs=lib_count(r[SHEET_COLS["StrandSeq"]]),
             sheet=sheet, modalities=set(), evidence={}, phases=set())
 
+    labels = igsr_phase_labels(refresh)
+    for sid, s in samples.items():
+        s["igsr_labels"] = labels.get(sid, [])
+    stray = sorted(set(labels) - set(samples))
+    if stray:
+        print(f"  NOTE IGSR labels {len(stray)} HGSVC samples not on the sheet: {stray}",
+              file=sys.stderr)
+
     crawl = igsr_crawl(refresh)
     for u in (u for u in crawl["unknown_dirs"] if not DERIVED_DIR.search(u)):
         print(f"  UNCLASSIFIED IGSR dir (add to HGSVC_DIRS): {u}", file=sys.stderr)
@@ -1174,6 +1217,24 @@ def hic_breakdown(records, hprc_rows, hgsvc_rows):
                    r["sample_id"] for r in recs if r["sample_id"] not in has), none=True)],
         sources=finish(sources, lambda w: (0 if w.startswith("IGSR") else 1, "Shi_hic" in w)),
         unattributed_files=loose["unattributed"], other_donors=sorted(loose["other_ids"]))
+
+    # the same donors by IGSR cohort label. Labels overlap: most donors carry both.
+    reads = (has & (on_igsr | on_s3)) - sheet_only
+    lab = {r["sample_id"]: set(r.get("igsr_labels", [])) for r in recs}
+    by_label = []
+    for name in ("HGSVC2", "HGSVC3"):
+        ids = {s for s, v in lab.items() if name in v}
+        by_label.append(dict(label=name, donors=len(ids), reads=len(ids & reads),
+                             not_public=len(ids & sheet_only),
+                             none=sorted(ids - has)))
+    out["HGSVC"]["by_label"] = dict(
+        rows=by_label,
+        both=sum(1 for v in lab.values() if v == {"HGSVC2", "HGSVC3"}),
+        only2=sorted(s for s, v in lab.items() if v == {"HGSVC2"}),
+        only3=sum(1 for v in lab.values() if v == {"HGSVC3"}),
+        neither=sorted(s for s, v in lab.items() if not v))
+    for x in by_label:
+        assert x["reads"] + x["not_public"] + len(x["none"]) == x["donors"], x
     for c in out.values():   # the split must partition the cohort
         assert sum(x["n"] for x in c["split"]) == c["cohort"], c["split"]
         assert sum(x["n"] for x in c["split"] if not x.get("none")) == c["total"], c["split"]
@@ -1225,6 +1286,7 @@ def build_site(hprc, hprc_rows, other, hprc_probe, hgsvc, hgsvc_rows, hgsvc_prob
                                             "release", "phases", "family_id", "relation",
                                             "project_yr", "strandseq_libs")}
             row["phases"] = ";".join(r.get("phases", []))
+            row["igsr_labels"] = ";".join(r.get("igsr_labels", []))
             for m in cols:
                 row[m] = m in r["modalities"]
                 if r["evidence"].get(m):
@@ -1232,7 +1294,8 @@ def build_site(hprc, hprc_rows, other, hprc_probe, hgsvc, hgsvc_rows, hgsvc_prob
             out_rows.append(row)
         head = (["sample_id", "aka", "population", "superpop", "sex"]
                 + (["release"] if cohort == "HPRC" else
-                   ["phases", "family_id", "relation", "project_yr", "strandseq_libs"])
+                   ["igsr_labels", "phases", "family_id", "relation", "project_yr",
+                    "strandseq_libs"])
                 + [x for m in cols for x in (m, m + "__src")])
         write_csv(os.path.join(ROOT, f"{cohort.lower()}/data/{cohort.lower()}_sample_modality_matrix.csv"),
                   out_rows, head)
@@ -1383,7 +1446,8 @@ def build_site(hprc, hprc_rows, other, hprc_probe, hgsvc, hgsvc_rows, hgsvc_prob
             rec["release"] = r["release"]
             rec["n_indexed"] = r["n_indexed"]
         else:
-            for k in ("family_id", "relation", "project_yr", "strandseq_libs", "phases"):
+            for k in ("family_id", "relation", "project_yr", "strandseq_libs", "phases",
+                      "igsr_labels"):
                 if r.get(k) not in (None, "", "nan"):
                     rec[k] = r[k]
         samples.append(rec)
