@@ -8,7 +8,7 @@ HGSVC production sheet. `phases` records which file collections hold each donor'
 
 | File | What it is |
 |---|---|
-| `data/hgsvc_file_index.csv` | One row per file: sample, collection, directory, modality, url |
+| `data/hgsvc_file_index.csv` | One row per file: sample, collection, directory, modality, exact size in bytes, url |
 | `data/hgsvc_sample_modality_matrix.csv` | 69 donors × assays, with `<assay>__src` = `both` / `sheet_only` / `igsr_only` / `nygc_30x` / `inline` |
 | `data/hgsvc_methylation_probe.csv` | Probed IGSR HiFi BAMs |
 

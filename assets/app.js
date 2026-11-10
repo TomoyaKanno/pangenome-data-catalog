@@ -32,7 +32,7 @@ const fmtBytes = b => {
   if (!b) return '';
   const u = ['B', 'KB', 'MB', 'GB', 'TB', 'PB'];
   let i = 0, v = b;
-  while (v >= 1024 && i < u.length - 1) { v /= 1024; i++; }
+  while (v >= 1000 && i < u.length - 1) { v /= 1000; i++; }   // decimal units, as S3 and the README use
   return `${v < 10 && i > 1 ? v.toFixed(1) : Math.round(v)} ${u[i]}`;
 };
 const plural = (n, w) => `${fmtN(n)} ${w}${n === 1 ? '' : 's'}`;
@@ -85,7 +85,8 @@ async function init() {
     $(`#head-${CSS[c]}`).textContent = `${fmtN(CAT.cohorts[c])} donors · ${WHERE[c]}`;
   $('#footer-note').textContent =
     `Updated ${CAT.generated_utc.slice(0, 10)} · ${fmtN(CAT.unique_samples)} donors · ` +
-    `${fmtN(CAT.totals.files)} files · ${(CAT.totals.bytes / 1e12).toFixed(0)} TB in the HPRC bucket.`;
+    `${fmtN(CAT.totals.files)} files · ` +
+    COHORTS.map(c => `${fmtBytes(CAT.totals.bytes_by_cohort[c])} for ${c} donors`).join(' · ') + '.';
 
   renderOverview();
   renderTakeaways();
@@ -534,7 +535,8 @@ function renderRecord(row, shard) {
       continue;
     }
     const det = el('details', { className: 'file-group' });
-    const bytes = isHprc ? fl.reduce((a, f) => a + f[2], 0) : 0;
+    const SZ = isHprc ? 2 : 5;   // column holding the size in each cohort's file rows
+    const bytes = fl.reduce((a, f) => a + (f[SZ] || 0), 0);
     det.append(el('summary', {}, [txt(label(m)),
       el('span', { className: 'fg-n', textContent: [plural(fl.length, 'file'), fmtBytes(bytes)].filter(Boolean).join(' · ') })]));
     const ul = el('ul', { className: 'file-list' });
@@ -544,7 +546,10 @@ function renderRecord(row, shard) {
       if (isHprc) {
         if (f[7]) li.append(el('span', { className: 'badge', textContent: f[7] }));
         li.append(el('span', { className: 'sz', textContent: fmtBytes(f[2]) }));
-      } else if (f[3]) li.append(el('span', { className: 'badge', textContent: f[3] }));
+      } else {
+        if (f[3]) li.append(el('span', { className: 'badge', textContent: f[3] }));
+        li.append(el('span', { className: 'sz', textContent: fmtBytes(f[5]) }));
+      }
       ul.append(li);
     }
     if (fl.length > 200) ul.append(el('li', {}, [el('span', { className: 'hint',
@@ -598,6 +603,7 @@ function renderDetails(d) {
       add('Total size', fmtBytes(row.bytes));
       add('In HPRC index', row.n_files ? `${fmtN(row.n_indexed)} of ${fmtN(row.n_files)} files` : '');
     } else {
+      add('Total size', fmtBytes(row.bytes));
       add('Files held in', (row.phases || []).join(', '));
       add('Family', row.family_id);
       add('Relation', row.relation);
@@ -661,7 +667,6 @@ function renderHicPage() {
     }
     const notes = ['A donor can have files in more than one location, so the Donors column does not add up to the total.'];
     if (c === 'HPRC') notes.push('Submission rows count only files that are not already in a working/ folder.');
-    if (c === 'HGSVC') notes.push('The IGSR site does not list file sizes.');
     if (v.other_donors.length) notes.push(`These locations also hold Hi-C for ${v.other_donors.length} people who are not ${c} donors.`);
     if (v.unattributed_files) notes.push(`${plural(v.unattributed_files, 'file')} carr${v.unattributed_files === 1 ? 'ies' : 'y'} no donor name.`);
     const right = el('div', { className: 'bd-right' }, [

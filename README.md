@@ -42,7 +42,7 @@ python3 -m http.server 8000        # then open http://localhost:8000
 ```
 
 Anonymous access only. Network reads are cached in `.cache/` (git-ignored); `--refresh`
-re-crawls. A cold run is ~10 minutes, mostly listing 456k S3 keys and probing ~2,000 BAM heads.
+re-crawls. A cold run is ~15 minutes: listing 456k S3 keys, probing ~2,000 BAM heads, and reading the size of ~19,000 IGSR files.
 The script prints `UNCLASSIFIED` for any new submission or IGSR directory it has no rule for,
 so new data types surface instead of silently disappearing.
 
@@ -121,6 +121,10 @@ donors. Other projects add RNA-seq or ENCODE data for only 167 of the 552 donors
   A negative means "not in the probed files", not "absent".
 - **HGSVC evidence** per assay: `both` / `sheet_only` / `igsr_only` / `nygc_30x` / `inline`.
   `sheet_only` still means you cannot download it from IGSR.
+- **File sizes.** HPRC sizes come from the S3 listing. IGSR's folder listings only show
+  rounded sizes, so the build asks the server for each file's exact `Content-Length`
+  (one header request per file, cached in `.cache/igsr_sizes.json`). HGSVC donors' data
+  totals 210 TB: 84 TB on IGSR and 126 TB in the HPRC bucket. HPRC donors' data is 1,112 TB.
 - **Invariants** (asserted): every file row lands in exactly one of attributed / unattributed /
   out-of-catalogue; coverage is recomputed from the records and must match.
 

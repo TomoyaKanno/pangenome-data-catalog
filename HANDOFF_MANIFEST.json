@@ -1,6 +1,6 @@
 {
   "bundle": "Pangenome data catalog: HPRC + HGSVC (2,3) + same-donor external data",
-  "generated_utc": "2026-11-10T21:30:15Z",
+  "generated_utc": "2026-11-10T21:57:36Z",
   "build": "python3 scripts/build_catalog.py --hgsvc-xlsx <HGSVC_Production_Master-2.xlsx>",
   "counts": {
     "donors": 552,
@@ -20,7 +20,12 @@
     "data_types": 32,
     "attributed_data_files": 51499,
     "hprc_TB": 1112.1,
-    "unattributed_files": 2289
+    "unattributed_files": 2289,
+    "hgsvc_TB": 209.8,
+    "hgsvc_TB_by_host": {
+      "IGSR": 83.8,
+      "HPRC bucket": 126.0
+    }
   },
   "coverage": {
     "HiFi": {

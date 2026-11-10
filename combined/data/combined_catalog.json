@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-11-10T21:30:15Z",
+ "generated_utc": "2026-11-10T21:57:36Z",
  "cohorts": {
   "HPRC": 490,
   "HGSVC": 69
@@ -649,7 +649,16 @@
  },
  "totals": {
   "files": 51499,
-  "bytes": 1112097642822257,
+  "bytes": 1321886233563983,
+  "bytes_by_cohort": {
+   "HPRC": 1112097642822257,
+   "HGSVC": 209788590741726
+  },
+  "hgsvc_bytes_by_host": {
+   "IGSR": 83781105158676,
+   "HPRC bucket": 126007485583050
+  },
+  "unsized_files": 0,
   "unattributed_files": 2289,
   "out_of_catalogue_files": 1961,
   "other_donor_files": 319,
@@ -1302,7 +1311,7 @@
       "where": "IGSR \u00b7 HGSVC3/working/2021_Hi-C_JAX/",
       "donors": 33,
       "files": 124,
-      "bytes": 0,
+      "bytes": 3161973507007,
       "url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/HGSVC3/working/2021_Hi-C_JAX/",
       "note": ""
      },
@@ -1310,7 +1319,7 @@
       "where": "IGSR \u00b7 HGSVC2/working/20200512_Hi-C/",
       "donors": 26,
       "files": 52,
-      "bytes": 0,
+      "bytes": 1718757312752,
       "url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/HGSVC2/working/20200512_Hi-C/",
       "note": ""
      },
@@ -1318,7 +1327,7 @@
       "where": "IGSR \u00b7 HGSVC3/working/202505012_USC_HighCovHiC/",
       "donors": 5,
       "files": 29,
-      "bytes": 0,
+      "bytes": 824667583963,
       "url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/HGSVC3/working/202505012_USC_HighCovHiC/",
       "note": ""
      },
@@ -1326,7 +1335,7 @@
       "where": "IGSR \u00b7 HGSVC2/working/20230515_Shi_hic_files/",
       "donors": 33,
       "files": 33,
-      "bytes": 0,
+      "bytes": 67363578339,
       "url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/HGSVC2/working/20230515_Shi_hic_files/",
       "note": "Processed contact maps (.hic), not reads; not counted"
      },
@@ -1334,7 +1343,7 @@
       "where": "HPRC bucket \u00b7 submissions/\u2026HGSVC_OMNIC/",
       "donors": 47,
       "files": 376,
-      "bytes": 0,
+      "bytes": 4127977877243,
       "url": "https://s3-us-west-2.amazonaws.com/human-pangenomics/index.html?prefix=submissions/9CDCD261-2A15-46AC-9AEF-EFAC9E2EA56A--HGSVC_OMNIC/",
       "note": "HGSVC donors sequenced by an HPRC centre (Omni-C)"
      }
@@ -13299,7 +13308,7 @@
    "superpop": "AFR",
    "sex": "female",
    "n_files": 101,
-   "bytes": 0,
+   "bytes": 6192999656363,
    "modalities": [
     "Bionano",
     "ENCODE_3D",
@@ -13321,16 +13330,16 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "HiC": "sheet_only",
     "StrandSeq": "sheet_only",
-    "Kinnex_IsoSeq": "both",
     "PacBio_CLR": "both",
-    "RNAseq": "both",
-    "Bionano": "both",
     "HiFi": "both",
+    "Bionano": "both",
     "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Illumina_WGS": "nygc_30x"
+    "Illumina_WGS": "nygc_30x",
+    "RNAseq": "both",
+    "Kinnex_IsoSeq": "both",
+    "HiC": "sheet_only"
    },
    "family_id": "Y117",
    "relation": "Mother",
@@ -13349,7 +13358,7 @@
    "superpop": "AFR",
    "sex": "male",
    "n_files": 97,
-   "bytes": 0,
+   "bytes": 1723960684035,
    "modalities": [
     "Bionano",
     "ENCODE_3D",
@@ -13369,16 +13378,16 @@
     "StrandSeq"
    ],
    "evidence": {
-    "HiC": "both",
     "StrandSeq": "sheet_only",
-    "Kinnex_IsoSeq": "both",
     "PacBio_CLR": "both",
-    "RNAseq": "both",
-    "Bionano": "both",
     "HiFi": "both",
+    "Bionano": "both",
     "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Illumina_WGS": "nygc_30x"
+    "Illumina_WGS": "nygc_30x",
+    "RNAseq": "both",
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both"
    },
    "family_id": "Y117",
    "relation": "Father",
@@ -13396,7 +13405,7 @@
    "superpop": "AFR",
    "sex": "female",
    "n_files": 91,
-   "bytes": 0,
+   "bytes": 1924221943319,
    "modalities": [
     "Bionano",
     "ENCODE_3D",
@@ -13414,16 +13423,16 @@
     "StrandSeq"
    ],
    "evidence": {
-    "HiC": "both",
     "StrandSeq": "sheet_only",
-    "Kinnex_IsoSeq": "both",
     "PacBio_CLR": "both",
-    "RNAseq": "both",
-    "Bionano": "both",
     "HiFi": "both",
+    "Bionano": "both",
     "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Illumina_WGS": "nygc_30x"
+    "Illumina_WGS": "nygc_30x",
+    "RNAseq": "both",
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both"
    },
    "family_id": "Y117",
    "relation": "Daughter",
@@ -13441,7 +13450,7 @@
    "superpop": "AMR",
    "sex": "male",
    "n_files": 117,
-   "bytes": 0,
+   "bytes": 8692063111602,
    "modalities": [
     "Bionano",
     "HiC",
@@ -13458,16 +13467,16 @@
     "StrandSeq"
    ],
    "evidence": {
-    "HiC": "both",
     "StrandSeq": "sheet_only",
-    "Kinnex_IsoSeq": "sheet_only",
     "PacBio_CLR": "both",
-    "RNAseq": "both",
-    "Bionano": "both",
     "HiFi": "both",
+    "Bionano": "both",
     "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Illumina_WGS": "nygc_30x"
+    "Illumina_WGS": "nygc_30x",
+    "RNAseq": "both",
+    "Kinnex_IsoSeq": "sheet_only",
+    "HiC": "both"
    },
    "family_id": "PR05",
    "relation": "Father",
@@ -13486,7 +13495,7 @@
    "superpop": "AMR",
    "sex": "female",
    "n_files": 92,
-   "bytes": 0,
+   "bytes": 5954916504260,
    "modalities": [
     "Bionano",
     "HiC",
@@ -13503,16 +13512,16 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "HiC": "sheet_only",
     "StrandSeq": "sheet_only",
-    "Kinnex_IsoSeq": "both",
     "PacBio_CLR": "both",
-    "RNAseq": "both",
-    "Bionano": "both",
     "HiFi": "both",
+    "Bionano": "both",
     "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Illumina_WGS": "nygc_30x"
+    "Illumina_WGS": "nygc_30x",
+    "RNAseq": "both",
+    "Kinnex_IsoSeq": "both",
+    "HiC": "sheet_only"
    },
    "family_id": "PR05",
    "relation": "Mother",
@@ -13531,7 +13540,7 @@
    "superpop": "AMR",
    "sex": "female",
    "n_files": 135,
-   "bytes": 0,
+   "bytes": 7632933168041,
    "modalities": [
     "Bionano",
     "HiC",
@@ -13548,16 +13557,16 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "HiC": "both",
     "StrandSeq": "sheet_only",
-    "Kinnex_IsoSeq": "both",
     "PacBio_CLR": "both",
-    "RNAseq": "both",
-    "Bionano": "both",
     "HiFi": "both",
+    "Bionano": "both",
     "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Illumina_WGS": "nygc_30x"
+    "Illumina_WGS": "nygc_30x",
+    "RNAseq": "both",
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both"
    },
    "family_id": "PR05",
    "relation": "Daughter",
@@ -13576,7 +13585,7 @@
    "superpop": "EAS",
    "sex": "male",
    "n_files": 122,
-   "bytes": 0,
+   "bytes": 6242206598309,
    "modalities": [
     "Bionano",
     "HiC",
@@ -13593,16 +13602,16 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "HiC": "both",
     "StrandSeq": "sheet_only",
-    "Kinnex_IsoSeq": "sheet_only",
     "PacBio_CLR": "both",
-    "RNAseq": "both",
-    "Bionano": "both",
     "HiFi": "both",
+    "Bionano": "both",
     "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Illumina_WGS": "nygc_30x"
+    "Illumina_WGS": "nygc_30x",
+    "RNAseq": "both",
+    "Kinnex_IsoSeq": "sheet_only",
+    "HiC": "both"
    },
    "family_id": "SH032",
    "relation": "Father",
@@ -13621,7 +13630,7 @@
    "superpop": "EAS",
    "sex": "female",
    "n_files": 110,
-   "bytes": 0,
+   "bytes": 8190410388912,
    "modalities": [
     "Bionano",
     "HiC",
@@ -13641,15 +13650,15 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "HiC": "both",
     "StrandSeq": "sheet_only",
-    "Kinnex_IsoSeq": "both",
     "PacBio_CLR": "both",
-    "RNAseq": "both",
-    "Bionano": "both",
     "HiFi": "both",
+    "Bionano": "both",
     "ONT": "both",
-    "Illumina_WGS": "nygc_30x"
+    "Illumina_WGS": "nygc_30x",
+    "RNAseq": "both",
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both"
    },
    "family_id": "SH032",
    "relation": "Mother",
@@ -13668,7 +13677,7 @@
    "superpop": "EAS",
    "sex": "female",
    "n_files": 67,
-   "bytes": 0,
+   "bytes": 940554740974,
    "modalities": [
     "Bionano",
     "HiC",
@@ -13685,16 +13694,16 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "HiC": "both",
     "StrandSeq": "sheet_only",
-    "Kinnex_IsoSeq": "both",
     "PacBio_CLR": "sheet_only",
-    "RNAseq": "both",
-    "Bionano": "both",
     "HiFi": "both",
+    "Bionano": "both",
     "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Illumina_WGS": "nygc_30x"
+    "Illumina_WGS": "nygc_30x",
+    "RNAseq": "both",
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both"
    },
    "family_id": "SH032",
    "relation": "Daughter",
@@ -13712,7 +13721,7 @@
    "superpop": "SAS",
    "sex": "male",
    "n_files": 308,
-   "bytes": 0,
+   "bytes": 1629313705868,
    "modalities": [
     "Bionano",
     "HiC",
@@ -13727,16 +13736,16 @@
     "StrandSeq"
    ],
    "evidence": {
-    "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
-    "Bionano": "both",
-    "HiC": "both",
-    "ONT": "both",
+    "HiFi": "both",
     "Illumina_WGS": "both",
-    "ONT_5mC": "igsr_only",
-    "PacBio_CLR": "both",
     "RNAseq": "both",
-    "HiFi": "both"
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both",
+    "StrandSeq": "both",
+    "PacBio_CLR": "both",
+    "Bionano": "both",
+    "ONT": "both",
+    "ONT_5mC": "igsr_only"
    },
    "family_id": "IT003",
    "relation": "Son",
@@ -13754,7 +13763,7 @@
    "superpop": "AMR",
    "sex": "female",
    "n_files": 288,
-   "bytes": 0,
+   "bytes": 4741975888699,
    "modalities": [
     "Bionano",
     "HiC",
@@ -13772,15 +13781,15 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
-    "Bionano": "both",
-    "HiC": "both",
-    "ONT": "both",
+    "HiFi": "both",
     "Illumina_WGS": "both",
-    "PacBio_CLR": "sheet_only",
     "RNAseq": "both",
-    "HiFi": "both"
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both",
+    "StrandSeq": "both",
+    "PacBio_CLR": "sheet_only",
+    "Bionano": "both",
+    "ONT": "both"
    },
    "family_id": "PEL003",
    "relation": "Daughter",
@@ -13799,7 +13808,7 @@
    "superpop": "EUR",
    "sex": "female",
    "n_files": 295,
-   "bytes": 0,
+   "bytes": 5166460330996,
    "modalities": [
     "Bionano",
     "Geuvadis_RNA",
@@ -13819,16 +13828,16 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
-    "Bionano": "both",
-    "HiC": "both",
-    "ONT": "both",
+    "HiFi": "both",
     "Illumina_WGS": "nygc_30x",
-    "ONT_5mC": "igsr_only",
-    "PacBio_CLR": "both",
     "RNAseq": "both",
-    "HiFi": "both"
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both",
+    "StrandSeq": "both",
+    "PacBio_CLR": "both",
+    "Bionano": "both",
+    "ONT": "both",
+    "ONT_5mC": "igsr_only"
    },
    "relation": "-",
    "project_yr": "Yr1, Yr3",
@@ -13846,7 +13855,7 @@
    "superpop": "AFR",
    "sex": "female",
    "n_files": 309,
-   "bytes": 0,
+   "bytes": 5532229366217,
    "modalities": [
     "Bionano",
     "HiC",
@@ -13864,15 +13873,15 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
-    "Bionano": "both",
-    "HiC": "both",
-    "ONT": "both",
+    "HiFi": "both",
     "Illumina_WGS": "both",
-    "PacBio_CLR": "both",
     "RNAseq": "both",
-    "HiFi": "both"
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both",
+    "StrandSeq": "both",
+    "PacBio_CLR": "both",
+    "Bionano": "both",
+    "ONT": "both"
    },
    "family_id": "GB24",
    "relation": "Daughter",
@@ -13891,7 +13900,7 @@
    "superpop": "AMR",
    "sex": "female",
    "n_files": 295,
-   "bytes": 0,
+   "bytes": 5034995322540,
    "modalities": [
     "Bionano",
     "HiC",
@@ -13908,16 +13917,16 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
-    "Bionano": "both",
-    "HiC": "both",
-    "ONT": "both",
+    "HiFi": "both",
     "Illumina_WGS": "both",
-    "ONT_5mC": "igsr_only",
-    "PacBio_CLR": "both",
     "RNAseq": "both",
-    "HiFi": "both"
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both",
+    "StrandSeq": "both",
+    "PacBio_CLR": "both",
+    "Bionano": "both",
+    "ONT": "both",
+    "ONT_5mC": "igsr_only"
    },
    "family_id": "CLM03",
    "relation": "Daughter",
@@ -13936,7 +13945,7 @@
    "superpop": "EAS",
    "sex": "female",
    "n_files": 292,
-   "bytes": 0,
+   "bytes": 4473024355466,
    "modalities": [
     "Bionano",
     "HiC",
@@ -13954,15 +13963,15 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline+5hmC",
-    "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
-    "Bionano": "both",
-    "HiC": "both",
-    "ONT": "both",
+    "HiFi": "both",
     "Illumina_WGS": "both",
-    "PacBio_CLR": "sheet_only",
     "RNAseq": "both",
-    "HiFi": "both"
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both",
+    "StrandSeq": "both",
+    "PacBio_CLR": "sheet_only",
+    "Bionano": "both",
+    "ONT": "both"
    },
    "family_id": "VN047",
    "relation": "Daughter",
@@ -13981,7 +13990,7 @@
    "superpop": "AFR",
    "sex": "female",
    "n_files": 271,
-   "bytes": 0,
+   "bytes": 3614581570506,
    "modalities": [
     "Bionano",
     "ENCODE_RNA",
@@ -13999,16 +14008,16 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "HiC": "both",
     "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
     "PacBio_CLR": "sheet_only",
-    "RNAseq": "both",
-    "Bionano": "both",
     "HiFi": "both",
+    "Bionano": "both",
     "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Illumina_WGS": "nygc_30x"
+    "Illumina_WGS": "nygc_30x",
+    "RNAseq": "both",
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both"
    },
    "relation": "-",
    "project_yr": "Yr1, Yr3",
@@ -14026,7 +14035,7 @@
    "superpop": "EUR",
    "sex": "female",
    "n_files": 277,
-   "bytes": 0,
+   "bytes": 1500164590304,
    "modalities": [
     "Bionano",
     "HiC",
@@ -14041,16 +14050,16 @@
     "StrandSeq"
    ],
    "evidence": {
-    "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
-    "Bionano": "both",
-    "HiC": "both",
-    "ONT": "both",
+    "HiFi": "both",
     "Illumina_WGS": "both",
-    "ONT_5mC": "igsr_only",
-    "PacBio_CLR": "both",
     "RNAseq": "both",
-    "HiFi": "both"
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both",
+    "StrandSeq": "both",
+    "PacBio_CLR": "both",
+    "Bionano": "both",
+    "ONT": "both",
+    "ONT_5mC": "igsr_only"
    },
    "family_id": "1328",
    "relation": "Daughter",
@@ -14068,7 +14077,7 @@
    "superpop": "AFR",
    "sex": "male",
    "n_files": 319,
-   "bytes": 0,
+   "bytes": 2095682818391,
    "modalities": [
     "Bionano",
     "HiC",
@@ -14086,15 +14095,15 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
-    "Bionano": "both",
-    "HiC": "both",
-    "ONT": "both",
+    "HiFi": "both",
     "Illumina_WGS": "nygc_30x",
-    "PacBio_CLR": "both",
     "RNAseq": "both",
-    "HiFi": "both"
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both",
+    "StrandSeq": "both",
+    "PacBio_CLR": "both",
+    "Bionano": "both",
+    "ONT": "both"
    },
    "family_id": "BB13",
    "relation": "Son",
@@ -14113,7 +14122,7 @@
    "superpop": "AFR",
    "sex": "female",
    "n_files": 286,
-   "bytes": 0,
+   "bytes": 5550328149100,
    "modalities": [
     "Bionano",
     "HiC",
@@ -14131,15 +14140,15 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
-    "Bionano": "both",
-    "HiC": "both",
-    "ONT": "both",
+    "HiFi": "both",
     "Illumina_WGS": "nygc_30x",
-    "PacBio_CLR": "both",
     "RNAseq": "both",
-    "HiFi": "both"
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both",
+    "StrandSeq": "both",
+    "PacBio_CLR": "both",
+    "Bionano": "both",
+    "ONT": "both"
    },
    "family_id": "2436",
    "relation": "Daughter",
@@ -14158,7 +14167,7 @@
    "superpop": "AFR",
    "sex": "male",
    "n_files": 319,
-   "bytes": 0,
+   "bytes": 2064045911789,
    "modalities": [
     "Bionano",
     "HiC",
@@ -14176,15 +14185,15 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
-    "Bionano": "both",
-    "HiC": "both",
-    "ONT": "both",
+    "HiFi": "both",
     "Illumina_WGS": "nygc_30x",
-    "PacBio_CLR": "both",
     "RNAseq": "both",
-    "HiFi": "both"
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both",
+    "StrandSeq": "both",
+    "PacBio_CLR": "both",
+    "Bionano": "both",
+    "ONT": "both"
    },
    "family_id": "NG98",
    "relation": "Son",
@@ -14203,7 +14212,7 @@
    "superpop": "SAS",
    "sex": "male",
    "n_files": 304,
-   "bytes": 0,
+   "bytes": 2177209760123,
    "modalities": [
     "Bionano",
     "HiC",
@@ -14221,15 +14230,15 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
-    "Bionano": "both",
-    "HiC": "both",
-    "ONT": "both",
+    "HiFi": "both",
     "Illumina_WGS": "nygc_30x",
-    "PacBio_CLR": "both",
     "RNAseq": "both",
-    "HiFi": "both"
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both",
+    "StrandSeq": "both",
+    "PacBio_CLR": "both",
+    "Bionano": "both",
+    "ONT": "both"
    },
    "family_id": "PK06",
    "relation": "Son",
@@ -14248,7 +14257,7 @@
    "superpop": "SAS",
    "sex": "male",
    "n_files": 319,
-   "bytes": 0,
+   "bytes": 2260734069304,
    "modalities": [
     "Bionano",
     "HiC",
@@ -14267,15 +14276,15 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
-    "Bionano": "both",
-    "HiC": "both",
-    "ONT": "both",
+    "HiFi": "both",
     "Illumina_WGS": "nygc_30x",
-    "PacBio_CLR": "both",
     "RNAseq": "both",
-    "HiFi": "both"
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both",
+    "StrandSeq": "both",
+    "PacBio_CLR": "both",
+    "Bionano": "both",
+    "ONT": "both"
    },
    "family_id": "BD01",
    "relation": "Son",
@@ -14294,7 +14303,7 @@
    "superpop": "SAS",
    "sex": "female",
    "n_files": 1019,
-   "bytes": 0,
+   "bytes": 7231428566419,
    "modalities": [
     "Bionano",
     "HiC",
@@ -14312,15 +14321,15 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
-    "Bionano": "both",
-    "HiC": "both",
-    "ONT": "both",
+    "HiFi": "both",
     "Illumina_WGS": "nygc_30x",
-    "PacBio_CLR": "both",
     "RNAseq": "both",
-    "HiFi": "both"
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both",
+    "StrandSeq": "both",
+    "PacBio_CLR": "both",
+    "Bionano": "both",
+    "ONT": "both"
    },
    "family_id": "ST12",
    "relation": "Daughter",
@@ -14339,7 +14348,7 @@
    "superpop": "AFR",
    "sex": "male",
    "n_files": 311,
-   "bytes": 0,
+   "bytes": 2333674503623,
    "modalities": [
     "Bionano",
     "HiC",
@@ -14357,15 +14366,15 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
-    "Bionano": "both",
-    "HiC": "both",
-    "ONT": "both",
+    "HiFi": "both",
     "Illumina_WGS": "nygc_30x",
-    "PacBio_CLR": "both",
     "RNAseq": "both",
-    "HiFi": "both"
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both",
+    "StrandSeq": "both",
+    "PacBio_CLR": "both",
+    "Bionano": "both",
+    "ONT": "both"
    },
    "family_id": "SL05",
    "relation": "Son",
@@ -14384,7 +14393,7 @@
    "superpop": "EAS",
    "sex": "male",
    "n_files": 311,
-   "bytes": 0,
+   "bytes": 1959872052916,
    "modalities": [
     "Bionano",
     "HiC",
@@ -14401,16 +14410,16 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
-    "Bionano": "both",
-    "HiC": "both",
-    "ONT": "both",
+    "HiFi": "both",
     "Illumina_WGS": "nygc_30x",
-    "ONT_5mC": "igsr_only",
-    "PacBio_CLR": "both",
     "RNAseq": "both",
-    "HiFi": "both"
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both",
+    "StrandSeq": "both",
+    "PacBio_CLR": "both",
+    "Bionano": "both",
+    "ONT": "both",
+    "ONT_5mC": "igsr_only"
    },
    "family_id": "-",
    "relation": "-",
@@ -14429,7 +14438,7 @@
    "superpop": "EUR",
    "sex": "male",
    "n_files": 331,
-   "bytes": 0,
+   "bytes": 1791831779065,
    "modalities": [
     "Bionano",
     "HiC",
@@ -14446,16 +14455,16 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
-    "Bionano": "both",
-    "HiC": "both",
-    "ONT": "both",
+    "HiFi": "both",
     "Illumina_WGS": "both",
-    "ONT_5mC": "igsr_only",
-    "PacBio_CLR": "both",
     "RNAseq": "both",
-    "HiFi": "both"
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both",
+    "StrandSeq": "both",
+    "PacBio_CLR": "both",
+    "Bionano": "both",
+    "ONT": "both",
+    "ONT_5mC": "igsr_only"
    },
    "family_id": "IBS002",
    "relation": "Son",
@@ -14474,7 +14483,7 @@
    "superpop": "AMR",
    "sex": "male",
    "n_files": 319,
-   "bytes": 0,
+   "bytes": 2016740605286,
    "modalities": [
     "Bionano",
     "HiC",
@@ -14491,16 +14500,16 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
-    "Bionano": "both",
-    "HiC": "both",
-    "ONT": "both",
+    "HiFi": "both",
     "Illumina_WGS": "both",
-    "ONT_5mC": "igsr_only",
-    "PacBio_CLR": "both",
     "RNAseq": "both",
-    "HiFi": "both"
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both",
+    "StrandSeq": "both",
+    "PacBio_CLR": "both",
+    "Bionano": "both",
+    "ONT": "both",
+    "ONT_5mC": "igsr_only"
    },
    "family_id": "m001",
    "relation": "Son",
@@ -14519,7 +14528,7 @@
    "superpop": "EAS",
    "sex": "female",
    "n_files": 282,
-   "bytes": 0,
+   "bytes": 5412586819877,
    "modalities": [
     "Bionano",
     "HiC",
@@ -14537,15 +14546,15 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
-    "Bionano": "both",
-    "HiC": "both",
-    "ONT": "both",
+    "HiFi": "both",
     "Illumina_WGS": "nygc_30x",
-    "PacBio_CLR": "both",
     "RNAseq": "both",
-    "HiFi": "both"
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both",
+    "StrandSeq": "both",
+    "PacBio_CLR": "both",
+    "Bionano": "both",
+    "ONT": "both"
    },
    "family_id": "-",
    "relation": "-",
@@ -14564,7 +14573,7 @@
    "superpop": "EAS",
    "sex": "female",
    "n_files": 289,
-   "bytes": 0,
+   "bytes": 4552895364422,
    "modalities": [
     "Bionano",
     "HiC",
@@ -14582,16 +14591,16 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
-    "Bionano": "both",
-    "HiC": "both",
-    "ONT": "both",
+    "HiFi": "both",
     "Illumina_WGS": "nygc_30x",
-    "ONT_5mC": "igsr_only",
-    "PacBio_CLR": "both",
     "RNAseq": "both",
-    "HiFi": "both"
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both",
+    "StrandSeq": "both",
+    "PacBio_CLR": "both",
+    "Bionano": "both",
+    "ONT": "both",
+    "ONT_5mC": "igsr_only"
    },
    "family_id": "-",
    "relation": "-",
@@ -14610,7 +14619,7 @@
    "superpop": "SAS",
    "sex": "female",
    "n_files": 295,
-   "bytes": 0,
+   "bytes": 4203075899440,
    "modalities": [
     "Bionano",
     "HiC",
@@ -14629,16 +14638,16 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
-    "Bionano": "both",
-    "HiC": "both",
-    "ONT": "both",
+    "HiFi": "both",
     "Illumina_WGS": "nygc_30x",
-    "ONT_5mC": "igsr_only",
-    "PacBio_CLR": "both",
     "RNAseq": "both",
-    "HiFi": "both"
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both",
+    "StrandSeq": "both",
+    "PacBio_CLR": "both",
+    "Bionano": "both",
+    "ONT": "both",
+    "ONT_5mC": "igsr_only"
    },
    "family_id": "-",
    "relation": "-",
@@ -14657,7 +14666,7 @@
    "superpop": "EUR",
    "sex": "male",
    "n_files": 320,
-   "bytes": 0,
+   "bytes": 1772246774026,
    "modalities": [
     "Bionano",
     "Geuvadis_RNA",
@@ -14677,15 +14686,15 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
-    "Bionano": "both",
-    "HiC": "both",
-    "ONT": "both",
+    "HiFi": "both",
     "Illumina_WGS": "nygc_30x",
-    "PacBio_CLR": "both",
     "RNAseq": "both",
-    "HiFi": "both"
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both",
+    "StrandSeq": "both",
+    "PacBio_CLR": "both",
+    "Bionano": "both",
+    "ONT": "both"
    },
    "family_id": "-",
    "relation": "-",
@@ -14704,7 +14713,7 @@
    "superpop": "EUR",
    "sex": "male",
    "n_files": 332,
-   "bytes": 0,
+   "bytes": 1832775743411,
    "modalities": [
     "Bionano",
     "Geuvadis_RNA",
@@ -14725,16 +14734,16 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
-    "Bionano": "both",
-    "HiC": "both",
-    "ONT": "both",
+    "HiFi": "both",
     "Illumina_WGS": "nygc_30x",
-    "ONT_5mC": "igsr_only",
-    "PacBio_CLR": "both",
     "RNAseq": "both",
-    "HiFi": "both"
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both",
+    "StrandSeq": "both",
+    "PacBio_CLR": "both",
+    "Bionano": "both",
+    "ONT": "both",
+    "ONT_5mC": "igsr_only"
    },
    "family_id": "-",
    "relation": "-",
@@ -14753,7 +14762,7 @@
    "superpop": "EAS",
    "sex": "male",
    "n_files": 322,
-   "bytes": 0,
+   "bytes": 1962527538365,
    "modalities": [
     "Bionano",
     "HiC",
@@ -14772,15 +14781,15 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
-    "Bionano": "both",
-    "HiC": "both",
-    "ONT": "both",
+    "HiFi": "both",
     "Illumina_WGS": "nygc_30x",
-    "PacBio_CLR": "both",
     "RNAseq": "both",
-    "HiFi": "both"
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both",
+    "StrandSeq": "both",
+    "PacBio_CLR": "both",
+    "Bionano": "both",
+    "ONT": "both"
    },
    "family_id": "-",
    "relation": "-",
@@ -14800,7 +14809,7 @@
    "superpop": "EUR",
    "sex": "male",
    "n_files": 20,
-   "bytes": 0,
+   "bytes": 1719998564805,
    "modalities": [
     "Bionano",
     "HiC",
@@ -14812,12 +14821,12 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline+5hmC",
-    "HiC": "sheet_only",
     "StrandSeq": "sheet_only",
-    "RNAseq": "sheet_only",
-    "Bionano": "sheet_only",
     "HiFi": "both",
-    "Illumina_WGS": "both"
+    "Bionano": "sheet_only",
+    "Illumina_WGS": "both",
+    "RNAseq": "sheet_only",
+    "HiC": "sheet_only"
    },
    "family_id": "HG002",
    "relation": "Son",
@@ -14854,12 +14863,12 @@
     "StrandSeq"
    ],
    "evidence": {
-    "HiC": "sheet_only",
     "StrandSeq": "sheet_only",
-    "RNAseq": "sheet_only",
-    "Bionano": "sheet_only",
     "HiFi": "sheet_only",
-    "Illumina_WGS": "nygc_30x"
+    "Bionano": "sheet_only",
+    "Illumina_WGS": "nygc_30x",
+    "RNAseq": "sheet_only",
+    "HiC": "sheet_only"
    },
    "family_id": "1463",
    "relation": "Mother",
@@ -14876,7 +14885,7 @@
    "superpop": "AFR",
    "sex": "female",
    "n_files": 289,
-   "bytes": 0,
+   "bytes": 989170954899,
    "modalities": [
     "Bionano",
     "HiC",
@@ -14892,15 +14901,15 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "HiC": "both",
     "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
-    "RNAseq": "both",
-    "Bionano": "sheet_only",
     "HiFi": "both",
+    "Bionano": "sheet_only",
     "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Illumina_WGS": "nygc_30x"
+    "Illumina_WGS": "nygc_30x",
+    "RNAseq": "both",
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both"
    },
    "family_id": "GB66",
    "relation": "Daughter",
@@ -14919,7 +14928,7 @@
    "superpop": "AFR",
    "sex": "female",
    "n_files": 248,
-   "bytes": 0,
+   "bytes": 8812101136,
    "modalities": [
     "HiFi",
     "Illumina_WGS",
@@ -14946,7 +14955,7 @@
    "superpop": "AFR",
    "sex": "female",
    "n_files": 254,
-   "bytes": 0,
+   "bytes": 10205278395,
    "modalities": [
     "Bionano",
     "HiC",
@@ -14956,11 +14965,11 @@
     "StrandSeq"
    ],
    "evidence": {
-    "HiC": "sheet_only",
     "StrandSeq": "both",
-    "Bionano": "sheet_only",
     "HiFi": "sheet_only",
-    "Illumina_WGS": "nygc_30x"
+    "Bionano": "sheet_only",
+    "Illumina_WGS": "nygc_30x",
+    "HiC": "sheet_only"
    },
    "family_id": "SL61",
    "relation": "Daughter",
@@ -14977,7 +14986,7 @@
    "superpop": "AMR",
    "sex": "female",
    "n_files": 315,
-   "bytes": 0,
+   "bytes": 5196162839256,
    "modalities": [
     "Bionano",
     "HiC",
@@ -14995,15 +15004,15 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "HiC": "both",
     "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
     "PacBio_CLR": "sheet_only",
-    "RNAseq": "both",
-    "Bionano": "both",
     "HiFi": "both",
+    "Bionano": "both",
     "ONT": "both",
-    "Illumina_WGS": "nygc_30x"
+    "Illumina_WGS": "nygc_30x",
+    "RNAseq": "both",
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both"
    },
    "family_id": "CLM29",
    "relation": "Daughter",
@@ -15022,7 +15031,7 @@
    "superpop": "EAS",
    "sex": "female",
    "n_files": 320,
-   "bytes": 0,
+   "bytes": 4587992934716,
    "modalities": [
     "Bionano",
     "HiC",
@@ -15040,15 +15049,15 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "HiC": "both",
     "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
     "PacBio_CLR": "sheet_only",
-    "RNAseq": "both",
-    "Bionano": "both",
     "HiFi": "both",
+    "Bionano": "both",
     "ONT": "both",
-    "Illumina_WGS": "nygc_30x"
+    "Illumina_WGS": "nygc_30x",
+    "RNAseq": "both",
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both"
    },
    "family_id": "VN061",
    "relation": "Daughter",
@@ -15067,7 +15076,7 @@
    "superpop": "AFR",
    "sex": "female",
    "n_files": 294,
-   "bytes": 0,
+   "bytes": 1227647797374,
    "modalities": [
     "Bionano",
     "HiC",
@@ -15084,16 +15093,16 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "HiC": "both",
     "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
     "PacBio_CLR": "sheet_only",
-    "RNAseq": "both",
-    "Bionano": "both",
     "HiFi": "both",
+    "Bionano": "both",
     "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Illumina_WGS": "nygc_30x"
+    "Illumina_WGS": "nygc_30x",
+    "RNAseq": "both",
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both"
    },
    "family_id": "LWK003",
    "relation": "-",
@@ -15112,7 +15121,7 @@
    "superpop": "SAS",
    "sex": "female",
    "n_files": 292,
-   "bytes": 0,
+   "bytes": 1470060334219,
    "modalities": [
     "Bionano",
     "HiC",
@@ -15129,16 +15138,16 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "HiC": "both",
     "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
     "PacBio_CLR": "sheet_only",
-    "RNAseq": "both",
-    "Bionano": "both",
     "HiFi": "both",
+    "Bionano": "both",
     "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Illumina_WGS": "nygc_30x"
+    "Illumina_WGS": "nygc_30x",
+    "RNAseq": "both",
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both"
    },
    "family_id": "IT220",
    "relation": "Daughter",
@@ -15157,7 +15166,7 @@
    "superpop": "SAS",
    "sex": "female",
    "n_files": 241,
-   "bytes": 0,
+   "bytes": 1489713099154,
    "modalities": [
     "Bionano",
     "HiC",
@@ -15175,15 +15184,15 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "HiC": "both",
     "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
     "PacBio_CLR": "sheet_only",
-    "RNAseq": "both",
-    "Bionano": "both",
     "HiFi": "both",
+    "Bionano": "both",
     "ONT": "both",
-    "Illumina_WGS": "nygc_30x"
+    "Illumina_WGS": "nygc_30x",
+    "RNAseq": "both",
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both"
    },
    "family_id": "BD19",
    "relation": "Daughter",
@@ -15202,7 +15211,7 @@
    "superpop": "AFR",
    "sex": "female",
    "n_files": 428,
-   "bytes": 0,
+   "bytes": 1252921611587,
    "modalities": [
     "Bionano",
     "HiC",
@@ -15219,16 +15228,16 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "HiC": "both",
     "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
     "PacBio_CLR": "sheet_only",
-    "RNAseq": "both",
-    "Bionano": "both",
     "HiFi": "both",
+    "Bionano": "both",
     "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Illumina_WGS": "nygc_30x"
+    "Illumina_WGS": "nygc_30x",
+    "RNAseq": "both",
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both"
    },
    "family_id": "2424",
    "relation": "Daughter",
@@ -15247,7 +15256,7 @@
    "superpop": "AMR",
    "sex": "female",
    "n_files": 295,
-   "bytes": 0,
+   "bytes": 1342103511541,
    "modalities": [
     "Bionano",
     "HiC",
@@ -15264,16 +15273,16 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "HiC": "both",
     "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
     "PacBio_CLR": "sheet_only",
-    "RNAseq": "both",
-    "Bionano": "both",
     "HiFi": "both",
+    "Bionano": "both",
     "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Illumina_WGS": "nygc_30x"
+    "Illumina_WGS": "nygc_30x",
+    "RNAseq": "both",
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both"
    },
    "family_id": "PEL38",
    "relation": "Daughter",
@@ -15292,7 +15301,7 @@
    "superpop": "EUR",
    "sex": "female",
    "n_files": 297,
-   "bytes": 0,
+   "bytes": 1442008842143,
    "modalities": [
     "Bionano",
     "Geuvadis_RNA",
@@ -15313,15 +15322,15 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "HiC": "both",
     "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
     "PacBio_CLR": "sheet_only",
-    "RNAseq": "both",
-    "Bionano": "both",
     "HiFi": "both",
+    "Bionano": "both",
     "ONT": "both",
-    "Illumina_WGS": "nygc_30x"
+    "Illumina_WGS": "nygc_30x",
+    "RNAseq": "both",
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both"
    },
    "family_id": "HG00268",
    "relation": "-",
@@ -15341,7 +15350,7 @@
    "superpop": "AFR",
    "sex": "female",
    "n_files": 474,
-   "bytes": 0,
+   "bytes": 4212600998929,
    "modalities": [
     "Bionano",
     "HiC",
@@ -15358,16 +15367,16 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "HiC": "both",
     "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
     "PacBio_CLR": "sheet_only",
-    "RNAseq": "both",
-    "Bionano": "both",
     "HiFi": "both",
+    "Bionano": "both",
     "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Illumina_WGS": "nygc_30x"
+    "Illumina_WGS": "nygc_30x",
+    "RNAseq": "both",
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both"
    },
    "family_id": "2484a",
    "relation": "Daughter",
@@ -15387,7 +15396,7 @@
    "superpop": "AFR",
    "sex": "female",
    "n_files": 204,
-   "bytes": 0,
+   "bytes": 236717156288,
    "modalities": [
     "Bionano",
     "ENCODE_RNA",
@@ -15401,14 +15410,14 @@
     "StrandSeq"
    ],
    "evidence": {
-    "HiC": "both",
     "StrandSeq": "both",
     "PacBio_CLR": "sheet_only",
-    "RNAseq": "both",
-    "Bionano": "both",
     "HiFi": "both",
+    "Bionano": "both",
     "ONT_5mC": "igsr_only",
-    "Illumina_WGS": "nygc_30x"
+    "Illumina_WGS": "nygc_30x",
+    "RNAseq": "both",
+    "HiC": "both"
    },
    "family_id": "NA19320",
    "relation": "-",
@@ -15427,7 +15436,7 @@
    "superpop": "AFR",
    "sex": "female",
    "n_files": 241,
-   "bytes": 0,
+   "bytes": 3798270171039,
    "modalities": [
     "Bionano",
     "Geuvadis_RNA",
@@ -15448,16 +15457,16 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "HiC": "both",
     "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
     "PacBio_CLR": "sheet_only",
-    "RNAseq": "both",
-    "Bionano": "both",
     "HiFi": "both",
+    "Bionano": "both",
     "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Illumina_WGS": "nygc_30x"
+    "Illumina_WGS": "nygc_30x",
+    "RNAseq": "both",
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both"
    },
    "family_id": "Y077",
    "relation": "Daughter",
@@ -15476,7 +15485,7 @@
    "superpop": "AFR",
    "sex": "female",
    "n_files": 280,
-   "bytes": 0,
+   "bytes": 4405885154579,
    "modalities": [
     "Bionano",
     "HiC",
@@ -15494,15 +15503,15 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "HiC": "both",
     "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
     "PacBio_CLR": "sheet_only",
-    "RNAseq": "both",
-    "Bionano": "both",
     "HiFi": "both",
+    "Bionano": "both",
     "ONT": "both",
-    "Illumina_WGS": "nygc_30x"
+    "Illumina_WGS": "nygc_30x",
+    "RNAseq": "both",
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both"
    },
    "family_id": "GB57",
    "relation": "Mother",
@@ -15521,7 +15530,7 @@
    "superpop": "AFR",
    "sex": "female",
    "n_files": 2299,
-   "bytes": 0,
+   "bytes": 5659767075986,
    "modalities": [
     "Bionano",
     "HiC",
@@ -15538,16 +15547,16 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "HiC": "both",
     "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
     "PacBio_CLR": "sheet_only",
-    "RNAseq": "both",
-    "Bionano": "both",
     "HiFi": "both",
+    "Bionano": "both",
     "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Illumina_WGS": "nygc_30x"
+    "Illumina_WGS": "nygc_30x",
+    "RNAseq": "both",
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both"
    },
    "family_id": "SL50",
    "relation": "Mother",
@@ -15566,7 +15575,7 @@
    "superpop": "AFR",
    "sex": "female",
    "n_files": 432,
-   "bytes": 0,
+   "bytes": 1373131167977,
    "modalities": [
     "Bionano",
     "HiC",
@@ -15585,15 +15594,15 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "HiC": "both",
     "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
     "PacBio_CLR": "sheet_only",
-    "RNAseq": "both",
-    "Bionano": "both",
     "HiFi": "both",
+    "Bionano": "both",
     "ONT": "both",
-    "Illumina_WGS": "nygc_30x"
+    "Illumina_WGS": "nygc_30x",
+    "RNAseq": "both",
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both"
    },
    "family_id": "NG109",
    "relation": "Mother",
@@ -15612,7 +15621,7 @@
    "superpop": "AFR",
    "sex": "female",
    "n_files": 252,
-   "bytes": 0,
+   "bytes": 1384550892559,
    "modalities": [
     "Bionano",
     "HiC",
@@ -15631,15 +15640,15 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "HiC": "both",
     "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
     "PacBio_CLR": "sheet_only",
-    "RNAseq": "both",
-    "Bionano": "both",
     "HiFi": "both",
+    "Bionano": "both",
     "ONT": "both",
-    "Illumina_WGS": "nygc_30x"
+    "Illumina_WGS": "nygc_30x",
+    "RNAseq": "both",
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both"
    },
    "family_id": "BB24",
    "relation": "Mother",
@@ -15658,7 +15667,7 @@
    "superpop": "AFR",
    "sex": "male",
    "n_files": 441,
-   "bytes": 0,
+   "bytes": 4833369682460,
    "modalities": [
     "Bionano",
     "HiC",
@@ -15676,14 +15685,14 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline+5hmC",
-    "HiC": "both",
     "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
-    "RNAseq": "both",
-    "Bionano": "both",
     "HiFi": "both",
+    "Bionano": "both",
     "ONT": "both",
-    "Illumina_WGS": "nygc_30x"
+    "Illumina_WGS": "nygc_30x",
+    "RNAseq": "both",
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both"
    },
    "family_id": "BB67",
    "relation": "-",
@@ -15702,7 +15711,7 @@
    "superpop": "AFR",
    "sex": "male",
    "n_files": 2162,
-   "bytes": 0,
+   "bytes": 6350750185279,
    "modalities": [
     "Bionano",
     "HiC",
@@ -15720,14 +15729,14 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "HiC": "both",
     "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
-    "RNAseq": "both",
-    "Bionano": "both",
     "HiFi": "both",
+    "Bionano": "both",
     "ONT": "both",
-    "Illumina_WGS": "nygc_30x"
+    "Illumina_WGS": "nygc_30x",
+    "RNAseq": "both",
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both"
    },
    "family_id": "NG16",
    "relation": "Father",
@@ -15747,7 +15756,7 @@
    "superpop": "AFR",
    "sex": "female",
    "n_files": 248,
-   "bytes": 0,
+   "bytes": 4174015438058,
    "modalities": [
     "Bionano",
     "HiC",
@@ -15763,16 +15772,16 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "HiC": "both",
     "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
     "PacBio_CLR": "sheet_only",
-    "RNAseq": "both",
-    "Bionano": "both",
     "HiFi": "both",
+    "Bionano": "both",
     "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Illumina_WGS": "sheet_only"
+    "Illumina_WGS": "sheet_only",
+    "RNAseq": "both",
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both"
    },
    "family_id": "2618",
    "relation": "Daughter",
@@ -15791,7 +15800,7 @@
    "superpop": "EAS",
    "sex": "male",
    "n_files": 442,
-   "bytes": 0,
+   "bytes": 950980991537,
    "modalities": [
     "Bionano",
     "ChrY_ONT",
@@ -15807,16 +15816,16 @@
     "StrandSeq"
    ],
    "evidence": {
-    "HiC": "both",
-    "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
-    "RNAseq": "both",
     "ChrY_ONT": "sheet_only",
-    "Bionano": "both",
+    "StrandSeq": "both",
     "HiFi": "both",
+    "Bionano": "both",
     "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Illumina_WGS": "nygc_30x"
+    "Illumina_WGS": "nygc_30x",
+    "RNAseq": "both",
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both"
    },
    "family_id": "NA18989",
    "relation": "-",
@@ -15834,7 +15843,7 @@
    "superpop": "AFR",
    "sex": "male",
    "n_files": 254,
-   "bytes": 0,
+   "bytes": 1351255309146,
    "modalities": [
     "Bionano",
     "ENCODE_RNA",
@@ -15852,15 +15861,15 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "HiC": "both",
     "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
-    "RNAseq": "both",
-    "Bionano": "both",
     "HiFi": "both",
+    "Bionano": "both",
     "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Illumina_WGS": "nygc_30x"
+    "Illumina_WGS": "nygc_30x",
+    "RNAseq": "both",
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both"
    },
    "family_id": "LWK001",
    "relation": "-",
@@ -15879,7 +15888,7 @@
    "superpop": "AFR",
    "sex": "male",
    "n_files": 255,
-   "bytes": 0,
+   "bytes": 1117793297823,
    "modalities": [
     "Bionano",
     "HiC",
@@ -15893,15 +15902,15 @@
     "StrandSeq"
    ],
    "evidence": {
-    "HiC": "both",
     "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
-    "RNAseq": "both",
-    "Bionano": "both",
     "HiFi": "both",
+    "Bionano": "both",
     "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Illumina_WGS": "nygc_30x"
+    "Illumina_WGS": "nygc_30x",
+    "RNAseq": "both",
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both"
    },
    "family_id": "GB40",
    "relation": "Father",
@@ -15919,7 +15928,7 @@
    "superpop": "AFR",
    "sex": "male",
    "n_files": 456,
-   "bytes": 0,
+   "bytes": 1259360065984,
    "modalities": [
     "Bionano",
     "ENCODE_RNA",
@@ -15935,15 +15944,15 @@
     "StrandSeq"
    ],
    "evidence": {
-    "HiC": "both",
     "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
-    "RNAseq": "both",
-    "Bionano": "both",
     "HiFi": "both",
+    "Bionano": "both",
     "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Illumina_WGS": "nygc_30x"
+    "Illumina_WGS": "nygc_30x",
+    "RNAseq": "both",
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both"
    },
    "family_id": "NA19317",
    "relation": "-",
@@ -15961,7 +15970,7 @@
    "superpop": "AFR",
    "sex": "male",
    "n_files": 262,
-   "bytes": 0,
+   "bytes": 1900762067254,
    "modalities": [
     "Bionano",
     "ENCODE_RNA",
@@ -15980,14 +15989,14 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "HiC": "both",
     "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
-    "RNAseq": "both",
-    "Bionano": "both",
     "HiFi": "both",
+    "Bionano": "both",
     "ONT": "both",
-    "Illumina_WGS": "nygc_30x"
+    "Illumina_WGS": "nygc_30x",
+    "RNAseq": "both",
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both"
    },
    "family_id": "NA19347",
    "relation": "-",
@@ -16006,7 +16015,7 @@
    "superpop": "AFR",
    "sex": "male",
    "n_files": 273,
-   "bytes": 0,
+   "bytes": 1600508017374,
    "modalities": [
     "Bionano",
     "HiC",
@@ -16023,14 +16032,14 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "HiC": "both",
     "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
-    "RNAseq": "both",
-    "Bionano": "both",
     "HiFi": "both",
+    "Bionano": "both",
     "ONT": "both",
-    "Illumina_WGS": "nygc_30x"
+    "Illumina_WGS": "nygc_30x",
+    "RNAseq": "both",
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both"
    },
    "family_id": "GB116",
    "relation": "Son",
@@ -16049,7 +16058,7 @@
    "superpop": "SAS",
    "sex": "female",
    "n_files": 1244,
-   "bytes": 0,
+   "bytes": 5838750602673,
    "modalities": [
     "Bionano",
     "HiC",
@@ -16067,15 +16076,15 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "HiC": "both",
     "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
     "PacBio_CLR": "sheet_only",
-    "RNAseq": "both",
-    "Bionano": "both",
     "HiFi": "both",
+    "Bionano": "both",
     "ONT": "both",
-    "Illumina_WGS": "nygc_30x"
+    "Illumina_WGS": "nygc_30x",
+    "RNAseq": "both",
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both"
    },
    "family_id": "ST116",
    "relation": "Daughter",
@@ -16094,7 +16103,7 @@
    "superpop": "AMR",
    "sex": "male",
    "n_files": 252,
-   "bytes": 0,
+   "bytes": 1135007981616,
    "modalities": [
     "Bionano",
     "HiC",
@@ -16108,15 +16117,15 @@
     "StrandSeq"
    ],
    "evidence": {
-    "HiC": "both",
     "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
-    "RNAseq": "both",
-    "Bionano": "both",
     "HiFi": "both",
+    "Bionano": "both",
     "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Illumina_WGS": "nygc_30x"
+    "Illumina_WGS": "nygc_30x",
+    "RNAseq": "both",
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both"
    },
    "family_id": "CLM51",
    "relation": "Son",
@@ -16134,7 +16143,7 @@
    "superpop": "AFR",
    "sex": "male",
    "n_files": 266,
-   "bytes": 0,
+   "bytes": 1552980038247,
    "modalities": [
     "Bionano",
     "ENCODE_RNA",
@@ -16152,14 +16161,14 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "HiC": "both",
     "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
-    "RNAseq": "both",
-    "Bionano": "both",
     "HiFi": "both",
+    "Bionano": "both",
     "ONT": "both",
-    "Illumina_WGS": "nygc_30x"
+    "Illumina_WGS": "nygc_30x",
+    "RNAseq": "both",
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both"
    },
    "family_id": "NA19384",
    "relation": "-",
@@ -16178,7 +16187,7 @@
    "superpop": "AFR",
    "sex": "male",
    "n_files": 248,
-   "bytes": 0,
+   "bytes": 941235673382,
    "modalities": [
     "Bionano",
     "HiC",
@@ -16194,15 +16203,15 @@
     "StrandSeq"
    ],
    "evidence": {
-    "HiC": "both",
     "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
-    "RNAseq": "both",
-    "Bionano": "both",
     "HiFi": "both",
+    "Bionano": "both",
     "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Illumina_WGS": "nygc_30x"
+    "Illumina_WGS": "nygc_30x",
+    "RNAseq": "both",
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both"
    },
    "family_id": "BB05",
    "relation": "Father",
@@ -16219,7 +16228,7 @@
    "superpop": "AFR",
    "sex": "male",
    "n_files": 443,
-   "bytes": 0,
+   "bytes": 1622975580126,
    "modalities": [
     "Bionano",
     "HiC",
@@ -16235,15 +16244,15 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "HiC": "both",
     "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
-    "RNAseq": "both",
-    "Bionano": "both",
     "HiFi": "both",
+    "Bionano": "both",
     "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Illumina_WGS": "nygc_30x"
+    "Illumina_WGS": "nygc_30x",
+    "RNAseq": "both",
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both"
    },
    "family_id": "2368",
    "relation": "Son",
@@ -16261,7 +16270,7 @@
    "superpop": "AFR",
    "sex": "male",
    "n_files": 261,
-   "bytes": 0,
+   "bytes": 1687135700604,
    "modalities": [
     "Bionano",
     "HiC",
@@ -16277,15 +16286,15 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "HiC": "both",
     "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
-    "RNAseq": "both",
-    "Bionano": "both",
     "HiFi": "both",
+    "Bionano": "both",
     "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Illumina_WGS": "nygc_30x"
+    "Illumina_WGS": "nygc_30x",
+    "RNAseq": "both",
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both"
    },
    "family_id": "SL51",
    "relation": "Son",
@@ -16303,7 +16312,7 @@
    "superpop": "EUR",
    "sex": "male",
    "n_files": 467,
-   "bytes": 0,
+   "bytes": 3259321341613,
    "modalities": [
     "Bionano",
     "Geuvadis_RNA",
@@ -16319,15 +16328,15 @@
     "StrandSeq"
    ],
    "evidence": {
-    "HiC": "both",
     "StrandSeq": "both",
-    "Kinnex_IsoSeq": "both",
-    "RNAseq": "both",
-    "Bionano": "both",
     "HiFi": "both",
+    "Bionano": "both",
     "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Illumina_WGS": "nygc_30x"
+    "Illumina_WGS": "nygc_30x",
+    "RNAseq": "both",
+    "Kinnex_IsoSeq": "both",
+    "HiC": "both"
    },
    "family_id": "HG00358",
    "relation": "-",

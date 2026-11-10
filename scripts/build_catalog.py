@@ -120,6 +120,47 @@ def http_get(url, rng=None, timeout=120, tries=4):
             time.sleep(2 ** i)
 
 
+def http_head_size(url, tries=4):
+    """Exact size of a remote file from its Content-Length. None if the server will not say."""
+    for i in range(tries):
+        try:
+            req = urllib.request.Request(url, method="HEAD",
+                                         headers={"User-Agent": "pangenome-data-catalog/2"})
+            with urllib.request.urlopen(req, timeout=60, context=_ctx()) as r:
+                n = r.headers.get("Content-Length")
+                return int(n) if n is not None else None
+        except urllib.error.HTTPError as e:
+            if e.code in (403, 404):
+                return None
+            time.sleep(2 ** i)
+        except Exception:
+            time.sleep(2 ** i)
+    return None
+
+
+def remote_sizes(urls, name, refresh):
+    """HEAD every url once; cached, saved in chunks so an interrupted run resumes.
+    The IGSR directory listings only show sizes rounded to two figures (18G), so the
+    exact byte counts come from here."""
+    path = os.path.join(CACHE, name)
+    sizes = {}
+    if os.path.exists(path) and not refresh:
+        with open(path) as fh:
+            sizes = json.load(fh)
+    todo = sorted(u for u in set(urls) if sizes.get(u) is None)
+    if todo:
+        print(f"  reading sizes of {len(todo):,} IGSR files ...", flush=True)
+    for i in range(0, len(todo), 1000):
+        chunk = todo[i:i + 1000]
+        with cf.ThreadPoolExecutor(16) as ex:
+            for u, n in zip(chunk, ex.map(http_head_size, chunk)):
+                sizes[u] = n
+        with open(path, "w") as fh:
+            json.dump(sizes, fh)
+        print(f"    {min(i + 1000, len(todo)):,} / {len(todo):,}", flush=True)
+    return sizes
+
+
 def cached(name, fn, refresh=False):
     path = os.path.join(CACHE, name)
     if os.path.exists(path) and not refresh:
@@ -817,6 +858,12 @@ def build_hgsvc(xlsx, nygc, refresh, from_hprc=(), inline_from_hprc=None):
         rows.append(dict(sample_id=sid, collection=coll, directory=dname, modality=mod,
                          assay_detail=detail, rel_path=path, url=IGSR + path,
                          in_catalogue=sid in samples))
+    sizes = remote_sizes([r["url"] for r in rows], "igsr_sizes.json", refresh)
+    for r in rows:
+        r["size_bytes"] = sizes.get(r["url"])
+    unsized = sum(1 for r in rows if r["size_bytes"] is None)
+    if unsized:
+        print(f"  WARN {unsized} IGSR files returned no size", file=sys.stderr)
 
     # HGSVC donors sequenced by HPRC centres, hosted in the HPRC bucket
     for r in from_hprc:
@@ -827,7 +874,7 @@ def build_hgsvc(xlsx, nygc, refresh, from_hprc=(), inline_from_hprc=None):
                          sub_dir=r["sub_dir"],
                          modality=r["modality"], assay_detail=r["assay_detail"],
                          rel_path=S3_HTTPS + r["s3_key"], url=S3_HTTPS + r["s3_key"],
-                         in_catalogue=sid in samples))
+                         size_bytes=int(r["size_bytes"]), in_catalogue=sid in samples))
     for (sid, mod), marks in (inline_from_hprc or {}).items():
         if sid in samples:
             samples[sid]["modalities"].add(mod)
@@ -1115,6 +1162,7 @@ def hic_breakdown(records, hprc_rows, hgsvc_rows):
         v = sources[where]
         v["donors"].add(r["sample_id"])
         v["files"] += 1
+        v["bytes"] += r["size_bytes"] or 0
     out["HGSVC"] = dict(
         total=len(has), cohort=len(recs),
         split=[dict(label="Reads on IGSR", n=len(has & on_igsr), ids=[]),
@@ -1144,7 +1192,7 @@ def build_site(hprc, hprc_rows, other, hprc_probe, hgsvc, hgsvc_rows, hgsvc_prob
     write_csv(os.path.join(ROOT, "hprc/data/hprc_other_donors_file_index.csv"), other)
     write_csv(os.path.join(ROOT, "hgsvc/data/hgsvc_file_index.csv"), hgsvc_rows,
               ["sample_id", "collection", "directory", "modality", "assay_detail",
-               "rel_path", "url", "in_catalogue"])
+               "size_bytes", "rel_path", "url", "in_catalogue"])
     write_csv(os.path.join(ROOT, "hgsvc/data/hgsvc_methylation_probe.csv"), hgsvc_probe)
     ext_rows = [dict(sample_id=s, modality=m, n_items=len(v), first=v[0])
                 for s, d in sorted(ext.items()) for m, v in sorted(d.items())]
@@ -1206,7 +1254,7 @@ def build_site(hprc, hprc_rows, other, hprc_probe, hgsvc, hgsvc_rows, hgsvc_prob
     for r in hgsvc_rows:
         if r["in_catalogue"]:
             hg[r["sample_id"]].append([r["modality"], r["url"], r["collection"],
-                                       r["assay_detail"], r["directory"]])
+                                       r["assay_detail"], r["directory"], r["size_bytes"] or 0])
     for r in records:
         sid = r["sample_id"]
         if r["cohort"] == "HPRC":
@@ -1219,9 +1267,10 @@ def build_site(hprc, hprc_rows, other, hprc_probe, hgsvc, hgsvc_rows, hgsvc_prob
                                "source", "kind", "tissue"], files=fl)
         else:
             fl = hg.get(sid, [])
-            r["n_files"], r["bytes"] = len(fl), 0
+            r["n_files"], r["bytes"] = len(fl), sum(f[5] for f in fl)
             shard = dict(sample_id=sid, cohort="HGSVC", prefix="",
-                         cols=["modality", "url", "collection", "assay_detail", "directory"],
+                         cols=["modality", "url", "collection", "assay_detail", "directory",
+                               "bytes"],
                          files=fl)
         shard["external"] = ext.get(sid, {})
         name = f"{sid}.{r['cohort']}.json" if sid in dual else f"{sid}.json"
@@ -1268,9 +1317,10 @@ def build_site(hprc, hprc_rows, other, hprc_probe, hgsvc, hgsvc_rows, hgsvc_prob
             for r in hprc_rows if not r["sample_id"]]
     oc_h = [[r["sample_id"], r["modality"], r["s3_key"], int(r["size_bytes"]), r["assay_detail"],
              r["source"]] for r in hprc_rows if r["sample_id"] and not r["in_catalogue"]]
-    un_g = [[r["modality"], r["url"], r["collection"], r["directory"]]
+    un_g = [[r["modality"], r["url"], r["collection"], r["directory"], r["size_bytes"] or 0]
             for r in hgsvc_rows if not r["sample_id"]]
-    oc_g = [[r["sample_id"], r["modality"], r["url"], r["collection"], r["directory"]]
+    oc_g = [[r["sample_id"], r["modality"], r["url"], r["collection"], r["directory"],
+             r["size_bytes"] or 0]
             for r in hgsvc_rows if r["sample_id"] and not r["in_catalogue"]]
     od = defaultdict(lambda: {"files": 0, "bytes": 0, "modalities": set(), "submissions": set(),
                               "tissue": set()})
@@ -1297,13 +1347,14 @@ def build_site(hprc, hprc_rows, other, hprc_probe, hgsvc, hgsvc_rows, hgsvc_prob
                                                                     "assay_detail", "source"],
                                       "files": un_h},
                              "HGSVC": {"prefix": "", "cols": ["modality", "url", "collection",
-                                                                 "directory"], "files": un_g}},
+                                                                 "directory", "bytes"],
+                                       "files": un_g}},
             "out_of_catalogue": {"HPRC": {"prefix": S3_HTTPS,
                                           "cols": ["sample_id", "modality", "key", "bytes",
                                                    "assay_detail", "source"], "files": oc_h},
                                  "HGSVC": {"prefix": "",
                                            "cols": ["sample_id", "modality", "url", "collection",
-                                                    "directory"], "files": oc_g}},
+                                                    "directory", "bytes"], "files": oc_g}},
             "other_donors": {"prefix": S3_HTTPS, "cols": ["donor", "modality", "key", "bytes",
                                                           "assay_detail", "tissue", "submission"],
                              "files": [[r["donor"], r["modality"], r["s3_key"], int(r["size_bytes"]),
@@ -1349,6 +1400,15 @@ def build_site(hprc, hprc_rows, other, hprc_probe, hgsvc, hgsvc_rows, hgsvc_prob
         "totals": {
             "files": sum(r["n_files"] for r in records),
             "bytes": sum(r["bytes"] for r in records),
+            "bytes_by_cohort": {c: sum(r["bytes"] for r in records if r["cohort"] == c)
+                                for c in cohorts},
+            # where the HGSVC bytes physically sit
+            "hgsvc_bytes_by_host": {
+                "IGSR": sum(r["size_bytes"] or 0 for r in hgsvc_rows
+                            if r["in_catalogue"] and r["collection"] != "HPRC bucket"),
+                "HPRC bucket": sum(r["size_bytes"] or 0 for r in hgsvc_rows
+                                   if r["in_catalogue"] and r["collection"] == "HPRC bucket")},
+            "unsized_files": sum(1 for r in hgsvc_rows if r["size_bytes"] is None),
             "unattributed_files": len(un_h) + len(un_g),
             "out_of_catalogue_files": len(oc_h) + len(oc_g),
             "other_donor_files": len(other),
