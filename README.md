@@ -1,126 +1,131 @@
-# Pangenome Data Catalog — HPRC + HGSVC3
+# Pangenome Data Catalog — HPRC + HGSVC (phases 2 and 3)
 
 **→ [tomoyakanno.github.io/pangenome-data-catalog](https://tomoyakanno.github.io/pangenome-data-catalog/)**
 
-An interactive catalogue of which sequencing assays exist for which samples across the
-two major human pangenome cohorts. Everything was derived by enumerating the primary
-archives directly — consortium index tables and production spreadsheets were used for
-metadata and explanation, never as the sole authority on what exists.
+An interactive catalogue of which sequencing **and functional** assays exist for which donors
+across the two human pangenome cohorts, plus what other projects have measured on the same
+1000 Genomes cell lines. Everything is derived from the primary archives:
 
 ```
-hprc/       438 samples, 14 assays, 19,807 files, ~758 TB   (s3://human-pangenomics)
-hgsvc3/      69 samples, 11 assays, 18,174 files            (IGSR + production sheet)
-combined/   507 records, 502 unique donors                  (unified vocabulary)
+HPRC    495 donors   s3://human-pangenomics  working/ + every raw-data submissions/ folder
+HGSVC    69 donors   IGSR HGSVC2 + HGSVC3 working/, the production sheet, and HGSVC donors
+                     sequenced by HPRC centres (hosted in the HPRC bucket)
+Other   NYGC 30x, 1KG-ONT, Geuvadis, MAGE and ENCODE, matched on the cell-line id
+        557 unique donors, 7 in both cohorts, 32 assay types, 51,483 attributed data files
 ```
 
-## What the app does
+## Rebuild (one command)
 
-Three views over one 141 KB static payload:
+```bash
+pip install pandas openpyxl        # everything else is the standard library
+python3 scripts/build_catalog.py --hgsvc-xlsx /path/to/HGSVC_Production_Master-2.xlsx
+python3 -m http.server 8000        # then open http://localhost:8000
+```
 
-- **Combine modalities** — require several assays at once and watch the matching donor
-  count collapse in real time. A cascade chart shows the falloff step by step, and a
-  *cost of adding one more* panel shows what each additional assay would cost you
-  before you commit to it. This is the headline feature: it makes visible that
-  multi-modal work on HPRC is a ~100-donor study, not a 400-donor one.
-- **Coverage** — per-assay coverage in each cohort, normalised within cohort so 402/438
-  and 69/69 stay comparable. Assays a consortium never ran read *not run*, never `0`.
-- **All samples** — searchable, sortable, filterable by cohort, population, sex and
-  release, with CSV export.
+Anonymous access only. Network reads are cached in `.cache/` (git-ignored); `--refresh`
+re-crawls. A cold run is ~10 minutes, mostly listing 456k S3 keys and probing ~2,000 BAM heads.
+The script prints `UNCLASSIFIED` for any new submission or IGSR directory it has no rule for,
+so new data types surface instead of silently disappearing.
 
-Clicking any row opens a drawer with that donor's metadata, per-assay provenance and a
-lazily-loaded file list with direct download URLs.
+## What changed in the November 2026 re-verification
 
-Selections live in the URL, so a filtered view is a shareable link:
-[`#assays=HiFi,ONT,FiberSeq&cohort=HPRC`](https://tomoyakanno.github.io/pangenome-data-catalog/#assays=HiFi,ONT,FiberSeq&cohort=HPRC).
+The earlier build was checked against a full re-listing of both archives. The headline
+conclusions it drew about *functional* data were wrong in several places.
 
-## What the data actually says
+| Claim in the old catalogue | What the archives show | Why it was wrong |
+|---|---|---|
+| HiFi 5mC: 86 HPRC donors | **414** (every one of the 353 core-five donors) | Revio/jasmine BAMs carry 5mC as inline MM/ML tags. The old build only counted dedicated "methylation" submissions. |
+| ONT methylation: not catalogued | **415 HPRC** donors with 5mC (most also 5hmC); **65 HGSVC** (nanopolish calls) | Same — dorado BAMs carry the tags inline; HGSVC's `Nanopolish_UW` directory was never classified. |
+| "HGSVC has no methylation" | 54 HGSVC donors have HiFi 5mC | From HGSVC donors re-sequenced by HPRC centres (`*_HGSVC_HiFi_Y5`, `UCSC_HGSVC_ONT_R10`, `HGSVC_OMNIC`), which the old build never looked at. |
+| Karyotype 40, microarray 40 | **394** and **400** | Only `working/` was scanned; Coriell's QC lives in `submissions/CORIELL_CHOP*` with `GM`/`PG` names and misspelt folders. |
+| Fiber-seq 111 | **124** | Includes whole-blood HiFi BAMs that carry Fiber-seq m6A tags (`A+a`, `T-a`), and the hiPSC ONT Fiber-seq. |
+| 438 HPRC donors | **495** | ~50 Year-7 donors with only ONT so far, and the 10-donor whole-blood vs LCL pilot (HG084xx) that has no `working/` directory. |
+| 5 donors in both cohorts | **7** | HGSVC stored HG001 and HG002 as the literal strings `NA12878 (HG001)` / `NA24385 (HG002)`. |
+| 6,143 files are "pooled, unattributable" | 2,289 genuinely unattributed | The HGSVC id regex ignored `GM*` names — most "pooled" Strand-seq was per-sample. |
+| HGSVC Illumina: 63/69 "sheet only, not downloadable" | 59 of those are in the **1kGP NYGC 30x** set on IGSR | Now shown as `nygc_30x` with download links. |
+| Illumina WGS includes every HPRC child | 57 donors carry **parents'** reads under `Illumina/parents/` | Tracked separately as *Trio parent Illumina*. |
+| HGSVC2 ONT-UL, `*_hic_*` dirs | were skipped | Directory-name regexes missed `ONT_UL` and lowercase `hic`; the HGSVC directory list is now explicit. |
 
-**The two cohorts are nearly disjoint.** Only 5 donors appear in both: HG00733, HG02818,
-HG03486, NA19036, NA19240. The union is therefore close to additive, and the cohort
-facet is genuinely informative rather than decoration.
+Assays that are **new to the catalogue**: Pore-C (5 donors), ONT 5mC/5hmC, whole-blood data
+(11; matched LCL vs blood HiFi, Omni-C and Kinnex), iPSC data (3), trio parent Illumina, and
+eight same-donor datasets from other projects (below). Data on donors outside both cohorts
+(ENCODE EnTEx tissue ONT with 5mC/5hmC, GTEx-style colon HiFi, pediatric blood donors) is
+listed in its own table rather than mixed into the cohort counts.
 
-**They have opposite shapes, and this is the most useful thing the app shows:**
+The app's combine view also had a layout bug (the right column overflowed the viewport,
+forcing horizontal scroll on most laptop widths); fixed.
 
-- **HPRC — large, sparse beyond the core.** 346 of 438 donors carry the core five
-  (HiFi, ONT, Illumina, Hi-C, Kinnex), but only 100 add Fiber-seq and only 44 also have
-  HiFi 5mC.
-- **HGSVC3 — small, near-complete.** 64 of 69 donors carry eight assays simultaneously
-  (Illumina, HiFi, ONT, Strand-seq, Hi-C, Bionano, RNA-seq, Kinnex).
+## Coverage now
 
-So: **need scale on the core assays → HPRC; need many assays on the same donor → HGSVC3.**
+| Assay | HPRC | HGSVC | | Assay | HPRC | HGSVC |
+|---|---:|---:|---|---|---:|---:|
+| PacBio HiFi | 423 | 69 | | HiFi 5mC | 414 | 54 |
+| ONT | 453 | 64 | | ONT 5mC / 5hmC | 415 | 65 |
+| Illumina WGS | 424 | 69 | | Fiber-seq (m6A) | 124 | — |
+| Hi-C / Omni-C | 397 | 68 | | Kinnex / Iso-Seq | 379 | 64 |
+| Pore-C | 5 | — | | RNA-seq (short) | — | 67 |
+| Micro-C | 1 | — | | ONT direct RNA | 1 | — |
+| Strand-seq | 9 | 69 | | Whole-blood data | 11 | — |
+| Bionano | 42 | 68 | | iPSC data | 3 | — |
 
-**Complementary specialities.** HGSVC3 has short-read RNA-seq (67 donors) and Strand-seq
-at scale (69) — HPRC has essentially neither. HPRC has Fiber-seq (111), HiFi 5mC (86),
-Micro-C (1, HG002 only) and ONT direct RNA (1) — HGSVC3 has none of those. A zero in the
-coverage table means *that consortium did not run that assay*, not that data is missing.
+Same donor, other projects (cohort donors whose cell line appears there):
+NYGC 30x WGS 422 / 67 · 1KG-ONT 111 / 17 · **MAGE RNA-seq 72 / 13** · Geuvadis 57 / 6 ·
+ENCODE RNA 36 / 9, ATAC/DNase 11 / 4, Hi-C/ChIA-PET 5 / 4, ChIP-seq 3 / 1, DNAme 2 / 3.
 
-## Provenance, in one line
+**The practical shape is unchanged in kind but not in degree.** HPRC: 353 donors carry the
+core five, and all 353 also have a HiFi methylome inline (317 an ONT one); Fiber-seq is still
+the bottleneck at 101. HGSVC: 64 of 69 donors carry eight assays, and all 64 also have ONT
+methylation. Expression is the asymmetry: HGSVC has its own short-read RNA-seq for 67 donors,
+while on HPRC the best you can do is core five + MAGE RNA-seq from a different culture, 58
+donors. Other projects add RNA-seq or ENCODE data for only 167 of the 557 donors in total.
 
-Neither consortium's index tables are complete. For HPRC, GitHub index tables resolve
-about 9.7k of 19.8k files and eight assays have no index at all. For HGSVC3, the
-production spreadsheet asserts data that is not on IGSR (63 of 69 Illumina rows, held at
-the Broad). Both catalogues therefore carry explicit provenance — `indexed_on_github`
-for HPRC, `<modality>__src` for HGSVC3 — surfaced in the UI on every row. It is the
-difference between "this exists" and "you can download this".
+## How the build decides
+
+- **Exhaustive listing, rules afterwards.** `working/` is taken whole (minus `fail_reads` /
+  `downsampled`). `submissions/` is classified by the `RULES` table (label and path regexes,
+  first match wins) with an explicit `SKIP` list for assemblies, alignments, QC and calls.
+  A submission file whose basename is already in that donor's `working/` is not double-counted.
+- **IDs are canonicalised** before counting: `GM12345 → NA12345`, GIAB Coriell ids → `HG00x`,
+  `PG12345` (Coriell/UW lab spelling) → the matching `HG`/`NA` id.
+- **Methylation probe.** For every donor, the first, last and newest-chemistry BAM of each of
+  HiFi and ONT is range-read (400 KB) and the reads' MM tags parsed. Results are in
+  `hprc/data/hprc_methylation_probe.csv` and `hgsvc/data/hgsvc_methylation_probe.csv`.
+  A negative means "not in the probed files", not "absent".
+- **HGSVC evidence** per assay: `both` / `sheet_only` / `igsr_only` / `nygc_30x` / `inline`.
+  `sheet_only` still means you cannot download it from IGSR.
+- **Invariants** (asserted): every file row lands in exactly one of attributed / unattributed /
+  out-of-catalogue; coverage is recomputed from the records and must match.
 
 ## Repo layout
 
 ```
-index.html, assets/         the app — plain HTML/CSS/ES modules, no build step
-site-data/catalog.json      141 KB app payload (507 records, coverage, intersections)
-site-data/files/*.json      per-donor download lists, fetched on demand
-scripts/prep_site_data.py   rebuilds site-data/ from the cohort bundles below
-hprc/, hgsvc3/, combined/   source-of-truth data + per-cohort READMEs and build scripts
+index.html, assets/          the app — plain HTML/CSS/ES modules, no build step
+site-data/catalog.json       196 KB payload: records, modality metadata, coverage, intersections
+site-data/files/*.json       per-donor file lists + same-donor external links, fetched on demand
+site-data/files/_unattributed.json   unattributed, out-of-catalogue and other-donor files
+scripts/build_catalog.py     the whole pipeline
+hprc/data/                   file index, sample × assay matrix, methylation probe, other donors
+hgsvc/data/                  file index, sample × assay matrix (+ __src evidence), probe
+external/data/               same-donor datasets by donor
+combined/data/               the app payload, pretty-printed
 ```
 
-Each cohort directory has its own `README.md` with the caveats specific to it.
-**Read those before writing code against the data** — each contains at least one trap
-that silently corrupts counts.
+## Known limits
 
-## Running it locally
-
-The app fetches JSON, so it needs to be served over HTTP rather than opened as a file:
-
-```bash
-python3 -m http.server 8000    # then open http://localhost:8000
-```
-
-## Regenerating
-
-After either cohort's data changes, rebuild the cohort bundle and then the site payload:
-
-```bash
-pip install boto3 pandas requests openpyxl
-
-cd hprc/scripts   && python build_hprc_catalog.py --out ../data
-cd hgsvc3/scripts && python build_hgsvc3_catalog.py \
-    --xlsx /path/to/HGSVC_Production_Master-2.xlsx --out ../data
-python scripts/prep_site_data.py
-```
-
-Both cohort builds use anonymous access, no credentials. HPRC needs
-`human-pangenomics.s3.us-west-2.amazonaws.com` and `raw.githubusercontent.com`; HGSVC3
-needs `ftp.1000genomes.ebi.ac.uk` over HTTPS.
-
-`prep_site_data.py` will refuse to write if its invariants break — every file index row
-must land in exactly one bucket, and derived coverage must match what the cohort build
-scripts published. Those assertions have already caught two real defects; leave them in.
-
-## Known data quirks the prep step handles
-
-- **GM/NA aliasing.** The HGSVC3 catalogue names four donors `GM19129`, `GM19320`,
-  `GM20355`, `GM21487` while its own file index spells the same Coriell donors `NA…`.
-  Unaliased, those donors show an empty download list while their files sit unattributed.
-- **6,143 files have no sample attribution** — overwhelmingly pooled or multiplexed
-  Strand-seq libraries. A further 20 name donors outside the catalogued cohorts,
-  including `NA24385` (GIAB's HG002). Both groups are preserved in
-  `site-data/files/_unattributed.json` rather than dropped.
-- **Kinnex and Iso-Seq are overlapping sets**, not disjoint ones — all 12 HGSVC3 Iso-Seq
-  donors are among the 64 Kinnex donors, so the unified `Kinnex_IsoSeq` count is 64, not 76.
+- The methylation flags are a lower bound for donors whose probed BAMs predate inline calls.
+- Other-project data is the same genome, not the same cells (different culture and passage).
+- MAGE is read from ENA (PRJNA851328); ENCODE from its public search API (released, cell lines).
+- The 718-sample pooled Strand-seq set (`HGSVC3/working/20260214_Strandseq_Pools`) is a
+  separate 1kGP effort and is not counted as HGSVC Strand-seq.
+- The HGSVC production spreadsheet is not in this repository; pass its path to rebuild.
 
 ## Sources
 
-- [`human-pangenomics`](https://github.com/human-pangenomics) — S3 bucket and index tables
-- [IGSR / HGSVC3](https://www.internationalgenome.org/data-portal/data-collection/hgsvc3) — the 1000 Genomes archive
-
+[human-pangenomics](https://github.com/human-pangenomics) ·
+[IGSR HGSVC2](https://www.internationalgenome.org/data-portal/data-collection/hgsvc2) /
+[HGSVC3](https://www.internationalgenome.org/data-portal/data-collection/hgsvc3) ·
+[1kGP 30x](https://www.internationalgenome.org/data-portal/data-collection/30x-grch38) ·
+[1KG-ONT](https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1KG_ONT_VIENNA/) ·
+[Geuvadis](https://www.internationalgenome.org/data-portal/data-collection/geuvadis) ·
+[MAGE](https://doi.org/10.1038/s41586-024-07708-2) · [ENCODE](https://www.encodeproject.org/).
 Underlying data is openly licensed by the respective consortia; this catalogue only indexes it.

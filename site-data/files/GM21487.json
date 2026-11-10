@@ -1,1 +1,0 @@
-{"sample_id":"GM21487","cohort":"HGSVC3","prefix":"https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/","cols":["modality","path","collection","orig_modality"],"files":[["HiFi","data_collections/HGSVC3/working/20250307_Alignments_HiFi_T2T/NA21487_20250307_Alignments_HiFi_T2T.bam","HGSVC3","HiFi"]]}

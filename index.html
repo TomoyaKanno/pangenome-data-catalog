@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pangenome Data Catalog — HPRC + HGSVC3</title>
-<meta name="description" content="Which sequencing assays exist for which samples across the HPRC and HGSVC3 cohorts, enumerated directly from the primary archives.">
+<title>Pangenome Data Catalog</title>
+<meta name="description" content="Which sequencing and functional assays exist for which donors across HPRC and HGSVC (phases 2 and 3), plus same-donor data from 1000 Genomes, Geuvadis, MAGE and ENCODE, enumerated directly from the primary archives.">
 <link rel="stylesheet" href="assets/style.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='13' font-size='13'>🧬</text></svg>">
 </head>
@@ -16,10 +16,12 @@
       <div>
         <h1>Pangenome Data Catalog</h1>
         <p class="lede">
-          Which sequencing assays exist for which samples across the two major human
-          pangenome cohorts. Built by enumerating <abbr title="s3://human-pangenomics">HPRC's S3 bucket</abbr>
-          and the <abbr title="ftp.1000genomes.ebi.ac.uk">IGSR archive</abbr> directly — consortium index
-          tables were used for metadata, never as the sole authority on what exists.
+          Which sequencing and functional assays exist for which donors across the two major
+          human pangenome cohorts — HPRC, and HGSVC phases 2 and 3 — and what other projects
+          have measured on the same cell lines. Built by enumerating
+          <abbr title="s3://human-pangenomics — working/ and submissions/">HPRC's S3 bucket</abbr>
+          and the <abbr title="ftp.1000genomes.ebi.ac.uk">IGSR archive</abbr> directly, and by reading
+          the first few hundred KB of the BAMs to see which already carry methylation calls.
         </p>
       </div>
       <button class="theme-toggle" id="theme-toggle" type="button">Theme</button>
@@ -79,7 +81,7 @@
             <select id="combine-cohort">
               <option value="">Both cohorts</option>
               <option value="HPRC">HPRC only</option>
-              <option value="HGSVC3">HGSVC3 only</option>
+              <option value="HGSVC">HGSVC only</option>
             </select>
             <button class="btn" id="combine-export" type="button">Export sample list (CSV)</button>
             <button class="btn" id="combine-link" type="button">Copy link to this selection</button>
@@ -89,7 +91,8 @@
             <table id="combine-table">
               <thead><tr>
                 <th>Sample</th><th>Cohort</th><th>Population</th><th>Sex</th>
-                <th class="num">Assays</th><th class="num">Files</th><th>Provenance</th>
+                <th class="num">Assays</th><th class="num" title="Datasets from other projects on the same cell line">Other proj.</th>
+                <th class="num">Files</th><th>Provenance</th>
               </tr></thead>
               <tbody></tbody>
             </table>
@@ -105,20 +108,20 @@
     <div class="card">
       <h2>Assay coverage by cohort</h2>
       <p class="hint">
-        Bars are the share of that cohort's samples, so the two columns stay comparable
-        despite very different cohort sizes (438 vs 69).
+        Bars are the share of that cohort's donors, so the two columns stay comparable
+        despite very different cohort sizes. Hover an assay name for what it covers.
       </p>
       <div class="callout info">
-        <strong>A blank cell is not missing data.</strong> Where a cohort simply never ran an
-        assay, the cell reads <em>not run</em> rather than 0 — those two states mean completely
-        different things when you are choosing a cohort.
+        <strong>A blank cell is not missing data.</strong> Where no donor in a cohort has an
+        assay, the cell reads <em>not run</em> rather than 0. Rows under <em>Same donor, other
+        projects</em> count cohort donors whose cell line was also used by that project.
       </div>
       <div class="table-scroll">
         <table id="coverage-table">
           <thead><tr>
             <th>Assay</th>
             <th class="num">HPRC <span style="color:var(--hprc)">●</span></th>
-            <th class="num">HGSVC3 <span style="color:var(--hgsvc)">●</span></th>
+            <th class="num">HGSVC <span style="color:var(--hgsvc)">●</span></th>
             <th class="num">Combined</th>
           </tr></thead>
           <tbody></tbody>
@@ -134,10 +137,28 @@
 
     <div class="card">
       <h2>Published intersections</h2>
-      <p class="hint">Precomputed by each cohort's build script, reproduced here as a cross-check on the live filter.</p>
+      <p class="hint">Precomputed by the build script, reproduced here as a cross-check on the live filter.</p>
       <div class="table-scroll">
         <table id="intersections-table">
-          <thead><tr><th>Cohort</th><th>Combination</th><th class="num">Samples</th></tr></thead>
+          <thead><tr><th>Cohort</th><th>Combination</th><th class="num">Donors</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Data in the HPRC bucket on donors outside the catalogue</h2>
+      <p class="hint">
+        Tissue and blood samples from donors who are not 1000 Genomes / HPRC cell lines: ENCODE
+        EnTEx tissue donors (ONT with 5mC/5hmC), GTEx-style colon tissue HiFi, and pediatric
+        whole-blood donors. They cannot be combined with the cohort assays, so they are listed here
+        rather than in the sample table. Download URLs are in
+        <a href="site-data/files/_unattributed.json"><code>_unattributed.json</code></a> under <code>other_donors</code>.
+      </p>
+      <div class="table-scroll">
+        <table id="other-donors">
+          <thead><tr><th>Donor</th><th>Assays</th><th>Context</th><th class="num">Files</th>
+            <th class="num">Size</th><th>Submission</th></tr></thead>
           <tbody></tbody>
         </table>
       </div>
@@ -153,8 +174,9 @@
         <select id="sample-cohort">
           <option value="">All cohorts</option>
           <option value="HPRC">HPRC</option>
-          <option value="HGSVC3">HGSVC3</option>
+          <option value="HGSVC">HGSVC</option>
         </select>
+        <select id="sample-has"><option value="">Has any assay</option></select>
         <select id="sample-pop"><option value="">All populations</option></select>
         <select id="sample-sex">
           <option value="">Any sex</option><option value="male">Male</option><option value="female">Female</option>
@@ -175,6 +197,7 @@
             <th class="sortable" data-key="population">Population</th>
             <th class="sortable" data-key="sex">Sex</th>
             <th class="sortable num" data-key="n_mod">Assays</th>
+            <th class="sortable num" data-key="n_ext" title="Datasets from other projects on the same cell line">Other proj.</th>
             <th class="sortable num" data-key="n_files">Files</th>
             <th class="sortable num" data-key="bytes">Size</th>
             <th>Provenance</th>
@@ -188,30 +211,38 @@
 
   <details class="card caveats" id="caveats">
     <summary>Before you trust this — caveats that change what the numbers mean</summary>
-    <ul>
-      <li><strong>Index tables are not the archive.</strong> HPRC's GitHub index tables resolve
-        only about 9,700 of 19,807 files, and eight modalities have no index at all. An
-        <em>unindexed</em> file is normal data that postdates the last index refresh — it is a
-        provenance note, not a quality signal.</li>
-      <li><strong>HGSVC3 "sheet only" means you cannot download it.</strong> The production
-        spreadsheet asserts Illumina WGS for all 69 samples, but only 6 have files on IGSR;
-        the rest live at the Broad. Every HGSVC3 assay here carries its evidence source.</li>
-      <li><strong>A zero means the consortium did not run that assay.</strong> HPRC has no
-        short-read RNA-seq; HGSVC3 has no Fiber-seq, HiFi 5mC or Micro-C. Neither is missing data.</li>
-      <li><strong>Multi-modal work is a ~100-sample study, not a 400-sample one.</strong> 346
-        HPRC samples carry the core five, but only 100 add Fiber-seq and only 44 also have HiFi 5mC.</li>
-      <li><strong>6,143 files cannot be tied to a sample</strong> — overwhelmingly pooled or
-        multiplexed Strand-seq libraries. They are real data; they simply have no per-sample
-        attribution. A further 20 name donors outside the catalogued cohorts (including
-        NA24385, GIAB's HG002). None are reachable from a sample row, so they are kept
-        together in <a href="site-data/files/_unattributed.json"><code>_unattributed.json</code></a>
-        with their download URLs.</li>
-      <li><strong>ONT 6mA chromatin stencilling is not a separate assay.</strong> It is a
-        basecall variant inside the UCSC ONT Fiber-seq submission, flagged on the samples that
-        have it rather than counted as its own modality.</li>
-      <li><strong>Iso-Seq and PacBio CLR are legacy</strong>, superseded by Kinnex and HiFi
-        respectively. They are shown in italics and folded into <code>Kinnex_IsoSeq</code> in
-        the unified vocabulary.</li>
+    <ul id="caveat-list">
+      <li><strong>Methylation is usually already in the reads.</strong> PacBio Revio/jasmine and ONT
+        dorado BAMs carry 5mC (ONT also 5hmC) as MM/ML tags. <em>HiFi 5mC</em> and <em>ONT 5mC</em>
+        mean those tags were found in the first ~1,000 reads of a probed BAM, or that a dedicated
+        methylation submission exists. A donor without the flag may still have it in BAMs that were
+        not probed; FASTQ-only data never does.</li>
+      <li><strong>Index tables are not the archive.</strong> HPRC's GitHub index tables cover only part
+        of the bucket, and Fiber-seq, Pore-C, Micro-C, direct RNA, Bionano, Strand-seq and the
+        Coriell karyotypes/arrays have no index at all. <em>Unindexed</em> is a provenance note, not a
+        quality signal.</li>
+      <li><strong>submissions/ holds data working/ does not.</strong> Ten donors (the HG084xx
+        whole-blood vs LCL pilot) have no <code>working/</code> directory at all. Every raw-data
+        submission is classified by name; files already promoted to <code>working/</code> are not
+        counted twice.</li>
+      <li><strong>HGSVC "sheet only" means you cannot download it from the HGSVC directories.</strong>
+        For Illumina, most of those donors are in the 1000 Genomes NYGC 30x set on the same archive,
+        shown as <em>nygc_30x</em>.</li>
+      <li><strong>HGSVC2 and HGSVC3 are phases of one cohort</strong>, not separate cohorts: every donor
+        in the HGSVC2 indexes is also on the HGSVC production sheet. Each donor shows which IGSR
+        collection holds its files.</li>
+      <li><strong>Other-project data is matched on the cell-line id.</strong> Geuvadis, MAGE, ENCODE and
+        1KG-ONT sequenced the same Coriell lines, but a different culture and passage. Treat them as
+        the same genome, not the same cells.</li>
+      <li><strong>Trio parents' reads are not the sample's.</strong> HPRC stores parental Illumina under
+        the child; it is shown as its own assay.</li>
+      <li><strong>Remaining unattributed files</strong> are mostly pooled Strand-seq flowcells and
+        multiplexed Kinnex pools with no per-sample name. They, the 1000G trio parents and the Coriell
+        lines screened but never sequenced are kept with their URLs in
+        <a href="site-data/files/_unattributed.json"><code>_unattributed.json</code></a>.</li>
+      <li><strong>ONT 6mA chromatin stencilling is not a separate assay.</strong> It is a basecall
+        variant inside the UCSC ONT Fiber-seq submission, shown as a file detail.</li>
+      <li><strong>Iso-Seq, PacBio CLR, 10x and microarrays are legacy</strong>, shown in italics.</li>
     </ul>
   </details>
 </main>
@@ -221,9 +252,14 @@
     <p id="footer-note"></p>
     <p>
       Sources: <a href="https://github.com/human-pangenomics">human-pangenomics</a> ·
-      <a href="https://www.internationalgenome.org/data-portal/data-collection/hgsvc3">IGSR / HGSVC3</a>.
+      <a href="https://www.internationalgenome.org/data-portal/data-collection/hgsvc2">IGSR / HGSVC2</a> ·
+      <a href="https://www.internationalgenome.org/data-portal/data-collection/hgsvc3">HGSVC3</a> ·
+      <a href="https://www.internationalgenome.org/data-portal/data-collection/30x-grch38">1kGP NYGC 30x</a> ·
+      <a href="https://www.internationalgenome.org/data-portal/data-collection/geuvadis">Geuvadis</a> ·
+      <a href="https://doi.org/10.1038/s41586-024-07708-2">MAGE</a> ·
+      <a href="https://www.encodeproject.org/">ENCODE</a>.
       Underlying data is openly licensed by the respective consortia; this catalogue only
-      indexes it. Regenerate with <code>scripts/prep_site_data.py</code>.
+      indexes it. Regenerate with <code>scripts/build_catalog.py</code>.
     </p>
   </div>
 </footer>

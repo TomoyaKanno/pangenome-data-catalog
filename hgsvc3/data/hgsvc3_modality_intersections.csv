@@ -1,8 +1,0 @@
-combination,n_samples
-core4 (Illumina+HiFi+ONT+StrandSeq),64
-core4 + HiC + Bionano,64
-core4 + RNAseq,64
-core4 + RNAseq + Kinnex,64
-"ALL 6 assembly+3D (Ill,HiFi,ONT,SS,HiC,BN) + RNAseq + Kinnex",64
-RNAseq + Kinnex (both transcriptome),64
-RNAseq + IsoSeq,12
