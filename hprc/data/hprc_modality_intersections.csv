@@ -1,9 +1,0 @@
-combination,n_samples
-core5 (HiFi+ONT+Illumina+HiC+Kinnex),346
-core5 + FiberSeq,100
-core5 + FiberSeq + HiFi_5mC,44
-core5 + Bionano,30
-FiberSeq + HiC_OmniC,100
-FiberSeq + Kinnex_IsoSeq,100
-FiberSeq + HiFi_5mC,44
-MicroC + FiberSeq,0
