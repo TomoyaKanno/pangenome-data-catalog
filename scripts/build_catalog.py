@@ -482,6 +482,14 @@ def fetch_hprc_metadata(refresh):
                                 ("superpopulation_abbreviation", "superpop")):
                 if row.get(f_in) and not m.get(f_out):
                     m[f_out] = row[f_in]
+    # Release 1 (the 47-genome Year 1 draft pangenome) has no sample metadata table; its
+    # assembly index is the membership list. Its two reference rows are not donors.
+    y1 = get_text(f"{GH}HPP_Year1_Assemblies/main/assembly_index/Year1_assemblies_v2_genbank.index",
+                  "gh/Year1_assemblies_v2_genbank.index.json", refresh)
+    for line in y1.splitlines()[1:]:
+        sid = canon(line.split("\t")[0])
+        if sid:
+            meta.setdefault(sid, {"releases": set()})["releases"].add("R1")
     return keys, meta
 
 
@@ -1173,6 +1181,20 @@ def hic_breakdown(records, hprc_rows, hgsvc_rows):
                dict(label="No Hi-C yet", n=len(recs) - len(has), ids=[], none=True)],
         sources=finish(sources, lambda w: 0 if w.startswith("working") else 1),
         unattributed_files=loose["unattributed"], other_donors=sorted(loose["other_ids"]))
+
+    # the same donors by HPRC release. Releases mostly nest, so the rows overlap.
+    rel = {r["sample_id"]: set(r["release"].split("+")) - {"untagged"} for r in recs}
+    rows = []
+    for name, title in (("R1", "Release 1"), ("R2", "Release 2"), ("R3", "Release 3")):
+        ids = {s for s, v in rel.items() if name in v}
+        rows.append(dict(label=title, donors=len(ids), reads=len(ids & has), not_public=0,
+                         none=sorted(ids - has)))
+    none_yet = {s for s, v in rel.items() if not v}
+    out["HPRC"]["by_label"] = dict(
+        rows=rows,
+        r1_in_r2=sum(1 for v in rel.values() if {"R1", "R2"} <= v),
+        r2_in_r3=sum(1 for v in rel.values() if {"R2", "R3"} <= v),
+        unlabelled=dict(donors=len(none_yet), reads=len(none_yet & has)))
 
     # ---- HGSVC ----
     recs = [r for r in records if r["cohort"] == "HGSVC"]

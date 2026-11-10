@@ -27,7 +27,8 @@ Four tabs, simplest first:
 - **Hi-C breakdown** — for each cohort, how the donors split by where their Hi-C / Omni-C
   files are (HPRC `working/` vs `submissions/`; HGSVC on IGSR vs in the HPRC bucket vs
   recorded-but-not-public), beside a table of every folder with donors, files and size.
-  The HGSVC box also splits its donors by IGSR cohort label, HGSVC2 vs HGSVC3.
+  Each box also splits its donors by cohort label: HPRC by Release 1, 2 and 3; HGSVC by
+  IGSR's HGSVC2 and HGSVC3 labels.
   Also reachable from the Hi-C row on the Overview.
 - **About the data** — where it comes from, what to watch for, and the specialist tables.
 
@@ -130,6 +131,10 @@ donors. Other projects add RNA-seq or ENCODE data for only 167 of the 552 donors
   portal gives the sample (`igsr_labels`): 44 are labelled HGSVC2 and 65 HGSVC3, 41 of them
   both; HG002 has neither. This is the donor's cohort label and is separate from `phases`,
   which records the folders the donor's files sit in.
+- **HPRC release label.** `release` lists every release a donor is in (`R1+R2+R3`, `R2+R3`,
+  `R3`, … or `untagged`). Release 2 and 3 come from their sample metadata tables; Release 1
+  (47 donors) from the Year 1 assembly index, which has no metadata table. Release 1 is 47
+  donors, Release 2 is 232, Release 3 is 345; 112 catalogue donors are in none yet.
 - **Invariants** (asserted): every file row lands in exactly one of attributed / unattributed /
   out-of-catalogue; coverage is recomputed from the records and must match.
 

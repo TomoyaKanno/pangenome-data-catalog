@@ -9,4 +9,5 @@ Written by `scripts/build_catalog.py` — see the top-level README for method an
 | `data/hprc_methylation_probe.csv` | Every probed BAM: MM modification codes found, kinetics present, programs in the header |
 | `data/hprc_other_donors_file_index.csv` | EnTEx tissue, colon tissue and pediatric blood donors who are not cohort members |
 
-`release` is `R2`, `R3`, `R2+R3` or `untagged` (data present, no release-table row).
+`release` lists every release the donor is in, joined with `+` (`R1+R2+R3`, `R2+R3`, `R3`, …),
+or `untagged` (data present, in no release yet). Release 1 is the 47-donor Year 1 set.

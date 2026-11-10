@@ -599,7 +599,8 @@ function renderDetails(d) {
     add('Population', [row.population, row.superpop].filter(Boolean).join(' · '));
     add('Sex', row.sex);
     if (row.cohort === 'HPRC') {
-      add('HPRC release', row.release === 'untagged' ? 'not in a release table yet' : row.release);
+      add('HPRC release', row.release === 'untagged' ? 'not in a release yet'
+        : row.release.split('+').map(x => x.slice(1)).join(', '));
       add('Total size', fmtBytes(row.bytes));
       add('In HPRC index', row.n_files ? `${fmtN(row.n_indexed)} of ${fmtN(row.n_files)} files` : '');
     } else {
@@ -657,32 +658,50 @@ function renderHicPage() {
     go.addEventListener('click', () => gotoDonors([m], c));
     left.append(go);
 
-    if (v.by_label) {   // HGSVC only: the same donors by IGSR cohort label
+    if (v.by_label) {   // the same donors by cohort label (HGSVC phase, HPRC release)
       const L = v.by_label;
       const idBtns = ids => ids.flatMap((id, i) => {
         const b = el('button', { className: 'link-btn id', type: 'button', textContent: id, title: `Open ${id}` });
         b.addEventListener('click', () => openDrawer(id));
         return i ? [txt(', '), b] : [b];
       });
+      const showNP = L.rows.some(x => x.not_public);
       const tb2 = el('tbody', {}, L.rows.map(x => el('tr', {}, [
         el('td', {}, [el('strong', { textContent: x.label })]),
         el('td', { className: 'num', textContent: fmtN(x.donors) }),
         el('td', { className: 'num strong', textContent: fmtN(x.reads) }),
-        el('td', { className: 'num', textContent: x.not_public ? fmtN(x.not_public) : '—' }),
-        el('td', { className: 'num' }, x.none.length ? idBtns(x.none) : [txt('—')])])));
-      const note = el('p', { className: 'bd-label-note' }, [
-        txt(`The labels overlap: ${L.both} donors carry both, ${L.only3} are HGSVC3 only and ${L.only2.length} are HGSVC2 only (`),
-        ...idBtns(L.only2), txt(').')]);
-      if (L.neither.length) note.append(txt(' '), ...idBtns(L.neither),
-        txt(` ${L.neither.length === 1 ? 'has' : 'have'} neither label on IGSR.`));
-      note.append(txt(' These are IGSR\u2019s cohort labels for the donor, not the folder the files sit in.'));
+        showNP ? el('td', { className: 'num', textContent: x.not_public ? fmtN(x.not_public) : '—' }) : null,
+        el('td', { className: 'num' }, !x.none.length ? [txt('—')]
+          : x.none.length <= 2 ? idBtns(x.none) : [txt(fmtN(x.none.length))])])));
+
+      const note = el('p', { className: 'bd-label-note' });
+      if (c === 'HGSVC') {
+        note.append(txt(`The labels overlap: ${L.both} donors carry both, ${L.only3} are HGSVC3 only and ${L.only2.length} are HGSVC2 only (`),
+          ...idBtns(L.only2), txt(').'));
+        if (L.neither.length) note.append(txt(' '), ...idBtns(L.neither),
+          txt(` ${L.neither.length === 1 ? 'has' : 'have'} neither label on IGSR.`));
+        note.append(txt(' These are IGSR\u2019s cohort labels for the donor, not the folder the files sit in.'));
+      } else {
+        const [r1, r2] = L.rows;
+        note.append(txt(`The releases mostly nest: ${L.r1_in_r2} of the ${r1.donors} Release 1 donors are also in Release 2, ` +
+          `and ${L.r2_in_r3} of the ${r2.donors} Release 2 donors are also in Release 3. ` +
+          `${fmtN(L.unlabelled.donors)} donors are in no release yet; ${L.unlabelled.reads} of them already have Hi-C.`));
+        const missing = [...new Set(L.rows.flatMap(x => x.none))];
+        if (missing.length > 2) {
+          const hp = id => donors.get(id)?.rows.find(r => r.cohort === 'HPRC');
+          const trio = missing.every(id => hp(id)?.modalities.includes('Illumina_parents'));
+          note.append(txt(` The ${missing.length} release donors without Hi-C are `), ...idBtns(missing),
+            txt(trio ? '; all of them have their parents\u2019 Illumina reads instead.' : '.'));
+        }
+        note.append(txt(' Release membership comes from HPRC\u2019s release tables on GitHub.'));
+      }
       left.append(
-        el('h3', { className: 'spaced', textContent: 'By cohort label: HGSVC2 vs HGSVC3' }),
+        el('h3', { className: 'spaced', textContent: c === 'HGSVC' ? 'By cohort label: HGSVC2 vs HGSVC3' : 'By release: 1, 2 and 3' }),
         el('div', { className: 'table-scroll' }, [el('table', { className: 'bd-table bd-label' }, [
-          el('thead', {}, [el('tr', {}, [el('th', { textContent: 'Label' }),
+          el('thead', {}, [el('tr', {}, [el('th', { textContent: c === 'HGSVC' ? 'Label' : 'Release' }),
             el('th', { className: 'num', textContent: 'Donors' }),
             el('th', { className: 'num', textContent: 'Hi-C reads' }),
-            el('th', { className: 'num', textContent: 'Not public' }),
+            showNP ? el('th', { className: 'num', textContent: 'Not public' }) : null,
             el('th', { className: 'num', textContent: 'None' })])]), tb2])]),
         note);
     }
