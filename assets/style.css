@@ -386,29 +386,51 @@ details.fold .hint { font-size: 13px; color: var(--text-muted); margin: 0 0 12px
 
 .nowrap { white-space: nowrap; }
 
-/* ---------- breakdown panel ---------- */
+/* ---------- Hi-C breakdown page ---------- */
 
 .link-btn { background: none; border: none; padding: 0; cursor: pointer; color: var(--hprc);
   font-size: 12.5px; text-align: left; }
 .link-btn:hover { text-decoration: underline; }
 td.name .link-btn { display: block; margin-top: 3px; }
-.link-btn.id { font-family: var(--mono); font-size: 12px; }
-.bd-intro { font-size: 13.5px; color: var(--text-secondary); margin: 0; }
-.drawer-body h3 .sw { vertical-align: 0; }
-.drawer-body h4 { font-size: 13px; margin: 18px 0 6px; color: var(--text-secondary); font-weight: 600; }
-.bd-row { display: grid; grid-template-columns: minmax(0, 1fr) 130px 40px; gap: 12px; align-items: center;
-  padding: 5px 0; font-size: 13.5px; }
+.link-btn.id { font-family: var(--mono); font-size: 12.5px; }
+
+.page-intro { margin: 0 0 20px; }
+.page-intro h2 { font-size: 18px; margin: 0 0 6px; letter-spacing: -0.01em; }
+.page-intro p { margin: 0; color: var(--text-secondary); font-size: 14px; max-width: 78ch; }
+#hic-cohorts .card { margin-bottom: 20px; }
+#hic-cohorts .card > h2 { font-size: 17px; margin-bottom: 14px; }
+#hic-cohorts .card > h2 .where { color: var(--text-muted); font-weight: 400; font-size: 14px; }
+
+.bd-grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 36px; align-items: start; }
+.bd-grid h3 { font-size: 12px; text-transform: uppercase; letter-spacing: 0.07em; color: var(--text-muted);
+  margin: 0 0 10px; font-weight: 600; }
+.bd-hero { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 20px; }
+.bd-hero .big { font-size: 40px; font-weight: 650; letter-spacing: -0.03em; line-height: 1; }
+.bd-hero .of { color: var(--text-secondary); font-size: 14.5px; }
+.bd-left .btn { margin-top: 14px; }
+
+.bd-row { display: grid; grid-template-columns: minmax(0, 1fr) 110px 40px; gap: 12px; align-items: center;
+  padding: 6px 0; font-size: 14px; }
 .bd-row .bar { height: 10px; background: var(--surface-sunken); border-radius: 4px; }
 .bd-row .bar span { display: block; height: 100%; border-radius: 4px; }
 .bd-row .n { text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; }
 .bd-row.off .lbl, .bd-row.off .n { color: var(--text-muted); font-weight: 400; }
-.bd-ids { margin: -2px 0 6px; line-height: 1.7; color: var(--text-muted); font-size: 12px; }
-table.bd-table { font-size: 12.5px; }
+.bd-ids { margin: -2px 0 8px; line-height: 1.8; color: var(--text-muted); font-size: 12.5px; }
+
+table.bd-table { font-size: 13px; }
 table.bd-table th { position: static; }
-table.bd-table td { padding: 7px 8px; vertical-align: top; }
-table.bd-table td a { font-family: var(--mono); font-size: 12px; word-break: break-all; }
-table.bd-table .desc { display: block; color: var(--text-muted); font-size: 12px; margin-top: 2px; }
-.bd-notes { margin: 8px 0 14px; padding-left: 18px; font-size: 12.5px; color: var(--text-muted); }
+table.bd-table td { padding: 8px 10px; vertical-align: top; }
+table.bd-table td a { font-family: var(--mono); font-size: 12.5px; overflow-wrap: anywhere; }
+table.bd-table .desc { display: block; color: var(--text-muted); font-size: 12.5px; margin-top: 2px; }
+table.bd-table td.num, table.bd-table th.num { white-space: nowrap; }
+.bd-notes { margin: 12px 0 0; padding-left: 18px; font-size: 12.5px; color: var(--text-muted); }
+.bd-notes li + li { margin-top: 3px; }
+
+.avail-row.as-btn { width: 100%; background: none; cursor: pointer; font: inherit; color: inherit; max-width: 560px; }
+.avail-row.as-btn:hover { border-color: var(--border-strong); background: var(--surface-2); }
+
+@media (max-width: 900px) { .bd-grid { grid-template-columns: minmax(0, 1fr); gap: 24px; } }
 @media (max-width: 640px) { .bd-row { grid-template-columns: minmax(0, 1fr) 70px 36px; } }
 
-table.bd-table td.num, table.bd-table th.num { white-space: nowrap; padding-left: 6px; padding-right: 6px; }
+/* .wrap sets padding after main does, so restate the vertical padding with enough specificity */
+main.wrap { padding-top: 28px; padding-bottom: 64px; }

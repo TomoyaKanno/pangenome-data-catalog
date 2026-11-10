@@ -16,7 +16,7 @@ Other   NYGC 30x, 1KG-ONT, Geuvadis, MAGE and ENCODE, matched on the cell-line i
 
 ## The app
 
-Three tabs, simplest first:
+Four tabs, simplest first:
 
 - **Overview** — one table: data types down the side, HPRC and HGSVC across the top, a bar
   and a donor count in each cell. Rare, older and QC data types sit behind one toggle.
@@ -24,11 +24,11 @@ Three tabs, simplest first:
 - **Find donors** — pick the data you need; only donors with all of it are listed. Each
   button shows how many donors would remain if you added it. The donor table is a dot grid
   of the main data types; click a donor for download links.
+- **Hi-C breakdown** — for each cohort, how the donors split by where their Hi-C / Omni-C
+  files are (HPRC `working/` vs `submissions/`; HGSVC on IGSR vs in the HPRC bucket vs
+  recorded-but-not-public), beside a table of every folder with donors, files and size.
+  Also reachable from the Hi-C row on the Overview.
 - **About the data** — where it comes from, what to watch for, and the specialist tables.
-
-The Hi-C / Omni-C row has a **breakdown panel**: for each cohort, how the donors split by
-where their files are (HPRC `working/` vs `submissions/`; HGSVC on IGSR vs in the HPRC bucket
-vs recorded-but-not-public), and a table of every location with donors, files and size.
 
 Selections live in the URL (`#view=donors&assays=HiFi,FiberSeq&cohort=HPRC`), so a filtered
 list is a shareable link.

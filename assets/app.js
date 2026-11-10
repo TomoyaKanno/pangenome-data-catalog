@@ -94,6 +94,7 @@ async function init() {
   renderShapeCompare();
   renderIntersections();
   renderOtherDonors();
+  renderHicPage();
   const pops = [...new Set(CAT.samples.map(s => s.population).filter(Boolean))].sort();
   $('#sample-pop').append(...pops.map(p => el('option', { value: p, textContent: p })));
   wireEvents();
@@ -158,7 +159,7 @@ function readHash() {
   const c = p.get('cohort') === 'HGSVC3' ? 'HGSVC' : p.get('cohort');
   if (COHORTS.includes(c)) state.cohort = c;
   const v = VIEW_ALIAS[p.get('view')] || p.get('view');
-  if (['overview', 'donors', 'about'].includes(v)) state.view = v;
+  if (['overview', 'donors', 'hic', 'about'].includes(v)) state.view = v;
   else if (a) state.view = 'donors';
 }
 
@@ -208,13 +209,13 @@ function renderOverview() {
       if (INFO[m].note) name.append(el('span', { className: 'desc', textContent: INFO[m].note }));
       if (CAT.breakdowns?.[m]) {
         const b = el('button', { className: 'link-btn', type: 'button', textContent: 'Where exactly? See the breakdown ›' });
-        b.addEventListener('click', e => { e.stopPropagation(); openBreakdown(m); });
+        b.addEventListener('click', e => { e.stopPropagation(); showView('hic'); scrollTo(0, 0); });
         b.addEventListener('keydown', e => e.stopPropagation());
         name.append(b);
       }
       const tr = el('tr', { className: 'clickable' + (isMain(m) ? '' : ' more-row'), tabIndex: 0 },
         [name, ...COHORTS.map(c => covCell(m, c))]);
-      const go = () => { state.selected = [m]; state.q = ''; $('#sample-search').value = ''; showView('donors'); renderDonors(); scrollTo(0, 0); };
+      const go = () => gotoDonors([m], '');
       tr.addEventListener('click', go);
       tr.addEventListener('keydown', e => { if (e.key === 'Enter') go(); });
       body.push(tr);
@@ -607,41 +608,33 @@ function renderDetails(d) {
   return det;
 }
 
-/* ---------------- breakdown panel (what exists where, for one data type) ---------------- */
+/* ---------------- Hi-C page: what exists where ---------------- */
 
-function showPanel(title, metaNodes, bodyNodes) {
-  $('#drawer-title').textContent = title;
-  $('#drawer-meta').replaceChildren(...metaNodes);
-  $('#drawer').classList.add('open');
-  $('#drawer').setAttribute('aria-hidden', 'false');
-  $('#drawer-scrim').classList.add('open');
-  const body = $('#drawer-body');
-  body.replaceChildren(...bodyNodes);
-  body.scrollTop = 0;
+function gotoDonors(mods, cohort) {
+  state.selected = [...mods]; state.cohort = cohort; state.q = ''; $('#sample-search').value = '';
+  $('#combine-cohort').value = cohort; showView('donors'); renderDonors(); scrollTo(0, 0);
 }
 
-function openBreakdown(m) {
-  const bd = CAT.breakdowns[m];
-  const parts = [el('p', { className: 'bd-intro', textContent:
-    'A donor is counted when at least one Hi-C or Omni-C read file carries their ID. ' +
-    'The two protocols are counted together. Each donor is in exactly one line of the first list.' })];
+function renderHicPage() {
+  const m = 'HiC', bd = CAT.breakdowns?.[m];
+  if (!bd) { $('.tabs [data-view="hic"]').hidden = true; return; }
 
-  for (const c of COHORTS) {
+  $('#hic-cohorts').replaceChildren(...COHORTS.map(c => {
     const v = bd[c];
-    parts.push(el('h3', {}, [el('span', { className: 'sw', style: `background:var(--${CSS[c]})` }),
-      txt(`${c} · ${fmtN(v.total)} of ${fmtN(v.cohort)} donors have it`)]));
-
-    const list = el('div', { className: 'bd-split' });
+    const left = el('div', { className: 'bd-left' }, [
+      el('div', { className: 'bd-hero' }, [
+        el('span', { className: 'big', textContent: fmtN(v.total) }),
+        el('span', { className: 'of', textContent: `of ${fmtN(v.cohort)} ${c} donors have Hi-C or Omni-C` })]),
+      el('h3', { textContent: 'How those donors divide' })]);
     for (const x of v.split) {
       if (!x.n) continue;
       const off = x.none || x.missing;
-      const row = el('div', { className: 'bd-row' + (off ? ' off' : ''),
+      left.append(el('div', { className: 'bd-row' + (off ? ' off' : ''),
         title: `${fmtN(x.n)} of ${fmtN(v.cohort)} ${c} donors` }, [
         el('span', { className: 'lbl', textContent: x.label }),
         el('div', { className: 'bar' }, [el('span', {
           style: `width:${Math.max((x.n / v.cohort) * 100, 1.5)}%;background:${off ? 'var(--axis)' : `var(--${CSS[c]})`}` })]),
-        el('span', { className: 'n', textContent: fmtN(x.n) })]);
-      list.append(row);
+        el('span', { className: 'n', textContent: fmtN(x.n) })]));
       if (x.ids.length && x.ids.length <= 20) {
         const ids = el('div', { className: 'bd-ids' });
         x.ids.forEach((id, i) => {
@@ -650,12 +643,13 @@ function openBreakdown(m) {
           b.addEventListener('click', () => openDrawer(id));
           ids.append(b);
         });
-        list.append(ids);
+        left.append(ids);
       }
     }
-    parts.push(list);
+    const go = el('button', { className: 'btn', type: 'button', textContent: `List the ${fmtN(v.total)} donors` });
+    go.addEventListener('click', () => gotoDonors([m], c));
+    left.append(go);
 
-    parts.push(el('h4', { textContent: `Where the ${c} files are` }));
     const tb = el('tbody');
     for (const sr of v.sources) {
       const loc = el('td', {}, [el('a', { href: sr.url, textContent: sr.where, target: '_blank', rel: 'noopener' })]);
@@ -665,34 +659,32 @@ function openBreakdown(m) {
         el('td', { className: 'num', textContent: fmtN(sr.files) }),
         el('td', { className: 'num', textContent: fmtBytes(sr.bytes) || '—' })]));
     }
-    parts.push(el('div', { className: 'table-scroll' }, [el('table', { className: 'bd-table' }, [
-      el('thead', {}, [el('tr', {}, [el('th', { textContent: 'Location' }), el('th', { className: 'num', textContent: 'Donors' }),
-        el('th', { className: 'num', textContent: 'Files' }), el('th', { className: 'num', textContent: 'Size' })])]), tb])]));
-
-    const notes = ['A donor can have files in more than one location, so this column does not add up to the total.'];
+    const notes = ['A donor can have files in more than one location, so the Donors column does not add up to the total.'];
     if (c === 'HPRC') notes.push('Submission rows count only files that are not already in a working/ folder.');
-    if (c === 'HGSVC') notes.push('File sizes are not listed by the IGSR site.');
+    if (c === 'HGSVC') notes.push('The IGSR site does not list file sizes.');
     if (v.other_donors.length) notes.push(`These locations also hold Hi-C for ${v.other_donors.length} people who are not ${c} donors.`);
     if (v.unattributed_files) notes.push(`${plural(v.unattributed_files, 'file')} carr${v.unattributed_files === 1 ? 'ies' : 'y'} no donor name.`);
-    parts.push(el('ul', { className: 'bd-notes' }, notes.map(n => el('li', { textContent: n }))));
+    const right = el('div', { className: 'bd-right' }, [
+      el('h3', { textContent: 'Where the files are' }),
+      el('div', { className: 'table-scroll' }, [el('table', { className: 'bd-table' }, [
+        el('thead', {}, [el('tr', {}, [el('th', { textContent: 'Location' }), el('th', { className: 'num', textContent: 'Donors' }),
+          el('th', { className: 'num', textContent: 'Files' }), el('th', { className: 'num', textContent: 'Size' })])]), tb])]),
+      el('ul', { className: 'bd-notes' }, notes.map(n => el('li', { textContent: n })))]);
 
-    const go = el('button', { className: 'btn', type: 'button', textContent: `List the ${fmtN(v.total)} ${c} donors` });
-    go.addEventListener('click', () => {
-      closeDrawer();
-      state.selected = [m]; state.cohort = c; state.q = ''; $('#sample-search').value = '';
-      $('#combine-cohort').value = c; showView('donors'); renderDonors(); scrollTo(0, 0);
-    });
-    parts.push(go);
-  }
+    return el('div', { className: 'card' }, [
+      el('h2', {}, [el('span', { className: 'sw', style: `background:var(--${CSS[c]})` }), txt(c),
+        el('span', { className: 'where', textContent: ` · ${WHERE[c]}` })]),
+      el('div', { className: 'bd-grid' }, [left, right])]);
+  }));
 
   const related = ['PoreC', 'MicroC', 'ENCODE_3D'].filter(r => CAT.coverage[r]);
-  if (related.length) {
-    parts.push(el('h3', { textContent: 'Related data, counted separately' }));
-    for (const r of related) parts.push(el('div', { className: 'avail-row' }, [
+  $('#hic-related').replaceChildren(...related.map(r => {
+    const row = el('button', { className: 'avail-row as-btn', type: 'button', title: 'List these donors' }, [
       el('span', { className: 'nm', textContent: label(r) }),
-      el('span', { className: 'note', textContent: COHORTS.map(c => `${CAT.coverage[r][c].n} ${c}`).join(' · ') + ' donors' })]));
-  }
-  showPanel(label(m), [txt('What exists, and where')], parts);
+      el('span', { className: 'note', textContent: COHORTS.map(c => `${CAT.coverage[r][c].n} ${c}`).join(' · ') + ' donors' })]);
+    row.addEventListener('click', () => gotoDonors([r], ''));
+    return row;
+  }));
 }
 
 function btn(text, fn) {

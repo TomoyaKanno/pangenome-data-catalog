@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pangenome Data Catalog</title>
 <meta name="description" content="What data exists for each donor in the HPRC and HGSVC human pangenome cohorts, and where to download it.">
-<link rel="stylesheet" href="assets/style.css?v=9">
+<link rel="stylesheet" href="assets/style.css?v=11">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='13' font-size='13'>🧬</text></svg>">
 </head>
 <body>
@@ -26,6 +26,7 @@
     <nav class="tabs" role="tablist">
       <button role="tab" data-view="overview" aria-selected="true">Overview</button>
       <button role="tab" data-view="donors"   aria-selected="false">Find donors</button>
+      <button role="tab" data-view="hic"      aria-selected="false">Hi-C breakdown</button>
       <button role="tab" data-view="about"    aria-selected="false">About the data</button>
     </nav>
   </div>
@@ -105,6 +106,24 @@
         </table>
       </div>
       <div class="empty" id="sample-empty" hidden>No donor has everything you picked.</div>
+    </div>
+  </section>
+
+  <!-- ============ HI-C BREAKDOWN ============ -->
+  <section class="view" id="view-hic" hidden>
+    <div class="page-intro">
+      <h2>Hi-C / Omni-C: what exists, and where</h2>
+      <p>
+        A donor is counted when at least one Hi-C or Omni-C read file carries their ID; the two
+        protocols are counted together. On the left, each donor appears in exactly one line.
+        On the right is every folder that holds the files.
+      </p>
+    </div>
+    <div id="hic-cohorts"></div>
+    <div class="card">
+      <h2>Related data, counted separately</h2>
+      <p class="hint">Other ways of measuring chromosome contacts. Click one to list its donors.</p>
+      <div id="hic-related"></div>
     </div>
   </section>
 
@@ -196,6 +215,6 @@
   <div class="drawer-body" id="drawer-body"></div>
 </aside>
 
-<script src="assets/app.js?v=8" type="module"></script>
+<script src="assets/app.js?v=9" type="module"></script>
 </body>
 </html>
