@@ -1,10 +1,10 @@
 {
- "generated_utc": "2026-11-10T20:56:59Z",
+ "generated_utc": "2026-11-10T21:30:15Z",
  "cohorts": {
-  "HPRC": 495,
+  "HPRC": 490,
   "HGSVC": 69
  },
- "unique_samples": 557,
+ "unique_samples": 552,
  "dual_cohort_samples": [
   "HG001",
   "HG002",
@@ -309,7 +309,7 @@
  "coverage": {
   "HiFi": {
    "HPRC": {
-    "n": 423,
+    "n": 418,
     "ran": true
    },
    "HGSVC": {
@@ -379,7 +379,7 @@
   },
   "HiFi_5mC": {
    "HPRC": {
-    "n": 414,
+    "n": 409,
     "ran": true
    },
    "HGSVC": {
@@ -399,7 +399,7 @@
   },
   "FiberSeq": {
    "HPRC": {
-    "n": 124,
+    "n": 119,
     "ran": true
    },
    "HGSVC": {
@@ -439,7 +439,7 @@
   },
   "HiC": {
    "HPRC": {
-    "n": 397,
+    "n": 395,
     "ran": true
    },
    "HGSVC": {
@@ -648,10 +648,10 @@
   }
  },
  "totals": {
-  "files": 51483,
-  "bytes": 1094310838470018,
+  "files": 51499,
+  "bytes": 1112097642822257,
   "unattributed_files": 2289,
-  "out_of_catalogue_files": 1977,
+  "out_of_catalogue_files": 1961,
   "other_donor_files": 319,
   "external_donors": 483
  },
@@ -1133,6 +1133,231 @@
    ]
   }
  ],
+ "breakdowns": {
+  "HiC": {
+   "HPRC": {
+    "total": 395,
+    "cohort": 490,
+    "split": [
+     {
+      "label": "In the donor's working/ folder",
+      "n": 380,
+      "ids": []
+     },
+     {
+      "label": "Only in a submissions/ folder",
+      "n": 15,
+      "ids": [
+       "HG01443",
+       "HG02688",
+       "HG06803",
+       "HG06804",
+       "HG06808",
+       "HG08434",
+       "HG08435",
+       "HG08436",
+       "HG08441",
+       "HG08443",
+       "HG08444",
+       "HG08446",
+       "HG08449",
+       "HG08463",
+       "HG08464"
+      ]
+     },
+     {
+      "label": "No Hi-C yet",
+      "n": 95,
+      "ids": [],
+      "none": true
+     }
+    ],
+    "sources": [
+     {
+      "where": "working/<donor>/raw_data/hic/",
+      "donors": 380,
+      "files": 4406,
+      "bytes": 57306685825328,
+      "url": "https://s3-us-west-2.amazonaws.com/human-pangenomics/index.html?prefix=working/",
+      "note": "The curated per-donor folders"
+     },
+     {
+      "where": "submissions/\u2026HIC_Y3_fillin_and_Y4_part1/",
+      "donors": 12,
+      "files": 38,
+      "bytes": 828618668036,
+      "url": "https://s3-us-west-2.amazonaws.com/human-pangenomics/index.html?prefix=submissions/F346B183-CEE4-41BF-BBEE-E4335B20B8B2--HIC_Y3_fillin_and_Y4_part1/",
+      "note": ""
+     },
+     {
+      "where": "submissions/\u2026WB_LCL_PILOT_OMNIC/",
+      "donors": 10,
+      "files": 80,
+      "bytes": 651115985695,
+      "url": "https://s3-us-west-2.amazonaws.com/human-pangenomics/index.html?prefix=submissions/192FC6C4-DDC0-45C6-ABA4-1C4FDE785008--WB_LCL_PILOT_OMNIC/",
+      "note": ""
+     },
+     {
+      "where": "submissions/\u2026Y3-HIC/",
+      "donors": 8,
+      "files": 58,
+      "bytes": 24132917,
+      "url": "https://s3-us-west-2.amazonaws.com/human-pangenomics/index.html?prefix=submissions/62B7A84C-C647-4FD9-92F0-90956198404D--Y3-HIC/",
+      "note": ""
+     },
+     {
+      "where": "submissions/\u2026HIC_Y3_fillin_and_Y4_part1-redo/",
+      "donors": 8,
+      "files": 22,
+      "bytes": 497823048370,
+      "url": "https://s3-us-west-2.amazonaws.com/human-pangenomics/index.html?prefix=submissions/BCB80684-0E0F-487D-9C76-C5D0F8CD333F--HIC_Y3_fillin_and_Y4_part1-redo/",
+      "note": ""
+     },
+     {
+      "where": "submissions/\u2026hic_and_parents/",
+      "donors": 8,
+      "files": 128,
+      "bytes": 814818923411,
+      "url": "https://s3-us-west-2.amazonaws.com/human-pangenomics/index.html?prefix=submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/",
+      "note": ""
+     },
+     {
+      "where": "submissions/\u2026TECHNOPOLE_HIC/",
+      "donors": 4,
+      "files": 48,
+      "bytes": 351768993453,
+      "url": "https://s3-us-west-2.amazonaws.com/human-pangenomics/index.html?prefix=submissions/5887B048-D767-4493-B91E-36085F5E3F95--TECHNOPOLE_HIC/",
+      "note": ""
+     },
+     {
+      "where": "submissions/\u2026WASHU_PED_HIC/",
+      "donors": 3,
+      "files": 12,
+      "bytes": 334981727027,
+      "url": "https://s3-us-west-2.amazonaws.com/human-pangenomics/index.html?prefix=submissions/AAE57F3C-BCE8-4288-93B2-47CEB39FCC38--WASHU_PED_HIC/",
+      "note": ""
+     },
+     {
+      "where": "submissions/\u2026Y2-HIC/",
+      "donors": 2,
+      "files": 32,
+      "bytes": 344911383921,
+      "url": "https://s3-us-west-2.amazonaws.com/human-pangenomics/index.html?prefix=submissions/4C696EB9-9AD2-47A2-8011-2F43977CC4E0--Y2-HIC/",
+      "note": ""
+     },
+     {
+      "where": "submissions/\u2026WB_LCL_PILOT/",
+      "donors": 1,
+      "files": 3,
+      "bytes": 29160716511,
+      "url": "https://s3-us-west-2.amazonaws.com/human-pangenomics/index.html?prefix=submissions/86D4A784-64AE-42F5-955E-B4FC8BF26D9F--WB_LCL_PILOT/",
+      "note": "Folder is named NA08441; same libraries as HG08441, so likely a duplicate upload"
+     }
+    ],
+    "unattributed_files": 0,
+    "other_donors": []
+   },
+   "HGSVC": {
+    "total": 68,
+    "cohort": 69,
+    "split": [
+     {
+      "label": "Reads on IGSR",
+      "n": 59,
+      "ids": []
+     },
+     {
+      "label": "Reads only in the HPRC bucket",
+      "n": 4,
+      "ids": [
+       "HG00513",
+       "HG02818",
+       "NA19129",
+       "NA19983"
+      ]
+     },
+     {
+      "label": "Recorded by HGSVC, but not public",
+      "n": 5,
+      "ids": [
+       "HG001",
+       "HG002",
+       "HG00732",
+       "HG03486",
+       "NA19238"
+      ],
+      "missing": true
+     },
+     {
+      "label": "No Hi-C",
+      "n": 1,
+      "ids": [
+       "HG03125"
+      ],
+      "none": true
+     }
+    ],
+    "sources": [
+     {
+      "where": "IGSR \u00b7 HGSVC3/working/2021_Hi-C_JAX/",
+      "donors": 33,
+      "files": 124,
+      "bytes": 0,
+      "url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/HGSVC3/working/2021_Hi-C_JAX/",
+      "note": ""
+     },
+     {
+      "where": "IGSR \u00b7 HGSVC2/working/20200512_Hi-C/",
+      "donors": 26,
+      "files": 52,
+      "bytes": 0,
+      "url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/HGSVC2/working/20200512_Hi-C/",
+      "note": ""
+     },
+     {
+      "where": "IGSR \u00b7 HGSVC3/working/202505012_USC_HighCovHiC/",
+      "donors": 5,
+      "files": 29,
+      "bytes": 0,
+      "url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/HGSVC3/working/202505012_USC_HighCovHiC/",
+      "note": ""
+     },
+     {
+      "where": "IGSR \u00b7 HGSVC2/working/20230515_Shi_hic_files/",
+      "donors": 33,
+      "files": 33,
+      "bytes": 0,
+      "url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/HGSVC2/working/20230515_Shi_hic_files/",
+      "note": "Processed contact maps (.hic), not reads; not counted"
+     },
+     {
+      "where": "HPRC bucket \u00b7 submissions/\u2026HGSVC_OMNIC/",
+      "donors": 47,
+      "files": 376,
+      "bytes": 0,
+      "url": "https://s3-us-west-2.amazonaws.com/human-pangenomics/index.html?prefix=submissions/9CDCD261-2A15-46AC-9AEF-EFAC9E2EA56A--HGSVC_OMNIC/",
+      "note": "HGSVC donors sequenced by an HPRC centre (Omni-C)"
+     }
+    ],
+    "unattributed_files": 1,
+    "other_donors": [
+     "HG02016",
+     "NA18486",
+     "NA18505",
+     "NA18507",
+     "NA18508",
+     "NA18516",
+     "NA18522",
+     "NA19099",
+     "NA19141",
+     "NA19193",
+     "NA19204",
+     "NA19219",
+     "NA19833"
+    ]
+   }
+  }
+ },
  "samples": [
   {
    "sample_id": "NA18940",
@@ -4221,8 +4446,8 @@
   {
    "sample_id": "HG01888",
    "cohort": "HPRC",
-   "n_files": 392,
-   "bytes": 59293701425,
+   "n_files": 395,
+   "bytes": 3860898615791,
    "modalities": [
     "HiFi",
     "Illumina_WGS",
@@ -5542,8 +5767,8 @@
    "cohort": "HPRC",
    "population": "GWD",
    "sex": "male",
-   "n_files": 119,
-   "bytes": 2849371681043,
+   "n_files": 122,
+   "bytes": 3432196086802,
    "modalities": [
     "Bionano",
     "FiberSeq",
@@ -6313,8 +6538,8 @@
    "cohort": "HPRC",
    "population": "PJL",
    "sex": "male",
-   "n_files": 52,
-   "bytes": 3491697167781,
+   "n_files": 53,
+   "bytes": 4746526831190,
    "modalities": [
     "HiC",
     "HiFi",
@@ -6544,8 +6769,8 @@
    "cohort": "HPRC",
    "population": "ESN",
    "sex": "male",
-   "n_files": 46,
-   "bytes": 2949492355625,
+   "n_files": 49,
+   "bytes": 6904088375684,
    "modalities": [
     "HiC",
     "HiFi",
@@ -6596,8 +6821,8 @@
    "cohort": "HPRC",
    "population": "ESN",
    "sex": "male",
-   "n_files": 49,
-   "bytes": 3631720711653,
+   "n_files": 52,
+   "bytes": 7774330449427,
    "modalities": [
     "FiberSeq",
     "HiC",
@@ -8723,8 +8948,8 @@
    "cohort": "HPRC",
    "population": "YRI",
    "sex": "male",
-   "n_files": 47,
-   "bytes": 2962225974536,
+   "n_files": 50,
+   "bytes": 7012565585408,
    "modalities": [
     "ENCODE_RNA",
     "HiC",
@@ -11789,7 +12014,6 @@
    "n_files": 47,
    "bytes": 1688252422801,
    "modalities": [
-    "HiC",
     "HiFi",
     "HiFi_5mC",
     "Illumina_WGS",
@@ -12047,8 +12271,8 @@
   {
    "sample_id": "HG08434",
    "cohort": "HPRC",
-   "n_files": 17,
-   "bytes": 881838308747,
+   "n_files": 20,
+   "bytes": 1343597160925,
    "modalities": [
     "FiberSeq",
     "HiC",
@@ -12070,8 +12294,8 @@
   {
    "sample_id": "HG08435",
    "cohort": "HPRC",
-   "n_files": 18,
-   "bytes": 1016636745054,
+   "n_files": 20,
+   "bytes": 1430386569975,
    "modalities": [
     "FiberSeq",
     "HiC",
@@ -12093,8 +12317,8 @@
   {
    "sample_id": "HG08436",
    "cohort": "HPRC",
-   "n_files": 18,
-   "bytes": 1044421218498,
+   "n_files": 21,
+   "bytes": 1505911829062,
    "modalities": [
     "FiberSeq",
     "HiC",
@@ -12116,8 +12340,8 @@
   {
    "sample_id": "HG08441",
    "cohort": "HPRC",
-   "n_files": 18,
-   "bytes": 1013194085483,
+   "n_files": 23,
+   "bytes": 1452655474469,
    "modalities": [
     "FiberSeq",
     "HiC",
@@ -12139,8 +12363,8 @@
   {
    "sample_id": "HG08443",
    "cohort": "HPRC",
-   "n_files": 17,
-   "bytes": 1024010145463,
+   "n_files": 20,
+   "bytes": 1545154433333,
    "modalities": [
     "FiberSeq",
     "HiC",
@@ -13014,24 +13238,6 @@
    "n_indexed": 0
   },
   {
-   "sample_id": "NA08441",
-   "cohort": "HPRC",
-   "n_files": 5,
-   "bytes": 439461388986,
-   "modalities": [
-    "FiberSeq",
-    "HiC",
-    "HiFi",
-    "HiFi_5mC"
-   ],
-   "evidence": {
-    "HiFi_5mC": "inline",
-    "FiberSeq": "inline m6A"
-   },
-   "release": "untagged",
-   "n_indexed": 0
-  },
-  {
    "sample_id": "HG02013",
    "cohort": "HPRC",
    "n_files": 5,
@@ -13087,74 +13293,6 @@
    "n_indexed": 0
   },
   {
-   "sample_id": "NA08434",
-   "cohort": "HPRC",
-   "n_files": 3,
-   "bytes": 461758852178,
-   "modalities": [
-    "FiberSeq",
-    "HiFi",
-    "HiFi_5mC"
-   ],
-   "evidence": {
-    "HiFi_5mC": "inline",
-    "FiberSeq": "inline m6A"
-   },
-   "release": "untagged",
-   "n_indexed": 0
-  },
-  {
-   "sample_id": "NA08435",
-   "cohort": "HPRC",
-   "n_files": 2,
-   "bytes": 413749824921,
-   "modalities": [
-    "FiberSeq",
-    "HiFi",
-    "HiFi_5mC"
-   ],
-   "evidence": {
-    "HiFi_5mC": "inline",
-    "FiberSeq": "inline m6A"
-   },
-   "release": "untagged",
-   "n_indexed": 0
-  },
-  {
-   "sample_id": "NA08436",
-   "cohort": "HPRC",
-   "n_files": 3,
-   "bytes": 461490610564,
-   "modalities": [
-    "FiberSeq",
-    "HiFi",
-    "HiFi_5mC"
-   ],
-   "evidence": {
-    "HiFi_5mC": "inline",
-    "FiberSeq": "inline m6A"
-   },
-   "release": "untagged",
-   "n_indexed": 0
-  },
-  {
-   "sample_id": "NA08443",
-   "cohort": "HPRC",
-   "n_files": 3,
-   "bytes": 521144287870,
-   "modalities": [
-    "FiberSeq",
-    "HiFi",
-    "HiFi_5mC"
-   ],
-   "evidence": {
-    "HiFi_5mC": "inline",
-    "FiberSeq": "inline m6A"
-   },
-   "release": "untagged",
-   "n_indexed": 0
-  },
-  {
    "sample_id": "NA19238",
    "cohort": "HGSVC",
    "population": "YRI",
@@ -13183,16 +13321,16 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "StrandSeq": "sheet_only",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "PacBio_CLR": "both",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
     "HiC": "sheet_only",
+    "StrandSeq": "sheet_only",
+    "Kinnex_IsoSeq": "both",
+    "PacBio_CLR": "both",
+    "RNAseq": "both",
     "Bionano": "both",
+    "HiFi": "both",
+    "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Kinnex_IsoSeq": "both"
+    "Illumina_WGS": "nygc_30x"
    },
    "family_id": "Y117",
    "relation": "Mother",
@@ -13231,16 +13369,16 @@
     "StrandSeq"
    ],
    "evidence": {
-    "StrandSeq": "sheet_only",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "PacBio_CLR": "both",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
     "HiC": "both",
+    "StrandSeq": "sheet_only",
+    "Kinnex_IsoSeq": "both",
+    "PacBio_CLR": "both",
+    "RNAseq": "both",
     "Bionano": "both",
+    "HiFi": "both",
+    "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Kinnex_IsoSeq": "both"
+    "Illumina_WGS": "nygc_30x"
    },
    "family_id": "Y117",
    "relation": "Father",
@@ -13276,16 +13414,16 @@
     "StrandSeq"
    ],
    "evidence": {
-    "StrandSeq": "sheet_only",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "PacBio_CLR": "both",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
     "HiC": "both",
+    "StrandSeq": "sheet_only",
+    "Kinnex_IsoSeq": "both",
+    "PacBio_CLR": "both",
+    "RNAseq": "both",
     "Bionano": "both",
+    "HiFi": "both",
+    "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Kinnex_IsoSeq": "both"
+    "Illumina_WGS": "nygc_30x"
    },
    "family_id": "Y117",
    "relation": "Daughter",
@@ -13320,16 +13458,16 @@
     "StrandSeq"
    ],
    "evidence": {
-    "StrandSeq": "sheet_only",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "PacBio_CLR": "both",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
     "HiC": "both",
+    "StrandSeq": "sheet_only",
+    "Kinnex_IsoSeq": "sheet_only",
+    "PacBio_CLR": "both",
+    "RNAseq": "both",
     "Bionano": "both",
+    "HiFi": "both",
+    "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Kinnex_IsoSeq": "sheet_only"
+    "Illumina_WGS": "nygc_30x"
    },
    "family_id": "PR05",
    "relation": "Father",
@@ -13365,16 +13503,16 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "StrandSeq": "sheet_only",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "PacBio_CLR": "both",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
     "HiC": "sheet_only",
+    "StrandSeq": "sheet_only",
+    "Kinnex_IsoSeq": "both",
+    "PacBio_CLR": "both",
+    "RNAseq": "both",
     "Bionano": "both",
+    "HiFi": "both",
+    "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Kinnex_IsoSeq": "both"
+    "Illumina_WGS": "nygc_30x"
    },
    "family_id": "PR05",
    "relation": "Mother",
@@ -13410,16 +13548,16 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "StrandSeq": "sheet_only",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "PacBio_CLR": "both",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
     "HiC": "both",
+    "StrandSeq": "sheet_only",
+    "Kinnex_IsoSeq": "both",
+    "PacBio_CLR": "both",
+    "RNAseq": "both",
     "Bionano": "both",
+    "HiFi": "both",
+    "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Kinnex_IsoSeq": "both"
+    "Illumina_WGS": "nygc_30x"
    },
    "family_id": "PR05",
    "relation": "Daughter",
@@ -13455,16 +13593,16 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "StrandSeq": "sheet_only",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "PacBio_CLR": "both",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
     "HiC": "both",
+    "StrandSeq": "sheet_only",
+    "Kinnex_IsoSeq": "sheet_only",
+    "PacBio_CLR": "both",
+    "RNAseq": "both",
     "Bionano": "both",
+    "HiFi": "both",
+    "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Kinnex_IsoSeq": "sheet_only"
+    "Illumina_WGS": "nygc_30x"
    },
    "family_id": "SH032",
    "relation": "Father",
@@ -13503,15 +13641,15 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "StrandSeq": "sheet_only",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "PacBio_CLR": "both",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
     "HiC": "both",
+    "StrandSeq": "sheet_only",
+    "Kinnex_IsoSeq": "both",
+    "PacBio_CLR": "both",
+    "RNAseq": "both",
     "Bionano": "both",
-    "Kinnex_IsoSeq": "both"
+    "HiFi": "both",
+    "ONT": "both",
+    "Illumina_WGS": "nygc_30x"
    },
    "family_id": "SH032",
    "relation": "Mother",
@@ -13547,16 +13685,16 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "StrandSeq": "sheet_only",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "PacBio_CLR": "sheet_only",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
     "HiC": "both",
+    "StrandSeq": "sheet_only",
+    "Kinnex_IsoSeq": "both",
+    "PacBio_CLR": "sheet_only",
+    "RNAseq": "both",
     "Bionano": "both",
+    "HiFi": "both",
+    "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Kinnex_IsoSeq": "both"
+    "Illumina_WGS": "nygc_30x"
    },
    "family_id": "SH032",
    "relation": "Daughter",
@@ -13589,16 +13727,16 @@
     "StrandSeq"
    ],
    "evidence": {
-    "HiFi": "both",
-    "RNAseq": "both",
-    "Illumina_WGS": "both",
-    "ONT": "both",
-    "PacBio_CLR": "both",
-    "ONT_5mC": "igsr_only",
     "StrandSeq": "both",
-    "HiC": "both",
+    "Kinnex_IsoSeq": "both",
     "Bionano": "both",
-    "Kinnex_IsoSeq": "both"
+    "HiC": "both",
+    "ONT": "both",
+    "Illumina_WGS": "both",
+    "ONT_5mC": "igsr_only",
+    "PacBio_CLR": "both",
+    "RNAseq": "both",
+    "HiFi": "both"
    },
    "family_id": "IT003",
    "relation": "Son",
@@ -13634,15 +13772,15 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "Illumina_WGS": "both",
-    "ONT": "both",
-    "PacBio_CLR": "sheet_only",
     "StrandSeq": "both",
-    "HiC": "both",
+    "Kinnex_IsoSeq": "both",
     "Bionano": "both",
-    "Kinnex_IsoSeq": "both"
+    "HiC": "both",
+    "ONT": "both",
+    "Illumina_WGS": "both",
+    "PacBio_CLR": "sheet_only",
+    "RNAseq": "both",
+    "HiFi": "both"
    },
    "family_id": "PEL003",
    "relation": "Daughter",
@@ -13681,16 +13819,16 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
-    "PacBio_CLR": "both",
-    "ONT_5mC": "igsr_only",
     "StrandSeq": "both",
-    "HiC": "both",
+    "Kinnex_IsoSeq": "both",
     "Bionano": "both",
-    "Kinnex_IsoSeq": "both"
+    "HiC": "both",
+    "ONT": "both",
+    "Illumina_WGS": "nygc_30x",
+    "ONT_5mC": "igsr_only",
+    "PacBio_CLR": "both",
+    "RNAseq": "both",
+    "HiFi": "both"
    },
    "relation": "-",
    "project_yr": "Yr1, Yr3",
@@ -13726,15 +13864,15 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "Illumina_WGS": "both",
-    "ONT": "both",
-    "PacBio_CLR": "both",
     "StrandSeq": "both",
-    "HiC": "both",
+    "Kinnex_IsoSeq": "both",
     "Bionano": "both",
-    "Kinnex_IsoSeq": "both"
+    "HiC": "both",
+    "ONT": "both",
+    "Illumina_WGS": "both",
+    "PacBio_CLR": "both",
+    "RNAseq": "both",
+    "HiFi": "both"
    },
    "family_id": "GB24",
    "relation": "Daughter",
@@ -13770,16 +13908,16 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "Illumina_WGS": "both",
-    "ONT": "both",
-    "PacBio_CLR": "both",
-    "ONT_5mC": "igsr_only",
     "StrandSeq": "both",
-    "HiC": "both",
+    "Kinnex_IsoSeq": "both",
     "Bionano": "both",
-    "Kinnex_IsoSeq": "both"
+    "HiC": "both",
+    "ONT": "both",
+    "Illumina_WGS": "both",
+    "ONT_5mC": "igsr_only",
+    "PacBio_CLR": "both",
+    "RNAseq": "both",
+    "HiFi": "both"
    },
    "family_id": "CLM03",
    "relation": "Daughter",
@@ -13816,15 +13954,15 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline+5hmC",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "Illumina_WGS": "both",
-    "ONT": "both",
-    "PacBio_CLR": "sheet_only",
     "StrandSeq": "both",
-    "HiC": "both",
+    "Kinnex_IsoSeq": "both",
     "Bionano": "both",
-    "Kinnex_IsoSeq": "both"
+    "HiC": "both",
+    "ONT": "both",
+    "Illumina_WGS": "both",
+    "PacBio_CLR": "sheet_only",
+    "RNAseq": "both",
+    "HiFi": "both"
    },
    "family_id": "VN047",
    "relation": "Daughter",
@@ -13861,16 +13999,16 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "StrandSeq": "both",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "PacBio_CLR": "sheet_only",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
     "HiC": "both",
+    "StrandSeq": "both",
+    "Kinnex_IsoSeq": "both",
+    "PacBio_CLR": "sheet_only",
+    "RNAseq": "both",
     "Bionano": "both",
+    "HiFi": "both",
+    "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Kinnex_IsoSeq": "both"
+    "Illumina_WGS": "nygc_30x"
    },
    "relation": "-",
    "project_yr": "Yr1, Yr3",
@@ -13903,16 +14041,16 @@
     "StrandSeq"
    ],
    "evidence": {
-    "HiFi": "both",
-    "RNAseq": "both",
-    "Illumina_WGS": "both",
-    "ONT": "both",
-    "PacBio_CLR": "both",
-    "ONT_5mC": "igsr_only",
     "StrandSeq": "both",
-    "HiC": "both",
+    "Kinnex_IsoSeq": "both",
     "Bionano": "both",
-    "Kinnex_IsoSeq": "both"
+    "HiC": "both",
+    "ONT": "both",
+    "Illumina_WGS": "both",
+    "ONT_5mC": "igsr_only",
+    "PacBio_CLR": "both",
+    "RNAseq": "both",
+    "HiFi": "both"
    },
    "family_id": "1328",
    "relation": "Daughter",
@@ -13948,15 +14086,15 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
-    "PacBio_CLR": "both",
     "StrandSeq": "both",
-    "HiC": "both",
+    "Kinnex_IsoSeq": "both",
     "Bionano": "both",
-    "Kinnex_IsoSeq": "both"
+    "HiC": "both",
+    "ONT": "both",
+    "Illumina_WGS": "nygc_30x",
+    "PacBio_CLR": "both",
+    "RNAseq": "both",
+    "HiFi": "both"
    },
    "family_id": "BB13",
    "relation": "Son",
@@ -13993,15 +14131,15 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
-    "PacBio_CLR": "both",
     "StrandSeq": "both",
-    "HiC": "both",
+    "Kinnex_IsoSeq": "both",
     "Bionano": "both",
-    "Kinnex_IsoSeq": "both"
+    "HiC": "both",
+    "ONT": "both",
+    "Illumina_WGS": "nygc_30x",
+    "PacBio_CLR": "both",
+    "RNAseq": "both",
+    "HiFi": "both"
    },
    "family_id": "2436",
    "relation": "Daughter",
@@ -14038,15 +14176,15 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
-    "PacBio_CLR": "both",
     "StrandSeq": "both",
-    "HiC": "both",
+    "Kinnex_IsoSeq": "both",
     "Bionano": "both",
-    "Kinnex_IsoSeq": "both"
+    "HiC": "both",
+    "ONT": "both",
+    "Illumina_WGS": "nygc_30x",
+    "PacBio_CLR": "both",
+    "RNAseq": "both",
+    "HiFi": "both"
    },
    "family_id": "NG98",
    "relation": "Son",
@@ -14083,15 +14221,15 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
-    "PacBio_CLR": "both",
     "StrandSeq": "both",
-    "HiC": "both",
+    "Kinnex_IsoSeq": "both",
     "Bionano": "both",
-    "Kinnex_IsoSeq": "both"
+    "HiC": "both",
+    "ONT": "both",
+    "Illumina_WGS": "nygc_30x",
+    "PacBio_CLR": "both",
+    "RNAseq": "both",
+    "HiFi": "both"
    },
    "family_id": "PK06",
    "relation": "Son",
@@ -14129,15 +14267,15 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
-    "PacBio_CLR": "both",
     "StrandSeq": "both",
-    "HiC": "both",
+    "Kinnex_IsoSeq": "both",
     "Bionano": "both",
-    "Kinnex_IsoSeq": "both"
+    "HiC": "both",
+    "ONT": "both",
+    "Illumina_WGS": "nygc_30x",
+    "PacBio_CLR": "both",
+    "RNAseq": "both",
+    "HiFi": "both"
    },
    "family_id": "BD01",
    "relation": "Son",
@@ -14174,15 +14312,15 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
-    "PacBio_CLR": "both",
     "StrandSeq": "both",
-    "HiC": "both",
+    "Kinnex_IsoSeq": "both",
     "Bionano": "both",
-    "Kinnex_IsoSeq": "both"
+    "HiC": "both",
+    "ONT": "both",
+    "Illumina_WGS": "nygc_30x",
+    "PacBio_CLR": "both",
+    "RNAseq": "both",
+    "HiFi": "both"
    },
    "family_id": "ST12",
    "relation": "Daughter",
@@ -14219,15 +14357,15 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
-    "PacBio_CLR": "both",
     "StrandSeq": "both",
-    "HiC": "both",
+    "Kinnex_IsoSeq": "both",
     "Bionano": "both",
-    "Kinnex_IsoSeq": "both"
+    "HiC": "both",
+    "ONT": "both",
+    "Illumina_WGS": "nygc_30x",
+    "PacBio_CLR": "both",
+    "RNAseq": "both",
+    "HiFi": "both"
    },
    "family_id": "SL05",
    "relation": "Son",
@@ -14263,16 +14401,16 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
-    "PacBio_CLR": "both",
-    "ONT_5mC": "igsr_only",
     "StrandSeq": "both",
-    "HiC": "both",
+    "Kinnex_IsoSeq": "both",
     "Bionano": "both",
-    "Kinnex_IsoSeq": "both"
+    "HiC": "both",
+    "ONT": "both",
+    "Illumina_WGS": "nygc_30x",
+    "ONT_5mC": "igsr_only",
+    "PacBio_CLR": "both",
+    "RNAseq": "both",
+    "HiFi": "both"
    },
    "family_id": "-",
    "relation": "-",
@@ -14308,16 +14446,16 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "Illumina_WGS": "both",
-    "ONT": "both",
-    "PacBio_CLR": "both",
-    "ONT_5mC": "igsr_only",
     "StrandSeq": "both",
-    "HiC": "both",
+    "Kinnex_IsoSeq": "both",
     "Bionano": "both",
-    "Kinnex_IsoSeq": "both"
+    "HiC": "both",
+    "ONT": "both",
+    "Illumina_WGS": "both",
+    "ONT_5mC": "igsr_only",
+    "PacBio_CLR": "both",
+    "RNAseq": "both",
+    "HiFi": "both"
    },
    "family_id": "IBS002",
    "relation": "Son",
@@ -14353,16 +14491,16 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "Illumina_WGS": "both",
-    "ONT": "both",
-    "PacBio_CLR": "both",
-    "ONT_5mC": "igsr_only",
     "StrandSeq": "both",
-    "HiC": "both",
+    "Kinnex_IsoSeq": "both",
     "Bionano": "both",
-    "Kinnex_IsoSeq": "both"
+    "HiC": "both",
+    "ONT": "both",
+    "Illumina_WGS": "both",
+    "ONT_5mC": "igsr_only",
+    "PacBio_CLR": "both",
+    "RNAseq": "both",
+    "HiFi": "both"
    },
    "family_id": "m001",
    "relation": "Son",
@@ -14399,15 +14537,15 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
-    "PacBio_CLR": "both",
     "StrandSeq": "both",
-    "HiC": "both",
+    "Kinnex_IsoSeq": "both",
     "Bionano": "both",
-    "Kinnex_IsoSeq": "both"
+    "HiC": "both",
+    "ONT": "both",
+    "Illumina_WGS": "nygc_30x",
+    "PacBio_CLR": "both",
+    "RNAseq": "both",
+    "HiFi": "both"
    },
    "family_id": "-",
    "relation": "-",
@@ -14444,16 +14582,16 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
-    "PacBio_CLR": "both",
-    "ONT_5mC": "igsr_only",
     "StrandSeq": "both",
-    "HiC": "both",
+    "Kinnex_IsoSeq": "both",
     "Bionano": "both",
-    "Kinnex_IsoSeq": "both"
+    "HiC": "both",
+    "ONT": "both",
+    "Illumina_WGS": "nygc_30x",
+    "ONT_5mC": "igsr_only",
+    "PacBio_CLR": "both",
+    "RNAseq": "both",
+    "HiFi": "both"
    },
    "family_id": "-",
    "relation": "-",
@@ -14491,16 +14629,16 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
-    "PacBio_CLR": "both",
-    "ONT_5mC": "igsr_only",
     "StrandSeq": "both",
-    "HiC": "both",
+    "Kinnex_IsoSeq": "both",
     "Bionano": "both",
-    "Kinnex_IsoSeq": "both"
+    "HiC": "both",
+    "ONT": "both",
+    "Illumina_WGS": "nygc_30x",
+    "ONT_5mC": "igsr_only",
+    "PacBio_CLR": "both",
+    "RNAseq": "both",
+    "HiFi": "both"
    },
    "family_id": "-",
    "relation": "-",
@@ -14539,15 +14677,15 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
-    "PacBio_CLR": "both",
     "StrandSeq": "both",
-    "HiC": "both",
+    "Kinnex_IsoSeq": "both",
     "Bionano": "both",
-    "Kinnex_IsoSeq": "both"
+    "HiC": "both",
+    "ONT": "both",
+    "Illumina_WGS": "nygc_30x",
+    "PacBio_CLR": "both",
+    "RNAseq": "both",
+    "HiFi": "both"
    },
    "family_id": "-",
    "relation": "-",
@@ -14587,16 +14725,16 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
-    "PacBio_CLR": "both",
-    "ONT_5mC": "igsr_only",
     "StrandSeq": "both",
-    "HiC": "both",
+    "Kinnex_IsoSeq": "both",
     "Bionano": "both",
-    "Kinnex_IsoSeq": "both"
+    "HiC": "both",
+    "ONT": "both",
+    "Illumina_WGS": "nygc_30x",
+    "ONT_5mC": "igsr_only",
+    "PacBio_CLR": "both",
+    "RNAseq": "both",
+    "HiFi": "both"
    },
    "family_id": "-",
    "relation": "-",
@@ -14634,15 +14772,15 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
-    "PacBio_CLR": "both",
     "StrandSeq": "both",
-    "HiC": "both",
+    "Kinnex_IsoSeq": "both",
     "Bionano": "both",
-    "Kinnex_IsoSeq": "both"
+    "HiC": "both",
+    "ONT": "both",
+    "Illumina_WGS": "nygc_30x",
+    "PacBio_CLR": "both",
+    "RNAseq": "both",
+    "HiFi": "both"
    },
    "family_id": "-",
    "relation": "-",
@@ -14674,12 +14812,12 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline+5hmC",
-    "StrandSeq": "sheet_only",
-    "HiFi": "both",
-    "RNAseq": "sheet_only",
-    "Illumina_WGS": "both",
     "HiC": "sheet_only",
-    "Bionano": "sheet_only"
+    "StrandSeq": "sheet_only",
+    "RNAseq": "sheet_only",
+    "Bionano": "sheet_only",
+    "HiFi": "both",
+    "Illumina_WGS": "both"
    },
    "family_id": "HG002",
    "relation": "Son",
@@ -14716,12 +14854,12 @@
     "StrandSeq"
    ],
    "evidence": {
-    "StrandSeq": "sheet_only",
-    "HiFi": "sheet_only",
-    "RNAseq": "sheet_only",
-    "Illumina_WGS": "nygc_30x",
     "HiC": "sheet_only",
-    "Bionano": "sheet_only"
+    "StrandSeq": "sheet_only",
+    "RNAseq": "sheet_only",
+    "Bionano": "sheet_only",
+    "HiFi": "sheet_only",
+    "Illumina_WGS": "nygc_30x"
    },
    "family_id": "1463",
    "relation": "Mother",
@@ -14754,15 +14892,15 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "StrandSeq": "both",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
     "HiC": "both",
+    "StrandSeq": "both",
+    "Kinnex_IsoSeq": "both",
+    "RNAseq": "both",
     "Bionano": "sheet_only",
+    "HiFi": "both",
+    "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Kinnex_IsoSeq": "both"
+    "Illumina_WGS": "nygc_30x"
    },
    "family_id": "GB66",
    "relation": "Daughter",
@@ -14818,11 +14956,11 @@
     "StrandSeq"
    ],
    "evidence": {
-    "StrandSeq": "both",
-    "HiFi": "sheet_only",
-    "Illumina_WGS": "nygc_30x",
     "HiC": "sheet_only",
-    "Bionano": "sheet_only"
+    "StrandSeq": "both",
+    "Bionano": "sheet_only",
+    "HiFi": "sheet_only",
+    "Illumina_WGS": "nygc_30x"
    },
    "family_id": "SL61",
    "relation": "Daughter",
@@ -14857,15 +14995,15 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "StrandSeq": "both",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "PacBio_CLR": "sheet_only",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
     "HiC": "both",
+    "StrandSeq": "both",
+    "Kinnex_IsoSeq": "both",
+    "PacBio_CLR": "sheet_only",
+    "RNAseq": "both",
     "Bionano": "both",
-    "Kinnex_IsoSeq": "both"
+    "HiFi": "both",
+    "ONT": "both",
+    "Illumina_WGS": "nygc_30x"
    },
    "family_id": "CLM29",
    "relation": "Daughter",
@@ -14902,15 +15040,15 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "StrandSeq": "both",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "PacBio_CLR": "sheet_only",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
     "HiC": "both",
+    "StrandSeq": "both",
+    "Kinnex_IsoSeq": "both",
+    "PacBio_CLR": "sheet_only",
+    "RNAseq": "both",
     "Bionano": "both",
-    "Kinnex_IsoSeq": "both"
+    "HiFi": "both",
+    "ONT": "both",
+    "Illumina_WGS": "nygc_30x"
    },
    "family_id": "VN061",
    "relation": "Daughter",
@@ -14946,16 +15084,16 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "StrandSeq": "both",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "PacBio_CLR": "sheet_only",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
     "HiC": "both",
+    "StrandSeq": "both",
+    "Kinnex_IsoSeq": "both",
+    "PacBio_CLR": "sheet_only",
+    "RNAseq": "both",
     "Bionano": "both",
+    "HiFi": "both",
+    "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Kinnex_IsoSeq": "both"
+    "Illumina_WGS": "nygc_30x"
    },
    "family_id": "LWK003",
    "relation": "-",
@@ -14991,16 +15129,16 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "StrandSeq": "both",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "PacBio_CLR": "sheet_only",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
     "HiC": "both",
+    "StrandSeq": "both",
+    "Kinnex_IsoSeq": "both",
+    "PacBio_CLR": "sheet_only",
+    "RNAseq": "both",
     "Bionano": "both",
+    "HiFi": "both",
+    "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Kinnex_IsoSeq": "both"
+    "Illumina_WGS": "nygc_30x"
    },
    "family_id": "IT220",
    "relation": "Daughter",
@@ -15037,15 +15175,15 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "StrandSeq": "both",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "PacBio_CLR": "sheet_only",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
     "HiC": "both",
+    "StrandSeq": "both",
+    "Kinnex_IsoSeq": "both",
+    "PacBio_CLR": "sheet_only",
+    "RNAseq": "both",
     "Bionano": "both",
-    "Kinnex_IsoSeq": "both"
+    "HiFi": "both",
+    "ONT": "both",
+    "Illumina_WGS": "nygc_30x"
    },
    "family_id": "BD19",
    "relation": "Daughter",
@@ -15081,16 +15219,16 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "StrandSeq": "both",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "PacBio_CLR": "sheet_only",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
     "HiC": "both",
+    "StrandSeq": "both",
+    "Kinnex_IsoSeq": "both",
+    "PacBio_CLR": "sheet_only",
+    "RNAseq": "both",
     "Bionano": "both",
+    "HiFi": "both",
+    "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Kinnex_IsoSeq": "both"
+    "Illumina_WGS": "nygc_30x"
    },
    "family_id": "2424",
    "relation": "Daughter",
@@ -15126,16 +15264,16 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "StrandSeq": "both",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "PacBio_CLR": "sheet_only",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
     "HiC": "both",
+    "StrandSeq": "both",
+    "Kinnex_IsoSeq": "both",
+    "PacBio_CLR": "sheet_only",
+    "RNAseq": "both",
     "Bionano": "both",
+    "HiFi": "both",
+    "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Kinnex_IsoSeq": "both"
+    "Illumina_WGS": "nygc_30x"
    },
    "family_id": "PEL38",
    "relation": "Daughter",
@@ -15175,15 +15313,15 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "StrandSeq": "both",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "PacBio_CLR": "sheet_only",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
     "HiC": "both",
+    "StrandSeq": "both",
+    "Kinnex_IsoSeq": "both",
+    "PacBio_CLR": "sheet_only",
+    "RNAseq": "both",
     "Bionano": "both",
-    "Kinnex_IsoSeq": "both"
+    "HiFi": "both",
+    "ONT": "both",
+    "Illumina_WGS": "nygc_30x"
    },
    "family_id": "HG00268",
    "relation": "-",
@@ -15220,16 +15358,16 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "StrandSeq": "both",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "PacBio_CLR": "sheet_only",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
     "HiC": "both",
+    "StrandSeq": "both",
+    "Kinnex_IsoSeq": "both",
+    "PacBio_CLR": "sheet_only",
+    "RNAseq": "both",
     "Bionano": "both",
+    "HiFi": "both",
+    "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Kinnex_IsoSeq": "both"
+    "Illumina_WGS": "nygc_30x"
    },
    "family_id": "2484a",
    "relation": "Daughter",
@@ -15263,14 +15401,14 @@
     "StrandSeq"
    ],
    "evidence": {
-    "StrandSeq": "both",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "PacBio_CLR": "sheet_only",
-    "Illumina_WGS": "nygc_30x",
     "HiC": "both",
+    "StrandSeq": "both",
+    "PacBio_CLR": "sheet_only",
+    "RNAseq": "both",
     "Bionano": "both",
-    "ONT_5mC": "igsr_only"
+    "HiFi": "both",
+    "ONT_5mC": "igsr_only",
+    "Illumina_WGS": "nygc_30x"
    },
    "family_id": "NA19320",
    "relation": "-",
@@ -15310,16 +15448,16 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "StrandSeq": "both",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "PacBio_CLR": "sheet_only",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
     "HiC": "both",
+    "StrandSeq": "both",
+    "Kinnex_IsoSeq": "both",
+    "PacBio_CLR": "sheet_only",
+    "RNAseq": "both",
     "Bionano": "both",
+    "HiFi": "both",
+    "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Kinnex_IsoSeq": "both"
+    "Illumina_WGS": "nygc_30x"
    },
    "family_id": "Y077",
    "relation": "Daughter",
@@ -15356,15 +15494,15 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "StrandSeq": "both",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "PacBio_CLR": "sheet_only",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
     "HiC": "both",
+    "StrandSeq": "both",
+    "Kinnex_IsoSeq": "both",
+    "PacBio_CLR": "sheet_only",
+    "RNAseq": "both",
     "Bionano": "both",
-    "Kinnex_IsoSeq": "both"
+    "HiFi": "both",
+    "ONT": "both",
+    "Illumina_WGS": "nygc_30x"
    },
    "family_id": "GB57",
    "relation": "Mother",
@@ -15400,16 +15538,16 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "StrandSeq": "both",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "PacBio_CLR": "sheet_only",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
     "HiC": "both",
+    "StrandSeq": "both",
+    "Kinnex_IsoSeq": "both",
+    "PacBio_CLR": "sheet_only",
+    "RNAseq": "both",
     "Bionano": "both",
+    "HiFi": "both",
+    "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Kinnex_IsoSeq": "both"
+    "Illumina_WGS": "nygc_30x"
    },
    "family_id": "SL50",
    "relation": "Mother",
@@ -15447,15 +15585,15 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "StrandSeq": "both",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "PacBio_CLR": "sheet_only",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
     "HiC": "both",
+    "StrandSeq": "both",
+    "Kinnex_IsoSeq": "both",
+    "PacBio_CLR": "sheet_only",
+    "RNAseq": "both",
     "Bionano": "both",
-    "Kinnex_IsoSeq": "both"
+    "HiFi": "both",
+    "ONT": "both",
+    "Illumina_WGS": "nygc_30x"
    },
    "family_id": "NG109",
    "relation": "Mother",
@@ -15493,15 +15631,15 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "StrandSeq": "both",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "PacBio_CLR": "sheet_only",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
     "HiC": "both",
+    "StrandSeq": "both",
+    "Kinnex_IsoSeq": "both",
+    "PacBio_CLR": "sheet_only",
+    "RNAseq": "both",
     "Bionano": "both",
-    "Kinnex_IsoSeq": "both"
+    "HiFi": "both",
+    "ONT": "both",
+    "Illumina_WGS": "nygc_30x"
    },
    "family_id": "BB24",
    "relation": "Mother",
@@ -15538,14 +15676,14 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline+5hmC",
-    "StrandSeq": "both",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
     "HiC": "both",
+    "StrandSeq": "both",
+    "Kinnex_IsoSeq": "both",
+    "RNAseq": "both",
     "Bionano": "both",
-    "Kinnex_IsoSeq": "both"
+    "HiFi": "both",
+    "ONT": "both",
+    "Illumina_WGS": "nygc_30x"
    },
    "family_id": "BB67",
    "relation": "-",
@@ -15582,14 +15720,14 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "StrandSeq": "both",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
     "HiC": "both",
+    "StrandSeq": "both",
+    "Kinnex_IsoSeq": "both",
+    "RNAseq": "both",
     "Bionano": "both",
-    "Kinnex_IsoSeq": "both"
+    "HiFi": "both",
+    "ONT": "both",
+    "Illumina_WGS": "nygc_30x"
    },
    "family_id": "NG16",
    "relation": "Father",
@@ -15625,16 +15763,16 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "StrandSeq": "both",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "PacBio_CLR": "sheet_only",
-    "Illumina_WGS": "sheet_only",
-    "ONT": "both",
     "HiC": "both",
+    "StrandSeq": "both",
+    "Kinnex_IsoSeq": "both",
+    "PacBio_CLR": "sheet_only",
+    "RNAseq": "both",
     "Bionano": "both",
+    "HiFi": "both",
+    "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Kinnex_IsoSeq": "both"
+    "Illumina_WGS": "sheet_only"
    },
    "family_id": "2618",
    "relation": "Daughter",
@@ -15669,16 +15807,16 @@
     "StrandSeq"
    ],
    "evidence": {
-    "StrandSeq": "both",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
     "HiC": "both",
-    "Bionano": "both",
+    "StrandSeq": "both",
+    "Kinnex_IsoSeq": "both",
+    "RNAseq": "both",
     "ChrY_ONT": "sheet_only",
+    "Bionano": "both",
+    "HiFi": "both",
+    "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Kinnex_IsoSeq": "both"
+    "Illumina_WGS": "nygc_30x"
    },
    "family_id": "NA18989",
    "relation": "-",
@@ -15714,15 +15852,15 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "StrandSeq": "both",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
     "HiC": "both",
+    "StrandSeq": "both",
+    "Kinnex_IsoSeq": "both",
+    "RNAseq": "both",
     "Bionano": "both",
+    "HiFi": "both",
+    "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Kinnex_IsoSeq": "both"
+    "Illumina_WGS": "nygc_30x"
    },
    "family_id": "LWK001",
    "relation": "-",
@@ -15755,15 +15893,15 @@
     "StrandSeq"
    ],
    "evidence": {
-    "StrandSeq": "both",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
     "HiC": "both",
+    "StrandSeq": "both",
+    "Kinnex_IsoSeq": "both",
+    "RNAseq": "both",
     "Bionano": "both",
+    "HiFi": "both",
+    "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Kinnex_IsoSeq": "both"
+    "Illumina_WGS": "nygc_30x"
    },
    "family_id": "GB40",
    "relation": "Father",
@@ -15797,15 +15935,15 @@
     "StrandSeq"
    ],
    "evidence": {
-    "StrandSeq": "both",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
     "HiC": "both",
+    "StrandSeq": "both",
+    "Kinnex_IsoSeq": "both",
+    "RNAseq": "both",
     "Bionano": "both",
+    "HiFi": "both",
+    "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Kinnex_IsoSeq": "both"
+    "Illumina_WGS": "nygc_30x"
    },
    "family_id": "NA19317",
    "relation": "-",
@@ -15842,14 +15980,14 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "StrandSeq": "both",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
     "HiC": "both",
+    "StrandSeq": "both",
+    "Kinnex_IsoSeq": "both",
+    "RNAseq": "both",
     "Bionano": "both",
-    "Kinnex_IsoSeq": "both"
+    "HiFi": "both",
+    "ONT": "both",
+    "Illumina_WGS": "nygc_30x"
    },
    "family_id": "NA19347",
    "relation": "-",
@@ -15885,14 +16023,14 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "StrandSeq": "both",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
     "HiC": "both",
+    "StrandSeq": "both",
+    "Kinnex_IsoSeq": "both",
+    "RNAseq": "both",
     "Bionano": "both",
-    "Kinnex_IsoSeq": "both"
+    "HiFi": "both",
+    "ONT": "both",
+    "Illumina_WGS": "nygc_30x"
    },
    "family_id": "GB116",
    "relation": "Son",
@@ -15929,15 +16067,15 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "StrandSeq": "both",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "PacBio_CLR": "sheet_only",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
     "HiC": "both",
+    "StrandSeq": "both",
+    "Kinnex_IsoSeq": "both",
+    "PacBio_CLR": "sheet_only",
+    "RNAseq": "both",
     "Bionano": "both",
-    "Kinnex_IsoSeq": "both"
+    "HiFi": "both",
+    "ONT": "both",
+    "Illumina_WGS": "nygc_30x"
    },
    "family_id": "ST116",
    "relation": "Daughter",
@@ -15970,15 +16108,15 @@
     "StrandSeq"
    ],
    "evidence": {
-    "StrandSeq": "both",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
     "HiC": "both",
+    "StrandSeq": "both",
+    "Kinnex_IsoSeq": "both",
+    "RNAseq": "both",
     "Bionano": "both",
+    "HiFi": "both",
+    "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Kinnex_IsoSeq": "both"
+    "Illumina_WGS": "nygc_30x"
    },
    "family_id": "CLM51",
    "relation": "Son",
@@ -16014,14 +16152,14 @@
    "evidence": {
     "ONT_5mC": "igsr_only",
     "HiFi_5mC": "inline",
-    "StrandSeq": "both",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
     "HiC": "both",
+    "StrandSeq": "both",
+    "Kinnex_IsoSeq": "both",
+    "RNAseq": "both",
     "Bionano": "both",
-    "Kinnex_IsoSeq": "both"
+    "HiFi": "both",
+    "ONT": "both",
+    "Illumina_WGS": "nygc_30x"
    },
    "family_id": "NA19384",
    "relation": "-",
@@ -16056,15 +16194,15 @@
     "StrandSeq"
    ],
    "evidence": {
-    "StrandSeq": "both",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
     "HiC": "both",
+    "StrandSeq": "both",
+    "Kinnex_IsoSeq": "both",
+    "RNAseq": "both",
     "Bionano": "both",
+    "HiFi": "both",
+    "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Kinnex_IsoSeq": "both"
+    "Illumina_WGS": "nygc_30x"
    },
    "family_id": "BB05",
    "relation": "Father",
@@ -16097,15 +16235,15 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "StrandSeq": "both",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
     "HiC": "both",
+    "StrandSeq": "both",
+    "Kinnex_IsoSeq": "both",
+    "RNAseq": "both",
     "Bionano": "both",
+    "HiFi": "both",
+    "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Kinnex_IsoSeq": "both"
+    "Illumina_WGS": "nygc_30x"
    },
    "family_id": "2368",
    "relation": "Son",
@@ -16139,15 +16277,15 @@
    ],
    "evidence": {
     "HiFi_5mC": "inline",
-    "StrandSeq": "both",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
     "HiC": "both",
+    "StrandSeq": "both",
+    "Kinnex_IsoSeq": "both",
+    "RNAseq": "both",
     "Bionano": "both",
+    "HiFi": "both",
+    "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Kinnex_IsoSeq": "both"
+    "Illumina_WGS": "nygc_30x"
    },
    "family_id": "SL51",
    "relation": "Son",
@@ -16181,15 +16319,15 @@
     "StrandSeq"
    ],
    "evidence": {
-    "StrandSeq": "both",
-    "HiFi": "both",
-    "RNAseq": "both",
-    "Illumina_WGS": "nygc_30x",
-    "ONT": "both",
     "HiC": "both",
+    "StrandSeq": "both",
+    "Kinnex_IsoSeq": "both",
+    "RNAseq": "both",
     "Bionano": "both",
+    "HiFi": "both",
+    "ONT": "both",
     "ONT_5mC": "igsr_only",
-    "Kinnex_IsoSeq": "both"
+    "Illumina_WGS": "nygc_30x"
    },
    "family_id": "HG00358",
    "relation": "-",

@@ -24220,9 +24220,9 @@ HG01243,HiFi,,,data,submissions/84cc9f68-4307-42c4-8079-a529a5f0070d--NISC_HiFi_
 HG01243,HiFi,,,data,submissions/84cc9f68-4307-42c4-8079-a529a5f0070d--NISC_HiFi_HG01243/HG01243/AXN0034_2/CCS_1659/m54313U_211126_191012.hifi_reads.fastq.gz,27478587575,submissions,False,True
 HG01243,HiFi,,,data,submissions/84cc9f68-4307-42c4-8079-a529a5f0070d--NISC_HiFi_HG01243/HG01243/AXN0034_2/CCS_1660/m54313U_211208_155922.hifi_reads.bam,124566843073,submissions,False,True
 HG01243,HiFi,,,data,submissions/84cc9f68-4307-42c4-8079-a529a5f0070d--NISC_HiFi_HG01243/HG01243/AXN0034_2/CCS_1660/m54313U_211208_155922.hifi_reads.fastq.gz,29875952761,submissions,False,True
-NA08441,HiC,Omni-C,,data,submissions/86D4A784-64AE-42F5-955E-B4FC8BF26D9F--WB_LCL_PILOT/NA08441/NA08441_1_LIB141069_23HY3FLT3_S7_L004_R2_001.fastq.gz,4822389847,submissions,False,True
-NA08441,HiC,Omni-C,,data,submissions/86D4A784-64AE-42F5-955E-B4FC8BF26D9F--WB_LCL_PILOT/NA08441/NA08441_2_LIB141070_23MMLVLT4_S8_L002_R1_001.fastq.gz,11992211607,submissions,False,True
-NA08441,HiC,Omni-C,,data,submissions/86D4A784-64AE-42F5-955E-B4FC8BF26D9F--WB_LCL_PILOT/NA08441/NA08441_2_LIB141070_23MMLVLT4_S8_L002_R2_001.fastq.gz,12346115057,submissions,False,True
+HG08441,HiC,Omni-C; folder named NA08441,,data,submissions/86D4A784-64AE-42F5-955E-B4FC8BF26D9F--WB_LCL_PILOT/NA08441/NA08441_1_LIB141069_23HY3FLT3_S7_L004_R2_001.fastq.gz,4822389847,submissions,False,True
+HG08441,HiC,Omni-C; folder named NA08441,,data,submissions/86D4A784-64AE-42F5-955E-B4FC8BF26D9F--WB_LCL_PILOT/NA08441/NA08441_2_LIB141070_23MMLVLT4_S8_L002_R1_001.fastq.gz,11992211607,submissions,False,True
+HG08441,HiC,Omni-C; folder named NA08441,,data,submissions/86D4A784-64AE-42F5-955E-B4FC8BF26D9F--WB_LCL_PILOT/NA08441/NA08441_2_LIB141070_23MMLVLT4_S8_L002_R2_001.fastq.gz,12346115057,submissions,False,True
 HG003,Illumina_WGS,,,data,submissions/8ced218e-9699-458e-9708-eef6969a8065--EXTRAMURAL_SAMPLES/HG002/parents/HG003/HG003_HiSeq30x_subsampled_R1.fastq.gz,45137067184,submissions,False,False
 HG003,Illumina_WGS,,,data,submissions/8ced218e-9699-458e-9708-eef6969a8065--EXTRAMURAL_SAMPLES/HG002/parents/HG003/HG003_HiSeq30x_subsampled_R2.fastq.gz,48000175473,submissions,False,False
 HG004,Illumina_WGS,,,data,submissions/8ced218e-9699-458e-9708-eef6969a8065--EXTRAMURAL_SAMPLES/HG002/parents/HG004/HG004_HiSeq30x_subsampled_R1.fastq.gz,43104576071,submissions,False,False
@@ -32741,6 +32741,22 @@ HG01978,HiFi,,,data,submissions/b4f464d0-8ae7-4f4d-8d43-8615cc331d3c--WUSTL_T2T_
 HG01978,HiFi,,,data,submissions/b4f464d0-8ae7-4f4d-8d43-8615cc331d3c--WUSTL_T2T_HiFi_TopUp_Year3/HG01978/PacBio_HiFi/m64136_220522_143827.5mc.hifi_reads.bam,168370283359,submissions,False,True
 HG03516,HiFi,,,data,submissions/b4f464d0-8ae7-4f4d-8d43-8615cc331d3c--WUSTL_T2T_HiFi_TopUp_Year3/HG03516/PacBio_HiFi/m64136_220529_152051.5mc.hifi_reads.bam,108575955774,submissions,False,True
 HG03516,HiFi,,,data,submissions/b4f464d0-8ae7-4f4d-8d43-8615cc331d3c--WUSTL_T2T_HiFi_TopUp_Year3/HG03516/PacBio_HiFi/m64136_220531_103752.5mc.hifi_reads.bam,159282444214,submissions,False,True
+HG01888,HiFi,,,data,submissions/bfda6ccb-c09e-4c43-9e4c-6672d3c58c99--UW_HGSVC_HiFi_subreads_fast5_pod5/HG01888/PacBio_HiFi_subreads/m54329U_220923_175554.subreads.bam,1290391068555,submissions,False,True
+HG01888,HiFi,,,data,submissions/bfda6ccb-c09e-4c43-9e4c-6672d3c58c99--UW_HGSVC_HiFi_subreads_fast5_pod5/HG01888/PacBio_HiFi_subreads/m54329U_220925_031642.subreads.bam,1255321686105,submissions,False,True
+HG01888,HiFi,,,data,submissions/bfda6ccb-c09e-4c43-9e4c-6672d3c58c99--UW_HGSVC_HiFi_subreads_fast5_pod5/HG01888/PacBio_HiFi_subreads/m54329U_220926_124522.subreads.bam,1255892159706,submissions,False,True
+HG02572,HiFi,,,data,submissions/bfda6ccb-c09e-4c43-9e4c-6672d3c58c99--UW_HGSVC_HiFi_subreads_fast5_pod5/HG02572/PacBio_HiFi_subreads/m54329U_210527_060352.subreads.bam,548315654010,submissions,False,True
+HG02572,HiFi,,,data,submissions/bfda6ccb-c09e-4c43-9e4c-6672d3c58c99--UW_HGSVC_HiFi_subreads_fast5_pod5/HG02572/PacBio_HiFi_subreads/m64076_200315_215826.subreads.bam,17135984,submissions,False,True
+HG02572,HiFi,,,data,submissions/bfda6ccb-c09e-4c43-9e4c-6672d3c58c99--UW_HGSVC_HiFi_subreads_fast5_pod5/HG02572/PacBio_HiFi_subreads/m64076_210502_044702.subreads.bam,34491615765,submissions,False,True
+HG03017,HiFi,,,data,submissions/bfda6ccb-c09e-4c43-9e4c-6672d3c58c99--UW_HGSVC_HiFi_subreads_fast5_pod5/HG03017/PacBio_HiFi_subreads/m64076_221001_041132.subreads.bam,1254829663409,submissions,False,True
+HG03130,HiFi,,,data,submissions/bfda6ccb-c09e-4c43-9e4c-6672d3c58c99--UW_HGSVC_HiFi_subreads_fast5_pod5/HG03130/PacBio_HiFi_subreads/m64076_220513_215716.subreads.bam,1324353143722,submissions,False,True
+HG03130,HiFi,,,data,submissions/bfda6ccb-c09e-4c43-9e4c-6672d3c58c99--UW_HGSVC_HiFi_subreads_fast5_pod5/HG03130/PacBio_HiFi_subreads/m64076_220516_221911.subreads.bam,1318102512407,submissions,False,True
+HG03130,HiFi,,,data,submissions/bfda6ccb-c09e-4c43-9e4c-6672d3c58c99--UW_HGSVC_HiFi_subreads_fast5_pod5/HG03130/PacBio_HiFi_subreads/m64076_220518_191414.subreads.bam,1312140363930,submissions,False,True
+HG03139,HiFi,,,data,submissions/bfda6ccb-c09e-4c43-9e4c-6672d3c58c99--UW_HGSVC_HiFi_subreads_fast5_pod5/HG03139/PacBio_HiFi_subreads/m54329U_220519_225150.subreads.bam,1332089450349,submissions,False,True
+HG03139,HiFi,,,data,submissions/bfda6ccb-c09e-4c43-9e4c-6672d3c58c99--UW_HGSVC_HiFi_subreads_fast5_pod5/HG03139/PacBio_HiFi_subreads/m54329U_220523_155616.subreads.bam,1451634285742,submissions,False,True
+HG03139,HiFi,,,data,submissions/bfda6ccb-c09e-4c43-9e4c-6672d3c58c99--UW_HGSVC_HiFi_subreads_fast5_pod5/HG03139/PacBio_HiFi_subreads/m54329U_220525_111437.subreads.bam,1358886001683,submissions,False,True
+NA18522,HiFi,,,data,submissions/bfda6ccb-c09e-4c43-9e4c-6672d3c58c99--UW_HGSVC_HiFi_subreads_fast5_pod5/NA18522/PacBio_HiFi_subreads/m54329U_220604_002013.subreads.bam,1297446852032,submissions,False,True
+NA18522,HiFi,,,data,submissions/bfda6ccb-c09e-4c43-9e4c-6672d3c58c99--UW_HGSVC_HiFi_subreads_fast5_pod5/NA18522/PacBio_HiFi_subreads/m54329U_220605_194957.subreads.bam,1315179991281,submissions,False,True
+NA18522,HiFi,,,data,submissions/bfda6ccb-c09e-4c43-9e4c-6672d3c58c99--UW_HGSVC_HiFi_subreads_fast5_pod5/NA18522/PacBio_HiFi_subreads/m54329U_220607_194753.subreads.bam,1437712767559,submissions,False,True
 HG00621,ONT,,,data,submissions/c7ec612a-04c8-4391-b57a-80959f40f3a2--UCSC_HPRC_nanopore_Year1_TopUp/HG00621/03_14_23_R941_HG00621_1_Guppy_6.4.6_prom_sup_pass.fastq.gz,57409894479,submissions,False,True
 HG00621,ONT,,,data,submissions/c7ec612a-04c8-4391-b57a-80959f40f3a2--UCSC_HPRC_nanopore_Year1_TopUp/HG00621/03_14_23_R941_HG00621_1_Guppy_6.4.6_prom_sup_pass_pass.bam,58441163437,submissions,False,True
 HG00621,ONT,,,data,submissions/c7ec612a-04c8-4391-b57a-80959f40f3a2--UCSC_HPRC_nanopore_Year1_TopUp/HG00621/03_14_23_R941_HG00621_2_Guppy_6.4.6_prom_sup_pass.bam,53971597281,submissions,False,True
@@ -33462,19 +33478,19 @@ HG002,HiFi,,,data,submissions/de000c71-bc38-4209-b86a-91d4eaadf68f--UW_HG002_HiF
 HG002,HiFi,,,data,submissions/de000c71-bc38-4209-b86a-91d4eaadf68f--UW_HG002_HiFi/HG002/raw_data/PacBio_HiFi/m64076_210310_104300.hifi_reads.bam,111759928631,submissions,False,True
 HG002,HiFi,,,data,submissions/de000c71-bc38-4209-b86a-91d4eaadf68f--UW_HG002_HiFi/HG002/raw_data/PacBio_HiFi/r64076_20210309_013440_A01.reads.bam,322875703608,submissions,False,True
 HG002,HiFi,,,data,submissions/de000c71-bc38-4209-b86a-91d4eaadf68f--UW_HG002_HiFi/HG002/raw_data/PacBio_HiFi/r64076_20210309_013440_B01.reads.bam,293799319113,submissions,False,True
-NA08434,HiFi,named PG08434,,data,submissions/e2586c0d-0862-4137-8d5b-514238eb2917--UW_HPRC_HiFi_Y7/PG08434/m84046_260115_220634_s1.hifi_reads.bc2049.bam,160736259883,submissions,False,True
-NA08434,HiFi,named PG08434,,data,submissions/e2586c0d-0862-4137-8d5b-514238eb2917--UW_HPRC_HiFi_Y7/PG08434/m84046_260121_221302_s1.hifi_reads.bc2049.bam,151518154738,submissions,False,True
-NA08434,HiFi,named PG08434,,data,submissions/e2586c0d-0862-4137-8d5b-514238eb2917--UW_HPRC_HiFi_Y7/PG08434/m84046_260122_001758_s2.hifi_reads.bc2049.bam,149504437557,submissions,False,True
-NA08435,HiFi,named PG08435,,data,submissions/e2586c0d-0862-4137-8d5b-514238eb2917--UW_HPRC_HiFi_Y7/PG08435/m84046_260116_024822_s2.hifi_reads.bc2050.bam,188776868299,submissions,False,True
-NA08435,HiFi,named PG08435,,data,submissions/e2586c0d-0862-4137-8d5b-514238eb2917--UW_HPRC_HiFi_Y7/PG08435/m84046_260122_022256_s3.hifi_reads.bc2050.bam,224972956622,submissions,False,True
-NA08436,HiFi,named PG08436,,data,submissions/e2586c0d-0862-4137-8d5b-514238eb2917--UW_HPRC_HiFi_Y7/PG08436/m84046_260115_220634_s1.hifi_reads.bc2051.bam,120305963718,submissions,False,True
-NA08436,HiFi,named PG08436,,data,submissions/e2586c0d-0862-4137-8d5b-514238eb2917--UW_HPRC_HiFi_Y7/PG08436/m84046_260121_221302_s1.hifi_reads.bc2051.bam,166887745487,submissions,False,True
-NA08436,HiFi,named PG08436,,data,submissions/e2586c0d-0862-4137-8d5b-514238eb2917--UW_HPRC_HiFi_Y7/PG08436/m84046_260122_001758_s2.hifi_reads.bc2051.bam,174296901359,submissions,False,True
-NA08441,HiFi,named PG08441,,data,submissions/e2586c0d-0862-4137-8d5b-514238eb2917--UW_HPRC_HiFi_Y7/PG08441/m84046_260116_024822_s2.hifi_reads.bc2053.bam,186534253716,submissions,False,True
-NA08441,HiFi,named PG08441,,data,submissions/e2586c0d-0862-4137-8d5b-514238eb2917--UW_HPRC_HiFi_Y7/PG08441/m84046_260122_022256_s3.hifi_reads.bc2053.bam,223766418759,submissions,False,True
-NA08443,HiFi,named PG08443,,data,submissions/e2586c0d-0862-4137-8d5b-514238eb2917--UW_HPRC_HiFi_Y7/PG08443/m84046_260115_220634_s1.hifi_reads.bc2052.bam,143105120804,submissions,False,True
-NA08443,HiFi,named PG08443,,data,submissions/e2586c0d-0862-4137-8d5b-514238eb2917--UW_HPRC_HiFi_Y7/PG08443/m84046_260121_221302_s1.hifi_reads.bc2052.bam,184223248407,submissions,False,True
-NA08443,HiFi,named PG08443,,data,submissions/e2586c0d-0862-4137-8d5b-514238eb2917--UW_HPRC_HiFi_Y7/PG08443/m84046_260122_001758_s2.hifi_reads.bc2052.bam,193815918659,submissions,False,True
+HG08434,HiFi,named PG08434,,data,submissions/e2586c0d-0862-4137-8d5b-514238eb2917--UW_HPRC_HiFi_Y7/PG08434/m84046_260115_220634_s1.hifi_reads.bc2049.bam,160736259883,submissions,False,True
+HG08434,HiFi,named PG08434,,data,submissions/e2586c0d-0862-4137-8d5b-514238eb2917--UW_HPRC_HiFi_Y7/PG08434/m84046_260121_221302_s1.hifi_reads.bc2049.bam,151518154738,submissions,False,True
+HG08434,HiFi,named PG08434,,data,submissions/e2586c0d-0862-4137-8d5b-514238eb2917--UW_HPRC_HiFi_Y7/PG08434/m84046_260122_001758_s2.hifi_reads.bc2049.bam,149504437557,submissions,False,True
+HG08435,HiFi,named PG08435,,data,submissions/e2586c0d-0862-4137-8d5b-514238eb2917--UW_HPRC_HiFi_Y7/PG08435/m84046_260116_024822_s2.hifi_reads.bc2050.bam,188776868299,submissions,False,True
+HG08435,HiFi,named PG08435,,data,submissions/e2586c0d-0862-4137-8d5b-514238eb2917--UW_HPRC_HiFi_Y7/PG08435/m84046_260122_022256_s3.hifi_reads.bc2050.bam,224972956622,submissions,False,True
+HG08436,HiFi,named PG08436,,data,submissions/e2586c0d-0862-4137-8d5b-514238eb2917--UW_HPRC_HiFi_Y7/PG08436/m84046_260115_220634_s1.hifi_reads.bc2051.bam,120305963718,submissions,False,True
+HG08436,HiFi,named PG08436,,data,submissions/e2586c0d-0862-4137-8d5b-514238eb2917--UW_HPRC_HiFi_Y7/PG08436/m84046_260121_221302_s1.hifi_reads.bc2051.bam,166887745487,submissions,False,True
+HG08436,HiFi,named PG08436,,data,submissions/e2586c0d-0862-4137-8d5b-514238eb2917--UW_HPRC_HiFi_Y7/PG08436/m84046_260122_001758_s2.hifi_reads.bc2051.bam,174296901359,submissions,False,True
+HG08441,HiFi,named PG08441,,data,submissions/e2586c0d-0862-4137-8d5b-514238eb2917--UW_HPRC_HiFi_Y7/PG08441/m84046_260116_024822_s2.hifi_reads.bc2053.bam,186534253716,submissions,False,True
+HG08441,HiFi,named PG08441,,data,submissions/e2586c0d-0862-4137-8d5b-514238eb2917--UW_HPRC_HiFi_Y7/PG08441/m84046_260122_022256_s3.hifi_reads.bc2053.bam,223766418759,submissions,False,True
+HG08443,HiFi,named PG08443,,data,submissions/e2586c0d-0862-4137-8d5b-514238eb2917--UW_HPRC_HiFi_Y7/PG08443/m84046_260115_220634_s1.hifi_reads.bc2052.bam,143105120804,submissions,False,True
+HG08443,HiFi,named PG08443,,data,submissions/e2586c0d-0862-4137-8d5b-514238eb2917--UW_HPRC_HiFi_Y7/PG08443/m84046_260121_221302_s1.hifi_reads.bc2052.bam,184223248407,submissions,False,True
+HG08443,HiFi,named PG08443,,data,submissions/e2586c0d-0862-4137-8d5b-514238eb2917--UW_HPRC_HiFi_Y7/PG08443/m84046_260122_001758_s2.hifi_reads.bc2052.bam,193815918659,submissions,False,True
 HG002,MicroC,,,data,submissions/e598a59c-65ed-4e5b-9111-b2217bc4ae1c--WUSTL_HG002_MicroC/HG002/MicroC/LIB033275_227H2CLT4_S974_L003_R1_001.fastq.gz,3887998278,submissions,False,True
 HG002,MicroC,,,data,submissions/e598a59c-65ed-4e5b-9111-b2217bc4ae1c--WUSTL_HG002_MicroC/HG002/MicroC/LIB033275_227H2CLT4_S974_L003_R2_001.fastq.gz,3975596545,submissions,False,True
 HG002,MicroC,,,data,submissions/e598a59c-65ed-4e5b-9111-b2217bc4ae1c--WUSTL_HG002_MicroC/HG002/MicroC/LIB033275_227KVNLT4_S388_L001_R1_001.fastq.gz,17904899814,submissions,False,True

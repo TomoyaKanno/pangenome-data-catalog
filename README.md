@@ -7,11 +7,11 @@ across the two human pangenome cohorts, plus what other projects have measured o
 1000 Genomes cell lines. Everything is derived from the primary archives:
 
 ```
-HPRC    495 donors   s3://human-pangenomics  working/ + every raw-data submissions/ folder
+HPRC    490 donors   s3://human-pangenomics  working/ + every raw-data submissions/ folder
 HGSVC    69 donors   IGSR HGSVC2 + HGSVC3 working/, the production sheet, and HGSVC donors
                      sequenced by HPRC centres (hosted in the HPRC bucket)
 Other   NYGC 30x, 1KG-ONT, Geuvadis, MAGE and ENCODE, matched on the cell-line id
-        557 unique donors, 7 in both cohorts, 32 assay types, 51,483 attributed data files
+        552 unique donors, 7 in both cohorts, 32 data types, 51,499 attributed data files
 ```
 
 ## The app
@@ -25,6 +25,10 @@ Three tabs, simplest first:
   button shows how many donors would remain if you added it. The donor table is a dot grid
   of the main data types; click a donor for download links.
 - **About the data** — where it comes from, what to watch for, and the specialist tables.
+
+The Hi-C / Omni-C row has a **breakdown panel**: for each cohort, how the donors split by
+where their files are (HPRC `working/` vs `submissions/`; HGSVC on IGSR vs in the HPRC bucket
+vs recorded-but-not-public), and a table of every location with donors, files and size.
 
 Selections live in the URL (`#view=donors&assays=HiFi,FiberSeq&cohort=HPRC`), so a filtered
 list is a shareable link.
@@ -49,17 +53,23 @@ conclusions it drew about *functional* data were wrong in several places.
 
 | Claim in the old catalogue | What the archives show | Why it was wrong |
 |---|---|---|
-| HiFi 5mC: 86 HPRC donors | **414** (every one of the 353 core-five donors) | Revio/jasmine BAMs carry 5mC as inline MM/ML tags. The old build only counted dedicated "methylation" submissions. |
+| HiFi 5mC: 86 HPRC donors | **409** (every one of the 353 core-five donors) | Revio/jasmine BAMs carry 5mC as inline MM/ML tags. The old build only counted dedicated "methylation" submissions. |
 | ONT methylation: not catalogued | **415 HPRC** donors with 5mC (most also 5hmC); **65 HGSVC** (nanopolish calls) | Same — dorado BAMs carry the tags inline; HGSVC's `Nanopolish_UW` directory was never classified. |
 | "HGSVC has no methylation" | 54 HGSVC donors have HiFi 5mC | From HGSVC donors re-sequenced by HPRC centres (`*_HGSVC_HiFi_Y5`, `UCSC_HGSVC_ONT_R10`, `HGSVC_OMNIC`), which the old build never looked at. |
 | Karyotype 40, microarray 40 | **394** and **400** | Only `working/` was scanned; Coriell's QC lives in `submissions/CORIELL_CHOP*` with `GM`/`PG` names and misspelt folders. |
-| Fiber-seq 111 | **124** | Includes whole-blood HiFi BAMs that carry Fiber-seq m6A tags (`A+a`, `T-a`), and the hiPSC ONT Fiber-seq. |
-| 438 HPRC donors | **495** | ~50 Year-7 donors with only ONT so far, and the 10-donor whole-blood vs LCL pilot (HG084xx) that has no `working/` directory. |
+| Fiber-seq 111 | **119** | Includes whole-blood HiFi BAMs that carry Fiber-seq m6A tags (`A+a`, `T-a`), and the hiPSC ONT Fiber-seq. |
+| 438 HPRC donors | **490** | ~50 Year-7 donors with only ONT so far, and the 10-donor whole-blood vs LCL pilot (HG084xx) that has no `working/` directory. |
 | 5 donors in both cohorts | **7** | HGSVC stored HG001 and HG002 as the literal strings `NA12878 (HG001)` / `NA24385 (HG002)`. |
 | 6,143 files are "pooled, unattributable" | 2,289 genuinely unattributed | The HGSVC id regex ignored `GM*` names — most "pooled" Strand-seq was per-sample. |
 | HGSVC Illumina: 63/69 "sheet only, not downloadable" | 59 of those are in the **1kGP NYGC 30x** set on IGSR | Now shown as `nygc_30x` with download links. |
 | Illumina WGS includes every HPRC child | 57 donors carry **parents'** reads under `Illumina/parents/` | Tracked separately as *Trio parent Illumina*. |
 | HGSVC2 ONT-UL, `*_hic_*` dirs | were skipped | Directory-name regexes missed `ONT_UL` and lowercase `hic`; the HGSVC directory list is now explicit. |
+
+A follow-up trace of the Hi-C count then found three errors in that first re-verification,
+now fixed: five donors counted twice under a second spelling (`NA084xx` for `HG084xx`), one
+dual-cohort donor ticked for HPRC Hi-C whose files belong to its HGSVC record, and six
+HPRC-only donors whose HiFi files had been routed to HGSVC by submission label alone. That
+is why HPRC is 490 donors, not 495, and Hi-C is 395, not 397.
 
 Assays that are **new to the catalogue**: Pore-C (5 donors), ONT 5mC/5hmC, whole-blood data
 (11; matched LCL vs blood HiFi, Omni-C and Kinnex), iPSC data (3), trio parent Illumina, and
@@ -71,10 +81,10 @@ listed in its own table rather than mixed into the cohort counts.
 
 | Assay | HPRC | HGSVC | | Assay | HPRC | HGSVC |
 |---|---:|---:|---|---|---:|---:|
-| PacBio HiFi | 423 | 69 | | HiFi 5mC | 414 | 54 |
+| PacBio HiFi | 418 | 69 | | HiFi 5mC | 409 | 54 |
 | ONT | 453 | 64 | | ONT 5mC / 5hmC | 415 | 65 |
-| Illumina WGS | 424 | 69 | | Fiber-seq (m6A) | 124 | — |
-| Hi-C / Omni-C | 397 | 68 | | Kinnex / Iso-Seq | 379 | 64 |
+| Illumina WGS | 424 | 69 | | Fiber-seq (m6A) | 119 | — |
+| Hi-C / Omni-C | 395 | 68 | | Kinnex / Iso-Seq | 379 | 64 |
 | Pore-C | 5 | — | | RNA-seq (short) | — | 67 |
 | Micro-C | 1 | — | | ONT direct RNA | 1 | — |
 | Strand-seq | 9 | 69 | | Whole-blood data | 11 | — |
@@ -89,7 +99,7 @@ core five, and all 353 also have a HiFi methylome inline (317 an ONT one); Fiber
 the bottleneck at 101. HGSVC: 64 of 69 donors carry eight assays, and all 64 also have ONT
 methylation. Expression is the asymmetry: HGSVC has its own short-read RNA-seq for 67 donors,
 while on HPRC the best you can do is core five + MAGE RNA-seq from a different culture, 58
-donors. Other projects add RNA-seq or ENCODE data for only 167 of the 557 donors in total.
+donors. Other projects add RNA-seq or ENCODE data for only 167 of the 552 donors in total.
 
 ## How the build decides
 
@@ -98,7 +108,13 @@ donors. Other projects add RNA-seq or ENCODE data for only 167 of the 557 donors
   first match wins) with an explicit `SKIP` list for assemblies, alignments, QC and calls.
   A submission file whose basename is already in that donor's `working/` is not double-counted.
 - **IDs are canonicalised** before counting: `GM12345 → NA12345`, GIAB Coriell ids → `HG00x`,
-  `PG12345` (Coriell/UW lab spelling) → the matching `HG`/`NA` id.
+  `PG12345` (Coriell/UW lab spelling) → the matching `HG`/`NA` id, resolved against every id
+  seen anywhere in the bucket. One mislabelled folder (`NA08441` = `HG08441`) is aliased
+  explicitly in `HPRC_ALIASES`.
+- **HGSVC donors in the HPRC bucket.** Submissions labelled `*HGSVC*` are credited to the
+  HGSVC record only for donors on the HGSVC roster; the same submissions also hold HPRC-only
+  donors, whose files stay with HPRC. A data type is ticked only on the record that lists
+  its files.
 - **Methylation probe.** For every donor, the first, last and newest-chemistry BAM of each of
   HiFi and ONT is range-read (400 KB) and the reads' MM tags parsed. Results are in
   `hprc/data/hprc_methylation_probe.csv` and `hgsvc/data/hgsvc_methylation_probe.csv`.
@@ -112,7 +128,7 @@ donors. Other projects add RNA-seq or ENCODE data for only 167 of the 557 donors
 
 ```
 index.html, assets/          the app — plain HTML/CSS/ES modules, no build step
-site-data/catalog.json       196 KB payload: records, modality metadata, coverage, intersections
+site-data/catalog.json       200 KB payload: records, data-type metadata, coverage, intersections, Hi-C breakdown
 site-data/files/*.json       per-donor file lists + same-donor external links, fetched on demand
 site-data/files/_unattributed.json   unattributed, out-of-catalogue and other-donor files
 scripts/build_catalog.py     the whole pipeline

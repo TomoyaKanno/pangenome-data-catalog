@@ -206,6 +206,12 @@ function renderOverview() {
       if (!isMain(m)) nMore++;
       const name = el('td', { className: 'name' }, [el('span', { className: 'nm', textContent: label(m) })]);
       if (INFO[m].note) name.append(el('span', { className: 'desc', textContent: INFO[m].note }));
+      if (CAT.breakdowns?.[m]) {
+        const b = el('button', { className: 'link-btn', type: 'button', textContent: 'Where exactly? See the breakdown ›' });
+        b.addEventListener('click', e => { e.stopPropagation(); openBreakdown(m); });
+        b.addEventListener('keydown', e => e.stopPropagation());
+        name.append(b);
+      }
       const tr = el('tr', { className: 'clickable' + (isMain(m) ? '' : ' more-row'), tabIndex: 0 },
         [name, ...COHORTS.map(c => covCell(m, c))]);
       const go = () => { state.selected = [m]; state.q = ''; $('#sample-search').value = ''; showView('donors'); renderDonors(); scrollTo(0, 0); };
@@ -599,6 +605,94 @@ function renderDetails(d) {
     det.append(kv);
   }
   return det;
+}
+
+/* ---------------- breakdown panel (what exists where, for one data type) ---------------- */
+
+function showPanel(title, metaNodes, bodyNodes) {
+  $('#drawer-title').textContent = title;
+  $('#drawer-meta').replaceChildren(...metaNodes);
+  $('#drawer').classList.add('open');
+  $('#drawer').setAttribute('aria-hidden', 'false');
+  $('#drawer-scrim').classList.add('open');
+  const body = $('#drawer-body');
+  body.replaceChildren(...bodyNodes);
+  body.scrollTop = 0;
+}
+
+function openBreakdown(m) {
+  const bd = CAT.breakdowns[m];
+  const parts = [el('p', { className: 'bd-intro', textContent:
+    'A donor is counted when at least one Hi-C or Omni-C read file carries their ID. ' +
+    'The two protocols are counted together. Each donor is in exactly one line of the first list.' })];
+
+  for (const c of COHORTS) {
+    const v = bd[c];
+    parts.push(el('h3', {}, [el('span', { className: 'sw', style: `background:var(--${CSS[c]})` }),
+      txt(`${c} · ${fmtN(v.total)} of ${fmtN(v.cohort)} donors have it`)]));
+
+    const list = el('div', { className: 'bd-split' });
+    for (const x of v.split) {
+      if (!x.n) continue;
+      const off = x.none || x.missing;
+      const row = el('div', { className: 'bd-row' + (off ? ' off' : ''),
+        title: `${fmtN(x.n)} of ${fmtN(v.cohort)} ${c} donors` }, [
+        el('span', { className: 'lbl', textContent: x.label }),
+        el('div', { className: 'bar' }, [el('span', {
+          style: `width:${Math.max((x.n / v.cohort) * 100, 1.5)}%;background:${off ? 'var(--axis)' : `var(--${CSS[c]})`}` })]),
+        el('span', { className: 'n', textContent: fmtN(x.n) })]);
+      list.append(row);
+      if (x.ids.length && x.ids.length <= 20) {
+        const ids = el('div', { className: 'bd-ids' });
+        x.ids.forEach((id, i) => {
+          if (i) ids.append(txt(' · '));
+          const b = el('button', { className: 'link-btn id', type: 'button', textContent: id, title: `Open ${id}` });
+          b.addEventListener('click', () => openDrawer(id));
+          ids.append(b);
+        });
+        list.append(ids);
+      }
+    }
+    parts.push(list);
+
+    parts.push(el('h4', { textContent: `Where the ${c} files are` }));
+    const tb = el('tbody');
+    for (const sr of v.sources) {
+      const loc = el('td', {}, [el('a', { href: sr.url, textContent: sr.where, target: '_blank', rel: 'noopener' })]);
+      if (sr.note) loc.append(el('span', { className: 'desc', textContent: sr.note }));
+      tb.append(el('tr', {}, [loc,
+        el('td', { className: 'num', textContent: fmtN(sr.donors) }),
+        el('td', { className: 'num', textContent: fmtN(sr.files) }),
+        el('td', { className: 'num', textContent: fmtBytes(sr.bytes) || '—' })]));
+    }
+    parts.push(el('div', { className: 'table-scroll' }, [el('table', { className: 'bd-table' }, [
+      el('thead', {}, [el('tr', {}, [el('th', { textContent: 'Location' }), el('th', { className: 'num', textContent: 'Donors' }),
+        el('th', { className: 'num', textContent: 'Files' }), el('th', { className: 'num', textContent: 'Size' })])]), tb])]));
+
+    const notes = ['A donor can have files in more than one location, so this column does not add up to the total.'];
+    if (c === 'HPRC') notes.push('Submission rows count only files that are not already in a working/ folder.');
+    if (c === 'HGSVC') notes.push('File sizes are not listed by the IGSR site.');
+    if (v.other_donors.length) notes.push(`These locations also hold Hi-C for ${v.other_donors.length} people who are not ${c} donors.`);
+    if (v.unattributed_files) notes.push(`${plural(v.unattributed_files, 'file')} carr${v.unattributed_files === 1 ? 'ies' : 'y'} no donor name.`);
+    parts.push(el('ul', { className: 'bd-notes' }, notes.map(n => el('li', { textContent: n }))));
+
+    const go = el('button', { className: 'btn', type: 'button', textContent: `List the ${fmtN(v.total)} ${c} donors` });
+    go.addEventListener('click', () => {
+      closeDrawer();
+      state.selected = [m]; state.cohort = c; state.q = ''; $('#sample-search').value = '';
+      $('#combine-cohort').value = c; showView('donors'); renderDonors(); scrollTo(0, 0);
+    });
+    parts.push(go);
+  }
+
+  const related = ['PoreC', 'MicroC', 'ENCODE_3D'].filter(r => CAT.coverage[r]);
+  if (related.length) {
+    parts.push(el('h3', { textContent: 'Related data, counted separately' }));
+    for (const r of related) parts.push(el('div', { className: 'avail-row' }, [
+      el('span', { className: 'nm', textContent: label(r) }),
+      el('span', { className: 'note', textContent: COHORTS.map(c => `${CAT.coverage[r][c].n} ${c}`).join(' · ') + ' donors' })]));
+  }
+  showPanel(label(m), [txt('What exists, and where')], parts);
 }
 
 function btn(text, fn) {

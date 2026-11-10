@@ -1,11 +1,11 @@
 {
   "bundle": "Pangenome data catalog: HPRC + HGSVC (2,3) + same-donor external data",
-  "generated_utc": "2026-11-10T20:46:29Z",
+  "generated_utc": "2026-11-10T21:30:15Z",
   "build": "python3 scripts/build_catalog.py --hgsvc-xlsx <HGSVC_Production_Master-2.xlsx>",
   "counts": {
-    "donors": 557,
+    "donors": 552,
     "cohorts": {
-      "HPRC": 495,
+      "HPRC": 490,
       "HGSVC": 69
     },
     "dual_cohort": [
@@ -17,14 +17,14 @@
       "NA19036",
       "NA19240"
     ],
-    "assay_types": 32,
-    "attributed_data_files": 51483,
-    "hprc_TB": 1094.3,
+    "data_types": 32,
+    "attributed_data_files": 51499,
+    "hprc_TB": 1112.1,
     "unattributed_files": 2289
   },
   "coverage": {
     "HiFi": {
-      "HPRC": 423,
+      "HPRC": 418,
       "HGSVC": 69
     },
     "ONT": {
@@ -39,28 +39,20 @@
       "HPRC": 57,
       "HGSVC": 0
     },
-    "HiC": {
-      "HPRC": 397,
-      "HGSVC": 68
+    "PacBio_CLR": {
+      "HPRC": 0,
+      "HGSVC": 50
     },
-    "PoreC": {
-      "HPRC": 5,
+    "TenX": {
+      "HPRC": 10,
       "HGSVC": 0
     },
-    "MicroC": {
-      "HPRC": 1,
-      "HGSVC": 0
-    },
-    "StrandSeq": {
-      "HPRC": 9,
-      "HGSVC": 69
-    },
-    "Bionano": {
-      "HPRC": 42,
-      "HGSVC": 68
+    "ChrY_ONT": {
+      "HPRC": 0,
+      "HGSVC": 1
     },
     "HiFi_5mC": {
-      "HPRC": 414,
+      "HPRC": 409,
       "HGSVC": 54
     },
     "ONT_5mC": {
@@ -68,7 +60,7 @@
       "HGSVC": 65
     },
     "FiberSeq": {
-      "HPRC": 124,
+      "HPRC": 119,
       "HGSVC": 0
     },
     "Kinnex_IsoSeq": {
@@ -83,20 +75,32 @@
       "HPRC": 1,
       "HGSVC": 0
     },
+    "HiC": {
+      "HPRC": 395,
+      "HGSVC": 68
+    },
+    "StrandSeq": {
+      "HPRC": 9,
+      "HGSVC": 69
+    },
+    "Bionano": {
+      "HPRC": 42,
+      "HGSVC": 68
+    },
+    "PoreC": {
+      "HPRC": 5,
+      "HGSVC": 0
+    },
+    "MicroC": {
+      "HPRC": 1,
+      "HGSVC": 0
+    },
     "WholeBlood": {
       "HPRC": 11,
       "HGSVC": 0
     },
     "iPSC": {
       "HPRC": 3,
-      "HGSVC": 0
-    },
-    "PacBio_CLR": {
-      "HPRC": 0,
-      "HGSVC": 50
-    },
-    "TenX": {
-      "HPRC": 10,
       "HGSVC": 0
     },
     "Microarray": {
@@ -107,29 +111,17 @@
       "HPRC": 394,
       "HGSVC": 0
     },
-    "ChrY_ONT": {
-      "HPRC": 0,
-      "HGSVC": 1
-    },
     "NYGC_30x": {
       "HPRC": 422,
       "HGSVC": 67
     },
-    "ONT_1KG": {
-      "HPRC": 111,
-      "HGSVC": 17
+    "MAGE_RNA": {
+      "HPRC": 72,
+      "HGSVC": 13
     },
     "Geuvadis_RNA": {
       "HPRC": 57,
       "HGSVC": 6
-    },
-    "Geuvadis_smallRNA": {
-      "HPRC": 57,
-      "HGSVC": 6
-    },
-    "MAGE_RNA": {
-      "HPRC": 72,
-      "HGSVC": 13
     },
     "ENCODE_RNA": {
       "HPRC": 36,
@@ -138,6 +130,14 @@
     "ENCODE_Access": {
       "HPRC": 11,
       "HGSVC": 4
+    },
+    "ONT_1KG": {
+      "HPRC": 111,
+      "HGSVC": 17
+    },
+    "Geuvadis_smallRNA": {
+      "HPRC": 57,
+      "HGSVC": 6
     },
     "ENCODE_ChIP": {
       "HPRC": 3,

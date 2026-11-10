@@ -409,7 +409,16 @@ def fetch_hprc_metadata(refresh):
     return keys, meta
 
 
-def build_hprc(refresh):
+# Folder names in the bucket that are a different spelling of a catalogued donor.
+# NA08441: submissions/*--WB_LCL_PILOT/NA08441/ holds Omni-C with the same library and
+# flowcell ids (LIB141069, 23HY3FLT3) as WB_LCL_PILOT_OMNIC/HG08441/ -- the same sample.
+HPRC_ALIASES = {"NA08441": "HG08441"}
+
+
+def build_hprc(refresh, hgsvc_ids=frozenset()):
+    """hgsvc_ids: donors on the HGSVC roster. HPRC centres sequenced some of them, in
+    submissions labelled *HGSVC*; those files are credited to the HGSVC record. The label
+    alone is not enough -- the same submissions also contain HPRC-only donors."""
     print("HPRC: listing s3://human-pangenomics ...", flush=True)
     working = s3_list("working/", refresh)
     subs = s3_list("submissions/", refresh)
@@ -437,9 +446,17 @@ def build_hprc(refresh):
             mod, detail = "Illumina_parents", "trio parent"
         rows.append(dict(sample_id=canon(raw) or raw, modality=mod, assay_detail=detail,
                          tissue="", s3_key=key, size_bytes=size, source="working",
-                         for_hgsvc=False, submission=""))
+                         for_hgsvc=False, submission="", sub_dir=""))
 
     # ---- submissions/ ----------------------------------------------------
+    # every id that appears as a folder in a raw-data submission, so a PG-prefixed folder
+    # can be resolved to HG or NA no matter which submission is read first
+    known = set(roster)
+    for key, _ in subs:
+        if not SKIP.search(key.split("/")[1].split("--", 1)[-1]):
+            for seg in key.split("/")[2:-1]:
+                if ID_RE.fullmatch(seg.split("_")[0]):
+                    known.add(HPRC_ALIASES.get(canon(seg), canon(seg)))
     have = {(r["sample_id"], os.path.basename(r["s3_key"])) for r in rows}
     unclassified, other_donor = Counter(), []
     for key, size in subs:
@@ -473,9 +490,11 @@ def build_hprc(refresh):
         note = ""
         pg = re.search(r"/PG(\d{5})[^/]*/", key) if sid is None else None
         if pg:   # Coriell/UW lab spelling of the same line: PG18523 = NA18523, PG08434 = HG08434
-            sid = next((c for c in ("HG" + pg.group(1), "NA" + pg.group(1)) if c in roster),
+            sid = next((c for c in ("HG" + pg.group(1), "NA" + pg.group(1)) if c in known),
                        "NA" + pg.group(1))
             note = f"named PG{pg.group(1)}"
+        if sid in HPRC_ALIASES:
+            note, sid = f"folder named {sid}", HPRC_ALIASES[sid]
         if seg_ids and file_ids and seg_ids[-1] not in file_ids:
             note = f"filename names {'/'.join(sorted(file_ids))}"
         if sid is None:
@@ -491,8 +510,8 @@ def build_hprc(refresh):
         rows.append(dict(sample_id=sid, modality=mod,
                          assay_detail="; ".join(x for x in (detail, note) if x),
                          tissue=tissue, s3_key=key, size_bytes=size, source="submissions",
-                         # HPRC centres sequenced HGSVC donors too; that data belongs to HGSVC
-                         for_hgsvc=bool(re.search(r"HGSVC", label)), submission=label))
+                         for_hgsvc=bool(re.search(r"HGSVC", label)) and sid in hgsvc_ids,
+                         submission=label, sub_dir=sub))
 
     if unclassified:
         print("  UNCLASSIFIED submissions (add a RULES or SKIP entry):", file=sys.stderr)
@@ -557,8 +576,8 @@ def build_hprc(refresh):
                             modalities=set(), evidence={}, tissues=set())
     for r in rows:
         s = samples.get(r["sample_id"])
-        if s is None or r["kind"] != "data":
-            continue
+        if s is None or r["kind"] != "data" or r["for_hgsvc"]:
+            continue   # a data type is credited only where its files are listed
         s["modalities"].add(r["modality"])
         if r["tissue"]:
             s["tissues"].add(r["tissue"])
@@ -805,6 +824,7 @@ def build_hgsvc(xlsx, nygc, refresh, from_hprc=(), inline_from_hprc=None):
             continue
         sid = r["sample_id"]
         rows.append(dict(sample_id=sid, collection="HPRC bucket", directory=r["submission"],
+                         sub_dir=r["sub_dir"],
                          modality=r["modality"], assay_detail=r["assay_detail"],
                          rel_path=S3_HTTPS + r["s3_key"], url=S3_HTTPS + r["s3_key"],
                          in_catalogue=sid in samples))
@@ -1005,6 +1025,111 @@ def write_csv(path, rows, cols=None):
         w.writeheader()
         for r in rows:
             w.writerow({k: ("" if r.get(k) is None else r.get(k)) for k in cols})
+
+
+S3_BROWSE = f"https://s3-us-west-2.amazonaws.com/{BUCKET}/index.html?prefix="
+
+
+def hic_breakdown(records, hprc_rows, hgsvc_rows):
+    """Where the Hi-C / Omni-C behind each cohort's count actually sits. 'split' partitions
+    the cohort's donors (each donor in exactly one line); 'sources' lists every location
+    with files, and a donor can appear in more than one."""
+    def src():
+        return defaultdict(lambda: dict(donors=set(), files=0, bytes=0, url="", note=""))
+
+    def finish(sources, order):
+        out = []
+        for where in sorted(sources, key=lambda w: (order(w), -len(sources[w]["donors"]))):
+            v = sources[where]
+            out.append(dict(where=where, donors=len(v["donors"]), files=v["files"],
+                            bytes=v["bytes"], url=v["url"], note=v["note"]))
+        return out
+
+    out = {}
+    # ---- HPRC ----
+    recs = [r for r in records if r["cohort"] == "HPRC"]
+    has = {r["sample_id"] for r in recs if "HiC" in r["modalities"]}
+    sources, in_work = src(), set()
+    loose = dict(unattributed=0, other_ids=set())
+    for r in hprc_rows:
+        if r["modality"] != "HiC" or r["kind"] != "data":
+            continue
+        if not r["sample_id"]:
+            loose["unattributed"] += 1
+            continue
+        if not r["in_catalogue"]:
+            loose["other_ids"].add(r["sample_id"])
+            continue
+        if r["source"] == "working":
+            where, in_work = "working/<donor>/raw_data/hic/", in_work | {r["sample_id"]}
+            sources[where]["url"] = S3_BROWSE + "working/"
+            sources[where]["note"] = "The curated per-donor folders"
+        else:
+            where = f"submissions/…{r['submission']}/"
+            sources[where]["url"] = S3_BROWSE + f"submissions/{r['sub_dir']}/"
+            alias = re.search(r"folder named (\w+)", r["assay_detail"])
+            if alias:
+                sources[where]["note"] = (f"Folder is named {alias.group(1)}; same libraries as "
+                                          f"{r['sample_id']}, so likely a duplicate upload")
+        v = sources[where]
+        v["donors"].add(r["sample_id"])
+        v["files"] += 1
+        v["bytes"] += int(r["size_bytes"])
+    out["HPRC"] = dict(
+        total=len(has), cohort=len(recs),
+        split=[dict(label="In the donor's working/ folder", n=len(has & in_work), ids=[]),
+               dict(label="Only in a submissions/ folder", n=len(has - in_work),
+                    ids=sorted(has - in_work)),
+               dict(label="No Hi-C yet", n=len(recs) - len(has), ids=[], none=True)],
+        sources=finish(sources, lambda w: 0 if w.startswith("working") else 1),
+        unattributed_files=loose["unattributed"], other_donors=sorted(loose["other_ids"]))
+
+    # ---- HGSVC ----
+    recs = [r for r in records if r["cohort"] == "HGSVC"]
+    has = {r["sample_id"] for r in recs if "HiC" in r["modalities"]}
+    sheet_only = {r["sample_id"] for r in recs if r["evidence"].get("HiC") == "sheet_only"}
+    sources, on_igsr, on_s3 = src(), set(), set()
+    loose = dict(unattributed=0, other_ids=set())
+    for r in hgsvc_rows:
+        if r["modality"] != "HiC":
+            continue
+        maps = r["assay_detail"] == "contact map (.hic)"
+        if not r["sample_id"]:
+            loose["unattributed"] += 1
+            continue
+        if not r["in_catalogue"]:
+            loose["other_ids"].add(r["sample_id"])
+            continue
+        if r["collection"] == "HPRC bucket":
+            where = f"HPRC bucket · submissions/…{r['directory']}/"
+            sources[where]["url"] = S3_BROWSE + f"submissions/{r['sub_dir']}/"
+            sources[where]["note"] = "HGSVC donors sequenced by an HPRC centre (Omni-C)"
+            on_s3.add(r["sample_id"])
+        else:
+            where = f"IGSR · {r['collection']}/working/{r['directory']}/"
+            sources[where]["url"] = IGSR + f"data_collections/{r['collection']}/working/{r['directory']}/"
+            if maps:
+                sources[where]["note"] = "Processed contact maps (.hic), not reads; not counted"
+            else:
+                on_igsr.add(r["sample_id"])
+        v = sources[where]
+        v["donors"].add(r["sample_id"])
+        v["files"] += 1
+    out["HGSVC"] = dict(
+        total=len(has), cohort=len(recs),
+        split=[dict(label="Reads on IGSR", n=len(has & on_igsr), ids=[]),
+               dict(label="Reads only in the HPRC bucket", n=len((has & on_s3) - on_igsr),
+                    ids=sorted((has & on_s3) - on_igsr)),
+               dict(label="Recorded by HGSVC, but not public", n=len(sheet_only),
+                    ids=sorted(sheet_only), missing=True),
+               dict(label="No Hi-C", n=len(recs) - len(has), ids=sorted(
+                   r["sample_id"] for r in recs if r["sample_id"] not in has), none=True)],
+        sources=finish(sources, lambda w: (0 if w.startswith("IGSR") else 1, "Shi_hic" in w)),
+        unattributed_files=loose["unattributed"], other_donors=sorted(loose["other_ids"]))
+    for c in out.values():   # the split must partition the cohort
+        assert sum(x["n"] for x in c["split"]) == c["cohort"], c["split"]
+        assert sum(x["n"] for x in c["split"] if not x.get("none")) == c["total"], c["split"]
+    return out
 
 
 def build_site(hprc, hprc_rows, other, hprc_probe, hgsvc, hgsvc_rows, hgsvc_probe, ext, out):
@@ -1230,6 +1355,7 @@ def build_site(hprc, hprc_rows, other, hprc_probe, hgsvc, hgsvc_rows, hgsvc_prob
             "external_donors": sum(1 for d in donors if ext.get(d)),
         },
         "other_donors": other_summary,
+        "breakdowns": {"HiC": hic_breakdown(records, hprc_rows, hgsvc_rows)},
         "samples": samples,
     }
     with open(os.path.join(out, "catalog.json"), "w") as fh:
@@ -1252,7 +1378,8 @@ def main():
     os.makedirs(CACHE, exist_ok=True)
     ext = build_external(a.refresh)
     nygc = {k for k, v in ext.items() if "NYGC_30x" in v}
-    hprc, hprc_rows, other, hprc_probe, to_hgsvc, inline_hgsvc = build_hprc(a.refresh)
+    hgsvc_ids = frozenset(canon(str(x)) for x in read_hgsvc_sheet(a.hgsvc_xlsx)["SampleID"])
+    hprc, hprc_rows, other, hprc_probe, to_hgsvc, inline_hgsvc = build_hprc(a.refresh, hgsvc_ids)
     hgsvc, hgsvc_rows, hgsvc_probe = build_hgsvc(a.hgsvc_xlsx, nygc, a.refresh, to_hgsvc, inline_hgsvc)
     build_site(hprc, hprc_rows, other, hprc_probe, hgsvc, hgsvc_rows, hgsvc_probe, ext,
                os.path.join(ROOT, "site-data"))
