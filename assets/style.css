@@ -462,3 +462,11 @@ tr.bd-detail > td { padding: 0 0 10px; border-bottom: 1px solid var(--axis); }
 .bd-src .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .bd-src .h { font-size: 11px; color: var(--text-muted); }
 tr.label-row .caret { font-size: 13px; color: var(--text-secondary); }
+
+/* folder contents (file types) under a location row */
+table.bd-table tr.label-row td:first-child { padding-left: 4px; }
+.bd-detail-sub.first { margin-top: 0; }
+.bd-src.types { max-width: 460px; }
+.bd-src .t { font-family: var(--mono); font-size: 12px; }
+.bd-src.off .t, .bd-src.off .num { color: var(--text-secondary); }
+.bd-src .sum { font-weight: 600; border-top: 1px solid var(--grid); padding-top: 4px; font-family: var(--sans); }

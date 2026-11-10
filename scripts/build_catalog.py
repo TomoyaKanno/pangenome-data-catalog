@@ -1128,14 +1128,77 @@ def write_csv(path, rows, cols=None):
 S3_BROWSE = f"https://s3-us-west-2.amazonaws.com/{BUCKET}/index.html?prefix="
 
 
+def file_type(path):
+    """A short label for what a file is, from its name. Paired FASTQ is split by read."""
+    name = os.path.basename(path)
+    if "release-transfer-manifests/" in path:
+        return "transfer manifest"
+    m = re.search(r"\.(fastq|fq)(\.gz)?$", name, re.I)
+    if m:
+        ext = f".{m.group(1).lower()}{(m.group(2) or '').lower()}"
+        # ..._R1_001.fastq.gz, ..._R2.trimmed.fastq.gz, ....R1.fastq.gz, ..._1.fq.gz
+        rd = (re.search(r"[_.]R([12])(?:_\d{3})?(?:\.[A-Za-z]+)?\.(?:fastq|fq)", name, re.I)
+              or re.search(r"_([12])\.(?:fastq|fq)", name, re.I))
+        label = f"{ext}, read {rd.group(1)}" if rd else ext
+        return label + (", downsampled" if "/downsampled/" in path else "")
+    m = re.search(r"\.([A-Za-z][A-Za-z0-9]{0,7})(\.gz)?$", name)
+    if m:
+        return f".{m.group(1).lower()}{(m.group(2) or '').lower()}"
+    if re.match(r"(?i)readme", name):
+        return "README"
+    if re.match(r"(?i)manifest", name):
+        return "manifest"
+    return "(no extension)"
+
+
+def inventory(files, counted, copies=frozenset()):
+    """Everything physically in a location, by file type, in three piles: files in the
+    location's totals, copies of files already counted in working/, and everything else."""
+    piles = {k: defaultdict(lambda: [0, 0]) for k in ("counted", "copies", "other")}
+    for path, size in files:
+        pile = ("counted" if path in counted else
+                "copies" if os.path.basename(path) in copies else "other")
+        fb = piles[pile][file_type(path)]
+        fb[0] += 1
+        fb[1] += size or 0
+    # reads first, in name order (read 1 before read 2); everything else by size
+    reads = lambda t: t.startswith((".fastq", ".fq"))
+    return {k: sorted((dict(type=t, files=f, bytes=b) for t, (f, b) in v.items()),
+                      key=lambda x: (0, x["type"], 0) if reads(x["type"]) else (1, "", -x["bytes"]))
+            for k, v in piles.items()}
+
+
 def hic_breakdown(records, hprc_rows, hgsvc_rows):
     """Where the Hi-C / Omni-C behind each cohort's count actually sits. 'split' partitions
     the cohort's donors (each donor in exactly one line); 'sources' lists every location
     with files, and a donor can appear in more than one."""
     def src():   # per[donor] = [files, bytes], so any subset of donors can be totalled
-        return defaultdict(lambda: dict(per=defaultdict(lambda: [0, 0]), url="", note=""))
+        return defaultdict(lambda: dict(per=defaultdict(lambda: [0, 0]), url="", note="",
+                                        keys=set(), prefix=""))
 
-    def finish(sources, order, subset=None):
+    # every file physically present, to show what else sits beside the counted reads
+    s3_all = s3_list("working/", False) + s3_list("submissions/", False)
+    igsr_all = [f[3] for f in igsr_crawl(False)["files"]]
+
+    def contents(v, copies=frozenset()):
+        kind, prefix = v["prefix"].split(":", 1)
+        if kind == "s3hic":      # the per-donor working folders
+            copies = frozenset()   # nothing here is a copy; uncounted files are derived ones
+            files = [(k, n) for k, n in s3_all if k.startswith("working/") and "/raw_data/hic/" in k]
+        elif kind == "s3":
+            files = [(k, n) for k, n in s3_all if k.startswith(prefix)]
+        else:
+            paths = [p for p in igsr_all if p.startswith(prefix)]
+            sizes = remote_sizes([IGSR + p for p in paths], "igsr_sizes.json", False)
+            files = [(p, sizes.get(IGSR + p)) for p in paths]
+        inv = inventory(files, v["keys"], copies)
+        n = sum(x["files"] for x in inv["counted"])
+        b = sum(x["bytes"] for x in inv["counted"])
+        assert (n, b) == (sum(f for f, _ in v["per"].values()), sum(x for _, x in v["per"].values())), \
+            (v["prefix"], n, b)
+        return inv
+
+    def finish(sources, order, subset=None, copies=frozenset()):
         out = []
         for where, v in sources.items():
             per = {d: fb for d, fb in v["per"].items() if subset is None or d in subset}
@@ -1143,6 +1206,8 @@ def hic_breakdown(records, hprc_rows, hgsvc_rows):
                 out.append(dict(where=where, donors=len(per), files=sum(f for f, _ in per.values()),
                                 bytes=sum(b for _, b in per.values()), url=v["url"],
                                 note=v["note"]))
+                if subset is None:   # the full-folder inventory belongs to the cohort table only
+                    out[-1]["contents"] = contents(v, copies)
         return sorted(out, key=lambda x: (order(x["where"]), -x["donors"]))
 
     def few(ids):   # donor ids are listed only for small groups
@@ -1167,9 +1232,11 @@ def hic_breakdown(records, hprc_rows, hgsvc_rows):
             where, in_work = "working/<donor>/raw_data/hic/", in_work | {r["sample_id"]}
             sources[where]["url"] = S3_BROWSE + "working/"
             sources[where]["note"] = "The curated per-donor folders"
+            sources[where]["prefix"] = "s3hic:"
         else:
             where = f"submissions/…{r['submission']}/"
             sources[where]["url"] = S3_BROWSE + f"submissions/{r['sub_dir']}/"
+            sources[where]["prefix"] = f"s3:submissions/{r['sub_dir']}/"
             alias = re.search(r"folder named (\w+)", r["assay_detail"])
             if alias:
                 sources[where]["note"] = (f"Folder is named {alias.group(1)}; same libraries as "
@@ -1177,8 +1244,10 @@ def hic_breakdown(records, hprc_rows, hgsvc_rows):
         fb = sources[where]["per"][r["sample_id"]]
         fb[0] += 1
         fb[1] += int(r["size_bytes"])
+        sources[where]["keys"].add(r["s3_key"])
     everyone = {r["sample_id"] for r in recs}
     hprc_order = lambda w: 0 if w.startswith("working") else 1
+    working_names = {os.path.basename(k) for k in sources["working/<donor>/raw_data/hic/"]["keys"]}
 
     def hprc_split(S):
         h = has & S
@@ -1189,7 +1258,7 @@ def hic_breakdown(records, hprc_rows, hgsvc_rows):
     out["HPRC"] = dict(
         total=len(has), cohort=len(recs),
         split=hprc_split(everyone),
-        sources=finish(sources, hprc_order),
+        sources=finish(sources, hprc_order, copies=working_names),
         unattributed_files=loose["unattributed"], other_donors=sorted(loose["other_ids"]))
 
     # the same donors by HPRC release. Releases mostly nest, so the rows overlap.
@@ -1228,11 +1297,15 @@ def hic_breakdown(records, hprc_rows, hgsvc_rows):
         if r["collection"] == "HPRC bucket":
             where = f"HPRC bucket · submissions/…{r['directory']}/"
             sources[where]["url"] = S3_BROWSE + f"submissions/{r['sub_dir']}/"
+            sources[where]["prefix"] = f"s3:submissions/{r['sub_dir']}/"
+            sources[where]["keys"].add(r["url"][len(S3_HTTPS):])
             sources[where]["note"] = "HGSVC donors sequenced by an HPRC centre (Omni-C)"
             on_s3.add(r["sample_id"])
         else:
             where = f"IGSR · {r['collection']}/working/{r['directory']}/"
             sources[where]["url"] = IGSR + f"data_collections/{r['collection']}/working/{r['directory']}/"
+            sources[where]["prefix"] = f"igsr:data_collections/{r['collection']}/working/{r['directory']}/"
+            sources[where]["keys"].add(r["rel_path"])
             if maps:
                 sources[where]["note"] = "Processed contact maps (.hic), not reads; not counted"
             else:

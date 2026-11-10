@@ -682,6 +682,34 @@ function labelDetail(x, c) {
   return box;
 }
 
+// What opens under a folder row: every file in the folder by type, counted or not.
+function folderContents(sr) {
+  const c = sr.contents;
+  const box = el('div', { className: 'bd-detail-box' });
+  const section = (title, items, cls = '') => {
+    if (!items.length) return;
+    box.append(el('div', { className: 'bd-detail-sub' + (box.childElementCount ? '' : ' first'), textContent: title }));
+    const list = el('div', { className: 'bd-src types ' + cls }, [
+      el('span', { className: 'h', textContent: 'File type' }), el('span', { className: 'h num', textContent: 'Files' }),
+      el('span', { className: 'h num', textContent: 'Total size' })]);
+    for (const x of items) list.append(
+      el('span', { className: 't', textContent: x.type }),
+      el('span', { className: 'num', textContent: fmtN(x.files) }),
+      el('span', { className: 'num', textContent: fmtBytes(x.bytes) || '—' }));
+    if (items.length > 1) list.append(
+      el('span', { className: 't sum', textContent: 'Total' }),
+      el('span', { className: 'num sum', textContent: fmtN(items.reduce((a, x) => a + x.files, 0)) }),
+      el('span', { className: 'num sum', textContent: fmtBytes(items.reduce((a, x) => a + x.bytes, 0)) || '—' }));
+    box.append(list);
+  };
+  section('Counted in this row', c.counted);
+  section('Copies of files already in a working/ folder (not counted twice)', c.copies, 'off');
+  section('Also in this folder (not counted)', c.other, 'off');
+  if (c.other.length) box.append(el('p', { className: 'bd-label-note', textContent:
+    'Not counted: reports, checksums, manifests, other data types, derived files, and files for people outside the cohort.' }));
+  return box;
+}
+
 function renderHicPage() {
   const m = 'HiC', bd = CAT.breakdowns?.[m];
   if (!bd) { $('.tabs [data-view="hic"]').hidden = true; return; }
@@ -764,14 +792,33 @@ function renderHicPage() {
 
     const tb = el('tbody');
     for (const sr of v.sources) {
-      const loc = el('td', {}, [el('a', { href: sr.url, textContent: sr.where, target: '_blank', rel: 'noopener' })]);
+      const link = el('a', { href: sr.url, textContent: sr.where, target: '_blank', rel: 'noopener' });
+      link.addEventListener('click', e => e.stopPropagation());
+      const caret = el('span', { className: 'caret', textContent: sr.contents ? '▸' : '' });
+      const loc = el('td', {}, [caret, link]);
       if (sr.note) loc.append(el('span', { className: 'desc', textContent: sr.note }));
-      tb.append(el('tr', {}, [loc,
+      const tr = el('tr', {}, [loc,
         el('td', { className: 'num', textContent: fmtN(sr.donors) }),
         el('td', { className: 'num', textContent: fmtN(sr.files) }),
-        el('td', { className: 'num', textContent: fmtBytes(sr.bytes) || '—' })]));
+        el('td', { className: 'num', textContent: fmtBytes(sr.bytes) || '—' })]);
+      tb.append(tr);
+      if (!sr.contents) continue;
+      tr.className = 'clickable label-row';
+      tr.tabIndex = 0;
+      tr.title = 'Show the file types in this folder';
+      tr.setAttribute('aria-expanded', 'false');
+      const detail = el('tr', { className: 'bd-detail', hidden: true }, [el('td', { colSpan: 4 }, [folderContents(sr)])]);
+      const toggle = () => {
+        detail.hidden = !detail.hidden;
+        tr.setAttribute('aria-expanded', String(!detail.hidden));
+        caret.textContent = detail.hidden ? '▸' : '▾';
+      };
+      tr.addEventListener('click', toggle);
+      tr.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); } });
+      tb.append(detail);
     }
-    const notes = ['A donor can have files in more than one location, so the Donors column does not add up to the total.'];
+    const notes = ['Click a location to see its file types and their total sizes.',
+      'A donor can have files in more than one location, so the Donors column does not add up to the total.'];
     if (c === 'HPRC') notes.push('Submission rows count only files that are not already in a working/ folder.');
     if (v.other_donors.length) notes.push(`These locations also hold Hi-C for ${v.other_donors.length} people who are not ${c} donors.`);
     if (v.unattributed_files) notes.push(`${plural(v.unattributed_files, 'file')} carr${v.unattributed_files === 1 ? 'ies' : 'y'} no donor name.`);
