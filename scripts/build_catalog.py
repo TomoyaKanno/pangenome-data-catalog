@@ -1132,16 +1132,21 @@ def hic_breakdown(records, hprc_rows, hgsvc_rows):
     """Where the Hi-C / Omni-C behind each cohort's count actually sits. 'split' partitions
     the cohort's donors (each donor in exactly one line); 'sources' lists every location
     with files, and a donor can appear in more than one."""
-    def src():
-        return defaultdict(lambda: dict(donors=set(), files=0, bytes=0, url="", note=""))
+    def src():   # per[donor] = [files, bytes], so any subset of donors can be totalled
+        return defaultdict(lambda: dict(per=defaultdict(lambda: [0, 0]), url="", note=""))
 
-    def finish(sources, order):
+    def finish(sources, order, subset=None):
         out = []
-        for where in sorted(sources, key=lambda w: (order(w), -len(sources[w]["donors"]))):
-            v = sources[where]
-            out.append(dict(where=where, donors=len(v["donors"]), files=v["files"],
-                            bytes=v["bytes"], url=v["url"], note=v["note"]))
-        return out
+        for where, v in sources.items():
+            per = {d: fb for d, fb in v["per"].items() if subset is None or d in subset}
+            if per:
+                out.append(dict(where=where, donors=len(per), files=sum(f for f, _ in per.values()),
+                                bytes=sum(b for _, b in per.values()), url=v["url"],
+                                note=v["note"]))
+        return sorted(out, key=lambda x: (order(x["where"]), -x["donors"]))
+
+    def few(ids):   # donor ids are listed only for small groups
+        return sorted(ids) if len(ids) <= 20 else []
 
     out = {}
     # ---- HPRC ----
@@ -1169,27 +1174,35 @@ def hic_breakdown(records, hprc_rows, hgsvc_rows):
             if alias:
                 sources[where]["note"] = (f"Folder is named {alias.group(1)}; same libraries as "
                                           f"{r['sample_id']}, so likely a duplicate upload")
-        v = sources[where]
-        v["donors"].add(r["sample_id"])
-        v["files"] += 1
-        v["bytes"] += int(r["size_bytes"])
+        fb = sources[where]["per"][r["sample_id"]]
+        fb[0] += 1
+        fb[1] += int(r["size_bytes"])
+    everyone = {r["sample_id"] for r in recs}
+    hprc_order = lambda w: 0 if w.startswith("working") else 1
+
+    def hprc_split(S):
+        h = has & S
+        return [dict(label="In the donor's working/ folder", n=len(h & in_work), ids=[]),
+                dict(label="Only in a submissions/ folder", n=len(h - in_work), ids=few(h - in_work)),
+                dict(label="No Hi-C yet", n=len(S - has), ids=few(S - has) if S != everyone else [],
+                     none=True)]
     out["HPRC"] = dict(
         total=len(has), cohort=len(recs),
-        split=[dict(label="In the donor's working/ folder", n=len(has & in_work), ids=[]),
-               dict(label="Only in a submissions/ folder", n=len(has - in_work),
-                    ids=sorted(has - in_work)),
-               dict(label="No Hi-C yet", n=len(recs) - len(has), ids=[], none=True)],
-        sources=finish(sources, lambda w: 0 if w.startswith("working") else 1),
+        split=hprc_split(everyone),
+        sources=finish(sources, hprc_order),
         unattributed_files=loose["unattributed"], other_donors=sorted(loose["other_ids"]))
 
     # the same donors by HPRC release. Releases mostly nest, so the rows overlap.
     rel = {r["sample_id"]: set(r["release"].split("+")) - {"untagged"} for r in recs}
     rows = []
-    for name, title in (("R1", "Release 1"), ("R2", "Release 2"), ("R3", "Release 3")):
-        ids = {s for s, v in rel.items() if name in v}
-        rows.append(dict(label=title, donors=len(ids), reads=len(ids & has), not_public=0,
-                         none=sorted(ids - has)))
     none_yet = {s for s, v in rel.items() if not v}
+    groups = [(title, {s for s, v in rel.items() if name in v}, False)
+              for name, title in (("R1", "Release 1"), ("R2", "Release 2"), ("R3", "Release 3"))]
+    for title, ids, unl in groups + [("No release yet", none_yet, True)]:
+        rows.append(dict(label=title, donors=len(ids), reads=len(ids & has), not_public=0,
+                         none=sorted(ids - has), unlabelled=unl,
+                         detail=dict(split=hprc_split(ids),
+                                     sources=finish(sources, hprc_order, ids))))
     out["HPRC"]["by_label"] = dict(
         rows=rows,
         r1_in_r2=sum(1 for v in rel.values() if {"R1", "R2"} <= v),
@@ -1224,20 +1237,24 @@ def hic_breakdown(records, hprc_rows, hgsvc_rows):
                 sources[where]["note"] = "Processed contact maps (.hic), not reads; not counted"
             else:
                 on_igsr.add(r["sample_id"])
-        v = sources[where]
-        v["donors"].add(r["sample_id"])
-        v["files"] += 1
-        v["bytes"] += r["size_bytes"] or 0
+        fb = sources[where]["per"][r["sample_id"]]
+        fb[0] += 1
+        fb[1] += r["size_bytes"] or 0
+    everyone = {r["sample_id"] for r in recs}
+    hgsvc_order = lambda w: (0 if w.startswith("IGSR") else 1, "Shi_hic" in w)
+
+    def hgsvc_split(S):
+        h = has & S
+        return [dict(label="Reads on IGSR", n=len(h & on_igsr), ids=[]),
+                dict(label="Reads only in the HPRC bucket", n=len((h & on_s3) - on_igsr),
+                     ids=few((h & on_s3) - on_igsr)),
+                dict(label="Recorded by HGSVC, but not public", n=len(sheet_only & S),
+                     ids=few(sheet_only & S), missing=True),
+                dict(label="No Hi-C", n=len(S - has), ids=few(S - has), none=True)]
     out["HGSVC"] = dict(
         total=len(has), cohort=len(recs),
-        split=[dict(label="Reads on IGSR", n=len(has & on_igsr), ids=[]),
-               dict(label="Reads only in the HPRC bucket", n=len((has & on_s3) - on_igsr),
-                    ids=sorted((has & on_s3) - on_igsr)),
-               dict(label="Recorded by HGSVC, but not public", n=len(sheet_only),
-                    ids=sorted(sheet_only), missing=True),
-               dict(label="No Hi-C", n=len(recs) - len(has), ids=sorted(
-                   r["sample_id"] for r in recs if r["sample_id"] not in has), none=True)],
-        sources=finish(sources, lambda w: (0 if w.startswith("IGSR") else 1, "Shi_hic" in w)),
+        split=hgsvc_split(everyone),
+        sources=finish(sources, hgsvc_order),
         unattributed_files=loose["unattributed"], other_donors=sorted(loose["other_ids"]))
 
     # the same donors by IGSR cohort label. Labels overlap: most donors carry both.
@@ -1248,7 +1265,9 @@ def hic_breakdown(records, hprc_rows, hgsvc_rows):
         ids = {s for s, v in lab.items() if name in v}
         by_label.append(dict(label=name, donors=len(ids), reads=len(ids & reads),
                              not_public=len(ids & sheet_only),
-                             none=sorted(ids - has)))
+                             none=sorted(ids - has),
+                             detail=dict(split=hgsvc_split(ids),
+                                         sources=finish(sources, hgsvc_order, ids))))
     out["HGSVC"]["by_label"] = dict(
         rows=by_label,
         both=sum(1 for v in lab.values() if v == {"HGSVC2", "HGSVC3"}),
@@ -1257,6 +1276,11 @@ def hic_breakdown(records, hprc_rows, hgsvc_rows):
         neither=sorted(s for s, v in lab.items() if not v))
     for x in by_label:
         assert x["reads"] + x["not_public"] + len(x["none"]) == x["donors"], x
+    for c in out.values():   # every label's detail must partition that label's donors
+        for x in c["by_label"]["rows"]:
+            assert sum(y["n"] for y in x["detail"]["split"]) == x["donors"], x["label"]
+            assert sum(y["n"] for y in x["detail"]["split"] if not y.get("none")
+                       and not y.get("missing")) == x["reads"], x["label"]
     for c in out.values():   # the split must partition the cohort
         assert sum(x["n"] for x in c["split"]) == c["cohort"], c["split"]
         assert sum(x["n"] for x in c["split"] if not x.get("none")) == c["total"], c["split"]

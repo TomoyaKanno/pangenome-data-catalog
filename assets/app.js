@@ -623,6 +623,53 @@ function gotoDonors(mods, cohort) {
   $('#combine-cohort').value = cohort; showView('donors'); renderDonors(); scrollTo(0, 0);
 }
 
+// Donor-id buttons that open that donor's panel.
+function idButtons(ids, sep = ', ') {
+  return ids.flatMap((id, i) => {
+    const b = el('button', { className: 'link-btn id', type: 'button', textContent: id, title: `Open ${id}` });
+    b.addEventListener('click', e => { e.stopPropagation(); openDrawer(id); });
+    return i ? [txt(sep), b] : [b];
+  });
+}
+
+// One bar per line of a split; `total` is the group the bars are a share of.
+function splitRows(split, total, c) {
+  const out = [];
+  for (const x of split) {
+    if (!x.n) continue;
+    const off = x.none || x.missing;
+    out.push(el('div', { className: 'bd-row' + (off ? ' off' : ''), title: `${fmtN(x.n)} of ${fmtN(total)} donors` }, [
+      el('span', { className: 'lbl', textContent: x.label }),
+      el('div', { className: 'bar' }, [el('span', {
+        style: `width:${Math.max((x.n / total) * 100, 1.5)}%;background:${off ? 'var(--axis)' : `var(--${CSS[c]})`}` })]),
+      el('span', { className: 'n', textContent: fmtN(x.n) })]));
+    if (x.ids.length && x.ids.length <= 20) out.push(el('div', { className: 'bd-ids' }, idButtons(x.ids, ' · ')));
+  }
+  return out;
+}
+
+// What opens under a label row: how that label's donors divide, and which folders hold their files.
+function labelDetail(x, c) {
+  const d = x.detail;
+  const box = el('div', { className: 'bd-detail-box' }, [
+    el('div', { className: 'bd-detail-head', textContent:
+      `${x.label}: ${fmtN(x.reads)} of ${fmtN(x.donors)} donors have Hi-C reads` }),
+    ...splitRows(d.split, x.donors, c)]);
+  if (d.sources.length) {
+    box.append(el('div', { className: 'bd-detail-sub', textContent: 'Folders holding these donors\u2019 files' }));
+    const list = el('div', { className: 'bd-src' }, [
+      el('span', { className: 'h', textContent: 'Folder' }), el('span', { className: 'h num', textContent: 'Donors' }),
+      el('span', { className: 'h num', textContent: 'Size' })]);
+    for (const sr of d.sources) list.append(
+      el('a', { href: sr.url, target: '_blank', rel: 'noopener', title: sr.note || sr.where,
+        textContent: sr.where.replace(/^(IGSR · |HPRC bucket · )/, '').replace(/^submissions\/…/, '…') }),
+      el('span', { className: 'num', textContent: fmtN(sr.donors) }),
+      el('span', { className: 'num', textContent: fmtBytes(sr.bytes) || '—' }));
+    box.append(list);
+  }
+  return box;
+}
+
 function renderHicPage() {
   const m = 'HiC', bd = CAT.breakdowns?.[m];
   if (!bd) { $('.tabs [data-view="hic"]').hidden = true; return; }
@@ -634,45 +681,37 @@ function renderHicPage() {
         el('span', { className: 'big', textContent: fmtN(v.total) }),
         el('span', { className: 'of', textContent: `of ${fmtN(v.cohort)} ${c} donors have Hi-C or Omni-C` })]),
       el('h3', { textContent: 'How those donors divide' })]);
-    for (const x of v.split) {
-      if (!x.n) continue;
-      const off = x.none || x.missing;
-      left.append(el('div', { className: 'bd-row' + (off ? ' off' : ''),
-        title: `${fmtN(x.n)} of ${fmtN(v.cohort)} ${c} donors` }, [
-        el('span', { className: 'lbl', textContent: x.label }),
-        el('div', { className: 'bar' }, [el('span', {
-          style: `width:${Math.max((x.n / v.cohort) * 100, 1.5)}%;background:${off ? 'var(--axis)' : `var(--${CSS[c]})`}` })]),
-        el('span', { className: 'n', textContent: fmtN(x.n) })]));
-      if (x.ids.length && x.ids.length <= 20) {
-        const ids = el('div', { className: 'bd-ids' });
-        x.ids.forEach((id, i) => {
-          if (i) ids.append(txt(' · '));
-          const b = el('button', { className: 'link-btn id', type: 'button', textContent: id, title: `Open ${id}` });
-          b.addEventListener('click', () => openDrawer(id));
-          ids.append(b);
-        });
-        left.append(ids);
-      }
-    }
+    left.append(...splitRows(v.split, v.cohort, c));
     const go = el('button', { className: 'btn', type: 'button', textContent: `List the ${fmtN(v.total)} donors` });
     go.addEventListener('click', () => gotoDonors([m], c));
     left.append(go);
 
     if (v.by_label) {   // the same donors by cohort label (HGSVC phase, HPRC release)
       const L = v.by_label;
-      const idBtns = ids => ids.flatMap((id, i) => {
-        const b = el('button', { className: 'link-btn id', type: 'button', textContent: id, title: `Open ${id}` });
-        b.addEventListener('click', () => openDrawer(id));
-        return i ? [txt(', '), b] : [b];
-      });
+      const idBtns = ids => idButtons(ids);
       const showNP = L.rows.some(x => x.not_public);
-      const tb2 = el('tbody', {}, L.rows.map(x => el('tr', {}, [
-        el('td', {}, [el('strong', { textContent: x.label })]),
-        el('td', { className: 'num', textContent: fmtN(x.donors) }),
-        el('td', { className: 'num strong', textContent: fmtN(x.reads) }),
-        showNP ? el('td', { className: 'num', textContent: x.not_public ? fmtN(x.not_public) : '—' }) : null,
-        el('td', { className: 'num' }, !x.none.length ? [txt('—')]
-          : x.none.length <= 2 ? idBtns(x.none) : [txt(fmtN(x.none.length))])])));
+      const nCols = showNP ? 5 : 4;
+      const tb2 = el('tbody');
+      for (const x of L.rows) {
+        const caret = el('span', { className: 'caret', textContent: '▸' });
+        const tr = el('tr', { className: 'clickable label-row', tabIndex: 0, title: 'Show where these donors\u2019 Hi-C is' }, [
+          el('td', {}, [caret, el('strong', { textContent: x.label })]),
+          el('td', { className: 'num', textContent: fmtN(x.donors) }),
+          el('td', { className: 'num strong', textContent: fmtN(x.reads) }),
+          showNP ? el('td', { className: 'num', textContent: x.not_public ? fmtN(x.not_public) : '—' }) : null,
+          el('td', { className: 'num' }, !x.none.length ? [txt('—')]
+            : x.none.length <= 2 ? idBtns(x.none) : [txt(fmtN(x.none.length))])]);
+        tr.setAttribute('aria-expanded', 'false');
+        const detail = el('tr', { className: 'bd-detail', hidden: true }, [el('td', { colSpan: nCols }, [labelDetail(x, c)])]);
+        const toggle = () => {
+          detail.hidden = !detail.hidden;
+          tr.setAttribute('aria-expanded', String(!detail.hidden));
+          caret.textContent = detail.hidden ? '▸' : '▾';
+        };
+        tr.addEventListener('click', toggle);
+        tr.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); } });
+        tb2.append(tr, detail);
+      }
 
       const note = el('p', { className: 'bd-label-note' });
       if (c === 'HGSVC') {
@@ -684,9 +723,8 @@ function renderHicPage() {
       } else {
         const [r1, r2] = L.rows;
         note.append(txt(`The releases mostly nest: ${L.r1_in_r2} of the ${r1.donors} Release 1 donors are also in Release 2, ` +
-          `and ${L.r2_in_r3} of the ${r2.donors} Release 2 donors are also in Release 3. ` +
-          `${fmtN(L.unlabelled.donors)} donors are in no release yet; ${L.unlabelled.reads} of them already have Hi-C.`));
-        const missing = [...new Set(L.rows.flatMap(x => x.none))];
+          `and ${L.r2_in_r3} of the ${r2.donors} Release 2 donors are also in Release 3.`));
+        const missing = [...new Set(L.rows.filter(x => !x.unlabelled).flatMap(x => x.none))];
         if (missing.length > 2) {
           const hp = id => donors.get(id)?.rows.find(r => r.cohort === 'HPRC');
           const trio = missing.every(id => hp(id)?.modalities.includes('Illumina_parents'));
@@ -697,6 +735,7 @@ function renderHicPage() {
       }
       left.append(
         el('h3', { className: 'spaced', textContent: c === 'HGSVC' ? 'By cohort label: HGSVC2 vs HGSVC3' : 'By release: 1, 2 and 3' }),
+        el('p', { className: 'bd-hint', textContent: 'Click a row to see where those donors\u2019 Hi-C is.' }),
         el('div', { className: 'table-scroll' }, [el('table', { className: 'bd-table bd-label' }, [
           el('thead', {}, [el('tr', {}, [el('th', { textContent: c === 'HGSVC' ? 'Label' : 'Release' }),
             el('th', { className: 'num', textContent: 'Donors' }),

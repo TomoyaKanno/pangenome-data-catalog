@@ -27,8 +27,9 @@ Four tabs, simplest first:
 - **Hi-C breakdown** — for each cohort, how the donors split by where their Hi-C / Omni-C
   files are (HPRC `working/` vs `submissions/`; HGSVC on IGSR vs in the HPRC bucket vs
   recorded-but-not-public), beside a table of every folder with donors, files and size.
-  Each box also splits its donors by cohort label: HPRC by Release 1, 2 and 3; HGSVC by
-  IGSR's HGSVC2 and HGSVC3 labels.
+  Each box also splits its donors by cohort label: HPRC by Release 1, 2 and 3 (plus "no
+  release yet"); HGSVC by IGSR's HGSVC2 and HGSVC3 labels. Click a label row to open how
+  that label's donors divide by location, and which folders hold their files.
   Also reachable from the Hi-C row on the Overview.
 - **About the data** — where it comes from, what to watch for, and the specialist tables.
 

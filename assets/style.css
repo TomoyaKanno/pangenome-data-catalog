@@ -443,3 +443,22 @@ table.bd-label th { white-space: normal; line-height: 1.25; vertical-align: bott
 .bd-label-note { margin: 10px 0 0; font-size: 12.5px; color: var(--text-muted); line-height: 1.6; }
 table.bd-label th.num { white-space: normal; }
 @media (max-width: 640px) { table.bd-label td, table.bd-label th { padding-left: 4px; padding-right: 4px; } table.bd-label th { letter-spacing: 0; } }
+
+/* expandable label rows on the Hi-C page */
+.bd-hint { margin: -4px 0 8px; font-size: 12.5px; color: var(--text-muted); }
+tr.label-row .caret { display: inline-block; width: 14px; color: var(--text-muted); font-size: 11px; }
+tr.label-row[aria-expanded="true"] { background: var(--surface-2); }
+tr.bd-detail[hidden] { display: none; }
+tr.bd-detail:hover { background: none; }
+tr.bd-detail > td { padding: 0 0 10px; border-bottom: 1px solid var(--axis); }
+.bd-detail-box { background: var(--surface-2); border-radius: 0 0 var(--radius-sm) var(--radius-sm); padding: 12px 14px 14px; }
+.bd-detail-head { font-size: 13px; font-weight: 600; margin-bottom: 6px; }
+.bd-detail-box .bd-row { font-size: 13px; grid-template-columns: minmax(0, 1fr) 80px 36px; }
+.bd-detail-box .bd-row .bar { background: var(--surface-1); }
+.bd-detail-sub { margin: 12px 0 6px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.07em;
+  color: var(--text-muted); font-weight: 600; }
+.bd-src { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; gap: 5px 14px; font-size: 12.5px; align-items: baseline; }
+.bd-src a { font-family: var(--mono); font-size: 12px; overflow-wrap: anywhere; }
+.bd-src .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.bd-src .h { font-size: 11px; color: var(--text-muted); }
+tr.label-row .caret { font-size: 13px; color: var(--text-secondary); }
