@@ -55,7 +55,9 @@ init();
 async function init() {
   initTheme();
   try {
-    CAT = await fetch(DATA + 'catalog.json').then(r => {
+    // 'no-cache' = always check with the server before reusing a stored copy. Without it a
+    // browser can pair this code with a data file from an earlier deploy for up to 10 minutes.
+    CAT = await fetch(DATA + 'catalog.json', { cache: 'no-cache' }).then(r => {
       if (!r.ok) throw new Error(`${r.status} ${r.statusText}`);
       return r.json();
     });
@@ -78,31 +80,40 @@ async function init() {
     for (const m of row.modalities) d.mods.add(m);
   }
 
-  $('#facts').textContent =
-    `${fmtN(CAT.cohorts.HPRC)} HPRC donors · ${fmtN(CAT.cohorts.HGSVC)} HGSVC donors · ` +
-    `${CAT.dual_cohort_samples.length} in both`;
-  for (const c of COHORTS)
-    $(`#head-${CSS[c]}`).textContent = `${fmtN(CAT.cohorts[c])} donors · ${WHERE[c]}`;
-  $('#footer-note').textContent =
-    `Updated ${CAT.generated_utc.slice(0, 10)} · ${fmtN(CAT.unique_samples)} donors · ` +
-    `${fmtN(CAT.totals.files)} files · ` +
-    COHORTS.map(c => `${fmtBytes(CAT.totals.bytes_by_cohort[c])} for ${c} donors`).join(' · ') + '.';
-
-  renderOverview();
-  renderTakeaways();
-  renderPicker();
-  renderPresets();
-  renderShapeCompare();
-  renderIntersections();
-  renderOtherDonors();
-  renderHicPage();
-  const pops = [...new Set(CAT.samples.map(s => s.population).filter(Boolean))].sort();
-  $('#sample-pop').append(...pops.map(p => el('option', { value: p, textContent: p })));
+  // Navigation is wired first, and each section renders on its own, so a fault in one
+  // section can never leave the tabs dead (it did once: a newer Hi-C page met older data).
   wireEvents();
+  const safe = (name, fn) => {
+    try { fn(); return true; } catch (err) { console.error(`[catalog] ${name} failed to render`, err); return false; }
+  };
+  safe('header', () => {
+    $('#facts').textContent =
+      `${fmtN(CAT.cohorts.HPRC)} HPRC donors · ${fmtN(CAT.cohorts.HGSVC)} HGSVC donors · ` +
+      `${CAT.dual_cohort_samples.length} in both`;
+    for (const c of COHORTS)
+      $(`#head-${CSS[c]}`).textContent = `${fmtN(CAT.cohorts[c])} donors · ${WHERE[c]}`;
+    const sizes = CAT.totals.bytes_by_cohort
+      ? COHORTS.map(c => `${fmtBytes(CAT.totals.bytes_by_cohort[c])} for ${c} donors`).join(' · ') : '';
+    $('#footer-note').textContent = [`Updated ${CAT.generated_utc.slice(0, 10)}`,
+      `${fmtN(CAT.unique_samples)} donors`, `${fmtN(CAT.totals.files)} files`, sizes].filter(Boolean).join(' · ') + '.';
+  });
+  safe('overview', renderOverview);
+  safe('takeaways', renderTakeaways);
+  safe('picker', renderPicker);
+  safe('presets', renderPresets);
+  safe('cohort comparison', renderShapeCompare);
+  safe('combinations', renderIntersections);
+  safe('other donors', renderOtherDonors);
+  if (!safe('Hi-C page', renderHicPage)) $('.tabs [data-view="hic"]').hidden = true;
+  safe('population filter', () => {
+    const pops = [...new Set(CAT.samples.map(s => s.population).filter(Boolean))].sort();
+    $('#sample-pop').append(...pops.map(p => el('option', { value: p, textContent: p })));
+  });
   readHash();
+  if (state.view === 'hic' && $('.tabs [data-view="hic"]').hidden) state.view = 'overview';
   $('#combine-cohort').value = state.cohort;
   showView(state.view);
-  renderDonors();
+  safe('donor list', renderDonors);
 }
 
 function initTheme() {
@@ -470,7 +481,8 @@ const shardCache = new Map();
 function loadShard(id, cohort, dual) {
   const name = dual ? `${id}.${cohort}.json` : `${id}.json`;
   if (!shardCache.has(name))
-    shardCache.set(name, fetch(DATA + 'files/' + name).then(r => (r.ok ? r.json() : null)).catch(() => null));
+    shardCache.set(name, fetch(DATA + 'files/' + name, { cache: 'no-cache' })
+      .then(r => (r.ok ? r.json() : null)).catch(() => null));
   return shardCache.get(name);
 }
 
@@ -701,6 +713,11 @@ function renderHicPage() {
           showNP ? el('td', { className: 'num', textContent: x.not_public ? fmtN(x.not_public) : '—' }) : null,
           el('td', { className: 'num' }, !x.none.length ? [txt('—')]
             : x.none.length <= 2 ? idBtns(x.none) : [txt(fmtN(x.none.length))])]);
+        if (!x.detail) {   // data from before per-label detail existed: show the row, no expansion
+          tr.classList.remove('clickable'); tr.removeAttribute('tabindex'); tr.removeAttribute('title'); caret.textContent = '';
+          tb2.append(tr);
+          continue;
+        }
         tr.setAttribute('aria-expanded', 'false');
         const detail = el('tr', { className: 'bd-detail', hidden: true }, [el('td', { colSpan: nCols }, [labelDetail(x, c)])]);
         const toggle = () => {
