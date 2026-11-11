@@ -497,6 +497,16 @@ def fetch_hprc_metadata(refresh):
 # NA08441: submissions/*--WB_LCL_PILOT/NA08441/ holds Omni-C with the same library and
 # flowcell ids (LIB141069, 23HY3FLT3) as WB_LCL_PILOT_OMNIC/HG08441/ -- the same sample.
 HPRC_ALIASES = {"NA08441": "HG08441"}
+# The WashU pedigree. submissions/*--WASHU_PED_DATA/README.txt lists the family under its
+# lab names and Coriell ids: grandmother, grandfather, mother, proband.
+PEDIGREE = {"PAN010": "HG06803", "PAN011": "HG06804", "PAN027": "HG06807", "PAN028": "HG06808"}
+# Bucket keys recognised as a second copy of a file that is already counted, so they are
+# listed nowhere else. Filled by build_hprc, read when a folder's contents are inventoried.
+HPRC_COPIES = set()
+# Two files of one donor and data type with the same exact size, at or above this size, are
+# the same file under another name (a "redo" upload renaming PG01192 to HG01192, a folder
+# typed HGO6807 beside HG06807). Small fixed-size files (array .idat) legitimately collide.
+SAME_FILE_MIN_BYTES = 100_000_000
 
 
 def build_hprc(refresh, hgsvc_ids=frozenset()):
@@ -542,6 +552,9 @@ def build_hprc(refresh, hgsvc_ids=frozenset()):
                 if ID_RE.fullmatch(seg.split("_")[0]):
                     known.add(HPRC_ALIASES.get(canon(seg), canon(seg)))
     have = {(r["sample_id"], os.path.basename(r["s3_key"])) for r in rows}
+    have_size = {(r["sample_id"], r["modality"], r["size_bytes"]) for r in rows
+                 if r["size_bytes"] >= SAME_FILE_MIN_BYTES}
+    HPRC_COPIES.clear()
     unclassified, other_donor = Counter(), []
     for key, size in subs:
         sub = key.split("/")[1]
@@ -581,6 +594,11 @@ def build_hprc(refresh, hgsvc_ids=frozenset()):
             note, sid = f"folder named {sid}", HPRC_ALIASES[sid]
         if seg_ids and file_ids and seg_ids[-1] not in file_ids:
             note = f"filename names {'/'.join(sorted(file_ids))}"
+        if sid is None:   # the pedigree's lab names (MGISTL-PAN027, PAN027.cell, ...)
+            ped = {PEDIGREE[x] for x in re.findall(r"PAN\d{3}", "/".join(segs)) if x in PEDIGREE}
+            if len(ped) == 1:
+                sid = ped.pop()
+                note = "filed under the pedigree's PAN name"
         if sid is None:
             donor = [d for d in re.findall(r"(MGISTL-PAN\d+|PAN\d{3}|EnTEX_[A-Z0-9]+|SM-[A-Z0-9]+)",
                                            "/".join(key.split("/")[2:])) if d != "EnTEX_ONT"]
@@ -590,7 +608,13 @@ def build_hprc(refresh, hgsvc_ids=frozenset()):
                                         size_bytes=size))
                 continue
         if (sid, os.path.basename(key)) in have:
+            HPRC_COPIES.add(key)
             continue   # the same file was promoted to working/
+        if sid and size >= SAME_FILE_MIN_BYTES:
+            if (sid, mod, size) in have_size:
+                HPRC_COPIES.add(key)
+                continue   # the same file again, under another name
+            have_size.add((sid, mod, size))
         rows.append(dict(sample_id=sid, modality=mod,
                          assay_detail="; ".join(x for x in (detail, note) if x),
                          tissue=tissue, s3_key=key, size_bytes=size, source="submissions",
@@ -1153,11 +1177,10 @@ def file_type(path):
 
 def inventory(files, counted, copies=frozenset()):
     """Everything physically in a location, by file type, in three piles: files in the
-    location's totals, copies of files already counted in working/, and everything else."""
+    location's totals, second copies of files already counted elsewhere, and everything else."""
     piles = {k: defaultdict(lambda: [0, 0]) for k in ("counted", "copies", "other")}
     for path, size in files:
-        pile = ("counted" if path in counted else
-                "copies" if os.path.basename(path) in copies else "other")
+        pile = "counted" if path in counted else "copies" if path in copies else "other"
         fb = piles[pile][file_type(path)]
         fb[0] += 1
         fb[1] += size or 0
@@ -1166,6 +1189,40 @@ def inventory(files, counted, copies=frozenset()):
     return {k: sorted((dict(type=t, files=f, bytes=b) for t, (f, b) in v.items()),
                       key=lambda x: (0, x["type"], 0) if reads(x["type"]) else (1, "", -x["bytes"]))
             for k, v in piles.items()}
+
+
+# One line per Hi-C location, shown under its name. Keyed by HPRC submission label or IGSR
+# directory. Each statement was checked against the folder's own README, its file names and
+# sizes, or the catalogue; keep them free of counts, which the table beside them carries.
+# A location with no entry gets no note, and the build says so.
+LOCATION_NOTES = {
+    "working": "The curated per-donor folders; the main copy of HPRC Hi-C.",
+    "WB_LCL_PILOT_OMNIC": "Omni-C for the ten whole-blood vs LCL pilot donors (HG084xx), "
+                          "who have no working/ folder.",
+    "Y2-HIC": "Year 2 delivery, nearly all copied to working/. Counted here: two donors "
+              "(HG01443, HG02688) whose Hi-C was never copied.",
+    "Y3-HIC": "Year 3 delivery, all copied to working/. What is counted here is small "
+              "leftover files, not real coverage.",
+    "HIC_Y3_fillin_and_Y4_part1": "Year 3 fill-in and Year 4 delivery, copied to working/ or "
+                                  "re-uploaded as the -redo folder. Only tiny leftover files count.",
+    "HIC_Y3_fillin_and_Y4_part1-redo": "Re-upload of the Year 3 fill-in and Year 4 delivery with "
+                                       "PG-prefixed files renamed to HG/NA. Counted: lanes not in working/.",
+    "hic_and_parents": "Extra Hi-C lanes for eight Release 1 donors, filed beside their "
+                       "parents' Illumina CRAMs.",
+    "TECHNOPOLE_HIC": "Hi-C lanes for four TSI donors of Release 2, in GM-named folders.",
+    "WASHU_PED_HIC": "Hi-C for three members of the WashU pedigree: grandmother, grandfather "
+                     "and proband. The mother, HG06807, is in working/.",
+    "WB_LCL_PILOT": "Folder is named NA08441; a second copy of HG08441's Omni-C.",
+    "HGSVC_OMNIC": "Omni-C for HGSVC donors, sequenced by an HPRC centre and kept in the HPRC bucket.",
+    "2021_Hi-C_JAX": "Jackson Laboratory Hi-C from 2021 with a 2023 top-up, mostly for donors "
+                     "added in HGSVC3.",
+    "20200512_Hi-C": "Jackson Laboratory Hi-C from 2020; its README calls these the 27 HGSVC "
+                     "children samples.",
+    "202505012_USC_HighCovHiC": "High-coverage Hi-C from the Chaisson lab at USC, made with the "
+                                "Phase Genomics Proximo kit.",
+    "20230515_Shi_hic_files": "Processed contact maps (.hic) from Li et al. 2023, built with "
+                              "Juicer on GRCh38. Not reads, so not counted as Hi-C.",
+}
 
 
 def hic_breakdown(records, hprc_rows, hgsvc_rows):
@@ -1231,23 +1288,20 @@ def hic_breakdown(records, hprc_rows, hgsvc_rows):
         if r["source"] == "working":
             where, in_work = "working/<donor>/raw_data/hic/", in_work | {r["sample_id"]}
             sources[where]["url"] = S3_BROWSE + "working/"
-            sources[where]["note"] = "The curated per-donor folders"
+            sources[where]["note"] = LOCATION_NOTES["working"]
             sources[where]["prefix"] = "s3hic:"
         else:
             where = f"submissions/…{r['submission']}/"
             sources[where]["url"] = S3_BROWSE + f"submissions/{r['sub_dir']}/"
             sources[where]["prefix"] = f"s3:submissions/{r['sub_dir']}/"
-            alias = re.search(r"folder named (\w+)", r["assay_detail"])
-            if alias:
-                sources[where]["note"] = (f"Folder is named {alias.group(1)}; same libraries as "
-                                          f"{r['sample_id']}, so likely a duplicate upload")
+            sources[where]["note"] = LOCATION_NOTES.get(r["submission"], "")
         fb = sources[where]["per"][r["sample_id"]]
         fb[0] += 1
         fb[1] += int(r["size_bytes"])
         sources[where]["keys"].add(r["s3_key"])
     everyone = {r["sample_id"] for r in recs}
     hprc_order = lambda w: 0 if w.startswith("working") else 1
-    working_names = {os.path.basename(k) for k in sources["working/<donor>/raw_data/hic/"]["keys"]}
+
 
     def hprc_split(S):
         h = has & S
@@ -1258,7 +1312,7 @@ def hic_breakdown(records, hprc_rows, hgsvc_rows):
     out["HPRC"] = dict(
         total=len(has), cohort=len(recs),
         split=hprc_split(everyone),
-        sources=finish(sources, hprc_order, copies=working_names),
+        sources=finish(sources, hprc_order, copies=HPRC_COPIES),
         unattributed_files=loose["unattributed"], other_donors=sorted(loose["other_ids"]))
 
     # the same donors by HPRC release. Releases mostly nest, so the rows overlap.
@@ -1299,16 +1353,15 @@ def hic_breakdown(records, hprc_rows, hgsvc_rows):
             sources[where]["url"] = S3_BROWSE + f"submissions/{r['sub_dir']}/"
             sources[where]["prefix"] = f"s3:submissions/{r['sub_dir']}/"
             sources[where]["keys"].add(r["url"][len(S3_HTTPS):])
-            sources[where]["note"] = "HGSVC donors sequenced by an HPRC centre (Omni-C)"
+            sources[where]["note"] = LOCATION_NOTES.get(r["directory"], "")
             on_s3.add(r["sample_id"])
         else:
             where = f"IGSR · {r['collection']}/working/{r['directory']}/"
             sources[where]["url"] = IGSR + f"data_collections/{r['collection']}/working/{r['directory']}/"
             sources[where]["prefix"] = f"igsr:data_collections/{r['collection']}/working/{r['directory']}/"
             sources[where]["keys"].add(r["rel_path"])
-            if maps:
-                sources[where]["note"] = "Processed contact maps (.hic), not reads; not counted"
-            else:
+            sources[where]["note"] = LOCATION_NOTES.get(r["directory"], "")
+            if not maps:
                 on_igsr.add(r["sample_id"])
         fb = sources[where]["per"][r["sample_id"]]
         fb[0] += 1
@@ -1349,6 +1402,11 @@ def hic_breakdown(records, hprc_rows, hgsvc_rows):
         neither=sorted(s for s, v in lab.items() if not v))
     for x in by_label:
         assert x["reads"] + x["not_public"] + len(x["none"]) == x["donors"], x
+    for c in out.values():
+        for x in c["sources"]:
+            if not x["note"]:
+                print(f"  NOTE no one-line summary for Hi-C location {x['where']} "
+                      "(add it to LOCATION_NOTES)", file=sys.stderr)
     for c in out.values():   # every label's detail must partition that label's donors
         for x in c["by_label"]["rows"]:
             assert sum(y["n"] for y in x["detail"]["split"]) == x["donors"], x["label"]
@@ -1523,7 +1581,7 @@ def build_site(hprc, hprc_rows, other, hprc_probe, hgsvc, hgsvc_rows, hgsvc_prob
                     "sample id at all (mostly pooled Strand-seq flowcells and multiplexed Kinnex "
                     "pools). 'out_of_catalogue' names a donor with no long-read data here "
                     "(1000G trio parents, Coriell lines screened but not sequenced). "
-                    "'other_donors' are EnTEx/GTEx tissue donors and MGI pediatric blood donors "
+                    "'other_donors' are EnTEx/GTEx tissue donors and MGI PAN-series blood donors "
                     "hosted in the HPRC bucket. All are real data.",
             "unattributed": {"HPRC": {"prefix": S3_HTTPS, "cols": ["modality", "key", "bytes",
                                                                     "assay_detail", "source"],

@@ -11,7 +11,7 @@ HPRC    490 donors   s3://human-pangenomics  working/ + every raw-data submissio
 HGSVC    69 donors   IGSR HGSVC2 + HGSVC3 working/, the production sheet, and HGSVC donors
                      sequenced by HPRC centres (hosted in the HPRC bucket)
 Other   NYGC 30x, 1KG-ONT, Geuvadis, MAGE and ENCODE, matched on the cell-line id
-        552 unique donors, 7 in both cohorts, 32 data types, 51,499 attributed data files
+        552 unique donors, 7 in both cohorts, 32 data types, 51,471 attributed data files
 ```
 
 ## The app
@@ -32,7 +32,8 @@ Four tabs, simplest first:
   that label's donors divide by location, and which folders hold their files. Click a
   folder row to open everything in that folder by file type, with file counts and total
   sizes: the counted reads (read 1 / read 2), copies of files already in `working/`, and
-  whatever else is there (reports, manifests, checksums, other data types).
+  whatever else is there (reports, manifests, checksums, other data types). Every folder
+  carries a one-line description, kept in `LOCATION_NOTES` in the build script.
   Also reachable from the Hi-C row on the Overview.
 - **About the data** — where it comes from, what to watch for, and the specialist tables.
 
@@ -59,7 +60,7 @@ conclusions it drew about *functional* data were wrong in several places.
 
 | Claim in the old catalogue | What the archives show | Why it was wrong |
 |---|---|---|
-| HiFi 5mC: 86 HPRC donors | **409** (every one of the 353 core-five donors) | Revio/jasmine BAMs carry 5mC as inline MM/ML tags. The old build only counted dedicated "methylation" submissions. |
+| HiFi 5mC: 86 HPRC donors | **412** (every one of the 353 core-five donors) | Revio/jasmine BAMs carry 5mC as inline MM/ML tags. The old build only counted dedicated "methylation" submissions. |
 | ONT methylation: not catalogued | **415 HPRC** donors with 5mC (most also 5hmC); **65 HGSVC** (nanopolish calls) | Same — dorado BAMs carry the tags inline; HGSVC's `Nanopolish_UW` directory was never classified. |
 | "HGSVC has no methylation" | 54 HGSVC donors have HiFi 5mC | From HGSVC donors re-sequenced by HPRC centres (`*_HGSVC_HiFi_Y5`, `UCSC_HGSVC_ONT_R10`, `HGSVC_OMNIC`), which the old build never looked at. |
 | Karyotype 40, microarray 40 | **394** and **400** | Only `working/` was scanned; Coriell's QC lives in `submissions/CORIELL_CHOP*` with `GM`/`PG` names and misspelt folders. |
@@ -78,22 +79,22 @@ HPRC-only donors whose HiFi files had been routed to HGSVC by submission label a
 is why HPRC is 490 donors, not 495, and Hi-C is 395, not 397.
 
 Assays that are **new to the catalogue**: Pore-C (5 donors), ONT 5mC/5hmC, whole-blood data
-(11; matched LCL vs blood HiFi, Omni-C and Kinnex), iPSC data (3), trio parent Illumina, and
+(14; matched LCL vs blood HiFi, Omni-C and Kinnex), iPSC data (3), trio parent Illumina, and
 eight same-donor datasets from other projects (below). Data on donors outside both cohorts
-(ENCODE EnTEx tissue ONT with 5mC/5hmC, GTEx-style colon HiFi, pediatric blood donors) is
+(ENCODE EnTEx tissue ONT with 5mC/5hmC, GTEx-style colon HiFi, MGI PAN-series blood donors) is
 listed in its own table rather than mixed into the cohort counts.
 
 ## Coverage now
 
 | Assay | HPRC | HGSVC | | Assay | HPRC | HGSVC |
 |---|---:|---:|---|---|---:|---:|
-| PacBio HiFi | 418 | 69 | | HiFi 5mC | 409 | 54 |
+| PacBio HiFi | 421 | 69 | | HiFi 5mC | 412 | 54 |
 | ONT | 453 | 64 | | ONT 5mC / 5hmC | 415 | 65 |
-| Illumina WGS | 424 | 69 | | Fiber-seq (m6A) | 119 | — |
+| Illumina WGS | 427 | 69 | | Fiber-seq (m6A) | 119 | — |
 | Hi-C / Omni-C | 395 | 68 | | Kinnex / Iso-Seq | 379 | 64 |
 | Pore-C | 5 | — | | RNA-seq (short) | — | 67 |
 | Micro-C | 1 | — | | ONT direct RNA | 1 | — |
-| Strand-seq | 9 | 69 | | Whole-blood data | 11 | — |
+| Strand-seq | 9 | 69 | | Whole-blood data | 14 | — |
 | Bionano | 42 | 68 | | iPSC data | 3 | — |
 
 Same donor, other projects (cohort donors whose cell line appears there):
@@ -117,6 +118,13 @@ donors. Other projects add RNA-seq or ENCODE data for only 167 of the 552 donors
   `PG12345` (Coriell/UW lab spelling) → the matching `HG`/`NA` id, resolved against every id
   seen anywhere in the bucket. One mislabelled folder (`NA08441` = `HG08441`) is aliased
   explicitly in `HPRC_ALIASES`.
+- **The same file under two names is counted once.** A submission file is skipped when its
+  donor already has a file of that name, or a file of the same data type with the same exact
+  size of 100 MB or more (a "redo" upload that renames `PG01192…` to `HG01192…`, a folder
+  typed `HGO6807` beside `HG06807`). 162 such files, 12 TB, were being counted twice.
+- **The WashU pedigree.** `WASHU_PED_DATA/README.txt` maps the lab names `PAN010`, `PAN011`,
+  `PAN027`, `PAN028` to grandmother, grandfather, mother and proband: `HG06803`, `HG06804`,
+  `HG06807`, `HG06808`. Files filed under the PAN names are credited to those donors.
 - **HGSVC donors in the HPRC bucket.** Submissions labelled `*HGSVC*` are credited to the
   HGSVC record only for donors on the HGSVC roster; the same submissions also hold HPRC-only
   donors, whose files stay with HPRC. A data type is ticked only on the record that lists
@@ -130,7 +138,7 @@ donors. Other projects add RNA-seq or ENCODE data for only 167 of the 552 donors
 - **File sizes.** HPRC sizes come from the S3 listing. IGSR's folder listings only show
   rounded sizes, so the build asks the server for each file's exact `Content-Length`
   (one header request per file, cached in `.cache/igsr_sizes.json`). HGSVC donors' data
-  totals 210 TB: 84 TB on IGSR and 126 TB in the HPRC bucket. HPRC donors' data is 1,112 TB.
+  totals 210 TB: 84 TB on IGSR and 126 TB in the HPRC bucket. HPRC donors' data is 1,105 TB.
 - **HGSVC2 vs HGSVC3 label.** Each HGSVC donor carries the phase label(s) the IGSR data
   portal gives the sample (`igsr_labels`): 44 are labelled HGSVC2 and 65 HGSVC3, 41 of them
   both; HG002 has neither. This is the donor's cohort label and is separate from `phases`,

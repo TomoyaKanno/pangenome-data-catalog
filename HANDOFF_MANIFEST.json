@@ -1,6 +1,6 @@
 {
   "bundle": "Pangenome data catalog: HPRC + HGSVC (2,3) + same-donor external data",
-  "generated_utc": "2026-11-10T21:57:36Z",
+  "generated_utc": "2026-11-11T00:05:40Z",
   "build": "python3 scripts/build_catalog.py --hgsvc-xlsx <HGSVC_Production_Master-2.xlsx>",
   "counts": {
     "donors": 552,
@@ -18,8 +18,8 @@
       "NA19240"
     ],
     "data_types": 32,
-    "attributed_data_files": 51499,
-    "hprc_TB": 1112.1,
+    "attributed_data_files": 51471,
+    "hprc_TB": 1105.4,
     "unattributed_files": 2289,
     "hgsvc_TB": 209.8,
     "hgsvc_TB_by_host": {
@@ -29,7 +29,7 @@
   },
   "coverage": {
     "HiFi": {
-      "HPRC": 418,
+      "HPRC": 421,
       "HGSVC": 69
     },
     "ONT": {
@@ -37,7 +37,7 @@
       "HGSVC": 64
     },
     "Illumina_WGS": {
-      "HPRC": 424,
+      "HPRC": 427,
       "HGSVC": 69
     },
     "Illumina_parents": {
@@ -57,7 +57,7 @@
       "HGSVC": 1
     },
     "HiFi_5mC": {
-      "HPRC": 409,
+      "HPRC": 412,
       "HGSVC": 54
     },
     "ONT_5mC": {
@@ -101,7 +101,7 @@
       "HGSVC": 0
     },
     "WholeBlood": {
-      "HPRC": 11,
+      "HPRC": 14,
       "HGSVC": 0
     },
     "iPSC": {
@@ -166,7 +166,7 @@
       "core5 + Fiber-seq + HiFi 5mC + ONT 5mC": 101,
       "core5 + MAGE RNA-seq": 58,
       "Fiber-seq + Kinnex + MAGE RNA-seq": 9,
-      "HiFi 5mC + Whole blood (LCL vs blood)": 11
+      "HiFi 5mC + Whole blood (LCL vs blood)": 14
     },
     "HGSVC": {
       "eight-assay set (Ill,HiFi,ONT,SS,HiC,BN,RNA,Kinnex)": 64,

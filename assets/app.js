@@ -703,7 +703,7 @@ function folderContents(sr) {
     box.append(list);
   };
   section('Counted in this row', c.counted);
-  section('Copies of files already in a working/ folder (not counted twice)', c.copies, 'off');
+  section('Second copies of files already counted elsewhere (not counted twice)', c.copies, 'off');
   section('Also in this folder (not counted)', c.other, 'off');
   if (c.other.length) box.append(el('p', { className: 'bd-label-note', textContent:
     'Not counted: reports, checksums, manifests, other data types, derived files, and files for people outside the cohort.' }));
@@ -819,7 +819,7 @@ function renderHicPage() {
     }
     const notes = ['Click a location to see its file types and their total sizes.',
       'A donor can have files in more than one location, so the Donors column does not add up to the total.'];
-    if (c === 'HPRC') notes.push('Submission rows count only files that are not already in a working/ folder.');
+    if (c === 'HPRC') notes.push('Submission rows count only files not already counted in working/ or in another submission.');
     if (v.other_donors.length) notes.push(`These locations also hold Hi-C for ${v.other_donors.length} people who are not ${c} donors.`);
     if (v.unattributed_files) notes.push(`${plural(v.unattributed_files, 'file')} carr${v.unattributed_files === 1 ? 'ies' : 'y'} no donor name.`);
     const right = el('div', { className: 'bd-right' }, [

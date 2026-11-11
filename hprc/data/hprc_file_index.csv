@@ -19097,6 +19097,18 @@ HG04228,HiFi,,,data,submissions/1E2DD570-3B26-418B-B50F-5417F64C5679--HIFI_DEEPC
 HG04228,HiFi,,,data,submissions/1E2DD570-3B26-418B-B50F-5417F64C5679--HIFI_DEEPCONSENSUS/HG04228/raw_data/PacBio_HiFi/DeepConsensus/m64076_210617_050849.dc0.2.Q20.fastq.gz,36340482678,submissions,False,True
 HG04228,HiFi,,,data,submissions/1E2DD570-3B26-418B-B50F-5417F64C5679--HIFI_DEEPCONSENSUS/HG04228/raw_data/PacBio_HiFi/DeepConsensus/m64076_210618_160639.dc0.2.Q20.fastq.gz,32731742497,submissions,False,True
 HG04228,HiFi,,,data,submissions/1E2DD570-3B26-418B-B50F-5417F64C5679--HIFI_DEEPCONSENSUS/HG04228/raw_data/PacBio_HiFi/DeepConsensus/m64076_210620_030428.dc0.2.Q20.fastq.gz,33202493109,submissions,False,True
+HG06803,HiFi,filed under the pedigree's PAN name,,data,submissions/1E2DD570-3B26-418B-B50F-5417F64C5679--HIFI_DEEPCONSENSUS/MGISTL-PAN010/raw_data/PacBio_HiFi/DeepConsensus/m64043_210416_171718.dc0.2.Q20.fastq.gz,36523145719,submissions,False,True
+HG06803,HiFi,filed under the pedigree's PAN name,,data,submissions/1E2DD570-3B26-418B-B50F-5417F64C5679--HIFI_DEEPCONSENSUS/MGISTL-PAN010/raw_data/PacBio_HiFi/DeepConsensus/m64043_210418_021436.dc0.2.Q20.fastq.gz,32225906816,submissions,False,True
+HG06803,HiFi,filed under the pedigree's PAN name,,data,submissions/1E2DD570-3B26-418B-B50F-5417F64C5679--HIFI_DEEPCONSENSUS/MGISTL-PAN010/raw_data/PacBio_HiFi/DeepConsensus/m64043_210420_151018.dc0.2.Q20.fastq.gz,34446114966,submissions,False,True
+HG06803,HiFi,filed under the pedigree's PAN name,,data,submissions/1E2DD570-3B26-418B-B50F-5417F64C5679--HIFI_DEEPCONSENSUS/MGISTL-PAN010/raw_data/PacBio_HiFi/DeepConsensus/m64043_210421_224017.dc0.2.Q20.fastq.gz,32239367156,submissions,False,True
+HG06804,HiFi,filed under the pedigree's PAN name,,data,submissions/1E2DD570-3B26-418B-B50F-5417F64C5679--HIFI_DEEPCONSENSUS/MGISTL-PAN011/raw_data/PacBio_HiFi/DeepConsensus/m64136_210506_183715.dc0.2.Q20.fastq.gz,31667326215,submissions,False,True
+HG06804,HiFi,filed under the pedigree's PAN name,,data,submissions/1E2DD570-3B26-418B-B50F-5417F64C5679--HIFI_DEEPCONSENSUS/MGISTL-PAN011/raw_data/PacBio_HiFi/DeepConsensus/m64136_210508_020125.dc0.2.Q20.fastq.gz,31610199584,submissions,False,True
+HG06804,HiFi,filed under the pedigree's PAN name,,data,submissions/1E2DD570-3B26-418B-B50F-5417F64C5679--HIFI_DEEPCONSENSUS/MGISTL-PAN011/raw_data/PacBio_HiFi/DeepConsensus/m64136_210509_092431.dc0.2.Q20.fastq.gz,32833837571,submissions,False,True
+HG06804,HiFi,filed under the pedigree's PAN name,,data,submissions/1E2DD570-3B26-418B-B50F-5417F64C5679--HIFI_DEEPCONSENSUS/MGISTL-PAN011/raw_data/PacBio_HiFi/DeepConsensus/m64136_210510_164711.dc0.2.Q20.fastq.gz,30584259743,submissions,False,True
+HG06808,HiFi,filed under the pedigree's PAN name,,data,submissions/1E2DD570-3B26-418B-B50F-5417F64C5679--HIFI_DEEPCONSENSUS/MGISTL-PAN028/raw_data/PacBio_HiFi/DeepConsensus/m64136_210429_180938.dc0.2.Q20.fastq.gz,31799019654,submissions,False,True
+HG06808,HiFi,filed under the pedigree's PAN name,,data,submissions/1E2DD570-3B26-418B-B50F-5417F64C5679--HIFI_DEEPCONSENSUS/MGISTL-PAN028/raw_data/PacBio_HiFi/DeepConsensus/m64136_210501_013313.dc0.2.Q20.fastq.gz,31631067336,submissions,False,True
+HG06808,HiFi,filed under the pedigree's PAN name,,data,submissions/1E2DD570-3B26-418B-B50F-5417F64C5679--HIFI_DEEPCONSENSUS/MGISTL-PAN028/raw_data/PacBio_HiFi/DeepConsensus/m64136_210503_174237.dc0.2.Q20.fastq.gz,33512236112,submissions,False,True
+HG06808,HiFi,filed under the pedigree's PAN name,,data,submissions/1E2DD570-3B26-418B-B50F-5417F64C5679--HIFI_DEEPCONSENSUS/MGISTL-PAN028/raw_data/PacBio_HiFi/DeepConsensus/m64136_210505_005712.dc0.2.Q20.fastq.gz,29990491831,submissions,False,True
 HG06807,HiFi,,,data,submissions/1E2DD570-3B26-418B-B50F-5417F64C5679--HIFI_DEEPCONSENSUS/MGISTL_PAN027_HG06807/raw_data/PacBio_HiFi/DeepConsensus/m64043_211118_185250.dc0.2.Q20.fastq.gz,38089593408,submissions,False,True
 HG06807,HiFi,,,data,submissions/1E2DD570-3B26-418B-B50F-5417F64C5679--HIFI_DEEPCONSENSUS/MGISTL_PAN027_HG06807/raw_data/PacBio_HiFi/DeepConsensus/m64043_211120_054831.dc0.2.Q20.fastq.gz,38435458460,submissions,False,True
 HG06807,HiFi,,,data,submissions/1E2DD570-3B26-418B-B50F-5417F64C5679--HIFI_DEEPCONSENSUS/MGISTL_PAN027_HG06807/raw_data/PacBio_HiFi/DeepConsensus/m64043_211121_164646.dc0.2.Q20.fastq.gz,37362717817,submissions,False,True
@@ -19126,6 +19138,12 @@ NA21309,HiFi,,,data,submissions/1E2DD570-3B26-418B-B50F-5417F64C5679--HIFI_DEEPC
 NA21309,HiFi,,,data,submissions/1E2DD570-3B26-418B-B50F-5417F64C5679--HIFI_DEEPCONSENSUS/NA21309/raw_data/PacBio_HiFi/DeepConsensus/NA21309.m64043_191213_191857.dc0.2.Q20.fastq.gz,41152427912,submissions,False,True
 NA21309,HiFi,,,data,submissions/1E2DD570-3B26-418B-B50F-5417F64C5679--HIFI_DEEPCONSENSUS/NA21309/raw_data/PacBio_HiFi/DeepConsensus/NA21309.m64043_191215_014401.dc0.2.Q20.fastq.gz,39797511882,submissions,False,True
 NA21309,HiFi,,,data,submissions/1E2DD570-3B26-418B-B50F-5417F64C5679--HIFI_DEEPCONSENSUS/NA21309/raw_data/PacBio_HiFi/DeepConsensus/NA21309.m64043_191219_192900.dc0.2.Q20.fastq.gz,19629437302,submissions,False,True
+HG06807,HiFi,filed under the pedigree's PAN name,,data,submissions/1E2DD570-3B26-418B-B50F-5417F64C5679--HIFI_DEEPCONSENSUS/PAN027/raw_data/PacBio_HiFi/DeepConsensus/PAN027.m64043_210925_220058.Q20.fastq.gz,37783701151,submissions,False,True
+HG06807,HiFi,filed under the pedigree's PAN name,,data,submissions/1E2DD570-3B26-418B-B50F-5417F64C5679--HIFI_DEEPCONSENSUS/PAN027/raw_data/PacBio_HiFi/DeepConsensus/PAN027.m64043_210927_090130.Q20.fastq.gz,36411200804,submissions,False,True
+HG06807,HiFi,filed under the pedigree's PAN name,,data,submissions/1E2DD570-3B26-418B-B50F-5417F64C5679--HIFI_DEEPCONSENSUS/PAN027/raw_data/PacBio_HiFi/DeepConsensus/PAN027.m64136_210423_181015.Q20.fastq.gz,37717492233,submissions,False,True
+HG06807,HiFi,filed under the pedigree's PAN name,,data,submissions/1E2DD570-3B26-418B-B50F-5417F64C5679--HIFI_DEEPCONSENSUS/PAN027/raw_data/PacBio_HiFi/DeepConsensus/PAN027.m64136_210425_000914.Q20.fastq.gz,32667366936,submissions,False,True
+HG06807,HiFi,filed under the pedigree's PAN name,,data,submissions/1E2DD570-3B26-418B-B50F-5417F64C5679--HIFI_DEEPCONSENSUS/PAN027/raw_data/PacBio_HiFi/DeepConsensus/PAN027.m64136_210426_185548.Q20.fastq.gz,31687769510,submissions,False,True
+HG06807,HiFi,filed under the pedigree's PAN name,,data,submissions/1E2DD570-3B26-418B-B50F-5417F64C5679--HIFI_DEEPCONSENSUS/PAN027/raw_data/PacBio_HiFi/DeepConsensus/PAN027.m64136_210428_005505.Q20.fastq.gz,28637185321,submissions,False,True
 HG002,HiFi,,,data,submissions/25d8f069-2c4a-48ee-ad11-cab25aafd280--WUSTL_HG002_HiFi/HG002/PacBio_HiFi/m64043_211027_183048.hifi_reads.bam,128867666702,submissions,False,True
 NA18940,Illumina_WGS,,,data,submissions/30CCB19D-C0D8-4F47-85D1-B7CB68A742D5--AMED_ILMN/NA18940/raw_data/Illumina/child/NA18940.final.cram,16674034146,submissions,False,True
 NA18943,Illumina_WGS,,,data,submissions/30CCB19D-C0D8-4F47-85D1-B7CB68A742D5--AMED_ILMN/NA18943/raw_data/Illumina/child/NA18943.final.cram,16119932140,submissions,False,True
@@ -19347,6 +19365,27 @@ HG04228,HiFi,,,data,submissions/3962C3F7-3C98-4CFB-AC64-D39D03A01912--READSBAM4D
 HG04228,HiFi,,,data,submissions/3962C3F7-3C98-4CFB-AC64-D39D03A01912--READSBAM4DC_2/HG04228/raw_data/PacBio_HiFi/Q9READSBAM/r64076_20210615_175840_B01_q9_forDC.bam,35504599555,submissions,False,True
 HG04228,HiFi,,,data,submissions/3962C3F7-3C98-4CFB-AC64-D39D03A01912--READSBAM4DC_2/HG04228/raw_data/PacBio_HiFi/Q9READSBAM/r64076_20210615_175840_C01_q9_forDC.bam,34162926335,submissions,False,True
 HG04228,HiFi,,,data,submissions/3962C3F7-3C98-4CFB-AC64-D39D03A01912--READSBAM4DC_2/HG04228/raw_data/PacBio_HiFi/Q9READSBAM/r64076_20210615_175840_D01_q9_forDC.bam,31519494124,submissions,False,True
+HG06803,HiFi,filed under the pedigree's PAN name,,data,submissions/3962C3F7-3C98-4CFB-AC64-D39D03A01912--READSBAM4DC_2/MGISTL-PAN010/raw_data/PacBio_HiFi/Q9READSBAM/m64043_210416_171718_q9_forDC.bam,32268419717,submissions,False,True
+HG06803,HiFi,filed under the pedigree's PAN name,,data,submissions/3962C3F7-3C98-4CFB-AC64-D39D03A01912--READSBAM4DC_2/MGISTL-PAN010/raw_data/PacBio_HiFi/Q9READSBAM/m64043_210418_021436_q9_forDC.bam,27794192283,submissions,False,True
+HG06803,HiFi,filed under the pedigree's PAN name,,data,submissions/3962C3F7-3C98-4CFB-AC64-D39D03A01912--READSBAM4DC_2/MGISTL-PAN010/raw_data/PacBio_HiFi/Q9READSBAM/m64043_210420_151018_q9_forDC.bam,30325237553,submissions,False,True
+HG06803,HiFi,filed under the pedigree's PAN name,,data,submissions/3962C3F7-3C98-4CFB-AC64-D39D03A01912--READSBAM4DC_2/MGISTL-PAN010/raw_data/PacBio_HiFi/Q9READSBAM/m64043_210421_224017_q9_forDC.bam,28363223607,submissions,False,True
+HG06804,HiFi,filed under the pedigree's PAN name,,data,submissions/3962C3F7-3C98-4CFB-AC64-D39D03A01912--READSBAM4DC_2/MGISTL-PAN011/raw_data/PacBio_HiFi/Q9READSBAM/m64136_210506_183715_q9_forDC.bam,31642500689,submissions,False,True
+HG06804,HiFi,filed under the pedigree's PAN name,,data,submissions/3962C3F7-3C98-4CFB-AC64-D39D03A01912--READSBAM4DC_2/MGISTL-PAN011/raw_data/PacBio_HiFi/Q9READSBAM/m64136_210508_020125_q9_forDC.bam,29093256972,submissions,False,True
+HG06804,HiFi,filed under the pedigree's PAN name,,data,submissions/3962C3F7-3C98-4CFB-AC64-D39D03A01912--READSBAM4DC_2/MGISTL-PAN011/raw_data/PacBio_HiFi/Q9READSBAM/m64136_210509_092431_q9_forDC.bam,29802403310,submissions,False,True
+HG06804,HiFi,filed under the pedigree's PAN name,,data,submissions/3962C3F7-3C98-4CFB-AC64-D39D03A01912--READSBAM4DC_2/MGISTL-PAN011/raw_data/PacBio_HiFi/Q9READSBAM/m64136_210510_164711_q9_forDC.bam,28158346711,submissions,False,True
+HG06807,HiFi,filed under the pedigree's PAN name,,data,submissions/3962C3F7-3C98-4CFB-AC64-D39D03A01912--READSBAM4DC_2/MGISTL-PAN027/raw_data/PacBio_HiFi/Q9READSBAM/m64043_210925_220058_q9_forDC.bam,38913362515,submissions,False,True
+HG06807,HiFi,filed under the pedigree's PAN name,,data,submissions/3962C3F7-3C98-4CFB-AC64-D39D03A01912--READSBAM4DC_2/MGISTL-PAN027/raw_data/PacBio_HiFi/Q9READSBAM/m64043_210927_090130_q9_forDC.bam,29489668737,submissions,False,True
+HG06807,HiFi,filed under the pedigree's PAN name,,data,submissions/3962C3F7-3C98-4CFB-AC64-D39D03A01912--READSBAM4DC_2/MGISTL-PAN027/raw_data/PacBio_HiFi/Q9READSBAM/m64043_211118_185250_q9_forDC.bam,37923269606,submissions,False,True
+HG06807,HiFi,filed under the pedigree's PAN name,,data,submissions/3962C3F7-3C98-4CFB-AC64-D39D03A01912--READSBAM4DC_2/MGISTL-PAN027/raw_data/PacBio_HiFi/Q9READSBAM/m64043_211120_054831_q9_forDC.bam,38664674789,submissions,False,True
+HG06807,HiFi,filed under the pedigree's PAN name,,data,submissions/3962C3F7-3C98-4CFB-AC64-D39D03A01912--READSBAM4DC_2/MGISTL-PAN027/raw_data/PacBio_HiFi/Q9READSBAM/m64043_211121_164646_q9_forDC.bam,38378718745,submissions,False,True
+HG06807,HiFi,filed under the pedigree's PAN name,,data,submissions/3962C3F7-3C98-4CFB-AC64-D39D03A01912--READSBAM4DC_2/MGISTL-PAN027/raw_data/PacBio_HiFi/Q9READSBAM/m64136_210423_181015_q9_forDC.bam,35818387084,submissions,False,True
+HG06807,HiFi,filed under the pedigree's PAN name,,data,submissions/3962C3F7-3C98-4CFB-AC64-D39D03A01912--READSBAM4DC_2/MGISTL-PAN027/raw_data/PacBio_HiFi/Q9READSBAM/m64136_210425_000914_q9_forDC.bam,32087170391,submissions,False,True
+HG06807,HiFi,filed under the pedigree's PAN name,,data,submissions/3962C3F7-3C98-4CFB-AC64-D39D03A01912--READSBAM4DC_2/MGISTL-PAN027/raw_data/PacBio_HiFi/Q9READSBAM/m64136_210426_185548_q9_forDC.bam,30464551056,submissions,False,True
+HG06807,HiFi,filed under the pedigree's PAN name,,data,submissions/3962C3F7-3C98-4CFB-AC64-D39D03A01912--READSBAM4DC_2/MGISTL-PAN027/raw_data/PacBio_HiFi/Q9READSBAM/m64136_210428_005505_q9_forDC.bam,28073065287,submissions,False,True
+HG06808,HiFi,filed under the pedigree's PAN name,,data,submissions/3962C3F7-3C98-4CFB-AC64-D39D03A01912--READSBAM4DC_2/MGISTL-PAN028/raw_data/PacBio_HiFi/Q9READSBAM/m64136_210429_180938_q9_forDC.bam,28616828317,submissions,False,True
+HG06808,HiFi,filed under the pedigree's PAN name,,data,submissions/3962C3F7-3C98-4CFB-AC64-D39D03A01912--READSBAM4DC_2/MGISTL-PAN028/raw_data/PacBio_HiFi/Q9READSBAM/m64136_210501_013313_q9_forDC.bam,29778541183,submissions,False,True
+HG06808,HiFi,filed under the pedigree's PAN name,,data,submissions/3962C3F7-3C98-4CFB-AC64-D39D03A01912--READSBAM4DC_2/MGISTL-PAN028/raw_data/PacBio_HiFi/Q9READSBAM/m64136_210503_174237_q9_forDC.bam,31838217039,submissions,False,True
+HG06808,HiFi,filed under the pedigree's PAN name,,data,submissions/3962C3F7-3C98-4CFB-AC64-D39D03A01912--READSBAM4DC_2/MGISTL-PAN028/raw_data/PacBio_HiFi/Q9READSBAM/m64136_210505_005712_q9_forDC.bam,28091408131,submissions,False,True
 NA18570,HiFi,,,data,submissions/3962C3F7-3C98-4CFB-AC64-D39D03A01912--READSBAM4DC_2/NA18570/raw_data/PacBio_HiFi/Q9READSBAM/m64330e_220821_125227.ccs.bam_q9_forDC.bam,48552030990,submissions,False,True
 NA18570,HiFi,,,data,submissions/3962C3F7-3C98-4CFB-AC64-D39D03A01912--READSBAM4DC_2/NA18570/raw_data/PacBio_HiFi/Q9READSBAM/m64334e_220815_142753.ccs.bam_q9_forDC.bam,49642944059,submissions,False,True
 NA18570,HiFi,,,data,submissions/3962C3F7-3C98-4CFB-AC64-D39D03A01912--READSBAM4DC_2/NA18570/raw_data/PacBio_HiFi/Q9READSBAM/m64334e_220821_130100.ccs.bam_q9_forDC.bam,49748974081,submissions,False,True
@@ -21383,7 +21422,6 @@ HG04204,HiFi,,,data,submissions/57361110-d079-4bb0-ac49-b4f6e0407fc0--UW_HPRC_Hi
 HG04204,HiFi,,,data,submissions/57361110-d079-4bb0-ac49-b4f6e0407fc0--UW_HPRC_HiFi_Y2/HG04204/raw_data/PacBio_HiFi/r54329U_20210514_220908_A01-bc1003_BAK8A_OA.reads.bam,213875646225,submissions,False,True
 HG04204,HiFi,,,data,submissions/57361110-d079-4bb0-ac49-b4f6e0407fc0--UW_HPRC_HiFi_Y2/HG04204/raw_data/PacBio_HiFi/r54329U_20210517_204310_A01-bc1003_BAK8A_OA.reads.bam,201834372142,submissions,False,True
 HG04204,HiFi,,,data,submissions/57361110-d079-4bb0-ac49-b4f6e0407fc0--UW_HPRC_HiFi_Y2/HG04204/raw_data/PacBio_HiFi/r54329U_20210517_204310_B01-bc1003_BAK8A_OA.reads.bam,210325844514,submissions,False,True
-HG04204,HiFi,,,data,submissions/57361110-d079-4bb0-ac49-b4f6e0407fc0--UW_HPRC_HiFi_Y2/HG04204/raw_data/PacBio_HiFi/r54329U_20210520_211729_A01-bc1003_BAK8A_OA.reads.bam,210325844514,submissions,False,True
 HG04228,HiFi,,,data,submissions/57361110-d079-4bb0-ac49-b4f6e0407fc0--UW_HPRC_HiFi_Y2/HG04228/raw_data/PacBio_HiFi/r54329U_20210507_223310_A01-bc1008_BAK8A_OA.reads.bam,29645070132,submissions,False,True
 HG04228,HiFi,,,data,submissions/57361110-d079-4bb0-ac49-b4f6e0407fc0--UW_HPRC_HiFi_Y2/HG04228/raw_data/PacBio_HiFi/r54329U_20210723_225604_B01.reads.bam,349216645233,submissions,False,True
 HG04228,HiFi,,,data,submissions/57361110-d079-4bb0-ac49-b4f6e0407fc0--UW_HPRC_HiFi_Y2/HG04228/raw_data/PacBio_HiFi/r64076_20210615_175840_B01.reads.bam,289919876852,submissions,False,True
@@ -21986,7 +22024,6 @@ HG002,ONT,,,data,submissions/5b73fa0e-658a-4248-b2b8-cd16155bc157--UCSC_GIAB_R10
 HG002,ONT,,,data,submissions/5b73fa0e-658a-4248-b2b8-cd16155bc157--UCSC_GIAB_R1041_nanopore/HG002_R1041_UL_Duplex/Dorado_v0.1.1/stereo_duplex/02_08_23_R1041_UL_Duplex_HG002_1_Dorado_v0.1.1_400bps_sup_stereo_duplex_fail.bam,647,submissions,False,True
 HG002,ONT,,,data,submissions/5b73fa0e-658a-4248-b2b8-cd16155bc157--UCSC_GIAB_R1041_nanopore/HG002_R1041_UL_Duplex/Dorado_v0.1.1/stereo_duplex/02_08_23_R1041_UL_Duplex_HG002_1_Dorado_v0.1.1_400bps_sup_stereo_duplex_fail.fastq.gz,182,submissions,False,True
 HG002,ONT,,,data,submissions/5b73fa0e-658a-4248-b2b8-cd16155bc157--UCSC_GIAB_R1041_nanopore/HG002_R1041_UL_Duplex/Dorado_v0.1.1/stereo_duplex/02_08_23_R1041_UL_Duplex_HG002_1_Dorado_v0.1.1_400bps_sup_stereo_duplex_pass.bam,99313524,submissions,False,True
-HG002,ONT,,,data,submissions/5b73fa0e-658a-4248-b2b8-cd16155bc157--UCSC_GIAB_R1041_nanopore/HG002_R1041_UL_Duplex/Dorado_v0.1.1/stereo_duplex/02_08_23_R1041_UL_Duplex_HG002_1_Dorado_v0.1.1_400bps_sup_stereo_duplex_pass.fastq.gz,109876799,submissions,False,True
 HG002,ONT,,,data,submissions/5b73fa0e-658a-4248-b2b8-cd16155bc157--UCSC_GIAB_R1041_nanopore/HG002_R1041_UL_Duplex/Dorado_v0.1.1/stereo_duplex/02_08_23_R1041_UL_Duplex_HG002_2_Dorado_v0.1.1_400bps_sup_stereo_duplex.bam,110348132,submissions,False,True
 HG002,ONT,,,data,submissions/5b73fa0e-658a-4248-b2b8-cd16155bc157--UCSC_GIAB_R1041_nanopore/HG002_R1041_UL_Duplex/Dorado_v0.1.1/stereo_duplex/02_08_23_R1041_UL_Duplex_HG002_2_Dorado_v0.1.1_400bps_sup_stereo_duplex_fail.bam,46520,submissions,False,True
 HG002,ONT,,,data,submissions/5b73fa0e-658a-4248-b2b8-cd16155bc157--UCSC_GIAB_R1041_nanopore/HG002_R1041_UL_Duplex/Dorado_v0.1.1/stereo_duplex/02_08_23_R1041_UL_Duplex_HG002_2_Dorado_v0.1.1_400bps_sup_stereo_duplex_fail.fastq.gz,49598,submissions,False,True
@@ -22240,12 +22277,27 @@ HG02624,FiberSeq,PacBio,,data,submissions/609e4464-8af6-4a46-8259-f12a92ce8eb2--
 HG02624,FiberSeq,PacBio,,data,submissions/609e4464-8af6-4a46-8259-f12a92ce8eb2--WUSTL_HPRC_Y5_Fiber-Seq/HG02624_FS/PacBio_HiFi/m84081_240501_202516_s2.hifi_reads.bc2089.bam,59813510560,submissions,False,True
 HG03672,FiberSeq,PacBio,,data,submissions/609e4464-8af6-4a46-8259-f12a92ce8eb2--WUSTL_HPRC_Y5_Fiber-Seq/HG03672_FS/PacBio_HiFi/m84081_240501_222434_s3.hifi_reads.bc2008.bam,354070709938,submissions,False,True
 HG03672,FiberSeq,PacBio,,data,submissions/609e4464-8af6-4a46-8259-f12a92ce8eb2--WUSTL_HPRC_Y5_Fiber-Seq/HG03672_FS/PacBio_HiFi/m84081_240502_002352_s4.hifi_reads.bc2008.bam,356400878286,submissions,False,True
-HG06807,HiFi,"DeepConsensus, blood",blood,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/DeepConsensus/HG06807/v0.2_blood/PAN027.m64043_210925_220058.Q20.fastq.gz,37783701151,submissions,False,True
-HG06807,HiFi,"DeepConsensus, blood",blood,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/DeepConsensus/HG06807/v0.2_blood/PAN027.m64043_210927_090130.Q20.fastq.gz,36411200804,submissions,False,True
-HG06807,HiFi,"DeepConsensus, blood",blood,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/DeepConsensus/HG06807/v0.2_blood/PAN027.m64136_210423_181015.Q20.fastq.gz,37717492233,submissions,False,True
-HG06807,HiFi,"DeepConsensus, blood",blood,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/DeepConsensus/HG06807/v0.2_blood/PAN027.m64136_210425_000914.Q20.fastq.gz,32667366936,submissions,False,True
-HG06807,HiFi,"DeepConsensus, blood",blood,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/DeepConsensus/HG06807/v0.2_blood/PAN027.m64136_210426_185548.Q20.fastq.gz,31687769510,submissions,False,True
-HG06807,HiFi,"DeepConsensus, blood",blood,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/DeepConsensus/HG06807/v0.2_blood/PAN027.m64136_210428_005505.Q20.fastq.gz,28637185321,submissions,False,True
+HG06803,HiFi,"DeepConsensus, blood; filed under the pedigree's PAN name",blood,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/DeepConsensus/blood/PAN010.MGISTL-PAN010.m64043_210416_171718.dc.q20.fastq.gz,29643275696,submissions,False,True
+HG06803,HiFi,"DeepConsensus, blood; filed under the pedigree's PAN name",blood,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/DeepConsensus/blood/PAN010.MGISTL-PAN010.m64043_210418_021436.dc.q20.fastq.gz,26096592874,submissions,False,True
+HG06803,HiFi,"DeepConsensus, blood; filed under the pedigree's PAN name",blood,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/DeepConsensus/blood/PAN010.MGISTL-PAN010.m64043_210420_151018.dc.q20.fastq.gz,27805944917,submissions,False,True
+HG06803,HiFi,"DeepConsensus, blood; filed under the pedigree's PAN name",blood,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/DeepConsensus/blood/PAN010.MGISTL-PAN010.m64043_210421_224017.dc.q20.fastq.gz,26028457017,submissions,False,True
+HG06804,HiFi,"DeepConsensus, blood; filed under the pedigree's PAN name",blood,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/DeepConsensus/blood/PAN011.MGISTL-PAN011.m64136_210506_183715.dc.q20.fastq.gz,26656233736,submissions,False,True
+HG06804,HiFi,"DeepConsensus, blood; filed under the pedigree's PAN name",blood,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/DeepConsensus/blood/PAN011.MGISTL-PAN011.m64136_210508_020125.dc.q20.fastq.gz,25704166323,submissions,False,True
+HG06804,HiFi,"DeepConsensus, blood; filed under the pedigree's PAN name",blood,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/DeepConsensus/blood/PAN011.MGISTL-PAN011.m64136_210509_092431.dc.q20.fastq.gz,26558778850,submissions,False,True
+HG06804,HiFi,"DeepConsensus, blood; filed under the pedigree's PAN name",blood,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/DeepConsensus/blood/PAN011.MGISTL-PAN011.m64136_210510_164711.dc.q20.fastq.gz,24725786865,submissions,False,True
+HG06807,HiFi,"DeepConsensus, blood; filed under the pedigree's PAN name",blood,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/DeepConsensus/blood/PAN027.MGISTL-PAN027.m64043_210925_220058.dc.q20.fastq.gz,27354247564,submissions,False,True
+HG06807,HiFi,"DeepConsensus, blood; filed under the pedigree's PAN name",blood,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/DeepConsensus/blood/PAN027.MGISTL-PAN027.m64043_210927_090130.dc.q20.fastq.gz,28459404653,submissions,False,True
+HG06807,HiFi,"DeepConsensus, blood; filed under the pedigree's PAN name",blood,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/DeepConsensus/blood/PAN027.MGISTL-PAN027.m64136_210423_181015.dc.q20.fastq.gz,27858931705,submissions,False,True
+HG06807,HiFi,"DeepConsensus, blood; filed under the pedigree's PAN name",blood,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/DeepConsensus/blood/PAN027.MGISTL-PAN027.m64136_210425_000914.dc.q20.fastq.gz,24425619786,submissions,False,True
+HG06807,HiFi,"DeepConsensus, blood; filed under the pedigree's PAN name",blood,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/DeepConsensus/blood/PAN027.MGISTL-PAN027.m64136_210426_185548.dc.q20.fastq.gz,23395608355,submissions,False,True
+HG06807,HiFi,"DeepConsensus, blood; filed under the pedigree's PAN name",blood,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/DeepConsensus/blood/PAN027.MGISTL-PAN027.m64136_210428_005505.dc.q20.fastq.gz,21553902623,submissions,False,True
+HG06808,HiFi,"DeepConsensus, blood; filed under the pedigree's PAN name",blood,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/DeepConsensus/blood/PAN028.MGISTL-PAN028.m64136_210429_180938.dc.q20.fastq.gz,25550461212,submissions,False,True
+HG06808,HiFi,"DeepConsensus, blood; filed under the pedigree's PAN name",blood,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/DeepConsensus/blood/PAN028.MGISTL-PAN028.m64136_210501_013313.dc.q20.fastq.gz,25004426715,submissions,False,True
+HG06808,HiFi,"DeepConsensus, blood; filed under the pedigree's PAN name",blood,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/DeepConsensus/blood/PAN028.MGISTL-PAN028.m64136_210503_174237.dc.q20.fastq.gz,26592016045,submissions,False,True
+HG06808,HiFi,"DeepConsensus, blood; filed under the pedigree's PAN name",blood,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/DeepConsensus/blood/PAN028.MGISTL-PAN028.m64136_210505_005712.dc.q20.fastq.gz,23792730685,submissions,False,True
+HG06807,HiFi,DeepConsensus; filed under the pedigree's PAN name,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/DeepConsensus/cell/PAN027.cell.MGISTL-PAN027.m64043_211118_185250.dc.q20.fastq.gz,31034029052,submissions,False,True
+HG06807,HiFi,DeepConsensus; filed under the pedigree's PAN name,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/DeepConsensus/cell/PAN027.cell.MGISTL-PAN027.m64043_211120_054831.dc.q20.fastq.gz,31413787185,submissions,False,True
+HG06807,HiFi,DeepConsensus; filed under the pedigree's PAN name,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/DeepConsensus/cell/PAN027.cell.MGISTL-PAN027.m64043_211121_164646.dc.q20.fastq.gz,30576557706,submissions,False,True
 HG06807,ONT,,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/HG06807/10_27_25_R1041M_UL_HTFC_HG06807_1.pod5.tar,835746908160,submissions,False,True
 HG06807,ONT,,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/HG06807/10_27_25_R1041M_UL_HTFC_HG06807_2.pod5.tar,663634647040,submissions,False,True
 HG06807,ONT,,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/HG06807/10_27_25_R1041P_UL_HTFC_HG06807_1.pod5.tar,1090416680960,submissions,False,True
@@ -22276,6 +22328,18 @@ HG06807,ONT,,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_D
 HG06807,ONT,,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/PAN027_ONT_100kb/basecalled_03_15_22_R941_HG06807_4.pass.100kL.fastq.gz,28625504553,submissions,False,True
 HG06807,ONT,,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/PAN027_ONT_100kb/basecalled_03_15_22_R941_HG06807_5.pass.100kL.fastq.gz,17957498654,submissions,False,True
 HG06807,ONT,,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/PAN027_ONT_100kb/basecalled_03_15_22_R941_HG06807_6.pass.100kL.fastq.gz,18237705539,submissions,False,True
+HG06803,HiFi_5mC,blood; filed under the pedigree's PAN name,blood,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/PacBio/blood/methycalled/PAN010.m64043_210416_171718.5mc.hifi_reads.bam,30843186777,submissions,False,True
+HG06803,HiFi_5mC,blood; filed under the pedigree's PAN name,blood,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/PacBio/blood/methycalled/PAN010.m64043_210418_021436.5mc.hifi_reads.bam,27185243720,submissions,False,True
+HG06803,HiFi_5mC,blood; filed under the pedigree's PAN name,blood,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/PacBio/blood/methycalled/PAN010.m64043_210420_151018.5mc.hifi_reads.bam,29364743710,submissions,False,True
+HG06803,HiFi_5mC,blood; filed under the pedigree's PAN name,blood,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/PacBio/blood/methycalled/PAN010.m64043_210421_224017.5mc.hifi_reads.bam,27400358226,submissions,False,True
+HG06804,HiFi_5mC,blood; filed under the pedigree's PAN name,blood,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/PacBio/blood/methycalled/PAN011.m64136_210506_183715.5mc.hifi_reads.bam,28520335946,submissions,False,True
+HG06804,HiFi_5mC,blood; filed under the pedigree's PAN name,blood,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/PacBio/blood/methycalled/PAN011.m64136_210508_020125.5mc.hifi_reads.bam,27562019541,submissions,False,True
+HG06804,HiFi_5mC,blood; filed under the pedigree's PAN name,blood,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/PacBio/blood/methycalled/PAN011.m64136_210509_092431.5mc.hifi_reads.bam,28261068426,submissions,False,True
+HG06804,HiFi_5mC,blood; filed under the pedigree's PAN name,blood,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/PacBio/blood/methycalled/PAN011.m64136_210510_164711.5mc.hifi_reads.bam,26319053001,submissions,False,True
+HG06808,HiFi_5mC,blood; filed under the pedigree's PAN name,blood,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/PacBio/blood/methycalled/PAN028.m64136_210429_180938.5mc.hifi_reads.bam,27623836543,submissions,False,True
+HG06808,HiFi_5mC,blood; filed under the pedigree's PAN name,blood,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/PacBio/blood/methycalled/PAN028.m64136_210501_013313.5mc.hifi_reads.bam,27466475783,submissions,False,True
+HG06808,HiFi_5mC,blood; filed under the pedigree's PAN name,blood,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/PacBio/blood/methycalled/PAN028.m64136_210503_174237.5mc.hifi_reads.bam,29260780155,submissions,False,True
+HG06808,HiFi_5mC,blood; filed under the pedigree's PAN name,blood,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/PacBio/blood/methycalled/PAN028.m64136_210505_005712.5mc.hifi_reads.bam,26164416354,submissions,False,True
 ,HiFi_5mC,blood,blood,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/PacBio/blood/methycalled/m64043_210925_220058.5mc.hifi_reads.bam,32528822605,submissions,False,False
 ,HiFi_5mC,blood,blood,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/PacBio/blood/methycalled/m64043_210927_090130.5mc.hifi_reads.bam,28197632605,submissions,False,False
 ,HiFi_5mC,blood,blood,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/PacBio/blood/methycalled/m64136_210423_181015.5mc.hifi_reads.bam,31682013995,submissions,False,False
@@ -22353,14 +22417,20 @@ HG06803,ONT,,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_D
 HG06804,ONT,,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/adaptive_sampling/06_18_24_R1041_UL_Pedigree_HG06804_1_dorado0.7.2_sup5.0.0_5mCG_5hmCG.bam,30755109801,submissions,False,True
 HG06807,ONT,,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/adaptive_sampling/06_18_24_R1041_UL_Pedigree_HG06807_1_dorado0.7.2_sup5.0.0_5mCG_5hmCG.bam,34922898191,submissions,False,True
 HG06808,ONT,,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/adaptive_sampling/06_18_24_R1041_UL_Pedigree_HG06808_1_dorado0.7.2_sup5.0.0_5mCG_5hmCG.bam,19473293692,submissions,False,True
-HG06807,ONT,,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/assemblies/PAN027_ONT_100kb/basecalled_03_15_22_R941_HG06807_1.pass.100kL.fastq.gz,39338238417,submissions,False,True
-HG06807,ONT,,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/assemblies/PAN027_ONT_100kb/basecalled_03_15_22_R941_HG06807_2.pass.100kL.fastq.gz,26755314899,submissions,False,True
-HG06807,ONT,,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/assemblies/PAN027_ONT_100kb/basecalled_03_15_22_R941_HG06807_3.pass.100kL.fastq.gz,31054606283,submissions,False,True
-HG06807,ONT,,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/assemblies/PAN027_ONT_100kb/basecalled_03_15_22_R941_HG06807_4.pass.100kL.fastq.gz,28625504553,submissions,False,True
-HG06807,ONT,,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/assemblies/PAN027_ONT_100kb/basecalled_03_15_22_R941_HG06807_5.pass.100kL.fastq.gz,17957498654,submissions,False,True
-HG06807,ONT,,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/assemblies/PAN027_ONT_100kb/basecalled_03_15_22_R941_HG06807_6.pass.100kL.fastq.gz,18237705539,submissions,False,True
+HG06803,ONT,filed under the pedigree's PAN name,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/chr1/chr1.PAN010.haplotype1.bam,12667192986,submissions,False,True
+HG06803,ONT,filed under the pedigree's PAN name,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/chr1/chr1.PAN010.haplotype2.bam,12792007963,submissions,False,True
+HG06804,ONT,filed under the pedigree's PAN name,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/chr1/chr1.PAN011.haplotype1.bam,11432041988,submissions,False,True
+HG06804,ONT,filed under the pedigree's PAN name,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/chr1/chr1.PAN011.haplotype2.bam,11263962871,submissions,False,True
+HG06807,ONT,filed under the pedigree's PAN name,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/chr1/chr1.PAN027.haplotype1.bam,16191235426,submissions,False,True
+HG06807,ONT,filed under the pedigree's PAN name,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/chr1/chr1.PAN027.haplotype2.bam,15849192686,submissions,False,True
+HG06808,ONT,filed under the pedigree's PAN name,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/chr1/chr1.PAN028.haplotype1.bam,14821323532,submissions,False,True
+HG06808,ONT,filed under the pedigree's PAN name,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/chr1/chr1.PAN028.haplotype2.bam,14894216583,submissions,False,True
 HG06807,ONT_directRNA,RNA004 m6A,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/direct_RNA/02_11_26_RNA004_TOTALRNA_HG06807_dorado1.4.0_sup5.3.0_m6A_DRACH.bam,5502237949,submissions,False,True
 HG06807,ONT_directRNA,RNA004 m6A,,report,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/direct_RNA/02_11_26_RNA004_TOTALRNA_HG06807_dorado1.4.0_sup5.3.0_m6A_DRACH_summary.txt.gz,575445987,submissions,False,True
+HG06803,ONT,filed under the pedigree's PAN name,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/duplex/PAN010.duplex.fastq.gz,81497916261,submissions,False,True
+HG06804,ONT,filed under the pedigree's PAN name,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/duplex/PAN011.duplex.fastq.gz,103496502185,submissions,False,True
+HG06807,ONT,filed under the pedigree's PAN name,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/duplex/PAN027.duplex.fastq.gz,95266682611,submissions,False,True
+HG06808,ONT,filed under the pedigree's PAN name,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/duplex/PAN028.duplex.fastq.gz,88555112622,submissions,False,True
 ,ONT,,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/element/6803_R1.fastq.gz,99711898440,submissions,False,False
 ,ONT,,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/element/6803_R2.fastq.gz,93691022708,submissions,False,False
 ,ONT,,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/element/6804_R1.fastq.gz,105166911548,submissions,False,False
@@ -22400,18 +22470,6 @@ HG06807,ONT,,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_D
 HG06807,ONT,,,report,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/prom_plus/LIG/hac_basecalled/11_03_25_R1041P_LIG_HTFC_HG06807_1_dorado1.4.0_hac-2025-11-06_summary.txt.gz,368097712,submissions,False,True
 HG06807,ONT,,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/prom_plus/LIG/hac_basecalled/11_03_25_R1041P_LIG_HTFC_HG06807_2_dorado1.4.0_hac-2025-11-06.bam,181238962070,submissions,False,True
 HG06807,ONT,,,report,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/prom_plus/LIG/hac_basecalled/11_03_25_R1041P_LIG_HTFC_HG06807_2_dorado1.4.0_hac-2025-11-06_summary.txt.gz,516848230,submissions,False,True
-HG06807,ONT,,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/prom_plus/LIG/pod5/11_03_25_R1041M_LIG_HTFC_HG06807_1.pod5.tar,771598540800,submissions,False,True
-HG06807,ONT,,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/prom_plus/LIG/pod5/11_03_25_R1041M_LIG_HTFC_HG06807_2.pod5.tar,1154169241600,submissions,False,True
-HG06807,ONT,,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/prom_plus/LIG/pod5/11_03_25_R1041P_LIG_HTFC_HG06807_1.pod5.tar,1499837562880,submissions,False,True
-HG06807,ONT,,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/prom_plus/LIG/pod5/11_03_25_R1041P_LIG_HTFC_HG06807_2.pod5.tar,2256153190400,submissions,False,True
-HG06807,ONT,,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/prom_plus/LIG/sup_basecalled/11_03_25_R1041M_LIG_HTFC_HG06807_1_dorado1.1.1_supv5.2.0_5mCG_5hmCG.bam,52755071110,submissions,False,True
-HG06807,ONT,,,report,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/prom_plus/LIG/sup_basecalled/11_03_25_R1041M_LIG_HTFC_HG06807_1_dorado1.1.1_supv5.2.0_5mCG_5hmCG_summary.txt.gz,151475698,submissions,False,True
-HG06807,ONT,,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/prom_plus/LIG/sup_basecalled/11_03_25_R1041M_LIG_HTFC_HG06807_2_dorado1.1.1_supv5.2.0_5mCG_5hmCG.bam,78238082458,submissions,False,True
-HG06807,ONT,,,report,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/prom_plus/LIG/sup_basecalled/11_03_25_R1041M_LIG_HTFC_HG06807_2_dorado1.1.1_supv5.2.0_5mCG_5hmCG_summary.txt.gz,265256175,submissions,False,True
-HG06807,ONT,,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/prom_plus/LIG/sup_basecalled/11_03_25_R1041P_LIG_HTFC_HG06807_1_dorado1.1.1_supv5.2.0_5mCG_5hmCG.bam,103590801062,submissions,False,True
-HG06807,ONT,,,report,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/prom_plus/LIG/sup_basecalled/11_03_25_R1041P_LIG_HTFC_HG06807_1_dorado1.1.1_supv5.2.0_5mCG_5hmCG_summary.txt.gz,259029472,submissions,False,True
-HG06807,ONT,,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/prom_plus/LIG/sup_basecalled/11_03_25_R1041P_LIG_HTFC_HG06807_2_dorado1.1.1_supv5.2.0_5mCG_5hmCG.bam,158391923327,submissions,False,True
-HG06807,ONT,,,report,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/prom_plus/LIG/sup_basecalled/11_03_25_R1041P_LIG_HTFC_HG06807_2_dorado1.1.1_supv5.2.0_5mCG_5hmCG_summary.txt.gz,362819927,submissions,False,True
 HG06807,ONT,,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/prom_plus/UL/hac_basecalled/10_27_25_R1041M_UL_HTFC_HG06807_1_dorado1.4.0_hac-2025-11-06.bam,58394271152,submissions,False,True
 HG06807,ONT,,,report,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/prom_plus/UL/hac_basecalled/10_27_25_R1041M_UL_HTFC_HG06807_1_dorado1.4.0_hac-2025-11-06_summary.txt.gz,117294976,submissions,False,True
 HG06807,ONT,,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/prom_plus/UL/hac_basecalled/10_27_25_R1041M_UL_HTFC_HG06807_2_dorado1.4.0_hac-2025-11-06.bam,46091843174,submissions,False,True
@@ -22420,17 +22478,8 @@ HG06807,ONT,,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_D
 HG06807,ONT,,,report,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/prom_plus/UL/hac_basecalled/10_27_25_R1041P_UL_HTFC_HG06807_1_dorado1.4.0_hac-2025-11-06_summary.txt.gz,154343826,submissions,False,True
 HG06807,ONT,,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/prom_plus/UL/hac_basecalled/10_27_25_R1041P_UL_HTFC_HG06807_2_dorado1.4.0_hac-2025-11-06.bam,73033389729,submissions,False,True
 HG06807,ONT,,,report,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/prom_plus/UL/hac_basecalled/10_27_25_R1041P_UL_HTFC_HG06807_2_dorado1.4.0_hac-2025-11-06_summary.txt.gz,135762593,submissions,False,True
-HG06807,ONT,,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/prom_plus/UL/pod5/10_27_25_R1041M_UL_HTFC_HG06807_1.pod5.tar,835746908160,submissions,False,True
-HG06807,ONT,,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/prom_plus/UL/pod5/10_27_25_R1041M_UL_HTFC_HG06807_2.pod5.tar,663634647040,submissions,False,True
-HG06807,ONT,,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/prom_plus/UL/pod5/10_27_25_R1041P_UL_HTFC_HG06807_1.pod5.tar,1090416680960,submissions,False,True
-HG06807,ONT,,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/prom_plus/UL/pod5/10_27_25_R1041P_UL_HTFC_HG06807_2.pod5.tar,1030875310080,submissions,False,True
-HG06807,ONT,,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/prom_plus/UL/sup_basecalled/10_27_25_R1041M_UL_HTFC_HG06807_1_dorado1.1.1_supv5.2.0_5mCG_5hmCG.bam,48916074702,submissions,False,True
 HG06807,ONT,,,report,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/prom_plus/UL/sup_basecalled/10_27_25_R1041M_UL_HTFC_HG06807_1_dorado1.1.1_supv5.2.0_5mCG_5hmCG_summary.txt.gz,83217759,submissions,False,True
-HG06807,ONT,,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/prom_plus/UL/sup_basecalled/10_27_25_R1041M_UL_HTFC_HG06807_2_dorado1.1.1_supv5.2.0_5mCG_5hmCG.bam,39000816065,submissions,False,True
 HG06807,ONT,,,report,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/prom_plus/UL/sup_basecalled/10_27_25_R1041M_UL_HTFC_HG06807_2_dorado1.1.1_supv5.2.0_5mCG_5hmCG_summary.txt.gz,61885190,submissions,False,True
-HG06807,ONT,,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/prom_plus/UL/sup_basecalled/10_27_25_R1041P_UL_HTFC_HG06807_1_dorado1.1.1_supv5.2.0_5mCG_5hmCG.bam,65950328842,submissions,False,True
-HG06807,ONT,,,report,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/prom_plus/UL/sup_basecalled/10_27_25_R1041P_UL_HTFC_HG06807_1_dorado1.1.1_supv5.2.0_5mCG_5hmCG_summary.txt.gz,109411291,submissions,False,True
-HG06807,ONT,,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/prom_plus/UL/sup_basecalled/10_27_25_R1041P_UL_HTFC_HG06807_2_dorado1.1.1_supv5.2.0_5mCG_5hmCG.bam,62467755416,submissions,False,True
 HG06807,ONT,,,report,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/prom_plus/UL/sup_basecalled/10_27_25_R1041P_UL_HTFC_HG06807_2_dorado1.1.1_supv5.2.0_5mCG_5hmCG_summary.txt.gz,96181820,submissions,False,True
 ,ONT,,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/q27_ont/km-tnt-hg06807-1.fastq.gz,64844121305,submissions,False,False
 ,ONT,,,data,submissions/61E64CC7-3281-4387-B428-C284F65B84EE--WASHU_PED_DATA/q27_ont/km-tnt-hg06807-2.fastq.gz,59734606943,submissions,False,False
@@ -22493,6 +22542,19 @@ NA20799,HiC,,,data,submissions/62B7A84C-C647-4FD9-92F0-90956198404D--Y3-HIC/NA20
 NA20799,HiC,,,data,submissions/62B7A84C-C647-4FD9-92F0-90956198404D--Y3-HIC/NA20799/raw_data/hic/NA20799-1_S4i_L003_R2_001.fastq.gz,972,submissions,False,True
 NA20799,HiC,,,data,submissions/62B7A84C-C647-4FD9-92F0-90956198404D--Y3-HIC/NA20799/raw_data/hic/NA20799-1_S4i_L004_R1_001.fastq.gz,510,submissions,False,True
 NA20799,HiC,,,data,submissions/62B7A84C-C647-4FD9-92F0-90956198404D--Y3-HIC/NA20799/raw_data/hic/NA20799-1_S4i_L004_R2_001.fastq.gz,576,submissions,False,True
+HG06803,Illumina_WGS,filed under the pedigree's PAN name,,data,submissions/656ace19-660a-44d6-b58a-09a322957a78--WUSTL_CELL_HIFI/MGISTL-PAN010/illumina/HTMKJDSX2_TCGCTCTGGA-TACTCAGCTG_L004_R1.fastq.gz,8567715904,submissions,False,True
+HG06803,Illumina_WGS,filed under the pedigree's PAN name,,data,submissions/656ace19-660a-44d6-b58a-09a322957a78--WUSTL_CELL_HIFI/MGISTL-PAN010/illumina/HTMKJDSX2_TCGCTCTGGA-TACTCAGCTG_L004_R2.fastq.gz,9247554004,submissions,False,True
+HG06803,Illumina_WGS,filed under the pedigree's PAN name,,data,submissions/656ace19-660a-44d6-b58a-09a322957a78--WUSTL_CELL_HIFI/MGISTL-PAN010/illumina/HTTMGDSX2_TCGCTCTGGA-TACTCAGCTG_L002_R1.fastq.gz,21811700940,submissions,False,True
+HG06803,Illumina_WGS,filed under the pedigree's PAN name,,data,submissions/656ace19-660a-44d6-b58a-09a322957a78--WUSTL_CELL_HIFI/MGISTL-PAN010/illumina/HTTMGDSX2_TCGCTCTGGA-TACTCAGCTG_L002_R2.fastq.gz,23024401557,submissions,False,True
+HG06804,Illumina_WGS,filed under the pedigree's PAN name,,data,submissions/656ace19-660a-44d6-b58a-09a322957a78--WUSTL_CELL_HIFI/MGISTL-PAN011/illumina/HTMKJDSX2_CGGCGTTCTA-GAGTTGAGGC_L004_R1.fastq.gz,15552360605,submissions,False,True
+HG06804,Illumina_WGS,filed under the pedigree's PAN name,,data,submissions/656ace19-660a-44d6-b58a-09a322957a78--WUSTL_CELL_HIFI/MGISTL-PAN011/illumina/HTMKJDSX2_CGGCGTTCTA-GAGTTGAGGC_L004_R2.fastq.gz,16412760792,submissions,False,True
+HG06804,Illumina_WGS,filed under the pedigree's PAN name,,data,submissions/656ace19-660a-44d6-b58a-09a322957a78--WUSTL_CELL_HIFI/MGISTL-PAN011/illumina/HTTMGDSX2_CGGCGTTCTA-GAGTTGAGGC_L002_R1.fastq.gz,17035222673,submissions,False,True
+HG06804,Illumina_WGS,filed under the pedigree's PAN name,,data,submissions/656ace19-660a-44d6-b58a-09a322957a78--WUSTL_CELL_HIFI/MGISTL-PAN011/illumina/HTTMGDSX2_CGGCGTTCTA-GAGTTGAGGC_L002_R2.fastq.gz,17633217987,submissions,False,True
+HG06807,HiFi,filed under the pedigree's PAN name,,data,submissions/656ace19-660a-44d6-b58a-09a322957a78--WUSTL_CELL_HIFI/MGISTL-PAN027/PacBio_HiFi/m64043_211118_185250.hifi_reads.bam,133750573250,submissions,False,True
+HG06807,HiFi,filed under the pedigree's PAN name,,data,submissions/656ace19-660a-44d6-b58a-09a322957a78--WUSTL_CELL_HIFI/MGISTL-PAN027/PacBio_HiFi/m64043_211120_054831.hifi_reads.bam,135143177253,submissions,False,True
+HG06807,HiFi,filed under the pedigree's PAN name,,data,submissions/656ace19-660a-44d6-b58a-09a322957a78--WUSTL_CELL_HIFI/MGISTL-PAN027/PacBio_HiFi/m64043_211121_164646.hifi_reads.bam,130060700091,submissions,False,True
+HG06808,Illumina_WGS,filed under the pedigree's PAN name,,data,submissions/656ace19-660a-44d6-b58a-09a322957a78--WUSTL_CELL_HIFI/MGISTL-PAN028/illumina/HTTMGDSX2_AATCTTGAGC-TGTGGACCAC_L002_R1.fastq.gz,34189102331,submissions,False,True
+HG06808,Illumina_WGS,filed under the pedigree's PAN name,,data,submissions/656ace19-660a-44d6-b58a-09a322957a78--WUSTL_CELL_HIFI/MGISTL-PAN028/illumina/HTTMGDSX2_AATCTTGAGC-TGTGGACCAC_L002_R2.fastq.gz,35917090049,submissions,False,True
 HG02559,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/H3G32AFX3_HG02559/fastq/HG02559x01PE20407_2_sequence.txt.gz,38803432,submissions,False,True
 HG02559,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/H3G32AFX3_HG02559/fastq/HG02559x01PE20412_1_sequence.txt.gz,12596178,submissions,False,True
 HG02559,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/H3G32AFX3_HG02559/fastq/HG02559x01PE20417_1_sequence.txt.gz,20322388,submissions,False,True
@@ -22550,8 +22612,6 @@ HG01123,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_
 HG01123,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01123/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01123x02PE20522_2_sequence.txt.gz,24765397,submissions,False,True
 HG01123,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01123/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01123x02PE20523_1_sequence.txt.gz,834016,submissions,False,True
 HG01123,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01123/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01123x02PE20523_2_sequence.txt.gz,846300,submissions,False,True
-HG01123,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01123/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01123x02PE20524_1_sequence.txt.gz,152346270,submissions,False,True
-HG01123,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01123/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01123x02PE20524_2_sequence.txt.gz,153689112,submissions,False,True
 HG01123,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01123/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01123x02PE20525_1_sequence.txt.gz,38567610,submissions,False,True
 HG01123,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01123/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01123x02PE20525_2_sequence.txt.gz,38830147,submissions,False,True
 HG01123,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01123/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01123x02PE20526_1_sequence.txt.gz,246789,submissions,False,True
@@ -22662,8 +22722,6 @@ HG01123,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_
 HG01123,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01123/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01123x02PE20578_2_sequence.txt.gz,53056737,submissions,False,True
 HG01123,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01123/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01123x02PE20579_1_sequence.txt.gz,16312464,submissions,False,True
 HG01123,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01123/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01123x02PE20579_2_sequence.txt.gz,16435230,submissions,False,True
-HG01123,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01123/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01123x02PE20580_1_sequence.txt.gz,113728743,submissions,False,True
-HG01123,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01123/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01123x02PE20580_2_sequence.txt.gz,114622279,submissions,False,True
 HG01123,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01123/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01123x02PE20581_1_sequence.txt.gz,26429169,submissions,False,True
 HG01123,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01123/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01123x02PE20581_2_sequence.txt.gz,26664952,submissions,False,True
 HG01123,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01123/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01123x02PE20582_1_sequence.txt.gz,57115116,submissions,False,True
@@ -22678,8 +22736,6 @@ HG01123,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_
 HG01123,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01123/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01123x02PE20586_2_sequence.txt.gz,59464234,submissions,False,True
 HG01123,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01123/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01123x02PE20587_1_sequence.txt.gz,13180589,submissions,False,True
 HG01123,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01123/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01123x02PE20587_2_sequence.txt.gz,13340118,submissions,False,True
-HG01123,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01123/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01123x02PE20588_1_sequence.txt.gz,104711100,submissions,False,True
-HG01123,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01123/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01123x02PE20588_2_sequence.txt.gz,105594505,submissions,False,True
 HG01123,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01123/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01123x02PE20589_1_sequence.txt.gz,53892812,submissions,False,True
 HG01123,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01123/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01123x02PE20589_2_sequence.txt.gz,54280845,submissions,False,True
 HG01123,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01123/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01123x02PE20590_1_sequence.txt.gz,47790411,submissions,False,True
@@ -22726,8 +22782,6 @@ HG01138,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_
 HG01138,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01138/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01138x02PE20314_2_sequence.txt.gz,23850537,submissions,False,True
 HG01138,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01138/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01138x02PE20315_1_sequence.txt.gz,15909191,submissions,False,True
 HG01138,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01138/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01138x02PE20315_2_sequence.txt.gz,16020663,submissions,False,True
-HG01138,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01138/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01138x02PE20316_1_sequence.txt.gz,132664862,submissions,False,True
-HG01138,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01138/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01138x02PE20316_2_sequence.txt.gz,132902977,submissions,False,True
 HG01138,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01138/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01138x02PE20317_1_sequence.txt.gz,17213016,submissions,False,True
 HG01138,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01138/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01138x02PE20317_2_sequence.txt.gz,17403776,submissions,False,True
 HG01138,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01138/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01138x02PE20318_1_sequence.txt.gz,47097540,submissions,False,True
@@ -22758,8 +22812,6 @@ HG01138,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_
 HG01138,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01138/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01138x02PE20330_2_sequence.txt.gz,12471450,submissions,False,True
 HG01138,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01138/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01138x02PE20331_1_sequence.txt.gz,9083537,submissions,False,True
 HG01138,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01138/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01138x02PE20331_2_sequence.txt.gz,9146713,submissions,False,True
-HG01138,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01138/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01138x02PE20332_1_sequence.txt.gz,156930387,submissions,False,True
-HG01138,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01138/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01138x02PE20332_2_sequence.txt.gz,159042851,submissions,False,True
 HG01138,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01138/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01138x02PE20333_1_sequence.txt.gz,18886725,submissions,False,True
 HG01138,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01138/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01138x02PE20333_2_sequence.txt.gz,19067100,submissions,False,True
 HG01138,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01138/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01138x02PE20334_1_sequence.txt.gz,47139887,submissions,False,True
@@ -22774,8 +22826,6 @@ HG01138,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_
 HG01138,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01138/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01138x02PE20338_2_sequence.txt.gz,48302187,submissions,False,True
 HG01138,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01138/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01138x02PE20339_1_sequence.txt.gz,15308133,submissions,False,True
 HG01138,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01138/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01138x02PE20339_2_sequence.txt.gz,15429696,submissions,False,True
-HG01138,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01138/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01138x02PE20340_1_sequence.txt.gz,102361490,submissions,False,True
-HG01138,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01138/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01138x02PE20340_2_sequence.txt.gz,102803187,submissions,False,True
 HG01138,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01138/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01138x02PE20341_1_sequence.txt.gz,30293305,submissions,False,True
 HG01138,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01138/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01138x02PE20341_2_sequence.txt.gz,30575057,submissions,False,True
 HG01138,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01138/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01138x02PE20342_1_sequence.txt.gz,26220381,submissions,False,True
@@ -22814,8 +22864,6 @@ HG01138,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_
 HG01138,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01138/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01138x02PE20358_2_sequence.txt.gz,30180097,submissions,False,True
 HG01138,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01138/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01138x02PE20359_1_sequence.txt.gz,43832522,submissions,False,True
 HG01138,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01138/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01138x02PE20359_2_sequence.txt.gz,44114174,submissions,False,True
-HG01138,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01138/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01138x02PE20360_1_sequence.txt.gz,138189238,submissions,False,True
-HG01138,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01138/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01138x02PE20360_2_sequence.txt.gz,139426044,submissions,False,True
 HG01138,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01138/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01138x02PE20361_1_sequence.txt.gz,11050651,submissions,False,True
 HG01138,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01138/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01138x02PE20361_2_sequence.txt.gz,11175357,submissions,False,True
 HG01138,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01138/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01138x02PE20362_1_sequence.txt.gz,45358917,submissions,False,True
@@ -22864,8 +22912,6 @@ HG01138,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_
 HG01138,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01138/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01138x02PE20383_2_sequence.txt.gz,21422870,submissions,False,True
 HG01138,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01138/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01138x02PE20384_1_sequence.txt.gz,34082571,submissions,False,True
 HG01138,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01138/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01138x02PE20384_2_sequence.txt.gz,34446502,submissions,False,True
-HG01138,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01138/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01138x02PE20385_1_sequence.txt.gz,256530456,submissions,False,True
-HG01138,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01138/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01138x02PE20385_2_sequence.txt.gz,258389851,submissions,False,True
 HG01138,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01138/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01138x02PE20386_1_sequence.txt.gz,53981829,submissions,False,True
 HG01138,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01138/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01138x02PE20386_2_sequence.txt.gz,54304291,submissions,False,True
 HG01138,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01138/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01138x02PE20387_1_sequence.txt.gz,6227432,submissions,False,True
@@ -22916,8 +22962,6 @@ HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_
 HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20413_2_sequence.txt.gz,799448,submissions,False,True
 HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20414_1_sequence.txt.gz,10535958,submissions,False,True
 HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20414_2_sequence.txt.gz,10641752,submissions,False,True
-HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20415_1_sequence.txt.gz,147871990,submissions,False,True
-HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20415_2_sequence.txt.gz,149248360,submissions,False,True
 HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20416_1_sequence.txt.gz,1196345,submissions,False,True
 HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20416_2_sequence.txt.gz,1212324,submissions,False,True
 HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20417_1_sequence.txt.gz,966100,submissions,False,True
@@ -22934,8 +22978,6 @@ HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_
 HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20422_2_sequence.txt.gz,67877595,submissions,False,True
 HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20423_1_sequence.txt.gz,16708096,submissions,False,True
 HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20423_2_sequence.txt.gz,16884163,submissions,False,True
-HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20424_1_sequence.txt.gz,126550978,submissions,False,True
-HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20424_2_sequence.txt.gz,127908893,submissions,False,True
 HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20425_1_sequence.txt.gz,58300654,submissions,False,True
 HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20425_2_sequence.txt.gz,58937889,submissions,False,True
 HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20426_1_sequence.txt.gz,56640339,submissions,False,True
@@ -22947,7 +22989,6 @@ HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_
 HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20429_1_sequence.txt.gz,85197576,submissions,False,True
 HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20429_2_sequence.txt.gz,85820966,submissions,False,True
 HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20430_1_sequence.txt.gz,99331036,submissions,False,True
-HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20430_2_sequence.txt.gz,100169390,submissions,False,True
 HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20431_1_sequence.txt.gz,3957621,submissions,False,True
 HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20431_2_sequence.txt.gz,4020221,submissions,False,True
 HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20432_1_sequence.txt.gz,29067957,submissions,False,True
@@ -22980,8 +23021,6 @@ HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_
 HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20445_2_sequence.txt.gz,2140964,submissions,False,True
 HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20446_1_sequence.txt.gz,720877,submissions,False,True
 HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20446_2_sequence.txt.gz,728231,submissions,False,True
-HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20447_1_sequence.txt.gz,167612007,submissions,False,True
-HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20447_2_sequence.txt.gz,168997526,submissions,False,True
 HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20448_1_sequence.txt.gz,15299093,submissions,False,True
 HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20448_2_sequence.txt.gz,15555170,submissions,False,True
 HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20449_1_sequence.txt.gz,4642052,submissions,False,True
@@ -23028,10 +23067,6 @@ HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_
 HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20469_2_sequence.txt.gz,1425740,submissions,False,True
 HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20470_1_sequence.txt.gz,12900093,submissions,False,True
 HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20470_2_sequence.txt.gz,13019659,submissions,False,True
-HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20471_1_sequence.txt.gz,258408656,submissions,False,True
-HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20471_2_sequence.txt.gz,260647964,submissions,False,True
-HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20472_1_sequence.txt.gz,177275470,submissions,False,True
-HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20472_2_sequence.txt.gz,179003334,submissions,False,True
 HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20473_1_sequence.txt.gz,1831144,submissions,False,True
 HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20473_2_sequence.txt.gz,1834575,submissions,False,True
 HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20474_1_sequence.txt.gz,8731325,submissions,False,True
@@ -23060,10 +23095,6 @@ HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_
 HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20485_2_sequence.txt.gz,14919162,submissions,False,True
 HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20486_1_sequence.txt.gz,43823165,submissions,False,True
 HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20486_2_sequence.txt.gz,44308047,submissions,False,True
-HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20487_1_sequence.txt.gz,204153958,submissions,False,True
-HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20487_2_sequence.txt.gz,205186044,submissions,False,True
-HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20488_1_sequence.txt.gz,168526237,submissions,False,True
-HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20488_2_sequence.txt.gz,170488322,submissions,False,True
 HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20489_1_sequence.txt.gz,45348632,submissions,False,True
 HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20489_2_sequence.txt.gz,45683775,submissions,False,True
 HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20490_1_sequence.txt.gz,55335327,submissions,False,True
@@ -23076,16 +23107,10 @@ HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_
 HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20493_2_sequence.txt.gz,21142651,submissions,False,True
 HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20494_1_sequence.txt.gz,4888745,submissions,False,True
 HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20494_2_sequence.txt.gz,4954585,submissions,False,True
-HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20495_1_sequence.txt.gz,302117442,submissions,False,True
-HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20495_2_sequence.txt.gz,305538601,submissions,False,True
-HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20496_1_sequence.txt.gz,168302518,submissions,False,True
-HG01358,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01358/Strand_seq/2020-07-24-HFGHJAFX2/fastq/HG01358x02PE20496_2_sequence.txt.gz,169985269,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20401_1_sequence.txt.gz,54348525,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20401_2_sequence.txt.gz,55150780,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20402_1_sequence.txt.gz,63924578,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20402_2_sequence.txt.gz,64285723,submissions,False,True
-HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20403_1_sequence.txt.gz,124578312,submissions,False,True
-HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20403_2_sequence.txt.gz,125761669,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20404_1_sequence.txt.gz,518073,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20404_2_sequence.txt.gz,545385,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20405_1_sequence.txt.gz,75423822,submissions,False,True
@@ -23135,7 +23160,6 @@ HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20427_1_sequence.txt.gz,81525073,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20427_2_sequence.txt.gz,82663884,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20428_1_sequence.txt.gz,98405820,submissions,False,True
-HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20428_2_sequence.txt.gz,100097184,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20429_1_sequence.txt.gz,12975065,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20429_2_sequence.txt.gz,13153775,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20430_1_sequence.txt.gz,44624724,submissions,False,True
@@ -23144,14 +23168,8 @@ HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20431_2_sequence.txt.gz,75433871,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20432_1_sequence.txt.gz,514038,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20432_2_sequence.txt.gz,520481,submissions,False,True
-HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20433_1_sequence.txt.gz,111287864,submissions,False,True
-HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20433_2_sequence.txt.gz,112666999,submissions,False,True
-HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20434_1_sequence.txt.gz,116452749,submissions,False,True
-HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20434_2_sequence.txt.gz,117895212,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20435_1_sequence.txt.gz,66349800,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20435_2_sequence.txt.gz,67151615,submissions,False,True
-HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20436_1_sequence.txt.gz,160239159,submissions,False,True
-HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20436_2_sequence.txt.gz,161832314,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20437_1_sequence.txt.gz,89380648,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20437_2_sequence.txt.gz,90253315,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20438_1_sequence.txt.gz,69260691,submissions,False,True
@@ -23160,20 +23178,12 @@ HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20439_2_sequence.txt.gz,68937683,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20440_1_sequence.txt.gz,356978,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20440_2_sequence.txt.gz,360820,submissions,False,True
-HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20441_1_sequence.txt.gz,126651544,submissions,False,True
-HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20441_2_sequence.txt.gz,127991705,submissions,False,True
-HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20442_1_sequence.txt.gz,116429532,submissions,False,True
-HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20442_2_sequence.txt.gz,117774549,submissions,False,True
-HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20443_1_sequence.txt.gz,106466902,submissions,False,True
-HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20443_2_sequence.txt.gz,107950027,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20444_1_sequence.txt.gz,75931023,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20444_2_sequence.txt.gz,76611094,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20445_1_sequence.txt.gz,84763171,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20445_2_sequence.txt.gz,85634103,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20446_1_sequence.txt.gz,11238764,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20446_2_sequence.txt.gz,11343851,submissions,False,True
-HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20447_1_sequence.txt.gz,157408730,submissions,False,True
-HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20447_2_sequence.txt.gz,159002608,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20448_1_sequence.txt.gz,466452,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20448_2_sequence.txt.gz,474183,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20449_1_sequence.txt.gz,47083754,submissions,False,True
@@ -23186,24 +23196,16 @@ HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20452_2_sequence.txt.gz,62812622,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20453_1_sequence.txt.gz,72954338,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20453_2_sequence.txt.gz,73766093,submissions,False,True
-HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20454_1_sequence.txt.gz,116293576,submissions,False,True
-HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20454_2_sequence.txt.gz,117621163,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20455_1_sequence.txt.gz,63618,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20455_2_sequence.txt.gz,64112,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20456_1_sequence.txt.gz,437308,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20456_2_sequence.txt.gz,440623,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20457_1_sequence.txt.gz,81212283,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20457_2_sequence.txt.gz,82225232,submissions,False,True
-HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20458_1_sequence.txt.gz,103867283,submissions,False,True
-HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20458_2_sequence.txt.gz,104879638,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20459_1_sequence.txt.gz,42771602,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20459_2_sequence.txt.gz,43193224,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20460_1_sequence.txt.gz,35538645,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20460_2_sequence.txt.gz,35970919,submissions,False,True
-HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20461_1_sequence.txt.gz,131940908,submissions,False,True
-HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20461_2_sequence.txt.gz,133105618,submissions,False,True
-HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20462_1_sequence.txt.gz,127296244,submissions,False,True
-HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20462_2_sequence.txt.gz,128933245,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20463_1_sequence.txt.gz,2772567,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20463_2_sequence.txt.gz,2804788,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20464_1_sequence.txt.gz,447187,submissions,False,True
@@ -23226,14 +23228,11 @@ HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20472_2_sequence.txt.gz,267274,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20473_1_sequence.txt.gz,55223160,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20473_2_sequence.txt.gz,55665594,submissions,False,True
-HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20474_1_sequence.txt.gz,114401487,submissions,False,True
-HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20474_2_sequence.txt.gz,115410370,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20475_1_sequence.txt.gz,75642925,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20475_2_sequence.txt.gz,76371633,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20476_1_sequence.txt.gz,23314609,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20476_2_sequence.txt.gz,23594658,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20477_1_sequence.txt.gz,99488526,submissions,False,True
-HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20477_2_sequence.txt.gz,100924855,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20478_1_sequence.txt.gz,270657,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20478_2_sequence.txt.gz,278012,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20479_1_sequence.txt.gz,147099,submissions,False,True
@@ -23247,13 +23246,10 @@ HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20483_1_sequence.txt.gz,90799883,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20483_2_sequence.txt.gz,91661987,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20484_1_sequence.txt.gz,99402883,submissions,False,True
-HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20484_2_sequence.txt.gz,100460434,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20485_1_sequence.txt.gz,38717,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20485_2_sequence.txt.gz,39836,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20486_1_sequence.txt.gz,53703,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20486_2_sequence.txt.gz,54284,submissions,False,True
-HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20487_1_sequence.txt.gz,232201244,submissions,False,True
-HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20487_2_sequence.txt.gz,233921607,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20488_1_sequence.txt.gz,189361,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20488_2_sequence.txt.gz,191836,submissions,False,True
 HG01888,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01888/Strand_seq/2020-03-21-H5WV5AFX2/fastq/HG01888x01PE20489_1_sequence.txt.gz,76753187,submissions,False,True
@@ -23288,8 +23284,6 @@ HG01891,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_
 HG01891,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01891/Strand_seq/2020-03-06-H5H3WAFX2/fastq/x02PE20407_2_sequence.txt.gz,58481889,submissions,False,True
 HG01891,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01891/Strand_seq/2020-03-06-H5H3WAFX2/fastq/x02PE20408_1_sequence.txt.gz,12245491,submissions,False,True
 HG01891,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01891/Strand_seq/2020-03-06-H5H3WAFX2/fastq/x02PE20408_2_sequence.txt.gz,12363435,submissions,False,True
-HG01891,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01891/Strand_seq/2020-03-06-H5H3WAFX2/fastq/x02PE20409_1_sequence.txt.gz,114392505,submissions,False,True
-HG01891,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01891/Strand_seq/2020-03-06-H5H3WAFX2/fastq/x02PE20409_2_sequence.txt.gz,114808820,submissions,False,True
 HG01891,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01891/Strand_seq/2020-03-06-H5H3WAFX2/fastq/x02PE20410_1_sequence.txt.gz,76102968,submissions,False,True
 HG01891,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01891/Strand_seq/2020-03-06-H5H3WAFX2/fastq/x02PE20410_2_sequence.txt.gz,76559982,submissions,False,True
 HG01891,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01891/Strand_seq/2020-03-06-H5H3WAFX2/fastq/x02PE20411_1_sequence.txt.gz,33072681,submissions,False,True
@@ -23364,8 +23358,6 @@ HG01891,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_
 HG01891,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01891/Strand_seq/2020-03-06-H5H3WAFX2/fastq/x02PE20445_2_sequence.txt.gz,73243140,submissions,False,True
 HG01891,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01891/Strand_seq/2020-03-06-H5H3WAFX2/fastq/x02PE20446_1_sequence.txt.gz,3048751,submissions,False,True
 HG01891,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01891/Strand_seq/2020-03-06-H5H3WAFX2/fastq/x02PE20446_2_sequence.txt.gz,3070984,submissions,False,True
-HG01891,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01891/Strand_seq/2020-03-06-H5H3WAFX2/fastq/x02PE20447_1_sequence.txt.gz,123530962,submissions,False,True
-HG01891,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01891/Strand_seq/2020-03-06-H5H3WAFX2/fastq/x02PE20447_2_sequence.txt.gz,124039492,submissions,False,True
 HG01891,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01891/Strand_seq/2020-03-06-H5H3WAFX2/fastq/x02PE20448_1_sequence.txt.gz,19344941,submissions,False,True
 HG01891,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01891/Strand_seq/2020-03-06-H5H3WAFX2/fastq/x02PE20448_2_sequence.txt.gz,19538871,submissions,False,True
 HG01891,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG01891/Strand_seq/2020-03-06-H5H3WAFX2/fastq/x02PE20449_1_sequence.txt.gz,38227708,submissions,False,True
@@ -23526,8 +23518,6 @@ HG02257,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_
 HG02257,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02257/Strand_seq/2020-05-26-H5HYFAFX2/HG02257x02PE20330_2_sequence.txt.gz,2013437,submissions,False,True
 HG02257,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02257/Strand_seq/2020-05-26-H5HYFAFX2/HG02257x02PE20331_1_sequence.txt.gz,78339698,submissions,False,True
 HG02257,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02257/Strand_seq/2020-05-26-H5HYFAFX2/HG02257x02PE20331_2_sequence.txt.gz,79030683,submissions,False,True
-HG02257,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02257/Strand_seq/2020-05-26-H5HYFAFX2/HG02257x02PE20332_1_sequence.txt.gz,3666922712,submissions,False,True
-HG02257,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02257/Strand_seq/2020-05-26-H5HYFAFX2/HG02257x02PE20332_2_sequence.txt.gz,3717550080,submissions,False,True
 HG02257,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02257/Strand_seq/2020-05-26-H5HYFAFX2/HG02257x02PE20333_1_sequence.txt.gz,31634172,submissions,False,True
 HG02257,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02257/Strand_seq/2020-05-26-H5HYFAFX2/HG02257x02PE20333_2_sequence.txt.gz,31899902,submissions,False,True
 HG02257,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02257/Strand_seq/2020-05-26-H5HYFAFX2/HG02257x02PE20334_1_sequence.txt.gz,83303556,submissions,False,True
@@ -23558,8 +23548,6 @@ HG02257,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_
 HG02257,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02257/Strand_seq/2020-05-26-H5HYFAFX2/HG02257x02PE20346_2_sequence.txt.gz,592405,submissions,False,True
 HG02257,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02257/Strand_seq/2020-05-26-H5HYFAFX2/HG02257x02PE20347_1_sequence.txt.gz,8677138,submissions,False,True
 HG02257,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02257/Strand_seq/2020-05-26-H5HYFAFX2/HG02257x02PE20347_2_sequence.txt.gz,8789427,submissions,False,True
-HG02257,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02257/Strand_seq/2020-05-26-H5HYFAFX2/HG02257x02PE20348_1_sequence.txt.gz,122622479,submissions,False,True
-HG02257,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02257/Strand_seq/2020-05-26-H5HYFAFX2/HG02257x02PE20348_2_sequence.txt.gz,124162953,submissions,False,True
 HG02257,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02257/Strand_seq/2020-05-26-H5HYFAFX2/HG02257x02PE20349_1_sequence.txt.gz,1757159,submissions,False,True
 HG02257,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02257/Strand_seq/2020-05-26-H5HYFAFX2/HG02257x02PE20349_2_sequence.txt.gz,1784459,submissions,False,True
 HG02257,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02257/Strand_seq/2020-05-26-H5HYFAFX2/HG02257x02PE20350_1_sequence.txt.gz,3903172,submissions,False,True
@@ -23641,7 +23629,6 @@ HG02257,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_
 HG02257,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02257/Strand_seq/2020-05-26-H5HYFAFX2/HG02257x02PE20388_1_sequence.txt.gz,654066,submissions,False,True
 HG02257,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02257/Strand_seq/2020-05-26-H5HYFAFX2/HG02257x02PE20388_2_sequence.txt.gz,657981,submissions,False,True
 HG02257,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02257/Strand_seq/2020-05-26-H5HYFAFX2/HG02257x02PE20389_1_sequence.txt.gz,99736684,submissions,False,True
-HG02257,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02257/Strand_seq/2020-05-26-H5HYFAFX2/HG02257x02PE20389_2_sequence.txt.gz,100487461,submissions,False,True
 HG02257,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02257/Strand_seq/2020-05-26-H5HYFAFX2/HG02257x02PE20390_1_sequence.txt.gz,81615662,submissions,False,True
 HG02257,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02257/Strand_seq/2020-05-26-H5HYFAFX2/HG02257x02PE20390_2_sequence.txt.gz,82405513,submissions,False,True
 HG02257,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02257/Strand_seq/2020-05-26-H5HYFAFX2/HG02257x02PE20391_1_sequence.txt.gz,1407110,submissions,False,True
@@ -23716,8 +23703,6 @@ HG02486,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_
 HG02486,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02486/Strand_seq/2020-05-26-H5HYFAFX2/fastq/HG02486x02PE20529_2_sequence.txt.gz,64600270,submissions,False,True
 HG02486,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02486/Strand_seq/2020-05-26-H5HYFAFX2/fastq/HG02486x02PE20530_1_sequence.txt.gz,17300139,submissions,False,True
 HG02486,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02486/Strand_seq/2020-05-26-H5HYFAFX2/fastq/HG02486x02PE20530_2_sequence.txt.gz,17467004,submissions,False,True
-HG02486,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02486/Strand_seq/2020-05-26-H5HYFAFX2/fastq/HG02486x02PE20531_1_sequence.txt.gz,116799898,submissions,False,True
-HG02486,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02486/Strand_seq/2020-05-26-H5HYFAFX2/fastq/HG02486x02PE20531_2_sequence.txt.gz,118224914,submissions,False,True
 HG02486,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02486/Strand_seq/2020-05-26-H5HYFAFX2/fastq/HG02486x02PE20532_1_sequence.txt.gz,2016524,submissions,False,True
 HG02486,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02486/Strand_seq/2020-05-26-H5HYFAFX2/fastq/HG02486x02PE20532_2_sequence.txt.gz,2033583,submissions,False,True
 HG02486,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02486/Strand_seq/2020-05-26-H5HYFAFX2/fastq/HG02486x02PE20533_1_sequence.txt.gz,86458265,submissions,False,True
@@ -23748,8 +23733,6 @@ HG02486,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_
 HG02486,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02486/Strand_seq/2020-05-26-H5HYFAFX2/fastq/HG02486x02PE20545_2_sequence.txt.gz,73595291,submissions,False,True
 HG02486,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02486/Strand_seq/2020-05-26-H5HYFAFX2/fastq/HG02486x02PE20546_1_sequence.txt.gz,76698687,submissions,False,True
 HG02486,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02486/Strand_seq/2020-05-26-H5HYFAFX2/fastq/HG02486x02PE20546_2_sequence.txt.gz,77701475,submissions,False,True
-HG02486,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02486/Strand_seq/2020-05-26-H5HYFAFX2/fastq/HG02486x02PE20547_1_sequence.txt.gz,117678118,submissions,False,True
-HG02486,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02486/Strand_seq/2020-05-26-H5HYFAFX2/fastq/HG02486x02PE20547_2_sequence.txt.gz,119041604,submissions,False,True
 HG02486,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02486/Strand_seq/2020-05-26-H5HYFAFX2/fastq/HG02486x02PE20548_1_sequence.txt.gz,60667610,submissions,False,True
 HG02486,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02486/Strand_seq/2020-05-26-H5HYFAFX2/fastq/HG02486x02PE20548_2_sequence.txt.gz,61053265,submissions,False,True
 HG02486,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02486/Strand_seq/2020-05-26-H5HYFAFX2/fastq/HG02486x02PE20549_1_sequence.txt.gz,11937326,submissions,False,True
@@ -23758,8 +23741,6 @@ HG02486,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_
 HG02486,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02486/Strand_seq/2020-05-26-H5HYFAFX2/fastq/HG02486x02PE20550_2_sequence.txt.gz,66483358,submissions,False,True
 HG02486,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02486/Strand_seq/2020-05-26-H5HYFAFX2/fastq/HG02486x02PE20551_1_sequence.txt.gz,53740712,submissions,False,True
 HG02486,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02486/Strand_seq/2020-05-26-H5HYFAFX2/fastq/HG02486x02PE20551_2_sequence.txt.gz,54316289,submissions,False,True
-HG02486,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02486/Strand_seq/2020-05-26-H5HYFAFX2/fastq/HG02486x02PE20552_1_sequence.txt.gz,127239725,submissions,False,True
-HG02486,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02486/Strand_seq/2020-05-26-H5HYFAFX2/fastq/HG02486x02PE20552_2_sequence.txt.gz,128725240,submissions,False,True
 HG02486,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02486/Strand_seq/2020-05-26-H5HYFAFX2/fastq/HG02486x02PE20553_1_sequence.txt.gz,16729646,submissions,False,True
 HG02486,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02486/Strand_seq/2020-05-26-H5HYFAFX2/fastq/HG02486x02PE20553_2_sequence.txt.gz,16905340,submissions,False,True
 HG02486,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02486/Strand_seq/2020-05-26-H5HYFAFX2/fastq/HG02486x02PE20554_1_sequence.txt.gz,21817,submissions,False,True
@@ -23822,8 +23803,6 @@ HG02486,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_
 HG02486,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02486/Strand_seq/2020-05-26-H5HYFAFX2/fastq/HG02486x02PE20582_2_sequence.txt.gz,505658,submissions,False,True
 HG02486,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02486/Strand_seq/2020-05-26-H5HYFAFX2/fastq/HG02486x02PE20583_1_sequence.txt.gz,2374952,submissions,False,True
 HG02486,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02486/Strand_seq/2020-05-26-H5HYFAFX2/fastq/HG02486x02PE20583_2_sequence.txt.gz,2389657,submissions,False,True
-HG02486,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02486/Strand_seq/2020-05-26-H5HYFAFX2/fastq/HG02486x02PE20584_1_sequence.txt.gz,110816277,submissions,False,True
-HG02486,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02486/Strand_seq/2020-05-26-H5HYFAFX2/fastq/HG02486x02PE20584_2_sequence.txt.gz,111946155,submissions,False,True
 HG02486,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02486/Strand_seq/2020-05-26-H5HYFAFX2/fastq/HG02486x02PE20585_1_sequence.txt.gz,1243054,submissions,False,True
 HG02486,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02486/Strand_seq/2020-05-26-H5HYFAFX2/fastq/HG02486x02PE20585_2_sequence.txt.gz,1252254,submissions,False,True
 HG02486,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02486/Strand_seq/2020-05-26-H5HYFAFX2/fastq/HG02486x02PE20586_1_sequence.txt.gz,21167397,submissions,False,True
@@ -23844,8 +23823,6 @@ HG02486,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_
 HG02486,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02486/Strand_seq/2020-05-26-H5HYFAFX2/fastq/HG02486x02PE20593_2_sequence.txt.gz,24376228,submissions,False,True
 HG02486,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02486/Strand_seq/2020-05-26-H5HYFAFX2/fastq/HG02486x02PE20594_1_sequence.txt.gz,10712354,submissions,False,True
 HG02486,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02486/Strand_seq/2020-05-26-H5HYFAFX2/fastq/HG02486x02PE20594_2_sequence.txt.gz,10818882,submissions,False,True
-HG02486,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02486/Strand_seq/2020-05-26-H5HYFAFX2/fastq/HG02486x02PE20595_1_sequence.txt.gz,245569383,submissions,False,True
-HG02486,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02486/Strand_seq/2020-05-26-H5HYFAFX2/fastq/HG02486x02PE20595_2_sequence.txt.gz,247286525,submissions,False,True
 HG02486,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02486/Strand_seq/2020-05-26-H5HYFAFX2/fastq/HG02486x02PE20596_1_sequence.txt.gz,12384047,submissions,False,True
 HG02486,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/HG02486/Strand_seq/2020-05-26-H5HYFAFX2/fastq/HG02486x02PE20596_2_sequence.txt.gz,12472509,submissions,False,True
 HG02559,StrandSeq,,,data,submissions/661e6bb2-04d3-4712-b6de-c42eeb8d63ba--EMBL_STRANDSEQ/fastq/HG02559x01PE20407_2_sequence.txt.gz,38803432,submissions,False,True
@@ -23877,10 +23854,6 @@ HG01887,HiFi,,,data,submissions/746FF75B-3C32-42AF-92BB-290BA92CF89A--RU_Y2_HIFI
 HG01887,HiFi,,,data,submissions/746FF75B-3C32-42AF-92BB-290BA92CF89A--RU_Y2_HIFI/HG01887/PacBio_HiFi/m64055e_210828_161538.hifi_reads.fastq.gz,24748508541,submissions,False,True
 HG01887,HiFi,,,data,submissions/746FF75B-3C32-42AF-92BB-290BA92CF89A--RU_Y2_HIFI/HG01887/PacBio_HiFi/m64055e_210831_160520.hifi_reads.bam,98518837083,submissions,False,True
 HG01887,HiFi,,,data,submissions/746FF75B-3C32-42AF-92BB-290BA92CF89A--RU_Y2_HIFI/HG01887/PacBio_HiFi/m64055e_210831_160520.hifi_reads.fastq.gz,22326241385,submissions,False,True
-HG01887,HiFi,,,data,submissions/746FF75B-3C32-42AF-92BB-290BA92CF89A--RU_Y2_HIFI/HG01887/m54306Ue_210830_185043.hifi_reads.bam,99426510536,submissions,False,True
-HG01887,HiFi,,,data,submissions/746FF75B-3C32-42AF-92BB-290BA92CF89A--RU_Y2_HIFI/HG01887/m54306Ue_210901_041827.hifi_reads.bam,103586739006,submissions,False,True
-HG01887,HiFi,,,data,submissions/746FF75B-3C32-42AF-92BB-290BA92CF89A--RU_Y2_HIFI/HG01887/m64055e_210828_161538.hifi_reads.bam,102157385115,submissions,False,True
-HG01887,HiFi,,,data,submissions/746FF75B-3C32-42AF-92BB-290BA92CF89A--RU_Y2_HIFI/HG01887/m64055e_210831_160520.hifi_reads.bam,98518837083,submissions,False,True
 HG02656,HiFi,,,data,submissions/746FF75B-3C32-42AF-92BB-290BA92CF89A--RU_Y2_HIFI/HG02656/PacBio_HiFi/m54306Ue_210817_152605.hifi_reads.bam,102853845954,submissions,False,True
 HG02656,HiFi,,,data,submissions/746FF75B-3C32-42AF-92BB-290BA92CF89A--RU_Y2_HIFI/HG02656/PacBio_HiFi/m54306Ue_210817_152605.hifi_reads.fastq.gz,24474147917,submissions,False,True
 HG02656,HiFi,,,data,submissions/746FF75B-3C32-42AF-92BB-290BA92CF89A--RU_Y2_HIFI/HG02656/PacBio_HiFi/m54306Ue_210825_213503.hifi_reads.bam,125821287954,submissions,False,True
@@ -23889,10 +23862,6 @@ HG02656,HiFi,,,data,submissions/746FF75B-3C32-42AF-92BB-290BA92CF89A--RU_Y2_HIFI
 HG02656,HiFi,,,data,submissions/746FF75B-3C32-42AF-92BB-290BA92CF89A--RU_Y2_HIFI/HG02656/PacBio_HiFi/m64055e_210819_161540.hifi_reads.fastq.gz,26223598319,submissions,False,True
 HG02656,HiFi,,,data,submissions/746FF75B-3C32-42AF-92BB-290BA92CF89A--RU_Y2_HIFI/HG02656/PacBio_HiFi/m64055e_210825_211340.hifi_reads.bam,110180252153,submissions,False,True
 HG02656,HiFi,,,data,submissions/746FF75B-3C32-42AF-92BB-290BA92CF89A--RU_Y2_HIFI/HG02656/PacBio_HiFi/m64055e_210825_211340.hifi_reads.fastq.gz,26300203482,submissions,False,True
-HG02656,HiFi,,,data,submissions/746FF75B-3C32-42AF-92BB-290BA92CF89A--RU_Y2_HIFI/HG02656/m54306Ue_210817_152605.hifi_reads.bam,102853845954,submissions,False,True
-HG02656,HiFi,,,data,submissions/746FF75B-3C32-42AF-92BB-290BA92CF89A--RU_Y2_HIFI/HG02656/m54306Ue_210825_213503.hifi_reads.bam,125821287954,submissions,False,True
-HG02656,HiFi,,,data,submissions/746FF75B-3C32-42AF-92BB-290BA92CF89A--RU_Y2_HIFI/HG02656/m64055e_210819_161540.hifi_reads.bam,111124885943,submissions,False,True
-HG02656,HiFi,,,data,submissions/746FF75B-3C32-42AF-92BB-290BA92CF89A--RU_Y2_HIFI/HG02656/m64055e_210825_211340.hifi_reads.bam,110180252153,submissions,False,True
 HG02668,HiFi,,,data,submissions/746FF75B-3C32-42AF-92BB-290BA92CF89A--RU_Y2_HIFI/HG02668/PacBio_HiFi/m54306Ue_210801_045414.hifi_reads.fastq.gz,22544949128,submissions,False,True
 HG02668,HiFi,,,data,submissions/746FF75B-3C32-42AF-92BB-290BA92CF89A--RU_Y2_HIFI/HG02668/PacBio_HiFi/m54306Ue_210802_164702.hifi_reads.fastq.gz,22634797087,submissions,False,True
 HG02668,HiFi,,,data,submissions/746FF75B-3C32-42AF-92BB-290BA92CF89A--RU_Y2_HIFI/HG02668/PacBio_HiFi/m54306Ue_210804_021745.hifi_reads.fastq.gz,15722434675,submissions,False,True
@@ -23947,12 +23916,6 @@ HG04187,HiFi,,,data,submissions/746FF75B-3C32-42AF-92BB-290BA92CF89A--RU_Y2_HIFI
 HG04187,HiFi,,,data,submissions/746FF75B-3C32-42AF-92BB-290BA92CF89A--RU_Y2_HIFI/HG04187/PacBio_HiFi/m64055_210514_141159.hifi_reads.bam,10881994919,submissions,False,True
 HG04187,HiFi,,,data,submissions/746FF75B-3C32-42AF-92BB-290BA92CF89A--RU_Y2_HIFI/HG04187/PacBio_HiFi/m64055_210609_194302.hifi_reads.bam,21917484579,submissions,False,True
 HG04187,HiFi,,,data,submissions/746FF75B-3C32-42AF-92BB-290BA92CF89A--RU_Y2_HIFI/HG04187/PacBio_HiFi/m64055_210611_031318.hifi_reads.bam,22579440147,submissions,False,True
-HG04187,HiFi,,,data,submissions/746FF75B-3C32-42AF-92BB-290BA92CF89A--RU_Y2_HIFI/HG04187/m64055_210509_163848.hifi_reads.bam,11599145148,submissions,False,True
-HG04187,HiFi,,,data,submissions/746FF75B-3C32-42AF-92BB-290BA92CF89A--RU_Y2_HIFI/HG04187/m64055_210511_013535.hifi_reads.bam,11684192698,submissions,False,True
-HG04187,HiFi,,,data,submissions/746FF75B-3C32-42AF-92BB-290BA92CF89A--RU_Y2_HIFI/HG04187/m64055_210512_103416.hifi_reads.bam,10038057184,submissions,False,True
-HG04187,HiFi,,,data,submissions/746FF75B-3C32-42AF-92BB-290BA92CF89A--RU_Y2_HIFI/HG04187/m64055_210514_141159.hifi_reads.bam,10881994919,submissions,False,True
-HG04187,HiFi,,,data,submissions/746FF75B-3C32-42AF-92BB-290BA92CF89A--RU_Y2_HIFI/HG04187/m64055_210609_194302.hifi_reads.bam,21917484579,submissions,False,True
-HG04187,HiFi,,,data,submissions/746FF75B-3C32-42AF-92BB-290BA92CF89A--RU_Y2_HIFI/HG04187/m64055_210611_031318.hifi_reads.bam,22579440147,submissions,False,True
 ,HiFi,,,data,submissions/746FF75B-3C32-42AF-92BB-290BA92CF89A--RU_Y2_HIFI/m54306Ue_210713_140744.reads.bam,253139740313,submissions,False,False
 ,HiFi,,,data,submissions/746FF75B-3C32-42AF-92BB-290BA92CF89A--RU_Y2_HIFI/m54306Ue_210715_000620.reads.bam,240069153238,submissions,False,False
 ,HiFi,,,data,submissions/746FF75B-3C32-42AF-92BB-290BA92CF89A--RU_Y2_HIFI/m54306Ue_210819_153346.reads.bam,205663082090,submissions,False,False
@@ -23963,12 +23926,6 @@ HG04187,HiFi,,,data,submissions/746FF75B-3C32-42AF-92BB-290BA92CF89A--RU_Y2_HIFI
 ,HiFi,,,data,submissions/746FF75B-3C32-42AF-92BB-290BA92CF89A--RU_Y2_HIFI/m64055e_210714_052746.reads.bam,256509299718,submissions,False,False
 ,HiFi,,,data,submissions/746FF75B-3C32-42AF-92BB-290BA92CF89A--RU_Y2_HIFI/m64055e_210731_145204.reads.bam,224257682524,submissions,False,False
 ,HiFi,,,data,submissions/746FF75B-3C32-42AF-92BB-290BA92CF89A--RU_Y2_HIFI/m64055e_210828_161538.reads.bam,258015069675,submissions,False,False
-HG04187,HiFi,,,data,submissions/7F161954-C8B0-4041-A2A8-65D0D8CDF30C--RU_Y2_sequel/HG04187/m64055_210509_163848.hifi_reads.bam,11599145148,submissions,False,True
-HG04187,HiFi,,,data,submissions/7F161954-C8B0-4041-A2A8-65D0D8CDF30C--RU_Y2_sequel/HG04187/m64055_210511_013535.hifi_reads.bam,11684192698,submissions,False,True
-HG04187,HiFi,,,data,submissions/7F161954-C8B0-4041-A2A8-65D0D8CDF30C--RU_Y2_sequel/HG04187/m64055_210512_103416.hifi_reads.bam,10038057184,submissions,False,True
-HG04187,HiFi,,,data,submissions/7F161954-C8B0-4041-A2A8-65D0D8CDF30C--RU_Y2_sequel/HG04187/m64055_210514_141159.hifi_reads.bam,10881994919,submissions,False,True
-HG04187,HiFi,,,data,submissions/7F161954-C8B0-4041-A2A8-65D0D8CDF30C--RU_Y2_sequel/HG04187/m64055_210609_194302.hifi_reads.bam,21917484579,submissions,False,True
-HG04187,HiFi,,,data,submissions/7F161954-C8B0-4041-A2A8-65D0D8CDF30C--RU_Y2_sequel/HG04187/m64055_210611_031318.hifi_reads.bam,22579440147,submissions,False,True
 ,HiFi,,,data,submissions/80d00e88-7a92-46d8-88c7-48f1486e11ed--HG002_PACBIO_REVIO/m84039_230117_233243_s1.hifi_reads.default.bam,60773567530,submissions,False,False
 ,HiFi_5mC,methylation submission,,data,submissions/817fde1e-c8e2-4922-b7a2-94a017f3796b--WashU_Reprocessed_HiFi_Bams_Methylation_Fix/m54329U_211209_115915-bc1002.5mc.reprocessed.hifi_reads.bam,120288813855,submissions,False,False
 ,HiFi_5mC,methylation submission,,data,submissions/817fde1e-c8e2-4922-b7a2-94a017f3796b--WashU_Reprocessed_HiFi_Bams_Methylation_Fix/m64076_211209_102926-bc1002.5mc.reprocessed.hifi_reads.bam,137169119762,submissions,False,False
@@ -24220,9 +24177,6 @@ HG01243,HiFi,,,data,submissions/84cc9f68-4307-42c4-8079-a529a5f0070d--NISC_HiFi_
 HG01243,HiFi,,,data,submissions/84cc9f68-4307-42c4-8079-a529a5f0070d--NISC_HiFi_HG01243/HG01243/AXN0034_2/CCS_1659/m54313U_211126_191012.hifi_reads.fastq.gz,27478587575,submissions,False,True
 HG01243,HiFi,,,data,submissions/84cc9f68-4307-42c4-8079-a529a5f0070d--NISC_HiFi_HG01243/HG01243/AXN0034_2/CCS_1660/m54313U_211208_155922.hifi_reads.bam,124566843073,submissions,False,True
 HG01243,HiFi,,,data,submissions/84cc9f68-4307-42c4-8079-a529a5f0070d--NISC_HiFi_HG01243/HG01243/AXN0034_2/CCS_1660/m54313U_211208_155922.hifi_reads.fastq.gz,29875952761,submissions,False,True
-HG08441,HiC,Omni-C; folder named NA08441,,data,submissions/86D4A784-64AE-42F5-955E-B4FC8BF26D9F--WB_LCL_PILOT/NA08441/NA08441_1_LIB141069_23HY3FLT3_S7_L004_R2_001.fastq.gz,4822389847,submissions,False,True
-HG08441,HiC,Omni-C; folder named NA08441,,data,submissions/86D4A784-64AE-42F5-955E-B4FC8BF26D9F--WB_LCL_PILOT/NA08441/NA08441_2_LIB141070_23MMLVLT4_S8_L002_R1_001.fastq.gz,11992211607,submissions,False,True
-HG08441,HiC,Omni-C; folder named NA08441,,data,submissions/86D4A784-64AE-42F5-955E-B4FC8BF26D9F--WB_LCL_PILOT/NA08441/NA08441_2_LIB141070_23MMLVLT4_S8_L002_R2_001.fastq.gz,12346115057,submissions,False,True
 HG003,Illumina_WGS,,,data,submissions/8ced218e-9699-458e-9708-eef6969a8065--EXTRAMURAL_SAMPLES/HG002/parents/HG003/HG003_HiSeq30x_subsampled_R1.fastq.gz,45137067184,submissions,False,False
 HG003,Illumina_WGS,,,data,submissions/8ced218e-9699-458e-9708-eef6969a8065--EXTRAMURAL_SAMPLES/HG002/parents/HG003/HG003_HiSeq30x_subsampled_R2.fastq.gz,48000175473,submissions,False,False
 HG004,Illumina_WGS,,,data,submissions/8ced218e-9699-458e-9708-eef6969a8065--EXTRAMURAL_SAMPLES/HG002/parents/HG004/HG004_HiSeq30x_subsampled_R1.fastq.gz,43104576071,submissions,False,False
@@ -26199,9 +26153,6 @@ HG03704,HiFi,,,data,submissions/971AE252-4B73-45A9-A048-C85BC6450250--READSBAM4D
 HG03834,HiFi,,,data,submissions/971AE252-4B73-45A9-A048-C85BC6450250--READSBAM4DC/HG03834/raw_data/PacBio_HiFi/Q9READSBAM/m64043_220107_191226_q9_forDC.bam,42725110086,submissions,False,True
 HG03834,HiFi,,,data,submissions/971AE252-4B73-45A9-A048-C85BC6450250--READSBAM4DC/HG03834/raw_data/PacBio_HiFi/Q9READSBAM/m64043_220109_060731_q9_forDC.bam,41169660347,submissions,False,True
 HG03834,HiFi,,,data,submissions/971AE252-4B73-45A9-A048-C85BC6450250--READSBAM4DC/HG03834/raw_data/PacBio_HiFi/Q9READSBAM/m64043_220110_170603_q9_forDC.bam,40651234914,submissions,False,True
-HG06807,HiFi,,,data,submissions/971AE252-4B73-45A9-A048-C85BC6450250--READSBAM4DC/MGISTLPAN027_HG06807/raw_data/PacBio_HiFi/Q9READSBAM/m64043_211118_185250_q9_forDC.bam,37923269606,submissions,False,True
-HG06807,HiFi,,,data,submissions/971AE252-4B73-45A9-A048-C85BC6450250--READSBAM4DC/MGISTLPAN027_HG06807/raw_data/PacBio_HiFi/Q9READSBAM/m64043_211120_054831_q9_forDC.bam,38664674789,submissions,False,True
-HG06807,HiFi,,,data,submissions/971AE252-4B73-45A9-A048-C85BC6450250--READSBAM4DC/MGISTLPAN027_HG06807/raw_data/PacBio_HiFi/Q9READSBAM/m64043_211121_164646_q9_forDC.bam,38378718745,submissions,False,True
 HG06807,HiFi,,,data,submissions/971AE252-4B73-45A9-A048-C85BC6450250--READSBAM4DC/MGISTLPAN027_HG06807/raw_data/PacBio_HiFi/Q9READSBAM/m64043_211222_184851_q9_forDC.bam,5046863826,submissions,False,True
 NA18522,HiFi,,,data,submissions/971AE252-4B73-45A9-A048-C85BC6450250--READSBAM4DC/NA18522/raw_data/PacBio_HiFi/Q9READSBAM/r54329U_20220601_194755_C01_q9_forDC.bam,39165999830,submissions,False,True
 NA18522,HiFi,,,data,submissions/971AE252-4B73-45A9-A048-C85BC6450250--READSBAM4DC/NA18522/raw_data/PacBio_HiFi/Q9READSBAM/r54329U_20220601_194755_D01_q9_forDC.bam,40246250698,submissions,False,True
@@ -26239,7 +26190,6 @@ NA20905,HiFi,,,data,submissions/971AE252-4B73-45A9-A048-C85BC6450250--READSBAM4D
 ,HiFi_5mC,methylation submission,,data,submissions/9BBD9C04-F637-429F-AB74-29D9E5C75B71--PACBIO_HG002_HIFI_CPG/Mm_Ml_tagged/m64011_190901_095311.hifi_reads.bam,22082963189,submissions,False,False
 ,HiFi_5mC,methylation submission,,data,submissions/9BBD9C04-F637-429F-AB74-29D9E5C75B71--PACBIO_HG002_HIFI_CPG/Mm_Ml_tagged/m64012_190920_173625.hifi_reads.bam,23610871319,submissions,False,False
 ,HiFi_5mC,methylation submission,,data,submissions/9BBD9C04-F637-429F-AB74-29D9E5C75B71--PACBIO_HG002_HIFI_CPG/Mm_Ml_tagged/m64012_190921_234837.hifi_reads.bam,23589911181,submissions,False,False
-NA18488,ONT,,,report,submissions/9E0E2B11-B819-407A-8033-14F08DE9F019--UCSC_HPRC_nanopore_Year5/GM18488/sup5.0.0_5mCG_5hmCG/04_30_24_R1041_UL_HPRC_GM18488_1_dorado0.9.1_sup5.0.0_5mCG_5hmCG_sequencing_summary.txt.gz,103762604,submissions,False,True
 NA18488,ONT,,,report,submissions/9E0E2B11-B819-407A-8033-14F08DE9F019--UCSC_HPRC_nanopore_Year5/GM18488/sup5.0.0_5mCG_5hmCG/04_30_24_R1041_UL_HPRC_GM18488_2_dorado0.9.1_sup5.0.0_5mCG_5hmCG_sequencing_summary.txt.gz,58238287,submissions,False,True
 NA18488,ONT,,,report,submissions/9E0E2B11-B819-407A-8033-14F08DE9F019--UCSC_HPRC_nanopore_Year5/GM18488/sup5.0.0_5mCG_5hmCG/04_30_24_R1041_UL_HPRC_GM18488_3_dorado0.9.1_sup5.0.0_5mCG_5hmCG_sequencing_summary.txt.gz,1129049,submissions,False,True
 NA18940,HiFi_5mC,methylation submission,,data,submissions/9b062291-dbec-4c64-a261-199955334b73--AMED_R2_HiFi_Reprocessed_Methylation_w_Kinetics/NA18940/PacBio_HiFi/m64121_230104_025826.hifi_reads.pm_v1.4.0.bam,103772504060,submissions,False,True
@@ -26346,6 +26296,34 @@ HG03363,HiFi,,,data,submissions/9ed6d423-774d-4ac4-90f1-5d3621997957--WUSTL_HPRC
 HG03363,HiFi,,,data,submissions/9ed6d423-774d-4ac4-90f1-5d3621997957--WUSTL_HPRC_HiFi_Y5/HG03363/PacBio_HiFi/m84081_240221_063842_s2.hifi_reads.bc2045.bam,107784890097,submissions,False,True
 HG03363,HiFi,,,data,submissions/9ed6d423-774d-4ac4-90f1-5d3621997957--WUSTL_HPRC_HiFi_Y5/HG03363/PacBio_HiFi/m84081_240221_083804_s3.hifi_reads.bc2045.bam,109083680351,submissions,False,True
 HG03363,HiFi,,,data,submissions/9ed6d423-774d-4ac4-90f1-5d3621997957--WUSTL_HPRC_HiFi_Y5/HG03363/PacBio_HiFi/m84081_240221_103730_s4.hifi_reads.bc2045.bam,108121101210,submissions,False,True
+HG06803,HiFi,blood; filed under the pedigree's PAN name,blood,data,submissions/9f0e43e9-a57d-42c1-992c-a2ce7c20940f--WUSTL_BLOOD_HIFI/MGISTL-PAN010/PacBio_HiFi/m64043_210416_171718.hifi_reads.bam,134553724465,submissions,False,True
+HG06803,HiFi,blood; filed under the pedigree's PAN name,blood,data,submissions/9f0e43e9-a57d-42c1-992c-a2ce7c20940f--WUSTL_BLOOD_HIFI/MGISTL-PAN010/PacBio_HiFi/m64043_210418_021436.hifi_reads.bam,119590670123,submissions,False,True
+HG06803,HiFi,blood; filed under the pedigree's PAN name,blood,data,submissions/9f0e43e9-a57d-42c1-992c-a2ce7c20940f--WUSTL_BLOOD_HIFI/MGISTL-PAN010/PacBio_HiFi/m64043_210420_151018.hifi_reads.bam,128179504272,submissions,False,True
+HG06803,HiFi,blood; filed under the pedigree's PAN name,blood,data,submissions/9f0e43e9-a57d-42c1-992c-a2ce7c20940f--WUSTL_BLOOD_HIFI/MGISTL-PAN010/PacBio_HiFi/m64043_210421_224017.hifi_reads.bam,119327862059,submissions,False,True
+HG06803,Illumina_WGS,filed under the pedigree's PAN name,,data,submissions/9f0e43e9-a57d-42c1-992c-a2ce7c20940f--WUSTL_BLOOD_HIFI/MGISTL-PAN010/illumina/AATGTCCGAG-CTTACGAGTA_S10_L003_R1_001.fastq.gz,6855664767,submissions,False,True
+HG06803,Illumina_WGS,filed under the pedigree's PAN name,,data,submissions/9f0e43e9-a57d-42c1-992c-a2ce7c20940f--WUSTL_BLOOD_HIFI/MGISTL-PAN010/illumina/AATGTCCGAG-CTTACGAGTA_S10_L003_R2_001.fastq.gz,7059150966,submissions,False,True
+HG06804,HiFi,blood; filed under the pedigree's PAN name,blood,data,submissions/9f0e43e9-a57d-42c1-992c-a2ce7c20940f--WUSTL_BLOOD_HIFI/MGISTL-PAN011/PacBio_HiFi/m64136_210506_183715.hifi_reads.bam,116862623531,submissions,False,True
+HG06804,HiFi,blood; filed under the pedigree's PAN name,blood,data,submissions/9f0e43e9-a57d-42c1-992c-a2ce7c20940f--WUSTL_BLOOD_HIFI/MGISTL-PAN011/PacBio_HiFi/m64136_210508_020125.hifi_reads.bam,117892689948,submissions,False,True
+HG06804,HiFi,blood; filed under the pedigree's PAN name,blood,data,submissions/9f0e43e9-a57d-42c1-992c-a2ce7c20940f--WUSTL_BLOOD_HIFI/MGISTL-PAN011/PacBio_HiFi/m64136_210509_092431.hifi_reads.bam,121542698002,submissions,False,True
+HG06804,HiFi,blood; filed under the pedigree's PAN name,blood,data,submissions/9f0e43e9-a57d-42c1-992c-a2ce7c20940f--WUSTL_BLOOD_HIFI/MGISTL-PAN011/PacBio_HiFi/m64136_210510_164711.hifi_reads.bam,112015544420,submissions,False,True
+HG06804,Illumina_WGS,filed under the pedigree's PAN name,,data,submissions/9f0e43e9-a57d-42c1-992c-a2ce7c20940f--WUSTL_BLOOD_HIFI/MGISTL-PAN011/illumina/CCATTCTGTA-TAACTTCACG_S36_L003_R1_001.fastq.gz,5752472504,submissions,False,True
+HG06804,Illumina_WGS,filed under the pedigree's PAN name,,data,submissions/9f0e43e9-a57d-42c1-992c-a2ce7c20940f--WUSTL_BLOOD_HIFI/MGISTL-PAN011/illumina/CCATTCTGTA-TAACTTCACG_S36_L003_R2_001.fastq.gz,6039821608,submissions,False,True
+HG06807,HiFi,blood; filed under the pedigree's PAN name,blood,data,submissions/9f0e43e9-a57d-42c1-992c-a2ce7c20940f--WUSTL_BLOOD_HIFI/MGISTL-PAN027/PacBio_HiFi/m64043_210925_220058.hifi_reads.bam,125072062970,submissions,False,True
+HG06807,HiFi,blood; filed under the pedigree's PAN name,blood,data,submissions/9f0e43e9-a57d-42c1-992c-a2ce7c20940f--WUSTL_BLOOD_HIFI/MGISTL-PAN027/PacBio_HiFi/m64043_210927_090130.hifi_reads.bam,127353157813,submissions,False,True
+HG06807,HiFi,blood; filed under the pedigree's PAN name,blood,data,submissions/9f0e43e9-a57d-42c1-992c-a2ce7c20940f--WUSTL_BLOOD_HIFI/MGISTL-PAN027/PacBio_HiFi/m64136_210423_181015.hifi_reads.bam,130422432792,submissions,False,True
+HG06807,HiFi,blood; filed under the pedigree's PAN name,blood,data,submissions/9f0e43e9-a57d-42c1-992c-a2ce7c20940f--WUSTL_BLOOD_HIFI/MGISTL-PAN027/PacBio_HiFi/m64136_210425_000914.hifi_reads.bam,113314804550,submissions,False,True
+HG06807,HiFi,blood; filed under the pedigree's PAN name,blood,data,submissions/9f0e43e9-a57d-42c1-992c-a2ce7c20940f--WUSTL_BLOOD_HIFI/MGISTL-PAN027/PacBio_HiFi/m64136_210426_185548.hifi_reads.bam,109503327562,submissions,False,True
+HG06807,HiFi,blood; filed under the pedigree's PAN name,blood,data,submissions/9f0e43e9-a57d-42c1-992c-a2ce7c20940f--WUSTL_BLOOD_HIFI/MGISTL-PAN027/PacBio_HiFi/m64136_210428_005505.hifi_reads.bam,99013199798,submissions,False,True
+HG06807,Illumina_WGS,filed under the pedigree's PAN name,,data,submissions/9f0e43e9-a57d-42c1-992c-a2ce7c20940f--WUSTL_BLOOD_HIFI/MGISTL-PAN027/illumina/AGGTCTATGG-TACATACCAC_S26_L003_R1_001.fastq.gz,3592112701,submissions,False,True
+HG06807,Illumina_WGS,filed under the pedigree's PAN name,,data,submissions/9f0e43e9-a57d-42c1-992c-a2ce7c20940f--WUSTL_BLOOD_HIFI/MGISTL-PAN027/illumina/AGGTCTATGG-TACATACCAC_S26_L003_R2_001.fastq.gz,4059911251,submissions,False,True
+HG06807,Illumina_WGS,filed under the pedigree's PAN name,,data,submissions/9f0e43e9-a57d-42c1-992c-a2ce7c20940f--WUSTL_BLOOD_HIFI/MGISTL-PAN027/illumina/AGGTCTATGG-TACATACCAC_S3_L003_R1_001.fastq.gz,6061958811,submissions,False,True
+HG06807,Illumina_WGS,filed under the pedigree's PAN name,,data,submissions/9f0e43e9-a57d-42c1-992c-a2ce7c20940f--WUSTL_BLOOD_HIFI/MGISTL-PAN027/illumina/AGGTCTATGG-TACATACCAC_S3_L003_R2_001.fastq.gz,6182370939,submissions,False,True
+HG06808,HiFi,blood; filed under the pedigree's PAN name,blood,data,submissions/9f0e43e9-a57d-42c1-992c-a2ce7c20940f--WUSTL_BLOOD_HIFI/MGISTL-PAN028/PacBio_HiFi/m64136_210429_180938.hifi_reads.bam,118760957374,submissions,False,True
+HG06808,HiFi,blood; filed under the pedigree's PAN name,blood,data,submissions/9f0e43e9-a57d-42c1-992c-a2ce7c20940f--WUSTL_BLOOD_HIFI/MGISTL-PAN028/PacBio_HiFi/m64136_210501_013313.hifi_reads.bam,115145530443,submissions,False,True
+HG06808,HiFi,blood; filed under the pedigree's PAN name,blood,data,submissions/9f0e43e9-a57d-42c1-992c-a2ce7c20940f--WUSTL_BLOOD_HIFI/MGISTL-PAN028/PacBio_HiFi/m64136_210503_174237.hifi_reads.bam,122536919095,submissions,False,True
+HG06808,HiFi,blood; filed under the pedigree's PAN name,blood,data,submissions/9f0e43e9-a57d-42c1-992c-a2ce7c20940f--WUSTL_BLOOD_HIFI/MGISTL-PAN028/PacBio_HiFi/m64136_210505_005712.hifi_reads.bam,109951174021,submissions,False,True
+HG06808,Illumina_WGS,filed under the pedigree's PAN name,,data,submissions/9f0e43e9-a57d-42c1-992c-a2ce7c20940f--WUSTL_BLOOD_HIFI/MGISTL-PAN028/illumina/GCTAGAATGG-TCACCGTCAC_S6_L003_R1_001.fastq.gz,8240658883,submissions,False,True
+HG06808,Illumina_WGS,filed under the pedigree's PAN name,,data,submissions/9f0e43e9-a57d-42c1-992c-a2ce7c20940f--WUSTL_BLOOD_HIFI/MGISTL-PAN028/illumina/GCTAGAATGG-TCACCGTCAC_S6_L003_R2_001.fastq.gz,8357256308,submissions,False,True
 HG00658,HiFi,,,data,submissions/A3D02676-D52B-4717-9312-73F78255BBB3--RU_Y3_HIFI/HG00658/m64055e_220304_184221.hifi_reads.bam,70666237878,submissions,False,True
 HG00658,HiFi,,,data,submissions/A3D02676-D52B-4717-9312-73F78255BBB3--RU_Y3_HIFI/HG00658/m64055e_220403_045718.hifi_reads.bam,55689516124,submissions,False,True
 HG00658,HiFi,,,data,submissions/A3D02676-D52B-4717-9312-73F78255BBB3--RU_Y3_HIFI/HG00658/m64055e_220504_181614.hifi_reads.bam,68302262147,submissions,False,True
@@ -27754,6 +27732,24 @@ HG02841,HiFi,,,data,submissions/B4B0B5DC-5FD5-42D5-8434-10DEF7D99E98--HPRC_DEEPC
 HG02984,HiFi,,,data,submissions/B4B0B5DC-5FD5-42D5-8434-10DEF7D99E98--HPRC_DEEPCONSENSUS_v1pt2_2024_02_q20_re-run/HG02984/raw_data/PacBio_HiFi/deepconsensus/v1pt2/HG02984.m64055e_220517_182131.dc.q20.fastq.gz,8174309364,submissions,False,True
 HG03050,HiFi,,,data,submissions/B4B0B5DC-5FD5-42D5-8434-10DEF7D99E98--HPRC_DEEPCONSENSUS_v1pt2_2024_02_q20_re-run/HG03050/raw_data/PacBio_HiFi/deepconsensus/v1pt2/HG03050.m54306Ue_220402_052301.dc.q20.fastq.gz,6313055323,submissions,False,True
 HG03050,HiFi,,,data,submissions/B4B0B5DC-5FD5-42D5-8434-10DEF7D99E98--HPRC_DEEPCONSENSUS_v1pt2_2024_02_q20_re-run/HG03050/raw_data/PacBio_HiFi/deepconsensus/v1pt2/HG03050.m64330e_220407_180519.dc.q20.fastq.gz,7810053374,submissions,False,True
+HG06803,HiFi,filed under the pedigree's PAN name,,data,submissions/B4B0B5DC-5FD5-42D5-8434-10DEF7D99E98--HPRC_DEEPCONSENSUS_v1pt2_2024_02_q20_re-run/MGISTL-PAN010/raw_data/PacBio_HiFi/deepconsensus/v1pt2/MGISTL-PAN010.m64043_210416_171718.dc.q20.fastq.gz,30563227310,submissions,False,True
+HG06803,HiFi,filed under the pedigree's PAN name,,data,submissions/B4B0B5DC-5FD5-42D5-8434-10DEF7D99E98--HPRC_DEEPCONSENSUS_v1pt2_2024_02_q20_re-run/MGISTL-PAN010/raw_data/PacBio_HiFi/deepconsensus/v1pt2/MGISTL-PAN010.m64043_210418_021436.dc.q20.fastq.gz,26926674252,submissions,False,True
+HG06803,HiFi,filed under the pedigree's PAN name,,data,submissions/B4B0B5DC-5FD5-42D5-8434-10DEF7D99E98--HPRC_DEEPCONSENSUS_v1pt2_2024_02_q20_re-run/MGISTL-PAN010/raw_data/PacBio_HiFi/deepconsensus/v1pt2/MGISTL-PAN010.m64043_210420_151018.dc.q20.fastq.gz,28723935603,submissions,False,True
+HG06803,HiFi,filed under the pedigree's PAN name,,data,submissions/B4B0B5DC-5FD5-42D5-8434-10DEF7D99E98--HPRC_DEEPCONSENSUS_v1pt2_2024_02_q20_re-run/MGISTL-PAN010/raw_data/PacBio_HiFi/deepconsensus/v1pt2/MGISTL-PAN010.m64043_210421_224017.dc.q20.fastq.gz,26910586375,submissions,False,True
+HG06804,HiFi,filed under the pedigree's PAN name,,data,submissions/B4B0B5DC-5FD5-42D5-8434-10DEF7D99E98--HPRC_DEEPCONSENSUS_v1pt2_2024_02_q20_re-run/MGISTL-PAN011/raw_data/PacBio_HiFi/deepconsensus/v1pt2/MGISTL-PAN011.m64136_210506_183715.dc.q20.fastq.gz,27782008996,submissions,False,True
+HG06804,HiFi,filed under the pedigree's PAN name,,data,submissions/B4B0B5DC-5FD5-42D5-8434-10DEF7D99E98--HPRC_DEEPCONSENSUS_v1pt2_2024_02_q20_re-run/MGISTL-PAN011/raw_data/PacBio_HiFi/deepconsensus/v1pt2/MGISTL-PAN011.m64136_210508_020125.dc.q20.fastq.gz,26631451944,submissions,False,True
+HG06804,HiFi,filed under the pedigree's PAN name,,data,submissions/B4B0B5DC-5FD5-42D5-8434-10DEF7D99E98--HPRC_DEEPCONSENSUS_v1pt2_2024_02_q20_re-run/MGISTL-PAN011/raw_data/PacBio_HiFi/deepconsensus/v1pt2/MGISTL-PAN011.m64136_210509_092431.dc.q20.fastq.gz,27517958491,submissions,False,True
+HG06804,HiFi,filed under the pedigree's PAN name,,data,submissions/B4B0B5DC-5FD5-42D5-8434-10DEF7D99E98--HPRC_DEEPCONSENSUS_v1pt2_2024_02_q20_re-run/MGISTL-PAN011/raw_data/PacBio_HiFi/deepconsensus/v1pt2/MGISTL-PAN011.m64136_210510_164711.dc.q20.fastq.gz,25640086113,submissions,False,True
+HG06807,HiFi,filed under the pedigree's PAN name,,data,submissions/B4B0B5DC-5FD5-42D5-8434-10DEF7D99E98--HPRC_DEEPCONSENSUS_v1pt2_2024_02_q20_re-run/MGISTL-PAN027/raw_data/PacBio_HiFi/deepconsensus/v1pt2/MGISTL-PAN027.m64043_210925_220058.dc.q20.fastq.gz,28049212635,submissions,False,True
+HG06807,HiFi,filed under the pedigree's PAN name,,data,submissions/B4B0B5DC-5FD5-42D5-8434-10DEF7D99E98--HPRC_DEEPCONSENSUS_v1pt2_2024_02_q20_re-run/MGISTL-PAN027/raw_data/PacBio_HiFi/deepconsensus/v1pt2/MGISTL-PAN027.m64043_210927_090130.dc.q20.fastq.gz,28948654737,submissions,False,True
+HG06807,HiFi,filed under the pedigree's PAN name,,data,submissions/B4B0B5DC-5FD5-42D5-8434-10DEF7D99E98--HPRC_DEEPCONSENSUS_v1pt2_2024_02_q20_re-run/MGISTL-PAN027/raw_data/PacBio_HiFi/deepconsensus/v1pt2/MGISTL-PAN027.m64136_210423_181015.dc.q20.fastq.gz,28709629430,submissions,False,True
+HG06807,HiFi,filed under the pedigree's PAN name,,data,submissions/B4B0B5DC-5FD5-42D5-8434-10DEF7D99E98--HPRC_DEEPCONSENSUS_v1pt2_2024_02_q20_re-run/MGISTL-PAN027/raw_data/PacBio_HiFi/deepconsensus/v1pt2/MGISTL-PAN027.m64136_210425_000914.dc.q20.fastq.gz,25154972933,submissions,False,True
+HG06807,HiFi,filed under the pedigree's PAN name,,data,submissions/B4B0B5DC-5FD5-42D5-8434-10DEF7D99E98--HPRC_DEEPCONSENSUS_v1pt2_2024_02_q20_re-run/MGISTL-PAN027/raw_data/PacBio_HiFi/deepconsensus/v1pt2/MGISTL-PAN027.m64136_210426_185548.dc.q20.fastq.gz,24059954624,submissions,False,True
+HG06807,HiFi,filed under the pedigree's PAN name,,data,submissions/B4B0B5DC-5FD5-42D5-8434-10DEF7D99E98--HPRC_DEEPCONSENSUS_v1pt2_2024_02_q20_re-run/MGISTL-PAN027/raw_data/PacBio_HiFi/deepconsensus/v1pt2/MGISTL-PAN027.m64136_210428_005505.dc.q20.fastq.gz,22163653595,submissions,False,True
+HG06808,HiFi,filed under the pedigree's PAN name,,data,submissions/B4B0B5DC-5FD5-42D5-8434-10DEF7D99E98--HPRC_DEEPCONSENSUS_v1pt2_2024_02_q20_re-run/MGISTL-PAN028/raw_data/PacBio_HiFi/deepconsensus/v1pt2/MGISTL-PAN028.m64136_210429_180938.dc.q20.fastq.gz,26437024648,submissions,False,True
+HG06808,HiFi,filed under the pedigree's PAN name,,data,submissions/B4B0B5DC-5FD5-42D5-8434-10DEF7D99E98--HPRC_DEEPCONSENSUS_v1pt2_2024_02_q20_re-run/MGISTL-PAN028/raw_data/PacBio_HiFi/deepconsensus/v1pt2/MGISTL-PAN028.m64136_210501_013313.dc.q20.fastq.gz,26000821095,submissions,False,True
+HG06808,HiFi,filed under the pedigree's PAN name,,data,submissions/B4B0B5DC-5FD5-42D5-8434-10DEF7D99E98--HPRC_DEEPCONSENSUS_v1pt2_2024_02_q20_re-run/MGISTL-PAN028/raw_data/PacBio_HiFi/deepconsensus/v1pt2/MGISTL-PAN028.m64136_210503_174237.dc.q20.fastq.gz,27622591763,submissions,False,True
+HG06808,HiFi,filed under the pedigree's PAN name,,data,submissions/B4B0B5DC-5FD5-42D5-8434-10DEF7D99E98--HPRC_DEEPCONSENSUS_v1pt2_2024_02_q20_re-run/MGISTL-PAN028/raw_data/PacBio_HiFi/deepconsensus/v1pt2/MGISTL-PAN028.m64136_210505_005712.dc.q20.fastq.gz,24800368108,submissions,False,True
 NA20799,HiFi,,,data,submissions/B4B0B5DC-5FD5-42D5-8434-10DEF7D99E98--HPRC_DEEPCONSENSUS_v1pt2_2024_02_q20_re-run/NA20799/raw_data/PacBio_HiFi/deepconsensus/v1pt2/NA20799.m54306Ue_220927_182256.dc.q20.fastq.gz,15667844406,submissions,False,True
 HG00423,ONT,,,data,submissions/BA2424FF-069C-4954-B908-90DF6D731487--UCSC_HPRC_NANOPORE_YEAR2_R10/HG00423/basecalled/05_12_25_R1041_UL_HPRC_HG00423_1_dorado1.0.0_supv5.0.0.bam,6294102397,submissions,False,True
 HG00423,ONT,,,report,submissions/BA2424FF-069C-4954-B908-90DF6D731487--UCSC_HPRC_NANOPORE_YEAR2_R10/HG00423/basecalled/05_12_25_R1041_UL_HPRC_HG00423_1_dorado1.0.0_supv5.0.0_summary.txt.gz,19171513,submissions,False,True
@@ -28221,42 +28217,14 @@ NA21106,Illumina_WGS,,,data,submissions/E3458FB3-14E6-4051-984A-D05608680B98--10
 NA21110,Illumina_WGS,,,data,submissions/E3458FB3-14E6-4051-984A-D05608680B98--1000G_ILL_WGS_CHILD_FASTQ/NA21110.final.fq.gz,29455889687,submissions,False,True
 NA21115,Illumina_WGS,,,data,submissions/E3458FB3-14E6-4051-984A-D05608680B98--1000G_ILL_WGS_CHILD_FASTQ/NA21115.final.fq.gz,23870764572,submissions,False,True
 NA21144,Illumina_WGS,,,data,submissions/E3458FB3-14E6-4051-984A-D05608680B98--1000G_ILL_WGS_CHILD_FASTQ/NA21144.final.fq.gz,18928502506,submissions,False,True
-HG01192,HiC,,,data,submissions/F346B183-CEE4-41BF-BBEE-E4335B20B8B2--HIC_Y3_fillin_and_Y4_part1/HG01192/raw_data/hic/PG01192-1_S7_L001_R1_001.fastq.gz,29033391469,submissions,False,True
-HG01192,HiC,,,data,submissions/F346B183-CEE4-41BF-BBEE-E4335B20B8B2--HIC_Y3_fillin_and_Y4_part1/HG01192/raw_data/hic/PG01192-1_S7_L001_R2_001.fastq.gz,30113196850,submissions,False,True
-HG01192,HiC,,,data,submissions/F346B183-CEE4-41BF-BBEE-E4335B20B8B2--HIC_Y3_fillin_and_Y4_part1/HG01192/raw_data/hic/PG01192-2_S7_L002_R1_001.fastq.gz,35950734660,submissions,False,True
-HG01192,HiC,,,data,submissions/F346B183-CEE4-41BF-BBEE-E4335B20B8B2--HIC_Y3_fillin_and_Y4_part1/HG01192/raw_data/hic/PG01192-2_S7_L002_R2_001.fastq.gz,37546423631,submissions,False,True
 HG01252,HiC,,,data,submissions/F346B183-CEE4-41BF-BBEE-E4335B20B8B2--HIC_Y3_fillin_and_Y4_part1/HG01252/raw_data/hic/HG01252-1_S2_L002_R1_001.fastq.gz,556,submissions,False,True
 HG01252,HiC,,,data,submissions/F346B183-CEE4-41BF-BBEE-E4335B20B8B2--HIC_Y3_fillin_and_Y4_part1/HG01252/raw_data/hic/HG01252-1_S2_L002_R2_001.fastq.gz,576,submissions,False,True
-HG01261,HiC,,,data,submissions/F346B183-CEE4-41BF-BBEE-E4335B20B8B2--HIC_Y3_fillin_and_Y4_part1/HG01261/raw_data/hic/PG01261-1_S2_L001_R1_001.fastq.gz,64949051763,submissions,False,True
-HG01261,HiC,,,data,submissions/F346B183-CEE4-41BF-BBEE-E4335B20B8B2--HIC_Y3_fillin_and_Y4_part1/HG01261/raw_data/hic/PG01261-1_S2_L001_R2_001.fastq.gz,68466454424,submissions,False,True
-HG01261,HiC,,,data,submissions/F346B183-CEE4-41BF-BBEE-E4335B20B8B2--HIC_Y3_fillin_and_Y4_part1/HG01261/raw_data/hic/PG01261-2_S2_L002_R1_001.fastq.gz,35427064191,submissions,False,True
-HG01261,HiC,,,data,submissions/F346B183-CEE4-41BF-BBEE-E4335B20B8B2--HIC_Y3_fillin_and_Y4_part1/HG01261/raw_data/hic/PG01261-2_S2_L002_R2_001.fastq.gz,36723913388,submissions,False,True
 HG01940,HiC,,,data,submissions/F346B183-CEE4-41BF-BBEE-E4335B20B8B2--HIC_Y3_fillin_and_Y4_part1/HG01940/raw_data/hic/HG01940-1_S4_L004_R1_001.fastq.gz,55210064,submissions,False,True
 HG01940,HiC,,,data,submissions/F346B183-CEE4-41BF-BBEE-E4335B20B8B2--HIC_Y3_fillin_and_Y4_part1/HG01940/raw_data/hic/HG01940-1_S4_L004_R2_001.fastq.gz,59596684,submissions,False,True
-HG01960,HiC,,,data,submissions/F346B183-CEE4-41BF-BBEE-E4335B20B8B2--HIC_Y3_fillin_and_Y4_part1/HG01960/raw_data/hic/PG01960-1_S3_L001_R1_001.fastq.gz,17717327831,submissions,False,True
-HG01960,HiC,,,data,submissions/F346B183-CEE4-41BF-BBEE-E4335B20B8B2--HIC_Y3_fillin_and_Y4_part1/HG01960/raw_data/hic/PG01960-1_S3_L001_R2_001.fastq.gz,18677572657,submissions,False,True
-HG01960,HiC,,,data,submissions/F346B183-CEE4-41BF-BBEE-E4335B20B8B2--HIC_Y3_fillin_and_Y4_part1/HG01960/raw_data/hic/PG01960-2_S3_L002_R1_001.fastq.gz,15668789745,submissions,False,True
-HG01960,HiC,,,data,submissions/F346B183-CEE4-41BF-BBEE-E4335B20B8B2--HIC_Y3_fillin_and_Y4_part1/HG01960/raw_data/hic/PG01960-2_S3_L002_R2_001.fastq.gz,16310581616,submissions,False,True
-HG01975,HiC,,,data,submissions/F346B183-CEE4-41BF-BBEE-E4335B20B8B2--HIC_Y3_fillin_and_Y4_part1/HG01975/raw_data/hic/PG01975-1_S4_L001_R1_001.fastq.gz,19754635072,submissions,False,True
-HG01975,HiC,,,data,submissions/F346B183-CEE4-41BF-BBEE-E4335B20B8B2--HIC_Y3_fillin_and_Y4_part1/HG01975/raw_data/hic/PG01975-1_S4_L001_R2_001.fastq.gz,21112812833,submissions,False,True
-HG01975,HiC,,,data,submissions/F346B183-CEE4-41BF-BBEE-E4335B20B8B2--HIC_Y3_fillin_and_Y4_part1/HG01975/raw_data/hic/PG01975-2_S4_L002_R1_001.fastq.gz,27191746939,submissions,False,True
-HG01975,HiC,,,data,submissions/F346B183-CEE4-41BF-BBEE-E4335B20B8B2--HIC_Y3_fillin_and_Y4_part1/HG01975/raw_data/hic/PG01975-2_S4_L002_R2_001.fastq.gz,28996128643,submissions,False,True
 HG02015,HiC,,,data,submissions/F346B183-CEE4-41BF-BBEE-E4335B20B8B2--HIC_Y3_fillin_and_Y4_part1/HG02015/raw_data/hic/HG02015-2_S9_L004_R1_001.fastq.gz,4776,submissions,False,True
 HG02015,HiC,,,data,submissions/F346B183-CEE4-41BF-BBEE-E4335B20B8B2--HIC_Y3_fillin_and_Y4_part1/HG02015/raw_data/hic/HG02015-2_S9_L004_R2_001.fastq.gz,4916,submissions,False,True
-HG02841,HiC,,,data,submissions/F346B183-CEE4-41BF-BBEE-E4335B20B8B2--HIC_Y3_fillin_and_Y4_part1/HG02841/raw_data/hic/PG02841-1_S5_L001_R1_001.fastq.gz,18589362730,submissions,False,True
-HG02841,HiC,,,data,submissions/F346B183-CEE4-41BF-BBEE-E4335B20B8B2--HIC_Y3_fillin_and_Y4_part1/HG02841/raw_data/hic/PG02841-1_S5_L001_R2_001.fastq.gz,19474293839,submissions,False,True
-HG02841,HiC,,,data,submissions/F346B183-CEE4-41BF-BBEE-E4335B20B8B2--HIC_Y3_fillin_and_Y4_part1/HG02841/raw_data/hic/PG02841-2_S5_L002_R1_001.fastq.gz,24450534010,submissions,False,True
-HG02841,HiC,,,data,submissions/F346B183-CEE4-41BF-BBEE-E4335B20B8B2--HIC_Y3_fillin_and_Y4_part1/HG02841/raw_data/hic/PG02841-2_S5_L002_R2_001.fastq.gz,25615905050,submissions,False,True
-HG02984,HiC,,,data,submissions/F346B183-CEE4-41BF-BBEE-E4335B20B8B2--HIC_Y3_fillin_and_Y4_part1/HG02984/raw_data/hic/PG02984-1_S6_L001_R1_001.fastq.gz,19489679026,submissions,False,True
-HG02984,HiC,,,data,submissions/F346B183-CEE4-41BF-BBEE-E4335B20B8B2--HIC_Y3_fillin_and_Y4_part1/HG02984/raw_data/hic/PG02984-1_S6_L001_R2_001.fastq.gz,20803532313,submissions,False,True
-HG02984,HiC,,,data,submissions/F346B183-CEE4-41BF-BBEE-E4335B20B8B2--HIC_Y3_fillin_and_Y4_part1/HG02984/raw_data/hic/PG02984-2_S6_L002_R1_001.fastq.gz,17930669377,submissions,False,True
-HG02984,HiC,,,data,submissions/F346B183-CEE4-41BF-BBEE-E4335B20B8B2--HIC_Y3_fillin_and_Y4_part1/HG02984/raw_data/hic/PG02984-2_S6_L002_R2_001.fastq.gz,19012047985,submissions,False,True
 HG03611,HiC,,,data,submissions/F346B183-CEE4-41BF-BBEE-E4335B20B8B2--HIC_Y3_fillin_and_Y4_part1/HG03611/raw_data/hic/HG03611-2_FC1_S6_L002_R1_001.fastq.gz,200,submissions,False,True
 HG03611,HiC,,,data,submissions/F346B183-CEE4-41BF-BBEE-E4335B20B8B2--HIC_Y3_fillin_and_Y4_part1/HG03611/raw_data/hic/HG03611-2_FC2_S6_L002_R2_001.fastq.gz,206,submissions,False,True
-HG03704,HiC,,,data,submissions/F346B183-CEE4-41BF-BBEE-E4335B20B8B2--HIC_Y3_fillin_and_Y4_part1/HG03704/raw_data/hic/HG03704-1_S1_L001_R1_001.fastq.gz,43362861412,submissions,False,True
-HG03704,HiC,,,data,submissions/F346B183-CEE4-41BF-BBEE-E4335B20B8B2--HIC_Y3_fillin_and_Y4_part1/HG03704/raw_data/hic/HG03704-1_S1_L001_R2_001.fastq.gz,46536915022,submissions,False,True
-HG03704,HiC,,,data,submissions/F346B183-CEE4-41BF-BBEE-E4335B20B8B2--HIC_Y3_fillin_and_Y4_part1/HG03704/raw_data/hic/HG03704-2_S1_L002_R1_001.fastq.gz,33566817374,submissions,False,True
-HG03704,HiC,,,data,submissions/F346B183-CEE4-41BF-BBEE-E4335B20B8B2--HIC_Y3_fillin_and_Y4_part1/HG03704/raw_data/hic/HG03704-2_S1_L002_R2_001.fastq.gz,36031405870,submissions,False,True
 NA21110,HiC,,,data,submissions/F346B183-CEE4-41BF-BBEE-E4335B20B8B2--HIC_Y3_fillin_and_Y4_part1/NA21110/raw_data/hic/NA21110-2_FC1_S2_L002_R2_001.fastq.gz,183,submissions,False,True
 NA21110,HiC,,,data,submissions/F346B183-CEE4-41BF-BBEE-E4335B20B8B2--HIC_Y3_fillin_and_Y4_part1/NA21110/raw_data/hic/NA21110-2_FC2_S2_L002_R1_001.fastq.gz,155,submissions,False,True
 NA18952,ONT,,,data,submissions/F673CD5D-9552-4CFC-8BE7-650A71CC5BF4--UCSC_HPRC_nanopore_Year4/GM18952/sup5.0.0_5mCG_5hmCG/11_28_23_R1041_HPRC_GM18952_2_dorado0.9.1_sup5.0.0_5mCG_5hmCG.bam,28,submissions,False,True
@@ -32764,7 +32732,6 @@ HG00621,ONT,,,data,submissions/c7ec612a-04c8-4391-b57a-80959f40f3a2--UCSC_HPRC_n
 HG00673,ONT,,,data,submissions/c7ec612a-04c8-4391-b57a-80959f40f3a2--UCSC_HPRC_nanopore_Year1_TopUp/HG00673/1_11_23_R941_HG00673_1.fast5.tar,592497838080,submissions,False,True
 HG00673,ONT,,,data,submissions/c7ec612a-04c8-4391-b57a-80959f40f3a2--UCSC_HPRC_nanopore_Year1_TopUp/HG00673/1_11_23_R941_HG00673_2.fast5.tar,532538142720,submissions,False,True
 HG02976,Kinnex_IsoSeq,Kinnex,,data,submissions/d22744ed-213c-43b3-a91d-31a282bb6e56--WUSTL_HPRC_Y5_Kinnex/HG02976/PacBio_HiFi/m84081_240531_190112_s1.hifi_reads.bcM0004.bam,66334639485,submissions,False,True
-HG02976,Kinnex_IsoSeq,Kinnex,,data,submissions/d22744ed-213c-43b3-a91d-31a282bb6e56--WUSTL_HPRC_Y5_Kinnex/HG02976/Read_Segmentation_and_IsoSeq/flnc.bam,72970820960,submissions,False,True
 HG02976,Kinnex_IsoSeq,Kinnex,,data,submissions/d22744ed-213c-43b3-a91d-31a282bb6e56--WUSTL_HPRC_Y5_Kinnex/HG02976/Read_Segmentation_and_IsoSeq/mapped.bam,1465702565,submissions,False,True
 HG02976,Kinnex_IsoSeq,Kinnex,,data,submissions/d22744ed-213c-43b3-a91d-31a282bb6e56--WUSTL_HPRC_Y5_Kinnex/HG02976/Read_Segmentation_and_IsoSeq/segmented.bam,74906938750,submissions,False,True
 HG02976,Kinnex_IsoSeq,Kinnex,,data,submissions/d22744ed-213c-43b3-a91d-31a282bb6e56--WUSTL_HPRC_Y5_Kinnex/HG02976/Read_Segmentation_and_IsoSeq/segmented.non_passing.bam,2492495457,submissions,False,True
@@ -33230,8 +33197,6 @@ HG02976,Kinnex_IsoSeq,Kinnex,,data,submissions/d22744ed-213c-43b3-a91d-31a282bb6
 ,Kinnex_IsoSeq,Kinnex,,data,submissions/d22744ed-213c-43b3-a91d-31a282bb6e56--WUSTL_HPRC_Y5_Kinnex/HPRC_Kinnex_Pool9/Read_Segmentation_and_IsoSeq_m84081_240719_203427_s1/segmented.non_passing.bam,3322107001,submissions,False,False
 HG00409,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG00411/parents/HG00409/HG00409.final.cram,14158930205,submissions,False,False
 HG00410,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG00411/parents/HG00410/HG00410.final.cram,15998091130,submissions,False,False
-HG00421,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG00423/parents/HG00421/HG00421.final.cram,16362680478,submissions,False,False
-HG00422,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG00423/parents/HG00422/HG00422.final.cram,17901133103,submissions,False,False
 HG00436,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG00438/parents/HG00436/HG00436.final.cram,14273715124,submissions,False,False
 HG00437,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG00438/parents/HG00437/HG00437.final.cram,15588412580,submissions,False,False
 HG00478,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG00480/parents/HG00478/HG00478.final.cram,15977668278,submissions,False,False
@@ -33350,18 +33315,6 @@ HG01976,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-9977
 HG01977,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG01978/parents/HG01977/HG01977.final.cram,13974450307,submissions,False,False
 HG01997,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG01998/parents/HG01997/HG01997.final.cram,13994064351,submissions,False,False
 HG02008,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG01998/parents/HG02008/HG02008.final.cram,14000019452,submissions,False,False
-HG02028,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG02027/parents/HG02028/HG02028.final.cram,14124078934,submissions,False,False
-HG02029,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG02027/parents/HG02029/HG02029.final.cram,15331225142,submissions,False,False
-HG02072,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG02071/parents/HG02072/HG02072.final.cram,15290882464,submissions,False,False
-HG02073,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG02071/parents/HG02073/HG02073.final.cram,15235831784,submissions,False,False
-HG02075,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG02074/parents/HG02075/HG02075.final.cram,14550416436,submissions,False,False
-HG02076,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG02074/parents/HG02076/HG02076.final.cram,15444685784,submissions,False,False
-HG02084,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG02083/parents/HG02084/HG02084.final.cram,13971821072,submissions,False,False
-HG02085,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG02083/parents/HG02085/HG02085.final.cram,14457622643,submissions,False,False
-HG02133,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG02132/parents/HG02133/HG02133.final.cram,16417721461,submissions,False,False
-HG02134,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG02132/parents/HG02134/HG02134.final.cram,15096633509,submissions,False,False
-HG02136,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG02135/parents/HG02136/HG02136.final.cram,14939342710,submissions,False,False
-HG02137,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG02135/parents/HG02137/HG02137.final.cram,15259566761,submissions,False,False
 HG02146,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG02148/parents/HG02146/HG02146.final.cram,14464889011,submissions,False,False
 HG02147,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG02148/parents/HG02147/HG02147.final.cram,15479747557,submissions,False,False
 HG02257,HiC,,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG02257/hic/NWM187c-1_S4_L001_R1_001.fastq.gz,6509550903,submissions,False,True
@@ -33400,8 +33353,6 @@ HG02486,HiC,,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_par
 HG02486,HiC,,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG02486/hic/NWM185c-2_S10_L004_R2_001.fastq.gz,7219997832,submissions,False,True
 HG02484,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG02486/parents/HG02484/HG02484.final.cram,15982264188,submissions,False,False
 HG02485,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG02486/parents/HG02485/HG02485.final.cram,15457030372,submissions,False,False
-HG02521,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG02523/parents/HG02521/HG02521.final.cram,16093955020,submissions,False,False
-HG02522,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG02523/parents/HG02522/HG02522.final.cram,14477326224,submissions,False,False
 HG02559,HiC,,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG02559/hic/NWM186c-1_S3_L001_R1_001.fastq.gz,6519204667,submissions,False,True
 HG02559,HiC,,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG02559/hic/NWM186c-1_S3_L001_R2_001.fastq.gz,6454994817,submissions,False,True
 HG02559,HiC,,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG02559/hic/NWM186c-1_S3_L002_R1_001.fastq.gz,7396181294,submissions,False,True
@@ -33422,16 +33373,12 @@ HG02557,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-9977
 HG02558,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG02559/parents/HG02558/HG02558.final.cram,16186144379,submissions,False,False
 HG02570,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG02572/parents/HG02570/HG02570.final.cram,16296388790,submissions,False,False
 HG02571,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG02572/parents/HG02571/HG02571.final.cram,15789721198,submissions,False,False
-HG02600,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG02602/parents/HG02600/HG02600.final.cram,16342542688,submissions,False,False
-HG02601,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG02602/parents/HG02601/HG02601.final.cram,15275521140,submissions,False,False
 HG02620,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG02622/parents/HG02620/HG02620.final.cram,15720885167,submissions,False,False
 HG02621,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG02622/parents/HG02621/HG02621.final.cram,15540871165,submissions,False,False
 HG02628,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG02630/parents/HG02628/HG02628.final.cram,15831451752,submissions,False,False
 HG02629,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG02630/parents/HG02629/HG02629.final.cram,15626286590,submissions,False,False
 HG02660,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG02662/parents/HG02660/HG02660.final.cram,16504665629,submissions,False,False
 HG02661,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG02662/parents/HG02661/HG02661.final.cram,15453756274,submissions,False,True
-HG02696,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG02698/parents/HG02696/HG02696.final.cram,16586430425,submissions,False,False
-HG02697,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG02698/parents/HG02697/HG02697.final.cram,15728319471,submissions,False,False
 HG02715,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG02717/parents/HG02715/HG02715.final.cram,17402625375,submissions,False,False
 HG02716,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG02717/parents/HG02716/HG02716.final.cram,16280528985,submissions,False,False
 HG02884,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG02886/parents/HG02884/HG02884.final.cram,15359276988,submissions,False,False
@@ -33444,32 +33391,6 @@ HG03538,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-9977
 HG03539,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG03540/parents/HG03539/HG03539.final.cram,15966149979,submissions,False,False
 HG03577,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG03579/parents/HG03577/HG03577.final.cram,15682774998,submissions,False,False
 HG03578,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG03579/parents/HG03578/HG03578.final.cram,16340317913,submissions,False,False
-HG03652,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG03654/parents/HG03652/HG03652.final.cram,16992382983,submissions,False,False
-HG03653,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG03654/parents/HG03653/HG03653.final.cram,15300956754,submissions,False,False
-HG03885,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG03688/parents/HG03885/HG03885.final.cram,22223979812,submissions,False,False
-HG03886,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG03688/parents/HG03886/HG03886.final.cram,15936578327,submissions,False,False
-HG03708,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG03710/parents/HG03708/HG03708.final.cram,19632392016,submissions,False,False
-HG03709,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG03710/parents/HG03709/HG03709.final.cram,15417919730,submissions,False,False
-HG03802,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG03804/parents/HG03802/HG03802.final.cram,16623866422,submissions,False,False
-HG03803,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG03804/parents/HG03803/HG03803.final.cram,15149226058,submissions,False,False
-HG03814,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG03816/parents/HG03814/HG03814.final.cram,14387948250,submissions,False,False
-HG03815,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG03816/parents/HG03815/HG03815.final.cram,18115924314,submissions,False,False
-HG03940,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG03942/parents/HG03940/HG03940.final.cram,15718832355,submissions,False,False
-HG03941,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG03942/parents/HG03941/HG03941.final.cram,16345380607,submissions,False,False
-HG03894,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG04115/parents/HG03894/HG03894.final.cram,17165652132,submissions,False,False
-HG03896,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG04115/parents/HG03896/HG03896.final.cram,15434504293,submissions,False,False
-HG04155,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG04157/parents/HG04155/HG04155.final.cram,17057218779,submissions,False,False
-HG04156,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG04157/parents/HG04156/HG04156.final.cram,17296408244,submissions,False,False
-HG04158,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG04160/parents/HG04158/HG04158.final.cram,18893022070,submissions,False,False
-HG04159,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG04160/parents/HG04159/HG04159.final.cram,18726709588,submissions,False,False
-HG04185,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG04187/parents/HG04185/HG04185.final.cram,16609525658,submissions,False,False
-HG04186,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG04187/parents/HG04186/HG04186.final.cram,17560702310,submissions,False,False
-HG04099,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG04199/parents/HG04099/HG04099.final.cram,16655860685,submissions,False,False
-HG04100,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG04199/parents/HG04100/HG04100.final.cram,22023918720,submissions,False,False
-HG03642,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG04204/parents/HG03642/HG03642.final.cram,15406131493,submissions,False,False
-HG03679,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG04204/parents/HG03679/HG03679.final.cram,15487903813,submissions,False,False
-HG04227,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG04228/parents/HG04227/HG04227.final.cram,17895742743,submissions,False,False
-HG04229,Illumina_WGS,1000G parent,,data,submissions/d6def6ff-2cf6-41f9-8d2d-99772afdaeb7--hic_and_parents/HG04228/parents/HG04229/HG04229.final.cram,16175047930,submissions,False,False
 HG002,HiFi,,,data,submissions/de000c71-bc38-4209-b86a-91d4eaadf68f--UW_HG002_HiFi/HG002/raw_data/PacBio_HiFi/m64004_210224_230828.hifi_reads.bam,25475357705,submissions,False,True
 HG002,HiFi,,,data,submissions/de000c71-bc38-4209-b86a-91d4eaadf68f--UW_HG002_HiFi/HG002/raw_data/PacBio_HiFi/m64014_210227_165255.hifi_reads.bam,26520902106,submissions,False,True
 HG002,HiFi,,,data,submissions/de000c71-bc38-4209-b86a-91d4eaadf68f--UW_HG002_HiFi/HG002/raw_data/PacBio_HiFi/m64015e_210223_010616.hifi_reads.bam,27954848402,submissions,False,True
@@ -33670,7 +33591,6 @@ HG03098,ONT,,,data,submissions/f9c83549-5414-4058-8422-ba653cde20e5--UCSC_HPRC_P
 HG03098,ONT,,,data,submissions/f9c83549-5414-4058-8422-ba653cde20e5--UCSC_HPRC_PLUS_nanopore/HG03098/guppy_6/05_17_22_R941_HG03098_2_2_Guppy_6.5.7_450bps_modbases_5mc_cg_sup_prom_pass.fastq.gz,24123129040,submissions,False,True
 HG03098,ONT,,,data,submissions/f9c83549-5414-4058-8422-ba653cde20e5--UCSC_HPRC_PLUS_nanopore/HG03098/guppy_6/05_17_22_R941_HG03098_2_3_Guppy_6.5.7_450bps_modbases_5mc_cg_sup_prom_fail.fastq.gz,12234049880,submissions,False,True
 HG03098,ONT,,,data,submissions/f9c83549-5414-4058-8422-ba653cde20e5--UCSC_HPRC_PLUS_nanopore/HG03098/guppy_6/05_17_22_R941_HG03098_2_3_Guppy_6.5.7_450bps_modbases_5mc_cg_sup_prom_pass.fastq.gz,53491581002,submissions,False,True
-HG02976,Kinnex_IsoSeq,Kinnex,,data,submissions/fcec3dfc-1170-4951-9cbc-c902dba2b214--WUSTL_HPRC_Y5_Per_Pool_Kinnex/HPRC_Kinnex_HG02976/flnc.bam,72970820960,submissions,False,True
 HG02976,Kinnex_IsoSeq,Kinnex,,data,submissions/fcec3dfc-1170-4951-9cbc-c902dba2b214--WUSTL_HPRC_Y5_Per_Pool_Kinnex/HPRC_Kinnex_HG02976/mapped.bam,1465720559,submissions,False,True
 ,Kinnex_IsoSeq,Kinnex,,data,submissions/fcec3dfc-1170-4951-9cbc-c902dba2b214--WUSTL_HPRC_Y5_Per_Pool_Kinnex/HPRC_Kinnex_Pool1/flnc-1.bam,19151328882,submissions,False,False
 ,Kinnex_IsoSeq,Kinnex,,data,submissions/fcec3dfc-1170-4951-9cbc-c902dba2b214--WUSTL_HPRC_Y5_Per_Pool_Kinnex/HPRC_Kinnex_Pool1/flnc-2.bam,24964464896,submissions,False,False
